@@ -8,23 +8,61 @@
   ];
   const catOf = (id) => CATS.find((c) => c.id === id);
   const PROGRAMS = [
-    { id: "conc", t: "Concours et recrutement", e: "🎯", c: "#6d4ae0", d: "Les épreuves d'aptitudes les plus fréquentes, étape par étape.", steps: [
-      { t: "Séries logiques", cat: "apt", subs: ["Séries logiques"] },
-      { t: "Raisonnement numérique", cat: "apt", subs: ["Raisonnement numérique"] },
-      { t: "Raisonnement verbal", cat: "apt", subs: ["Raisonnement verbal"] },
-      { t: "Logique, espace et matrices", cat: "apt", subs: ["Logique déductive", "Raisonnement spatial", "Matrices progressives"] },
-      { t: "Attention et vitesse", cat: "apt", subs: ["Attention et vitesse"] },
-      { t: "Entretien et jugement situationnel", cat: "per", subs: ["Recrutement", "Biais de réponse"] }] },
-    { id: "pers", t: "Tests de personnalité", e: "🧠", c: "#0e8a96", d: "Des modèles aux inventaires utilisés en clinique et en orientation.", steps: [
-      { t: "Big Five", cat: "per", subs: ["Big Five"] },
-      { t: "MBTI, 16PF et MMPI", cat: "per", subs: ["MBTI", "Inventaires cliniques", "Inventaires de personnalité"] },
-      { t: "Intérêts professionnels", cat: "per", subs: ["Intérêts professionnels"] },
-      { t: "Tests projectifs et méthode", cat: "per", subs: ["Tests projectifs", "Méthodologie"] }] },
-    { id: "theo", t: "Théorie pour étudiants", e: "📐", c: "#c9801b", d: "Les bases de la psychométrie pour réussir vos examens.", steps: [
-      { t: "Histoire et QI", cat: "theo", subs: ["Histoire", "Notion de QI"] },
-      { t: "Fidélité et validité", cat: "theo", subs: ["Fidélité", "Validité"] },
-      { t: "Étalonnage, statistiques, équité", cat: "theo", subs: ["Étalonnage", "Statistiques", "Équité"] },
-      { t: "Intelligence et grands auteurs", cat: "theo", subs: ["Échelles de Wechsler", "Facteur g", "Théories de l'intelligence", "Définitions"] }] }
+    { id: "conc", t: "Concours et recrutement", e: "🎯", c: "#6d4ae0", d: "Les épreuves d'aptitudes les plus fréquentes, des suites logiques à l'entretien de recrutement.", steps: [
+      { t: "Séries logiques", cat: "apt", packs: ["Séries logiques"] },
+      { t: "Calcul et tableaux de données", cat: "apt", packs: ["Raisonnement numérique et calcul", "Tableaux et pourcentages"] },
+      { t: "Raisonnement verbal et langue", cat: "apt", packs: ["Raisonnement verbal et langue"] },
+      { t: "Logique et déduction", cat: "apt", packs: ["Logique et déduction"] },
+      { t: "Matrices et tests non verbaux", cat: "apt", packs: ["Matrices et tests non verbaux"] },
+      { t: "Espace, perception et mécanique", cat: "apt", packs: ["Espace, perception et mécanique"] },
+      { t: "Batteries d'aptitudes et acquis", cat: "apt", packs: ["Batteries d'aptitudes et admission", "Acquis scolaires, lecture et langues"] },
+      { t: "Attention et vitesse", cat: "apt", packs: ["Attention et vitesse"] },
+      { t: "Recrutement et sélection", cat: "per", packs: ["Recrutement et sélection"] }] },
+    { id: "pers", t: "Tests de personnalité", e: "🧠", c: "#0e8a96", d: "Des modèles aux inventaires utilisés en orientation et en entreprise.", steps: [
+      { t: "Big Five", cat: "per", packs: ["Big Five"] },
+      { t: "MBTI et inventaires de personnalité", cat: "per", packs: ["MBTI", "Inventaires de personnalité"] },
+      { t: "Intérêts, valeurs et styles", cat: "per", packs: ["Intérêts, valeurs et styles"] },
+      { t: "Tests projectifs", cat: "per", packs: ["Tests projectifs"] },
+      { t: "Méthodologie et biais de réponse", cat: "per", packs: ["Méthodologie des questionnaires"] },
+      { t: "Interprétation des profils", cat: "per", packs: ["Interprétation des profils"] }] },
+    { id: "clin", t: "Psychologie clinique et santé", e: "🩺", c: "#c2307c", d: "Inventaires cliniques, échelles de dépistage, entretiens et évaluation fonctionnelle.", steps: [
+      { t: "MMPI et inventaires cliniques", cat: "per", packs: ["MMPI et inventaires cliniques"] },
+      { t: "Dépistage : anxiété, trauma, humeur, sommeil", cat: "per", packs: ["Dépistage : anxiété, trauma, humeur, sommeil"] },
+      { t: "Entretiens cliniques, enfants et famille", cat: "per", packs: ["Entretiens cliniques, enfants et famille"] },
+      { t: "Bien-être, stress et psychologie positive", cat: "per", packs: ["Bien-être, stress et psychologie positive"] },
+      { t: "Évaluation clinique et fonctionnelle", cat: "theo", packs: ["Évaluation clinique, fonctionnelle et neuropsychologique"] }] },
+    { id: "intel", t: "Tests d'intelligence", e: "🧩", c: "#c9801b", d: "WAIS, WISC, Raven et théories de l'intelligence.", steps: [
+      { t: "Sous-tests du WAIS et du WISC", cat: "apt", packs: ["Sous-tests du WAIS et du WISC"] },
+      { t: "Échelles de Wechsler", cat: "theo", packs: ["Échelles de Wechsler"] },
+      { t: "QI et théories de l'intelligence", cat: "theo", packs: ["QI et théories de l'intelligence"] },
+      { t: "Matrices et tests non verbaux", cat: "apt", packs: ["Matrices et tests non verbaux"] },
+      { t: "Tests chez l'enfant", cat: "theo", packs: ["Tests chez l'enfant"] }] },
+    { id: "neuro", t: "Neuropsychologie", e: "🔬", c: "#2563eb", d: "Attention, mémoire, fonctions exécutives et batteries neuropsychologiques.", steps: [
+      { t: "Attention et vitesse", cat: "apt", packs: ["Attention et vitesse"] },
+      { t: "Mémoire", cat: "apt", packs: ["Mémoire"] },
+      { t: "Fonctions exécutives", cat: "apt", packs: ["Fonctions exécutives"] },
+      { t: "Neuropsychologie et motricité", cat: "apt", packs: ["Neuropsychologie et motricité"] },
+      { t: "Évaluation clinique et fonctionnelle", cat: "theo", packs: ["Évaluation clinique, fonctionnelle et neuropsychologique"] }] },
+    { id: "trav", t: "Travail et sélection du personnel", e: "💼", c: "#12805c", d: "Psychologie du travail, sélection, validité des méthodes et équité.", steps: [
+      { t: "Psychologie du travail", cat: "per", packs: ["Psychologie du travail"] },
+      { t: "Recrutement et sélection", cat: "per", packs: ["Recrutement et sélection"] },
+      { t: "Intérêts, valeurs et styles", cat: "per", packs: ["Intérêts, valeurs et styles"] },
+      { t: "Batteries d'aptitudes et admission", cat: "apt", packs: ["Batteries d'aptitudes et admission"] },
+      { t: "Validité, équité et sélection", cat: "theo", packs: ["Validité, équité et sélection"] }] },
+    { id: "theo", t: "Théorie pour étudiants", e: "📐", c: "#7c3aed", d: "Les bases de la psychométrie pour réussir vos examens.", steps: [
+      { t: "Histoire de la psychométrie", cat: "theo", packs: ["Histoire de la psychométrie"] },
+      { t: "Fidélité et théorie classique", cat: "theo", packs: ["Fidélité et théorie classique"] },
+      { t: "Validité, équité et sélection", cat: "theo", packs: ["Validité, équité et sélection"] },
+      { t: "Étalonnage et notes standard", cat: "theo", packs: ["Étalonnage et notes standard"] },
+      { t: "Construction de tests et analyse d'items", cat: "theo", packs: ["Construction de tests et analyse d'items"] },
+      { t: "TRI, analyse factorielle et fondements", cat: "theo", packs: ["TRI, analyse factorielle et fondements"] },
+      { t: "Statistiques et choix des tests", cat: "theo", packs: ["Statistiques et choix des tests"] },
+      { t: "Calculs psychométriques", cat: "theo", packs: ["Calculs psychométriques"] }] },
+    { id: "ethic", t: "Éthique et pratique professionnelle", e: "⚖️", c: "#d9650b", d: "Déontologie, passation, cotation et interprétation responsable des tests.", steps: [
+      { t: "Éthique et déontologie", cat: "per", packs: ["Éthique et déontologie"] },
+      { t: "Pratique professionnelle et éthique", cat: "theo", packs: ["Pratique professionnelle et éthique"] },
+      { t: "Interprétation des profils", cat: "per", packs: ["Interprétation des profils"] },
+      { t: "Méthodologie des questionnaires", cat: "per", packs: ["Méthodologie des questionnaires"] }] }
   ];
   const TABS = ["home", "packs", "progress", "settings"];
   const ACCENTS = { violet: "#5b3fd0", bleu: "#2563eb", vert: "#12805c", orange: "#d9650b", rose: "#c2307c" };
@@ -103,7 +141,7 @@
     const out = [];
     CATS.forEach((c) => {
       const m = new Map();
-      Q[c.id].forEach((q, i) => { if (!m.has(q.s)) m.set(q.s, []); m.get(q.s).push({ cat: c.id, i, s: q.s }); });
+      Q[c.id].forEach((q, i) => { const pk = q.p || q.s; if (!m.has(pk)) m.set(pk, []); m.get(pk).push({ cat: c.id, i, s: q.s, p: pk }); });
       m.forEach((items, s) => out.push({ cat: c.id, s, items }));
     });
     return out;
@@ -113,7 +151,7 @@
     const avg = done.length ? done.reduce((s, x) => s + res[key(x.cat, x.i)], 0) / done.length : 0;
     return { n: items.length, done: done.length, avg, unl: items.filter((x) => !locked(x.i)).length };
   }
-  const stepItems = (st) => Q[st.cat].map((q, i) => ({ cat: st.cat, i, s: q.s })).filter((x) => st.subs.includes(x.s));
+  const stepItems = (st) => Q[st.cat].map((q, i) => ({ cat: st.cat, i, s: q.s, p: q.p || q.s })).filter((x) => st.packs.includes(x.p));
   function nextTodo() {
     for (const c of CATS) for (let i = 0; i < tot(c.id); i++) if (!locked(i) && res[key(c.id, i)] == null) return { cat: c.id, i };
     return null;
@@ -384,7 +422,7 @@
         <button class="btn alt" data-act="share">Partager l'application</button><div class="gap"></div>
         <a class="btn alt" href="https://wa.me/${C.WHATSAPP}" target="_blank" rel="noopener">Contacter sur WhatsApp</a><div class="gap"></div>
         <button class="btn danger" data-act="reset">Effacer ma progression</button></div>
-      <p class="muted small" style="text-align:center">${C.APP_NAME} · version 2 · ${allItems().length} questions</p>`;
+      <p class="muted small" style="text-align:center">${C.APP_NAME} · version 3 · ${allItems().length} questions</p>`;
   }
 
   // ---------- catégorie ----------
