@@ -1,4 +1,4 @@
-const V = "psychotest-v1";
+const V = "psychotest-v3";
 const FILES = ["./", "./index.html", "./style.css", "./app.js", "./config.js", "./questions.js",
   "./manifest.json", "./icon-192.png", "./icon-512.png", "./maskable-512.png",
   "./apple-touch-icon.png", "./favicon.png"];

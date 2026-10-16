@@ -1,7 +1,1851 @@
-﻿// Application PsychoTest : 1000 questions.
+﻿// Application PsychoTest : 1000 questions. Les 250 premières (92 + 75 + 83) sont gratuites, réparties dans tous les paquets.
 // Format : { p: paquet, s: sous-thème, q: énoncé, a: [[assertion, vrai?], ...], e: explication }
 window.QUESTIONS = {
  "apt": [
+  {
+   "s": "Séries logiques",
+   "q": "Soit la série : 3, 6, 12, 24, …",
+   "a": [
+    [
+     "La série est géométrique, de raison 2.",
+     true
+    ],
+    [
+     "On ajoute 3 à chaque terme.",
+     false
+    ],
+    [
+     "Le terme suivant est 48.",
+     true
+    ]
+   ],
+   "e": "Chaque terme est multiplié par 2 : 24 × 2 = 48. Une addition constante donnerait 3, 6, 9, 12…",
+   "p": "Séries logiques"
+  },
+  {
+   "s": "Séries logiques",
+   "q": "Soit la série : 2, 4, 8, 16, 32, …",
+   "a": [
+    [
+     "Le terme suivant est 48.",
+     false
+    ],
+    [
+     "Les termes sont des puissances de 2.",
+     true
+    ],
+    [
+     "Le terme suivant est 64.",
+     true
+    ]
+   ],
+   "e": "Chaque terme double : 32 × 2 = 64.",
+   "p": "Séries logiques"
+  },
+  {
+   "s": "Séries logiques",
+   "q": "Soit la série : 81, 27, 9, 3, …",
+   "a": [
+    [
+     "Le terme suivant est 0.",
+     false
+    ],
+    [
+     "Le terme suivant est 1.",
+     true
+    ],
+    [
+     "On divise par 3 à chaque fois.",
+     true
+    ]
+   ],
+   "e": "3 ÷ 3 = 1.",
+   "p": "Séries logiques"
+  },
+  {
+   "s": "Séries logiques",
+   "q": "Soit la série : 2, 10, 4, 20, 6, 30, …",
+   "a": [
+    [
+     "Le terme suivant est 40.",
+     false
+    ],
+    [
+     "La série contient deux suites entrelacées.",
+     true
+    ],
+    [
+     "Le terme suivant est 8.",
+     true
+    ]
+   ],
+   "e": "Termes impairs : 2, 4, 6, 8. Termes pairs : 10, 20, 30, 40.",
+   "p": "Séries logiques"
+  },
+  {
+   "s": "Séries logiques",
+   "q": "Soit la série : 5, 11, 23, 47, …",
+   "a": [
+    [
+     "Le terme suivant est 95.",
+     true
+    ],
+    [
+     "La règle est « multiplier par 2, puis ajouter 1 ».",
+     true
+    ],
+    [
+     "Le terme suivant est 94.",
+     false
+    ]
+   ],
+   "e": "47 × 2 + 1 = 95.",
+   "p": "Séries logiques"
+  },
+  {
+   "s": "Raisonnement numérique",
+   "q": "Fractions : 1/2 + 1/3.",
+   "a": [
+    [
+     "3/4 + 1/4 est égal à 1.",
+     true
+    ],
+    [
+     "Le dénominateur commun est 6.",
+     true
+    ],
+    [
+     "Le résultat est 5/6.",
+     true
+    ],
+    [
+     "Le résultat est 2/5.",
+     false
+    ]
+   ],
+   "e": "1/2 = 3/6 et 1/3 = 2/6, donc 5/6. On n'additionne jamais les dénominateurs. 3/4 + 1/4 = 4/4 = 1.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Raisonnement numérique",
+   "q": "Trois cahiers coûtent 1 500 FC (même prix pour chacun).",
+   "a": [
+    [
+     "Quatre cahiers coûtent 1 800 FC.",
+     false
+    ],
+    [
+     "Un cahier coûte 500 FC.",
+     true
+    ],
+    [
+     "Cinq cahiers coûtent 2 500 FC.",
+     true
+    ]
+   ],
+   "e": "1 500 ÷ 3 = 500 FC par cahier. Quatre cahiers : 4 × 500 = 2 000 FC.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Raisonnement numérique",
+   "q": "Fractions et décimaux.",
+   "a": [
+    [
+     "0,5 est égal à 1/2.",
+     true
+    ],
+    [
+     "0,25 est égal à 1/2.",
+     false
+    ],
+    [
+     "0,75 est égal à 3/4.",
+     true
+    ]
+   ],
+   "e": "0,25 = 1/4. Les deux premières égalités sont correctes.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Raisonnement numérique",
+   "q": "Conversions d'unités.",
+   "a": [
+    [
+     "3 heures égalent 180 minutes.",
+     true
+    ],
+    [
+     "2,5 km égalent 2 500 m.",
+     true
+    ],
+    [
+     "1,5 heure égale 100 minutes.",
+     false
+    ]
+   ],
+   "e": "1,5 h = 90 minutes, car 0,5 h = 30 minutes.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Raisonnement numérique",
+   "q": "Puissances.",
+   "a": [
+    [
+     "10³ est égal à 1 000.",
+     true
+    ],
+    [
+     "3² est égal à 6.",
+     false
+    ],
+    [
+     "2⁵ est égal à 32.",
+     true
+    ]
+   ],
+   "e": "3² = 3 × 3 = 9.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Calcul mental",
+   "q": "Calcul : 15 × 12.",
+   "a": [
+    [
+     "Le résultat est 180.",
+     true
+    ],
+    [
+     "On peut calculer 15 × 10 puis ajouter 15 × 2.",
+     true
+    ],
+    [
+     "Le résultat est 170.",
+     false
+    ]
+   ],
+   "e": "150 + 30 = 180.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Calcul mental",
+   "q": "Carrés de nombres.",
+   "a": [
+    [
+     "12² est égal à 124.",
+     false
+    ],
+    [
+     "15² est égal à 225.",
+     true
+    ],
+    [
+     "13² est égal à 169.",
+     true
+    ]
+   ],
+   "e": "12² = 144.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Raisonnement numérique",
+   "q": "Un prix de 100 augmente de 10 %, puis encore de 10 %.",
+   "a": [
+    [
+     "La hausse totale est de 21 %.",
+     true
+    ],
+    [
+     "Le prix final est de 121.",
+     true
+    ],
+    [
+     "Le prix final est de 120.",
+     false
+    ]
+   ],
+   "e": "110 × 1,10 = 121. Les pourcentages successifs se composent, ils ne s'additionnent pas.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Raisonnement numérique",
+   "q": "Un prix de 100 subit une remise de 20 %, puis une remise de 10 %.",
+   "a": [
+    [
+     "Le prix final est de 72.",
+     true
+    ],
+    [
+     "La remise totale est de 28 %.",
+     true
+    ],
+    [
+     "La remise totale est de 30 %.",
+     false
+    ]
+   ],
+   "e": "100 × 0,80 = 80, puis 80 × 0,90 = 72.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Raisonnement numérique",
+   "q": "La moyenne de quatre notes est 12. Trois notes valent 10, 12 et 14.",
+   "a": [
+    [
+     "La somme des quatre notes est 48.",
+     true
+    ],
+    [
+     "La quatrième note est 16.",
+     false
+    ],
+    [
+     "La quatrième note est 12.",
+     true
+    ]
+   ],
+   "e": "48 − (10 + 12 + 14) = 12.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Problèmes de raisonnement",
+   "q": "4 ouvriers terminent un travail en 6 jours (même rythme pour chacun).",
+   "a": [
+    [
+     "8 ouvriers le terminent en 3 jours.",
+     true
+    ],
+    [
+     "8 ouvriers le terminent en 12 jours.",
+     false
+    ],
+    [
+     "Le travail représente 24 journées d'ouvrier.",
+     true
+    ]
+   ],
+   "e": "Plus il y a d'ouvriers, moins il faut de jours : 24 ÷ 8 = 3.",
+   "p": "Raisonnement numérique et calcul"
+  },
+  {
+   "s": "Interprétation de données",
+   "q": "Une population passe de 1 000 à 1 200 habitants.",
+   "a": [
+    [
+     "La hausse est de 12 %.",
+     false
+    ],
+    [
+     "La hausse est de 200 habitants.",
+     true
+    ],
+    [
+     "La hausse est de 20 %.",
+     true
+    ]
+   ],
+   "e": "200 ÷ 1 000 = 20 %.",
+   "p": "Tableaux et pourcentages"
+  },
+  {
+   "s": "Interprétation de données",
+   "q": "Un article coûte 50 $ avant une taxe de 16 %.",
+   "a": [
+    [
+     "Le prix taxe comprise est de 66 $.",
+     false
+    ],
+    [
+     "Le prix taxe comprise est de 58 $.",
+     true
+    ],
+    [
+     "La taxe est de 8 $.",
+     true
+    ]
+   ],
+   "e": "16 % de 50 = 8 $, donc 50 + 8 = 58 $.",
+   "p": "Tableaux et pourcentages"
+  },
+  {
+   "s": "Interprétation de données",
+   "q": "Sur 600 électeurs : 45 % votent A, 35 % votent B, 20 % votent C.",
+   "a": [
+    [
+     "B obtient 210 voix.",
+     true
+    ],
+    [
+     "A obtient 270 voix.",
+     true
+    ],
+    [
+     "C obtient 100 voix.",
+     false
+    ]
+   ],
+   "e": "20 % de 600 = 120 voix.",
+   "p": "Tableaux et pourcentages"
+  },
+  {
+   "s": "Raisonnement verbal",
+   "q": "Recherche de contraire pour le mot « prudent ».",
+   "a": [
+    [
+     "« Téméraire » est un contraire approprié.",
+     true
+    ],
+    [
+     "« Avisé » est un contraire.",
+     false
+    ],
+    [
+     "« Imprudent » est un contraire.",
+     true
+    ]
+   ],
+   "e": "« Avisé » est plutôt un synonyme de prudent. « Imprudent » et « téméraire » expriment le manque de prudence.",
+   "p": "Raisonnement verbal et langue"
+  },
+  {
+   "s": "Raisonnement verbal",
+   "q": "Trouvez l'intrus : pomme, banane, carotte, mangue.",
+   "a": [
+    [
+     "Le critère de classement est « fruit ou légume ».",
+     true
+    ],
+    [
+     "« Carotte » est l'intrus.",
+     true
+    ],
+    [
+     "« Banane » est l'intrus.",
+     false
+    ]
+   ],
+   "e": "La pomme, la banane et la mangue sont des fruits. La carotte est un légume.",
+   "p": "Raisonnement verbal et langue"
+  },
+  {
+   "s": "Raisonnement verbal",
+   "q": "Trouvez l'intrus : lundi, mardi, janvier, jeudi.",
+   "a": [
+    [
+     "Le critère est « jour de la semaine ».",
+     true
+    ],
+    [
+     "« Janvier » est l'intrus.",
+     true
+    ],
+    [
+     "« Jeudi » est l'intrus.",
+     false
+    ]
+   ],
+   "e": "Janvier est un mois, les autres sont des jours.",
+   "p": "Raisonnement verbal et langue"
+  },
+  {
+   "s": "Raisonnement verbal",
+   "q": "Analogie : « livre est à lecteur comme film est à … ».",
+   "a": [
+    [
+     "« Spectateur » complète l'analogie.",
+     true
+    ],
+    [
+     "La relation est une relation de contraire.",
+     false
+    ],
+    [
+     "La relation est « œuvre – public ».",
+     true
+    ]
+   ],
+   "e": "On lit un livre, on regarde un film.",
+   "p": "Raisonnement verbal et langue"
+  },
+  {
+   "s": "Raisonnement verbal",
+   "q": "Recherche de contraires pour « croître ».",
+   "a": [
+    [
+     "« Augmenter » est un contraire.",
+     false
+    ],
+    [
+     "« Diminuer » est un contraire.",
+     true
+    ],
+    [
+     "« Décroître » est un contraire.",
+     true
+    ]
+   ],
+   "e": "« Augmenter » est plutôt un synonyme de croître.",
+   "p": "Raisonnement verbal et langue"
+  },
+  {
+   "s": "Raisonnement verbal",
+   "q": "Recherche de contraires et de synonymes pour « transparent ».",
+   "a": [
+    [
+     "« Opaque » est un synonyme.",
+     false
+    ],
+    [
+     "« Limpide » est un synonyme.",
+     true
+    ],
+    [
+     "« Opaque » est un contraire.",
+     true
+    ]
+   ],
+   "e": "Opaque ne laisse pas passer la lumière, contrairement à transparent.",
+   "p": "Raisonnement verbal et langue"
+  },
+  {
+   "s": "Raisonnement verbal",
+   "q": "Trouvez l'intrus : chaise, table, armoire, marteau.",
+   "a": [
+    [
+     "« Table » est l'intrus.",
+     false
+    ],
+    [
+     "Le critère est « meuble ou outil ».",
+     true
+    ],
+    [
+     "« Marteau » est l'intrus.",
+     true
+    ]
+   ],
+   "e": "Chaise, table et armoire sont des meubles. Le marteau est un outil.",
+   "p": "Raisonnement verbal et langue"
+  },
+  {
+   "s": "Orthographe et grammaire",
+   "q": "Accord du participe passé.",
+   "a": [
+    [
+     "« Les fleurs que j'ai cueillies » est correct.",
+     true
+    ],
+    [
+     "« Les lettres que j'ai écrit » est correct.",
+     false
+    ],
+    [
+     "« Elles sont parties » est correct.",
+     true
+    ]
+   ],
+   "e": "Avec avoir, le participe s'accorde avec le COD placé avant : « les lettres que j'ai écrites ».",
+   "p": "Raisonnement verbal et langue"
+  },
+  {
+   "s": "Logique déductive",
+   "q": "Prémisse : « S'il pleut, la route est mouillée ».",
+   "a": [
+    [
+     "Si la route est mouillée, on peut conclure qu'il a plu.",
+     false
+    ],
+    [
+     "S'il pleut, la route est mouillée.",
+     true
+    ],
+    [
+     "Si la route n'est pas mouillée, alors il n'a pas plu.",
+     true
+    ]
+   ],
+   "e": "La route peut être mouillée pour une autre raison (camion-citerne, par exemple). En revanche, route sèche entraîne qu'il n'a pas plu.",
+   "p": "Logique et déduction"
+  },
+  {
+   "s": "Logique déductive",
+   "q": "Règle : « Si A, alors B ». On sait que B est faux.",
+   "a": [
+    [
+     "On ne peut rien conclure sur A.",
+     false
+    ],
+    [
+     "A est faux.",
+     true
+    ],
+    [
+     "A est vrai.",
+     false
+    ]
+   ],
+   "e": "Si A était vrai, B le serait aussi. Comme B est faux, A est forcément faux.",
+   "p": "Logique et déduction"
+  },
+  {
+   "s": "Logique déductive",
+   "q": "A arrive avant B. C arrive après B. D arrive avant A.",
+   "a": [
+    [
+     "D arrive en premier.",
+     true
+    ],
+    [
+     "C arrive en dernier.",
+     true
+    ],
+    [
+     "B arrive en premier.",
+     false
+    ]
+   ],
+   "e": "L'ordre est D, A, B, C.",
+   "p": "Logique et déduction"
+  },
+  {
+   "s": "Problèmes de logique",
+   "q": "Règle : « Si je gagne, j'offre un cadeau ».",
+   "a": [
+    [
+     "Si je n'ai pas offert de cadeau, je n'ai pas gagné.",
+     true
+    ],
+    [
+     "Si je gagne, j'offre un cadeau.",
+     true
+    ],
+    [
+     "Si j'ai offert un cadeau, j'ai forcément gagné.",
+     false
+    ]
+   ],
+   "e": "On peut offrir un cadeau sans avoir gagné.",
+   "p": "Logique et déduction"
+  },
+  {
+   "s": "Logique déductive",
+   "q": "Négation de « Tous les élèves ont réussi ».",
+   "a": [
+    [
+     "« Certains élèves n'ont pas réussi » est équivalent à la négation.",
+     true
+    ],
+    [
+     "« Aucun élève n'a réussi » est la négation.",
+     false
+    ],
+    [
+     "« Au moins un élève n'a pas réussi » est la négation.",
+     true
+    ]
+   ],
+   "e": "Pour nier « tous », il suffit qu'un seul fasse exception.",
+   "p": "Logique et déduction"
+  },
+  {
+   "s": "Cognitive Reflection Test",
+   "q": "Test de réflexion cognitive de Frederick : « Une batte et une balle coûtent 1,10 $ ; la batte coûte 1 $ de plus que la balle ».",
+   "a": [
+    [
+     "La réponse intuitive « 0,10 $ » est erronée.",
+     true
+    ],
+    [
+     "La balle coûte 0,10 $.",
+     false
+    ],
+    [
+     "La balle coûte 0,05 $.",
+     true
+    ]
+   ],
+   "e": "Si la balle coûtait 0,10 $, la batte coûterait 1,10 $ et le total serait de 1,20 $.",
+   "p": "Logique et déduction"
+  },
+  {
+   "s": "Raisonnement et sélection",
+   "q": "Problème de Monty Hall : trois portes, une voiture. Après le choix du joueur, l'animateur ouvre une porte vide et propose de changer.",
+   "a": [
+    [
+     "Les deux portes restantes ont 1 chance sur 2.",
+     false
+    ],
+    [
+     "Garder sa porte donne 1 chance sur 3 de gagner.",
+     true
+    ],
+    [
+     "Changer de porte donne 2 chances sur 3 de gagner.",
+     true
+    ]
+   ],
+   "e": "L'animateur connaît la porte gagnante, donc son choix apporte une information.",
+   "p": "Logique et déduction"
+  },
+  {
+   "s": "Raisonnement et sélection",
+   "q": "À propos de l'UCAT :",
+   "a": [
+    [
+     "Il évalue la dextérité manuelle.",
+     false
+    ],
+    [
+     "Il comprend un volet de jugement situationnel.",
+     true
+    ],
+    [
+     "Il est utilisé pour l'admission à des études de médecine et d'odontologie.",
+     true
+    ]
+   ],
+   "e": "Il comprend aussi des épreuves de raisonnement verbal, de prise de décision et de raisonnement quantitatif.",
+   "p": "Logique et déduction"
+  },
+  {
+   "s": "Matrices progressives",
+   "q": "Dans une série, les figures contiennent 1, puis 2, puis 3 points.",
+   "a": [
+    [
+     "La figure suivante contient 2 points.",
+     false
+    ],
+    [
+     "La règle est une progression régulière (+1).",
+     true
+    ],
+    [
+     "La figure suivante contient 4 points.",
+     true
+    ]
+   ],
+   "e": "Le nombre de points augmente de 1 à chaque figure.",
+   "p": "Matrices et tests non verbaux"
+  },
+  {
+   "s": "Matrices progressives",
+   "q": "À propos des performances aux matrices :",
+   "a": [
+    [
+     "La familiarité avec les tests peut les influencer.",
+     true
+    ],
+    [
+     "Elles sont totalement indépendantes de tout apprentissage.",
+     false
+    ],
+    [
+     "L'effet Flynn a été observé notamment sur ces épreuves.",
+     true
+    ]
+   ],
+   "e": "Même un test peu verbal reste sensible à l'expérience et à la scolarité.",
+   "p": "Matrices et tests non verbaux"
+  },
+  {
+   "s": "Raisonnement abstrait",
+   "q": "Code : A = 1, B = 2, C = 3.",
+   "a": [
+    [
+     "Le mot BAC vaut 6.",
+     true
+    ],
+    [
+     "Le mot CAB vaut aussi 6.",
+     true
+    ],
+    [
+     "Le mot BAC vaut 5.",
+     false
+    ]
+   ],
+   "e": "2 + 1 + 3 = 6, quel que soit l'ordre des lettres.",
+   "p": "Matrices et tests non verbaux"
+  },
+  {
+   "s": "Raisonnement abstrait",
+   "q": "Série de formes : cercle, carré, triangle, cercle, carré, …",
+   "a": [
+    [
+     "La forme suivante est un triangle.",
+     true
+    ],
+    [
+     "La forme suivante est un cercle.",
+     false
+    ],
+    [
+     "La série suit un cycle de 3 formes.",
+     true
+    ]
+   ],
+   "e": "Le cycle est cercle, carré, triangle.",
+   "p": "Matrices et tests non verbaux"
+  },
+  {
+   "s": "Raven (matrices)",
+   "q": "À propos de la structure des SPM :",
+   "a": [
+    [
+     "Il y a 5 séries (A à E) de 12 items chacune.",
+     true
+    ],
+    [
+     "Dans les séries C à E, il y a 8 réponses possibles par item.",
+     true
+    ],
+    [
+     "Chaque item propose seulement 4 réponses possibles.",
+     false
+    ]
+   ],
+   "e": "Les séries A et B proposent 6 réponses, et les séries C, D et E en proposent 8.",
+   "p": "Matrices et tests non verbaux"
+  },
+  {
+   "s": "D48 (dominos)",
+   "q": "À propos de la tâche demandée dans le D48 :",
+   "a": [
+    [
+     "Il faut découvrir la logique d'une disposition de dominos.",
+     true
+    ],
+    [
+     "Il faut trouver le domino ou la valeur manquante.",
+     true
+    ],
+    [
+     "Il faut lire un texte et répondre à des questions.",
+     false
+    ]
+   ],
+   "e": "On raisonne sur des configurations de points, sans recourir à la lecture.",
+   "p": "Matrices et tests non verbaux"
+  },
+  {
+   "s": "Cattell Culture Fair",
+   "q": "À propos de l'objectif du Culture Fair Test :",
+   "a": [
+    [
+     "Cattell visait à mesurer l'intelligence fluide.",
+     true
+    ],
+    [
+     "Il est valable dans toutes les cultures sans adaptation.",
+     false
+    ],
+    [
+     "Aucun test n'est totalement indépendant de la culture.",
+     true
+    ]
+   ],
+   "e": "Même un test non verbal suppose une certaine familiarité avec le format et le matériel.",
+   "p": "Matrices et tests non verbaux"
+  },
+  {
+   "s": "Tests non verbaux",
+   "q": "À propos du NNAT (Naglieri Nonverbal Ability Test) :",
+   "a": [
+    [
+     "Il s'adresse à des enfants et à des adolescents.",
+     true
+    ],
+    [
+     "Il repose sur des items de type matrices.",
+     true
+    ],
+    [
+     "Il repose sur la lecture de textes.",
+     false
+    ]
+   ],
+   "e": "On y trouve du raisonnement par analogie, des séries et de la visualisation spatiale.",
+   "p": "Matrices et tests non verbaux"
+  },
+  {
+   "s": "Raisonnement spatial",
+   "q": "Une flèche pointe vers le haut.",
+   "a": [
+    [
+     "Après une rotation de 180°, elle pointe vers le bas.",
+     true
+    ],
+    [
+     "Après une rotation de 90° vers la droite, elle pointe vers la droite.",
+     true
+    ],
+    [
+     "Après une rotation de 90° vers la droite, elle pointe vers la gauche.",
+     false
+    ]
+   ],
+   "e": "Un quart de tour dans le sens des aiguilles d'une montre amène la flèche vers la droite.",
+   "p": "Espace, perception et mécanique"
+  },
+  {
+   "s": "Raisonnement spatial",
+   "q": "Un grand cube de 3 × 3 × 3 est peint sur toutes ses faces, puis découpé en 27 petits cubes.",
+   "a": [
+    [
+     "1 petit cube n'a aucune face peinte.",
+     true
+    ],
+    [
+     "8 petits cubes ont exactement 3 faces peintes.",
+     true
+    ],
+    [
+     "12 petits cubes ont exactement 3 faces peintes.",
+     false
+    ]
+   ],
+   "e": "Les 8 coins ont 3 faces, les 12 arêtes ont 2 faces, les 6 centres de face en ont 1, et le cube central aucune.",
+   "p": "Espace, perception et mécanique"
+  },
+  {
+   "s": "Raisonnement mécanique",
+   "q": "À propos des engrenages :",
+   "a": [
+    [
+     "Deux roues dentées en contact tournent en sens inverse.",
+     true
+    ],
+    [
+     "Deux roues dentées en contact tournent dans le même sens.",
+     false
+    ],
+    [
+     "Une petite roue entraînée par une grande roue tourne plus vite.",
+     true
+    ]
+   ],
+   "e": "Chaque dent pousse la dent opposée : le sens s'inverse.",
+   "p": "Espace, perception et mécanique"
+  },
+  {
+   "s": "Raisonnement spatial",
+   "q": "Un cube a une arête de 3 cm.",
+   "a": [
+    [
+     "Son aire totale est de 54 cm².",
+     true
+    ],
+    [
+     "Son volume est de 9 cm³.",
+     false
+    ],
+    [
+     "Son volume est de 27 cm³.",
+     true
+    ]
+   ],
+   "e": "Volume : 3 × 3 × 3 = 27. Aire : 6 faces × 9 = 54.",
+   "p": "Espace, perception et mécanique"
+  },
+  {
+   "s": "Cubes de Kohs",
+   "q": "À propos des cubes de Kohs :",
+   "a": [
+    [
+     "C'est une épreuve verbale.",
+     false
+    ],
+    [
+     "L'épreuve évalue le raisonnement visuo-spatial.",
+     true
+    ],
+    [
+     "Le sujet reproduit un modèle avec des cubes à faces colorées.",
+     true
+    ]
+   ],
+   "e": "Les cubes se manipulent : la langue joue très peu.",
+   "p": "Espace, perception et mécanique"
+  },
+  {
+   "s": "Rotation mentale",
+   "q": "À propos de l'expérience de Shepard et Metzler (1971) :",
+   "a": [
+    [
+     "Le temps de réponse augmente avec l'angle de rotation.",
+     true
+    ],
+    [
+     "Les sujets comparent des figures tridimensionnelles tournées.",
+     true
+    ],
+    [
+     "Le temps de réponse diminue avec l'angle de rotation.",
+     false
+    ]
+   ],
+   "e": "Cet effet suggère que l'on fait tourner mentalement une image de la figure.",
+   "p": "Espace, perception et mécanique"
+  },
+  {
+   "s": "Perception et style cognitif",
+   "q": "À propos de l'illusion de Müller-Lyer :",
+   "a": [
+    [
+     "Deux segments de même longueur paraissent différents.",
+     true
+    ],
+    [
+     "Elle prouve que les segments sont de longueurs différentes.",
+     false
+    ],
+    [
+     "La direction des pointes de flèche influence la perception.",
+     true
+    ]
+   ],
+   "e": "C'est un exemple d'illusion géométrique.",
+   "p": "Espace, perception et mécanique"
+  },
+  {
+   "s": "Figures complexes",
+   "q": "À propos de l'arrangement d'images du Wechsler (Picture Arrangement) :",
+   "a": [
+    [
+     "Il évalue la dextérité.",
+     false
+    ],
+    [
+     "Il évalue notamment la compréhension de situations sociales.",
+     true
+    ],
+    [
+     "Le sujet ordonne des images pour raconter une histoire logique.",
+     true
+    ]
+   ],
+   "e": "Il était présent dans les premières versions des échelles de Wechsler.",
+   "p": "Espace, perception et mécanique"
+  },
+  {
+   "s": "Batteries d'aptitudes",
+   "q": "À propos des Differential Aptitude Tests (DAT) :",
+   "a": [
+    [
+     "Ils comprennent aussi des épreuves de raisonnement mécanique et de relations spatiales.",
+     true
+    ],
+    [
+     "Ils comprennent notamment des épreuves de raisonnement verbal, numérique et abstrait.",
+     true
+    ],
+    [
+     "Ils mesurent les intérêts professionnels.",
+     false
+    ]
+   ],
+   "e": "Ils sont utilisés surtout pour l'orientation scolaire et professionnelle.",
+   "p": "Batteries d'aptitudes et admission"
+  },
+  {
+   "s": "Batteries d'aptitudes",
+   "q": "À propos du Wonderlic Personnel Test :",
+   "a": [
+    [
+     "Il comporte plusieurs centaines d'items.",
+     false
+    ],
+    [
+     "Il doit être terminé en 12 minutes.",
+     true
+    ],
+    [
+     "Il comporte 50 items.",
+     true
+    ]
+   ],
+   "e": "C'est un test court d'aptitude cognitive générale, utilisé en sélection.",
+   "p": "Batteries d'aptitudes et admission"
+  },
+  {
+   "s": "WASI",
+   "q": "Subtests de la WASI à quatre subtests :",
+   "a": [
+    [
+     "Cubes et Matrices.",
+     true
+    ],
+    [
+     "Mémoire des chiffres et Code.",
+     false
+    ],
+    [
+     "Vocabulaire et Similitudes.",
+     true
+    ]
+   ],
+   "e": "La WASI ne comporte pas ces deux derniers subtests, présents dans le WAIS.",
+   "p": "Batteries d'aptitudes et admission"
+  },
+  {
+   "s": "Créativité (TTCT, AUT, RAT)",
+   "q": "À propos du Remote Associates Test (Mednick) :",
+   "a": [
+    [
+     "Il évalue la dextérité.",
+     false
+    ],
+    [
+     "Il évalue la pensée convergente.",
+     true
+    ],
+    [
+     "Le sujet trouve un mot qui relie trois mots donnés.",
+     true
+    ]
+   ],
+   "e": "Il existe une seule bonne réponse par item.",
+   "p": "Batteries d'aptitudes et admission"
+  },
+  {
+   "s": "Échelles cognitives générales",
+   "q": "À propos des Reynolds Intellectual Assessment Scales (RIAS) :",
+   "a": [
+    [
+     "Elles fournissent un indice verbal et un indice non verbal.",
+     true
+    ],
+    [
+     "Elles incluent un indice de mémoire.",
+     true
+    ],
+    [
+     "Elles ne comportent aucune épreuve non verbale.",
+     false
+    ]
+   ],
+   "e": "Elles sont plutôt courtes, avec un nombre réduit de subtests.",
+   "p": "Batteries d'aptitudes et admission"
+  },
+  {
+   "s": "Tests de sélection militaire et universitaire",
+   "q": "À propos du GRE General Test :",
+   "a": [
+    [
+     "Il comprend une épreuve d'écriture analytique.",
+     true
+    ],
+    [
+     "Il évalue la dextérité manuelle.",
+     false
+    ],
+    [
+     "Il évalue le raisonnement verbal et quantitatif.",
+     true
+    ]
+   ],
+   "e": "Il est utilisé pour l'admission à des études supérieures.",
+   "p": "Batteries d'aptitudes et admission"
+  },
+  {
+   "s": "Tests d'acquis et d'aptitudes spécifiques",
+   "q": "À propos des Measures of Musical Talents de Seashore :",
+   "a": [
+    [
+     "Elles évaluent le raisonnement mathématique.",
+     false
+    ],
+    [
+     "Elles datent de 1919.",
+     true
+    ],
+    [
+     "Elles évaluent des capacités de discrimination, par exemple de hauteur ou de rythme.",
+     true
+    ]
+   ],
+   "e": "Elles mesurent surtout la perception auditive de base.",
+   "p": "Acquis scolaires, lecture et langues"
+  },
+  {
+   "s": "Tests de langue",
+   "q": "À propos du TCF et du TEF :",
+   "a": [
+    [
+     "Ce sont des tests d'évaluation du niveau de français.",
+     true
+    ],
+    [
+     "Ils sont utilisés notamment pour des démarches d'études ou d'immigration.",
+     true
+    ],
+    [
+     "Ils évaluent les aptitudes mécaniques.",
+     false
+    ]
+   ],
+   "e": "Les résultats sont exprimés selon les niveaux du CECRL.",
+   "p": "Acquis scolaires, lecture et langues"
+  },
+  {
+   "s": "Aptitudes scolaires",
+   "q": "À propos du KTEA (Kaufman Test of Educational Achievement) :",
+   "a": [
+    [
+     "Il évalue aussi le langage écrit et oral.",
+     true
+    ],
+    [
+     "Il évalue des acquis scolaires, comme la lecture et les mathématiques.",
+     true
+    ],
+    [
+     "Il évalue la personnalité.",
+     false
+    ]
+   ],
+   "e": "Il est utilisé dans les bilans d'apprentissage.",
+   "p": "Acquis scolaires, lecture et langues"
+  },
+  {
+   "s": "Tests de lecture",
+   "q": "À propos du TOWRE (Test of Word Reading Efficiency) :",
+   "a": [
+    [
+     "Il évalue l'efficacité de lecture de mots.",
+     true
+    ],
+    [
+     "Il évalue le raisonnement abstrait.",
+     false
+    ],
+    [
+     "Il comprend la lecture de mots irréguliers et de pseudo-mots.",
+     true
+    ]
+   ],
+   "e": "Chaque épreuve est limitée dans le temps, ce qui mesure la fluence.",
+   "p": "Acquis scolaires, lecture et langues"
+  },
+  {
+   "s": "Langage et lecture",
+   "q": "À propos de la Neale Analysis of Reading Ability :",
+   "a": [
+    [
+     "Elle évalue les aptitudes numériques.",
+     false
+    ],
+    [
+     "Elle évalue la lecture orale de textes.",
+     true
+    ],
+    [
+     "On y mesure la précision et la compréhension.",
+     true
+    ]
+   ],
+   "e": "Le sujet lit des textes de difficulté croissante.",
+   "p": "Acquis scolaires, lecture et langues"
+  },
+  {
+   "s": "Mathématiques et échelles françaises",
+   "q": "À propos du TEDI-MATH :",
+   "a": [
+    [
+     "Il évalue des compétences de base en mathématiques chez l'enfant.",
+     true
+    ],
+    [
+     "Il évalue la personnalité.",
+     false
+    ],
+    [
+     "Il est d'origine francophone.",
+     true
+    ]
+   ],
+   "e": "Il explore le dénombrement, la numération et le calcul.",
+   "p": "Acquis scolaires, lecture et langues"
+  },
+  {
+   "s": "Attention et vitesse",
+   "q": "À propos du test de Stroop :",
+   "a": [
+    [
+     "Il mesure la mémoire à long terme.",
+     false
+    ],
+    [
+     "Il mesure l'attention sélective et la capacité d'inhibition.",
+     true
+    ],
+    [
+     "Nommer la couleur de l'encre est plus lent quand le mot désigne une autre couleur.",
+     true
+    ]
+   ],
+   "e": "Lire le mot est automatique : il faut l'inhiber pour nommer la couleur, ce qui crée de l'interférence.",
+   "p": "Attention et vitesse"
+  },
+  {
+   "s": "Attention et vitesse",
+   "q": "À propos de la mémoire de travail :",
+   "a": [
+    [
+     "L'empan de chiffres évalue la mémoire verbale à court terme.",
+     true
+    ],
+    [
+     "Les blocs de Corsi sont un test de personnalité.",
+     false
+    ],
+    [
+     "Les blocs de Corsi évaluent la mémoire visuo-spatiale.",
+     true
+    ]
+   ],
+   "e": "Dans le test de Corsi, on reproduit une séquence de blocs touchés par l'examinateur.",
+   "p": "Attention et vitesse"
+  },
+  {
+   "s": "Attention et vitesse",
+   "q": "À propos du compromis vitesse-précision :",
+   "a": [
+    [
+     "La vitesse et la précision sont toujours indépendantes.",
+     false
+    ],
+    [
+     "Un test chronométré peut désavantager une personne très anxieuse.",
+     true
+    ],
+    [
+     "Aller plus vite fait souvent augmenter le nombre d'erreurs.",
+     true
+    ]
+   ],
+   "e": "Dans bien des épreuves, gagner en vitesse se paie en précision.",
+   "p": "Attention et vitesse"
+  },
+  {
+   "s": "Tests d'attention (SDMT, PASAT, Ruff)",
+   "q": "À propos du Symbol Digit Modalities Test (SDMT) :",
+   "a": [
+    [
+     "Il évalue la vitesse de traitement de l'information.",
+     true
+    ],
+    [
+     "Il dure 90 secondes.",
+     true
+    ],
+    [
+     "Il évalue la mémoire des visages.",
+     false
+    ]
+   ],
+   "e": "Le sujet associe des chiffres à des symboles selon une clé.",
+   "p": "Attention et vitesse"
+  },
+  {
+   "s": "Tests d'attention",
+   "q": "À propos du TOVA (Test of Variables of Attention) :",
+   "a": [
+    [
+     "C'est un test de performance continue informatisé.",
+     true
+    ],
+    [
+     "Il évalue le raisonnement verbal.",
+     false
+    ],
+    [
+     "Il est utilisé dans l'évaluation du TDAH.",
+     true
+    ]
+   ],
+   "e": "Il mesure l'attention soutenue et l'impulsivité.",
+   "p": "Attention et vitesse"
+  },
+  {
+   "s": "Tâches cognitives expérimentales",
+   "q": "À propos de la SART (Sustained Attention to Response Task) :",
+   "a": [
+    [
+     "Le sujet répond à presque tous les chiffres, sauf à un chiffre cible.",
+     true
+    ],
+    [
+     "Les erreurs de commission reflètent des lapsus d'attention.",
+     true
+    ],
+    [
+     "Elle évalue la dextérité manuelle.",
+     false
+    ]
+   ],
+   "e": "Robertson et ses collègues l'ont proposée en 1997.",
+   "p": "Attention et vitesse"
+  },
+  {
+   "s": "Tâches cognitives expérimentales",
+   "q": "À propos de la tâche de signal d'arrêt (stop-signal) :",
+   "a": [
+    [
+     "Elle évalue la compréhension verbale.",
+     false
+    ],
+    [
+     "Logan et Cowan l'ont décrite en 1984.",
+     true
+    ],
+    [
+     "Elle évalue la capacité d'inhiber une réponse déjà initiée.",
+     true
+    ]
+   ],
+   "e": "Un signal d'arrêt apparaît après le stimulus, et le sujet doit retenir sa réponse.",
+   "p": "Attention et vitesse"
+  },
+  {
+   "s": "Tâches cognitives expérimentales",
+   "q": "À propos de l'Attention Network Test (ANT) :",
+   "a": [
+    [
+     "Il évalue trois réseaux : alerte, orientation et contrôle exécutif.",
+     true
+    ],
+    [
+     "Fan et ses collègues l'ont proposé en 2002.",
+     true
+    ],
+    [
+     "Il évalue le vocabulaire.",
+     false
+    ]
+   ],
+   "e": "Il combine une tâche d'indiçage et une tâche de Flanker.",
+   "p": "Attention et vitesse"
+  },
+  {
+   "s": "Mémoire",
+   "q": "À propos de l'empan mnésique :",
+   "a": [
+    [
+     "Miller a décrit une capacité d'environ 7 ± 2 éléments.",
+     true
+    ],
+    [
+     "Le regroupement (chunking) permet de retenir davantage.",
+     true
+    ],
+    [
+     "Miller est l'auteur du test de Rorschach.",
+     false
+    ]
+   ],
+   "e": "Regrouper des chiffres par paquets facilite la mémorisation.",
+   "p": "Mémoire"
+  },
+  {
+   "s": "Tests de mémoire",
+   "q": "À propos du Benton Visual Retention Test :",
+   "a": [
+    [
+     "Il évalue l'attention auditive.",
+     false
+    ],
+    [
+     "Il évalue la mémoire visuelle et la perception visuo-spatiale.",
+     true
+    ],
+    [
+     "Il comprend 10 figures à reproduire.",
+     true
+    ]
+   ],
+   "e": "Le sujet regarde chaque figure quelques secondes, puis la dessine de mémoire.",
+   "p": "Mémoire"
+  },
+  {
+   "s": "Tests de mémoire",
+   "q": "À propos du Hopkins Verbal Learning Test (HVLT-R) :",
+   "a": [
+    [
+     "La liste comporte 12 mots.",
+     true
+    ],
+    [
+     "Il comprend trois essais d'apprentissage.",
+     true
+    ],
+    [
+     "La liste comporte 50 mots.",
+     false
+    ]
+   ],
+   "e": "Il inclut aussi un rappel différé et une reconnaissance.",
+   "p": "Mémoire"
+  },
+  {
+   "s": "Mémoire et développement de l'enfant",
+   "q": "À propos des échelles de Griffiths :",
+   "a": [
+    [
+     "Elles évaluent le développement du jeune enfant.",
+     true
+    ],
+    [
+     "Elles explorent notamment le langage et la coordination oeil-main.",
+     true
+    ],
+    [
+     "Elles évaluent la personnalité de l'adulte.",
+     false
+    ]
+   ],
+   "e": "Elles sont utilisées pour repérer des retards de développement.",
+   "p": "Mémoire"
+  },
+  {
+   "s": "Mémoire",
+   "q": "À propos du Recognition Memory Test de Warrington :",
+   "a": [
+    [
+     "Le sujet choisit entre deux options.",
+     true
+    ],
+    [
+     "Il comprend des mots et des visages.",
+     true
+    ],
+    [
+     "Il évalue la dextérité.",
+     false
+    ]
+   ],
+   "e": "Il évalue la mémoire de reconnaissance.",
+   "p": "Mémoire"
+  },
+  {
+   "s": "Wisconsin Card Sorting Test",
+   "q": "À propos de l'usage du WCST :",
+   "a": [
+    [
+     "Il est un test de personnalité.",
+     false
+    ],
+    [
+     "Il a été utilisé en neuropsychologie pour explorer le fonctionnement frontal.",
+     true
+    ],
+    [
+     "Il a été introduit par Berg en 1948.",
+     true
+    ]
+   ],
+   "e": "Le WCST est une épreuve cognitive, pas un questionnaire.",
+   "p": "Fonctions exécutives"
+  },
+  {
+   "s": "Fonctions exécutives",
+   "q": "À propos de l'Iowa Gambling Task (Bechara) :",
+   "a": [
+    [
+     "Il évalue le vocabulaire.",
+     false
+    ],
+    [
+     "Il comporte quatre paquets de cartes.",
+     true
+    ],
+    [
+     "Il évalue la prise de décision en situation d'incertitude.",
+     true
+    ]
+   ],
+   "e": "Certains paquets rapportent beaucoup mais font perdre davantage à long terme.",
+   "p": "Fonctions exécutives"
+  },
+  {
+   "s": "Fonctions exécutives",
+   "q": "À propos du test de Hayling (Burgess et Shallice) :",
+   "a": [
+    [
+     "Le sujet complète des phrases dont il manque le dernier mot.",
+     true
+    ],
+    [
+     "Dans la seconde partie, il doit donner un mot sans rapport avec la phrase.",
+     true
+    ],
+    [
+     "Il évalue la dextérité manuelle.",
+     false
+    ]
+   ],
+   "e": "Il évalue l'initiation et surtout l'inhibition de réponses automatiques.",
+   "p": "Fonctions exécutives"
+  },
+  {
+   "s": "Fonctions exécutives de l'enfant",
+   "q": "À propos de la tâche Jour-Nuit de Stroop pour enfants :",
+   "a": [
+    [
+     "Elle évalue la lecture.",
+     false
+    ],
+    [
+     "Elle évalue le contrôle de l'inhibition.",
+     true
+    ],
+    [
+     "L'enfant dit « nuit » devant un soleil et « jour » devant une lune.",
+     true
+    ]
+   ],
+   "e": "Elle est accessible à de jeunes enfants qui ne lisent pas encore.",
+   "p": "Fonctions exécutives"
+  },
+  {
+   "s": "Tests de dextérité",
+   "q": "À propos de la cotation du Purdue Pegboard :",
+   "a": [
+    [
+     "On compte le nombre de chevilles placées dans un temps limité.",
+     true
+    ],
+    [
+     "Il comprend aussi une épreuve d'assemblage.",
+     true
+    ],
+    [
+     "Il se cote sur un barème de QI.",
+     false
+    ]
+   ],
+   "e": "Les épreuves principales durent 30 secondes, et l'assemblage dure plus longtemps.",
+   "p": "Neuropsychologie et motricité"
+  },
+  {
+   "s": "Tests neuropsychologiques spécifiques",
+   "q": "À propos du test de jugement d'orientation de lignes de Benton :",
+   "a": [
+    [
+     "Il évalue la mémoire des mots.",
+     false
+    ],
+    [
+     "Le sujet associe l'orientation de lignes à un modèle en éventail.",
+     true
+    ],
+    [
+     "Il évalue la perception visuo-spatiale.",
+     true
+    ]
+   ],
+   "e": "Il comporte 30 items.",
+   "p": "Neuropsychologie et motricité"
+  },
+  {
+   "s": "Batteries neuropsychologiques",
+   "q": "À propos du test de tapotement digital (Finger Tapping) :",
+   "a": [
+    [
+     "Il évalue le vocabulaire.",
+     false
+    ],
+    [
+     "Il évalue la vitesse motrice fine.",
+     true
+    ],
+    [
+     "Le sujet tapote le plus vite possible avec un doigt.",
+     true
+    ]
+   ],
+   "e": "Il fait partie de la batterie de Halstead-Reitan.",
+   "p": "Neuropsychologie et motricité"
+  },
+  {
+   "s": "Batteries neuropsychologiques",
+   "q": "À propos de la Western Aphasia Battery (WAB) :",
+   "a": [
+    [
+     "Elle évalue l'aphasie.",
+     true
+    ],
+    [
+     "Elle évalue les intérêts professionnels.",
+     false
+    ],
+    [
+     "Elle fournit un quotient d'aphasie.",
+     true
+    ]
+   ],
+   "e": "Elle a été proposée par Kertesz.",
+   "p": "Neuropsychologie et motricité"
+  },
+  {
+   "s": "Tests moteurs",
+   "q": "À propos du Movement ABC-2 :",
+   "a": [
+    [
+     "Il évalue la coordination motrice de l'enfant.",
+     true
+    ],
+    [
+     "Il est utilisé dans le repérage du trouble de l'acquisition de la coordination.",
+     true
+    ],
+    [
+     "Il évalue le vocabulaire.",
+     false
+    ]
+   ],
+   "e": "Il explore la dextérité manuelle, la visée et l'équilibre.",
+   "p": "Neuropsychologie et motricité"
+  },
+  {
+   "s": "Batteries informatisées",
+   "q": "À propos du Vienna Test System :",
+   "a": [
+    [
+     "Il se passe uniquement sur papier.",
+     false
+    ],
+    [
+     "C'est un système de tests psychologiques informatisés.",
+     true
+    ],
+    [
+     "Il est largement utilisé pour des applications de transport et de sélection.",
+     true
+    ]
+   ],
+   "e": "Il est édité par Schuhfried.",
+   "p": "Neuropsychologie et motricité"
+  },
+  {
+   "s": "Batteries informatisées",
+   "q": "À propos de Cogstate :",
+   "a": [
+    [
+     "Elle est utilisée en recherche clinique.",
+     true
+    ],
+    [
+     "C'est une batterie informatisée de tests cognitifs.",
+     true
+    ],
+    [
+     "Elle évalue les traits de personnalité.",
+     false
+    ]
+   ],
+   "e": "Ses épreuves sont brèves et conçues pour être répétées.",
+   "p": "Neuropsychologie et motricité"
+  },
+  {
+   "s": "Praxies et latéralité",
+   "q": "À propos des tests de dominance latérale de Harris :",
+   "a": [
+    [
+     "Ils évaluent la préférence manuelle, oculaire et pédestre.",
+     true
+    ],
+    [
+     "Ils évaluent les aptitudes numériques.",
+     false
+    ],
+    [
+     "Ils s'utilisent notamment chez l'enfant.",
+     true
+    ]
+   ],
+   "e": "Ils déterminent la latéralité de façon plus complète que la seule main.",
+   "p": "Neuropsychologie et motricité"
+  },
+  {
+   "s": "Sous-tests du WAIS-IV",
+   "q": "À propos du sous-test Vocabulaire du WAIS-IV :",
+   "a": [
+    [
+     "Il évalue la mémoire visuelle.",
+     false
+    ],
+    [
+     "Le sujet définit des mots.",
+     true
+    ],
+    [
+     "Il évalue les connaissances lexicales et l'expression verbale.",
+     true
+    ]
+   ],
+   "e": "Les définitions sont cotées selon leur précision.",
+   "p": "Sous-tests du WAIS et du WISC"
+  },
+  {
+   "s": "Sous-tests du WAIS-IV",
+   "q": "À propos du sous-test Balances du WAIS-IV :",
+   "a": [
+    [
+     "Il présente des balances avec des formes et demande de trouver la forme manquante.",
+     true
+    ],
+    [
+     "Il évalue le raisonnement quantitatif.",
+     true
+    ],
+    [
+     "Il évalue la mémoire des mots.",
+     false
+    ]
+   ],
+   "e": "Il est un sous-test complémentaire du raisonnement perceptif.",
+   "p": "Sous-tests du WAIS et du WISC"
+  },
+  {
+   "s": "Sous-tests du WAIS-IV",
+   "q": "À propos du sous-test Séquence lettres-chiffres du WAIS-IV :",
+   "a": [
+    [
+     "Il évalue le vocabulaire.",
+     false
+    ],
+    [
+     "Le sujet remet en ordre des chiffres et des lettres entendus.",
+     true
+    ],
+    [
+     "Il évalue la mémoire de travail.",
+     true
+    ]
+   ],
+   "e": "Il est un sous-test complémentaire de l'indice de mémoire de travail.",
+   "p": "Sous-tests du WAIS et du WISC"
+  },
+  {
+   "s": "Sous-tests du WISC-V et du SB5",
+   "q": "À propos du sous-test Empan d'images du WISC-V :",
+   "a": [
+    [
+     "Le sujet retient des images et les retrouve dans l'ordre ou non.",
+     true
+    ],
+    [
+     "Il évalue le vocabulaire.",
+     false
+    ],
+    [
+     "Il évalue la mémoire de travail visuelle.",
+     true
+    ]
+   ],
+   "e": "Il a été introduit avec le WISC-V.",
+   "p": "Sous-tests du WAIS et du WISC"
+  },
   {
    "s": "Séries logiques",
    "q": "Soit la série : 2, 6, 18, 54, …",
@@ -187,50 +2031,6 @@ window.QUESTIONS = {
    "p": "Espace, perception et mécanique"
   },
   {
-   "s": "Raisonnement numérique",
-   "q": "Fractions : 1/2 + 1/3.",
-   "a": [
-    [
-     "3/4 + 1/4 est égal à 1.",
-     true
-    ],
-    [
-     "Le dénominateur commun est 6.",
-     true
-    ],
-    [
-     "Le résultat est 5/6.",
-     true
-    ],
-    [
-     "Le résultat est 2/5.",
-     false
-    ]
-   ],
-   "e": "1/2 = 3/6 et 1/3 = 2/6, donc 5/6. On n'additionne jamais les dénominateurs. 3/4 + 1/4 = 4/4 = 1.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Raisonnement verbal",
-   "q": "Recherche de contraire pour le mot « prudent ».",
-   "a": [
-    [
-     "« Téméraire » est un contraire approprié.",
-     true
-    ],
-    [
-     "« Avisé » est un contraire.",
-     false
-    ],
-    [
-     "« Imprudent » est un contraire.",
-     true
-    ]
-   ],
-   "e": "« Avisé » est plutôt un synonyme de prudent. « Imprudent » et « téméraire » expriment le manque de prudence.",
-   "p": "Raisonnement verbal et langue"
-  },
-  {
    "s": "Attention et vitesse",
    "q": "À propos d'un test de barrage (rayer des cibles parmi des distracteurs) :",
    "a": [
@@ -249,26 +2049,6 @@ window.QUESTIONS = {
    ],
    "e": "Ce type de test (par exemple le d2) évalue la concentration. On compte les cibles ratées (omissions) et les mauvaises cibles barrées (fausses alarmes).",
    "p": "Attention et vitesse"
-  },
-  {
-   "s": "Séries logiques",
-   "q": "Soit la série : 3, 6, 12, 24, …",
-   "a": [
-    [
-     "La série est géométrique, de raison 2.",
-     true
-    ],
-    [
-     "On ajoute 3 à chaque terme.",
-     false
-    ],
-    [
-     "Le terme suivant est 48.",
-     true
-    ]
-   ],
-   "e": "Chaque terme est multiplié par 2 : 24 × 2 = 48. Une addition constante donnerait 3, 6, 9, 12…",
-   "p": "Séries logiques"
   },
   {
    "s": "Séries logiques",
@@ -328,26 +2108,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "C'est la suite de Fibonacci : 5 + 8 = 13.",
-   "p": "Séries logiques"
-  },
-  {
-   "s": "Séries logiques",
-   "q": "Soit la série : 2, 4, 8, 16, 32, …",
-   "a": [
-    [
-     "Le terme suivant est 48.",
-     false
-    ],
-    [
-     "Les termes sont des puissances de 2.",
-     true
-    ],
-    [
-     "Le terme suivant est 64.",
-     true
-    ]
-   ],
-   "e": "Chaque terme double : 32 × 2 = 64.",
    "p": "Séries logiques"
   },
   {
@@ -432,26 +2192,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement numérique",
-   "q": "Trois cahiers coûtent 1 500 FC (même prix pour chacun).",
-   "a": [
-    [
-     "Quatre cahiers coûtent 1 800 FC.",
-     false
-    ],
-    [
-     "Un cahier coûte 500 FC.",
-     true
-    ],
-    [
-     "Cinq cahiers coûtent 2 500 FC.",
-     true
-    ]
-   ],
-   "e": "1 500 ÷ 3 = 500 FC par cahier. Quatre cahiers : 4 × 500 = 2 000 FC.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Raisonnement numérique",
    "q": "Équation : 2x + 6 = 14.",
    "a": [
     [
@@ -508,26 +2248,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Distance = vitesse × temps : 15 × 2 = 30 km ; 15 × 4 = 60 km.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Raisonnement numérique",
-   "q": "Fractions et décimaux.",
-   "a": [
-    [
-     "0,5 est égal à 1/2.",
-     true
-    ],
-    [
-     "0,25 est égal à 1/2.",
-     false
-    ],
-    [
-     "0,75 est égal à 3/4.",
-     true
-    ]
-   ],
-   "e": "0,25 = 1/4. Les deux premières égalités sont correctes.",
    "p": "Raisonnement numérique et calcul"
   },
   {
@@ -612,26 +2332,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement verbal",
-   "q": "Trouvez l'intrus : pomme, banane, carotte, mangue.",
-   "a": [
-    [
-     "Le critère de classement est « fruit ou légume ».",
-     true
-    ],
-    [
-     "« Carotte » est l'intrus.",
-     true
-    ],
-    [
-     "« Banane » est l'intrus.",
-     false
-    ]
-   ],
-   "e": "La pomme, la banane et la mangue sont des fruits. La carotte est un légume.",
-   "p": "Raisonnement verbal et langue"
-  },
-  {
-   "s": "Raisonnement verbal",
    "q": "Recherche de contraires pour « généreux ».",
    "a": [
     [
@@ -689,46 +2389,6 @@ window.QUESTIONS = {
    ],
    "e": "Si aucun n'a échoué, alors tous ont réussi.",
    "p": "Raisonnement verbal et langue"
-  },
-  {
-   "s": "Raisonnement verbal",
-   "q": "Trouvez l'intrus : lundi, mardi, janvier, jeudi.",
-   "a": [
-    [
-     "Le critère est « jour de la semaine ».",
-     true
-    ],
-    [
-     "« Janvier » est l'intrus.",
-     true
-    ],
-    [
-     "« Jeudi » est l'intrus.",
-     false
-    ]
-   ],
-   "e": "Janvier est un mois, les autres sont des jours.",
-   "p": "Raisonnement verbal et langue"
-  },
-  {
-   "s": "Logique déductive",
-   "q": "Prémisse : « S'il pleut, la route est mouillée ».",
-   "a": [
-    [
-     "Si la route est mouillée, on peut conclure qu'il a plu.",
-     false
-    ],
-    [
-     "S'il pleut, la route est mouillée.",
-     true
-    ],
-    [
-     "Si la route n'est pas mouillée, alors il n'a pas plu.",
-     true
-    ]
-   ],
-   "e": "La route peut être mouillée pour une autre raison (camion-citerne, par exemple). En revanche, route sèche entraîne qu'il n'a pas plu.",
-   "p": "Logique et déduction"
   },
   {
    "s": "Logique déductive",
@@ -792,26 +2452,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Logique déductive",
-   "q": "Règle : « Si A, alors B ». On sait que B est faux.",
-   "a": [
-    [
-     "On ne peut rien conclure sur A.",
-     false
-    ],
-    [
-     "A est faux.",
-     true
-    ],
-    [
-     "A est vrai.",
-     false
-    ]
-   ],
-   "e": "Si A était vrai, B le serait aussi. Comme B est faux, A est forcément faux.",
-   "p": "Logique et déduction"
-  },
-  {
-   "s": "Logique déductive",
    "q": "Prémisses : « Aucun médecin n'est ignorant en anatomie » et « Paul est ignorant en anatomie ».",
    "a": [
     [
@@ -848,26 +2488,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Les paires sont 1-6, 2-5 et 3-4.",
-   "p": "Espace, perception et mécanique"
-  },
-  {
-   "s": "Raisonnement spatial",
-   "q": "Une flèche pointe vers le haut.",
-   "a": [
-    [
-     "Après une rotation de 180°, elle pointe vers le bas.",
-     true
-    ],
-    [
-     "Après une rotation de 90° vers la droite, elle pointe vers la droite.",
-     true
-    ],
-    [
-     "Après une rotation de 90° vers la droite, elle pointe vers la gauche.",
-     false
-    ]
-   ],
-   "e": "Un quart de tour dans le sens des aiguilles d'une montre amène la flèche vers la droite.",
    "p": "Espace, perception et mécanique"
   },
   {
@@ -952,26 +2572,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Matrices progressives",
-   "q": "Dans une série, les figures contiennent 1, puis 2, puis 3 points.",
-   "a": [
-    [
-     "La figure suivante contient 2 points.",
-     false
-    ],
-    [
-     "La règle est une progression régulière (+1).",
-     true
-    ],
-    [
-     "La figure suivante contient 4 points.",
-     true
-    ]
-   ],
-   "e": "Le nombre de points augmente de 1 à chaque figure.",
-   "p": "Matrices et tests non verbaux"
-  },
-  {
-   "s": "Matrices progressives",
    "q": "À propos des Standard Progressive Matrices (SPM) :",
    "a": [
     [
@@ -989,26 +2589,6 @@ window.QUESTIONS = {
    ],
    "e": "Les SPM évaluent le raisonnement non verbal, avec des problèmes de plus en plus complexes.",
    "p": "Matrices et tests non verbaux"
-  },
-  {
-   "s": "Attention et vitesse",
-   "q": "À propos du test de Stroop :",
-   "a": [
-    [
-     "Il mesure la mémoire à long terme.",
-     false
-    ],
-    [
-     "Il mesure l'attention sélective et la capacité d'inhibition.",
-     true
-    ],
-    [
-     "Nommer la couleur de l'encre est plus lent quand le mot désigne une autre couleur.",
-     true
-    ]
-   ],
-   "e": "Lire le mot est automatique : il faut l'inhiber pour nommer la couleur, ce qui crée de l'interférence.",
-   "p": "Attention et vitesse"
   },
   {
    "s": "Attention et vitesse",
@@ -1092,26 +2672,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement numérique",
-   "q": "Conversions d'unités.",
-   "a": [
-    [
-     "3 heures égalent 180 minutes.",
-     true
-    ],
-    [
-     "2,5 km égalent 2 500 m.",
-     true
-    ],
-    [
-     "1,5 heure égale 100 minutes.",
-     false
-    ]
-   ],
-   "e": "1,5 h = 90 minutes, car 0,5 h = 30 minutes.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Raisonnement numérique",
    "q": "Équation : 3x − 5 = 16.",
    "a": [
     [
@@ -1168,26 +2728,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Supérieur à 4 : 5 ou 6, soit 2 chances sur 6 = 1/3.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Raisonnement numérique",
-   "q": "Puissances.",
-   "a": [
-    [
-     "10³ est égal à 1 000.",
-     true
-    ],
-    [
-     "3² est égal à 6.",
-     false
-    ],
-    [
-     "2⁵ est égal à 32.",
-     true
-    ]
-   ],
-   "e": "3² = 3 × 3 = 9.",
    "p": "Raisonnement numérique et calcul"
   },
   {
@@ -1292,26 +2832,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Séries logiques",
-   "q": "Soit la série : 81, 27, 9, 3, …",
-   "a": [
-    [
-     "Le terme suivant est 0.",
-     false
-    ],
-    [
-     "Le terme suivant est 1.",
-     true
-    ],
-    [
-     "On divise par 3 à chaque fois.",
-     true
-    ]
-   ],
-   "e": "3 ÷ 3 = 1.",
-   "p": "Séries logiques"
-  },
-  {
-   "s": "Séries logiques",
    "q": "Soit la série de lettres : J, F, M, A, M, …",
    "a": [
     [
@@ -1392,26 +2912,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement verbal",
-   "q": "Analogie : « livre est à lecteur comme film est à … ».",
-   "a": [
-    [
-     "« Spectateur » complète l'analogie.",
-     true
-    ],
-    [
-     "La relation est une relation de contraire.",
-     false
-    ],
-    [
-     "La relation est « œuvre – public ».",
-     true
-    ]
-   ],
-   "e": "On lit un livre, on regarde un film.",
-   "p": "Raisonnement verbal et langue"
-  },
-  {
-   "s": "Raisonnement verbal",
    "q": "Définitions de mots.",
    "a": [
     [
@@ -1471,26 +2971,6 @@ window.QUESTIONS = {
    "p": "Raisonnement verbal et langue"
   },
   {
-   "s": "Raisonnement verbal",
-   "q": "Recherche de contraires pour « croître ».",
-   "a": [
-    [
-     "« Augmenter » est un contraire.",
-     false
-    ],
-    [
-     "« Diminuer » est un contraire.",
-     true
-    ],
-    [
-     "« Décroître » est un contraire.",
-     true
-    ]
-   ],
-   "e": "« Augmenter » est plutôt un synonyme de croître.",
-   "p": "Raisonnement verbal et langue"
-  },
-  {
    "s": "Logique déductive",
    "q": "Prémisses : « Tous les carrés sont des rectangles » et « ABCD est un rectangle ».",
    "a": [
@@ -1532,26 +3012,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Logique déductive",
-   "q": "A arrive avant B. C arrive après B. D arrive avant A.",
-   "a": [
-    [
-     "D arrive en premier.",
-     true
-    ],
-    [
-     "C arrive en dernier.",
-     true
-    ],
-    [
-     "B arrive en premier.",
-     false
-    ]
-   ],
-   "e": "L'ordre est D, A, B, C.",
-   "p": "Logique et déduction"
-  },
-  {
-   "s": "Logique déductive",
    "q": "Prémisse : « Tous les médecins ont étudié la médecine ».",
    "a": [
     [
@@ -1569,26 +3029,6 @@ window.QUESTIONS = {
    ],
    "e": "On peut avoir étudié la médecine sans être médecin : la réciproque n'est pas valable.",
    "p": "Logique et déduction"
-  },
-  {
-   "s": "Raisonnement spatial",
-   "q": "Un grand cube de 3 × 3 × 3 est peint sur toutes ses faces, puis découpé en 27 petits cubes.",
-   "a": [
-    [
-     "1 petit cube n'a aucune face peinte.",
-     true
-    ],
-    [
-     "8 petits cubes ont exactement 3 faces peintes.",
-     true
-    ],
-    [
-     "12 petits cubes ont exactement 3 faces peintes.",
-     false
-    ]
-   ],
-   "e": "Les 8 coins ont 3 faces, les 12 arêtes ont 2 faces, les 6 centres de face en ont 1, et le cube central aucune.",
-   "p": "Espace, perception et mécanique"
   },
   {
    "s": "Raisonnement spatial",
@@ -1652,26 +3092,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Attention et vitesse",
-   "q": "À propos de la mémoire de travail :",
-   "a": [
-    [
-     "L'empan de chiffres évalue la mémoire verbale à court terme.",
-     true
-    ],
-    [
-     "Les blocs de Corsi sont un test de personnalité.",
-     false
-    ],
-    [
-     "Les blocs de Corsi évaluent la mémoire visuo-spatiale.",
-     true
-    ]
-   ],
-   "e": "Dans le test de Corsi, on reproduit une séquence de blocs touchés par l'examinateur.",
-   "p": "Attention et vitesse"
-  },
-  {
-   "s": "Attention et vitesse",
    "q": "À propos des temps de réaction :",
    "a": [
     [
@@ -1731,26 +3151,6 @@ window.QUESTIONS = {
    "p": "Matrices et tests non verbaux"
   },
   {
-   "s": "Matrices progressives",
-   "q": "À propos des performances aux matrices :",
-   "a": [
-    [
-     "La familiarité avec les tests peut les influencer.",
-     true
-    ],
-    [
-     "Elles sont totalement indépendantes de tout apprentissage.",
-     false
-    ],
-    [
-     "L'effet Flynn a été observé notamment sur ces épreuves.",
-     true
-    ]
-   ],
-   "e": "Même un test peu verbal reste sensible à l'expérience et à la scolarité.",
-   "p": "Matrices et tests non verbaux"
-  },
-  {
    "s": "Interprétation de données",
    "q": "Ventes d'une boutique : lundi 20, mardi 30, mercredi 25, jeudi 45.",
    "a": [
@@ -1788,26 +3188,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "20 % de 500 = 100 $, et non 120 $.",
-   "p": "Tableaux et pourcentages"
-  },
-  {
-   "s": "Interprétation de données",
-   "q": "Une population passe de 1 000 à 1 200 habitants.",
-   "a": [
-    [
-     "La hausse est de 12 %.",
-     false
-    ],
-    [
-     "La hausse est de 200 habitants.",
-     true
-    ],
-    [
-     "La hausse est de 20 %.",
-     true
-    ]
-   ],
-   "e": "200 ÷ 1 000 = 20 %.",
    "p": "Tableaux et pourcentages"
   },
   {
@@ -1868,26 +3248,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "45 ÷ 60 = 0,75 = 75 %.",
-   "p": "Tableaux et pourcentages"
-  },
-  {
-   "s": "Interprétation de données",
-   "q": "Un article coûte 50 $ avant une taxe de 16 %.",
-   "a": [
-    [
-     "Le prix taxe comprise est de 66 $.",
-     false
-    ],
-    [
-     "Le prix taxe comprise est de 58 $.",
-     true
-    ],
-    [
-     "La taxe est de 8 $.",
-     true
-    ]
-   ],
-   "e": "16 % de 50 = 8 $, donc 50 + 8 = 58 $.",
    "p": "Tableaux et pourcentages"
   },
   {
@@ -1972,26 +3332,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement abstrait",
-   "q": "Code : A = 1, B = 2, C = 3.",
-   "a": [
-    [
-     "Le mot BAC vaut 6.",
-     true
-    ],
-    [
-     "Le mot CAB vaut aussi 6.",
-     true
-    ],
-    [
-     "Le mot BAC vaut 5.",
-     false
-    ]
-   ],
-   "e": "2 + 1 + 3 = 6, quel que soit l'ordre des lettres.",
-   "p": "Matrices et tests non verbaux"
-  },
-  {
-   "s": "Raisonnement abstrait",
    "q": "Axes de symétrie de figures.",
    "a": [
     [
@@ -2072,26 +3412,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Problèmes de logique",
-   "q": "Règle : « Si je gagne, j'offre un cadeau ».",
-   "a": [
-    [
-     "Si je n'ai pas offert de cadeau, je n'ai pas gagné.",
-     true
-    ],
-    [
-     "Si je gagne, j'offre un cadeau.",
-     true
-    ],
-    [
-     "Si j'ai offert un cadeau, j'ai forcément gagné.",
-     false
-    ]
-   ],
-   "e": "On peut offrir un cadeau sans avoir gagné.",
-   "p": "Logique et déduction"
-  },
-  {
-   "s": "Problèmes de logique",
    "q": "Prémisses : « Aucun A n'est B » et « Tous les C sont B ».",
    "a": [
     [
@@ -2156,26 +3476,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Calcul mental",
-   "q": "Calcul : 15 × 12.",
-   "a": [
-    [
-     "Le résultat est 180.",
-     true
-    ],
-    [
-     "On peut calculer 15 × 10 puis ajouter 15 × 2.",
-     true
-    ],
-    [
-     "Le résultat est 170.",
-     false
-    ]
-   ],
-   "e": "150 + 30 = 180.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Calcul mental",
    "q": "Tables de multiplication.",
    "a": [
     [
@@ -2236,26 +3536,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Calcul mental",
-   "q": "Carrés de nombres.",
-   "a": [
-    [
-     "12² est égal à 124.",
-     false
-    ],
-    [
-     "15² est égal à 225.",
-     true
-    ],
-    [
-     "13² est égal à 169.",
-     true
-    ]
-   ],
-   "e": "12² = 144.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Calcul mental",
    "q": "Calculs rapides.",
    "a": [
     [
@@ -2292,26 +3572,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Le levier réduit la force, mais pas le travail : on appuie sur une plus grande distance.",
-   "p": "Espace, perception et mécanique"
-  },
-  {
-   "s": "Raisonnement mécanique",
-   "q": "À propos des engrenages :",
-   "a": [
-    [
-     "Deux roues dentées en contact tournent en sens inverse.",
-     true
-    ],
-    [
-     "Deux roues dentées en contact tournent dans le même sens.",
-     false
-    ],
-    [
-     "Une petite roue entraînée par une grande roue tourne plus vite.",
-     true
-    ]
-   ],
-   "e": "Chaque dent pousse la dent opposée : le sens s'inverse.",
    "p": "Espace, perception et mécanique"
   },
   {
@@ -2395,26 +3655,6 @@ window.QUESTIONS = {
    "p": "Séries logiques"
   },
   {
-   "s": "Séries logiques",
-   "q": "Soit la série : 2, 10, 4, 20, 6, 30, …",
-   "a": [
-    [
-     "Le terme suivant est 40.",
-     false
-    ],
-    [
-     "La série contient deux suites entrelacées.",
-     true
-    ],
-    [
-     "Le terme suivant est 8.",
-     true
-    ]
-   ],
-   "e": "Termes impairs : 2, 4, 6, 8. Termes pairs : 10, 20, 30, 40.",
-   "p": "Séries logiques"
-  },
-  {
    "s": "Raisonnement verbal",
    "q": "Analogie : « température est à thermomètre comme poids est à … ».",
    "a": [
@@ -2475,26 +3715,6 @@ window.QUESTIONS = {
    "p": "Raisonnement verbal et langue"
   },
   {
-   "s": "Raisonnement verbal",
-   "q": "Recherche de contraires et de synonymes pour « transparent ».",
-   "a": [
-    [
-     "« Opaque » est un synonyme.",
-     false
-    ],
-    [
-     "« Limpide » est un synonyme.",
-     true
-    ],
-    [
-     "« Opaque » est un contraire.",
-     true
-    ]
-   ],
-   "e": "Opaque ne laisse pas passer la lumière, contrairement à transparent.",
-   "p": "Raisonnement verbal et langue"
-  },
-  {
    "s": "Raisonnement numérique",
    "q": "2 kg de farine permettent de faire 12 pains.",
    "a": [
@@ -2535,26 +3755,6 @@ window.QUESTIONS = {
    "p": "Raisonnement numérique et calcul"
   },
   {
-   "s": "Raisonnement numérique",
-   "q": "Un prix de 100 augmente de 10 %, puis encore de 10 %.",
-   "a": [
-    [
-     "La hausse totale est de 21 %.",
-     true
-    ],
-    [
-     "Le prix final est de 121.",
-     true
-    ],
-    [
-     "Le prix final est de 120.",
-     false
-    ]
-   ],
-   "e": "110 × 1,10 = 121. Les pourcentages successifs se composent, ils ne s'additionnent pas.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
    "s": "Interprétation de données",
    "q": "Production d'une usine : janvier 50, février 60, mars 45.",
    "a": [
@@ -2592,26 +3792,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "20 ÷ 80 = 25 %. Le pourcentage se calcule par rapport à la valeur de départ.",
-   "p": "Tableaux et pourcentages"
-  },
-  {
-   "s": "Interprétation de données",
-   "q": "Sur 600 électeurs : 45 % votent A, 35 % votent B, 20 % votent C.",
-   "a": [
-    [
-     "B obtient 210 voix.",
-     true
-    ],
-    [
-     "A obtient 270 voix.",
-     true
-    ],
-    [
-     "C obtient 100 voix.",
-     false
-    ]
-   ],
-   "e": "20 % de 600 = 120 voix.",
    "p": "Tableaux et pourcentages"
   },
   {
@@ -2696,26 +3876,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement numérique",
-   "q": "Un prix de 100 subit une remise de 20 %, puis une remise de 10 %.",
-   "a": [
-    [
-     "Le prix final est de 72.",
-     true
-    ],
-    [
-     "La remise totale est de 28 %.",
-     true
-    ],
-    [
-     "La remise totale est de 30 %.",
-     false
-    ]
-   ],
-   "e": "100 × 0,80 = 80, puis 80 × 0,90 = 72.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Raisonnement numérique",
    "q": "Pourcentages inversés.",
    "a": [
     [
@@ -2772,26 +3932,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "En additionnant : 2x = 12, donc x = 6 et y = 4.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Raisonnement numérique",
-   "q": "La moyenne de quatre notes est 12. Trois notes valent 10, 12 et 14.",
-   "a": [
-    [
-     "La somme des quatre notes est 48.",
-     true
-    ],
-    [
-     "La quatrième note est 16.",
-     false
-    ],
-    [
-     "La quatrième note est 12.",
-     true
-    ]
-   ],
-   "e": "48 − (10 + 12 + 14) = 12.",
    "p": "Raisonnement numérique et calcul"
   },
   {
@@ -2856,26 +3996,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement verbal",
-   "q": "Trouvez l'intrus : chaise, table, armoire, marteau.",
-   "a": [
-    [
-     "« Table » est l'intrus.",
-     false
-    ],
-    [
-     "Le critère est « meuble ou outil ».",
-     true
-    ],
-    [
-     "« Marteau » est l'intrus.",
-     true
-    ]
-   ],
-   "e": "Chaise, table et armoire sont des meubles. Le marteau est un outil.",
-   "p": "Raisonnement verbal et langue"
-  },
-  {
-   "s": "Raisonnement verbal",
    "q": "À propos du mot « bénévole » :",
    "a": [
     [
@@ -2936,26 +4056,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Orthographe et grammaire",
-   "q": "Accord du participe passé.",
-   "a": [
-    [
-     "« Les fleurs que j'ai cueillies » est correct.",
-     true
-    ],
-    [
-     "« Les lettres que j'ai écrit » est correct.",
-     false
-    ],
-    [
-     "« Elles sont parties » est correct.",
-     true
-    ]
-   ],
-   "e": "Avec avoir, le participe s'accorde avec le COD placé avant : « les lettres que j'ai écrites ».",
-   "p": "Raisonnement verbal et langue"
-  },
-  {
-   "s": "Orthographe et grammaire",
    "q": "Pluriels irréguliers.",
    "a": [
     [
@@ -2973,26 +4073,6 @@ window.QUESTIONS = {
    ],
    "e": "On écrit « chevaux ».",
    "p": "Raisonnement verbal et langue"
-  },
-  {
-   "s": "Logique déductive",
-   "q": "Négation de « Tous les élèves ont réussi ».",
-   "a": [
-    [
-     "« Certains élèves n'ont pas réussi » est équivalent à la négation.",
-     true
-    ],
-    [
-     "« Aucun élève n'a réussi » est la négation.",
-     false
-    ],
-    [
-     "« Au moins un élève n'a pas réussi » est la négation.",
-     true
-    ]
-   ],
-   "e": "Pour nier « tous », il suffit qu'un seul fasse exception.",
-   "p": "Logique et déduction"
   },
   {
    "s": "Logique déductive",
@@ -3136,26 +4216,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement spatial",
-   "q": "Un cube a une arête de 3 cm.",
-   "a": [
-    [
-     "Son aire totale est de 54 cm².",
-     true
-    ],
-    [
-     "Son volume est de 9 cm³.",
-     false
-    ],
-    [
-     "Son volume est de 27 cm³.",
-     true
-    ]
-   ],
-   "e": "Volume : 3 × 3 × 3 = 27. Aire : 6 faces × 9 = 54.",
-   "p": "Espace, perception et mécanique"
-  },
-  {
-   "s": "Raisonnement spatial",
    "q": "Les aiguilles d'une horloge.",
    "a": [
     [
@@ -3192,26 +4252,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "La troisième colonne vaut le quadruple de la première : 5 × 4 = 20.",
-   "p": "Matrices et tests non verbaux"
-  },
-  {
-   "s": "Raisonnement abstrait",
-   "q": "Série de formes : cercle, carré, triangle, cercle, carré, …",
-   "a": [
-    [
-     "La forme suivante est un triangle.",
-     true
-    ],
-    [
-     "La forme suivante est un cercle.",
-     false
-    ],
-    [
-     "La série suit un cycle de 3 formes.",
-     true
-    ]
-   ],
-   "e": "Le cycle est cercle, carré, triangle.",
    "p": "Matrices et tests non verbaux"
   },
   {
@@ -3275,26 +4315,6 @@ window.QUESTIONS = {
    "p": "Mémoire"
   },
   {
-   "s": "Mémoire",
-   "q": "À propos de l'empan mnésique :",
-   "a": [
-    [
-     "Miller a décrit une capacité d'environ 7 ± 2 éléments.",
-     true
-    ],
-    [
-     "Le regroupement (chunking) permet de retenir davantage.",
-     true
-    ],
-    [
-     "Miller est l'auteur du test de Rorschach.",
-     false
-    ]
-   ],
-   "e": "Regrouper des chiffres par paquets facilite la mémorisation.",
-   "p": "Mémoire"
-  },
-  {
    "s": "Attention et vitesse",
    "q": "À propos du subtest Code (substitution symbole-chiffre) de Wechsler :",
    "a": [
@@ -3335,26 +4355,6 @@ window.QUESTIONS = {
    "p": "Attention et vitesse"
   },
   {
-   "s": "Attention et vitesse",
-   "q": "À propos du compromis vitesse-précision :",
-   "a": [
-    [
-     "La vitesse et la précision sont toujours indépendantes.",
-     false
-    ],
-    [
-     "Un test chronométré peut désavantager une personne très anxieuse.",
-     true
-    ],
-    [
-     "Aller plus vite fait souvent augmenter le nombre d'erreurs.",
-     true
-    ]
-   ],
-   "e": "Dans bien des épreuves, gagner en vitesse se paie en précision.",
-   "p": "Attention et vitesse"
-  },
-  {
    "s": "Raven (matrices)",
    "q": "À propos de la passation des matrices progressives standard (SPM) de Raven :",
    "a": [
@@ -3392,26 +4392,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Les normes dépendent de la population et de l'époque de standardisation.",
-   "p": "Matrices et tests non verbaux"
-  },
-  {
-   "s": "Raven (matrices)",
-   "q": "À propos de la structure des SPM :",
-   "a": [
-    [
-     "Il y a 5 séries (A à E) de 12 items chacune.",
-     true
-    ],
-    [
-     "Dans les séries C à E, il y a 8 réponses possibles par item.",
-     true
-    ],
-    [
-     "Chaque item propose seulement 4 réponses possibles.",
-     false
-    ]
-   ],
-   "e": "Les séries A et B proposent 6 réponses, et les séries C, D et E en proposent 8.",
    "p": "Matrices et tests non verbaux"
   },
   {
@@ -3476,26 +4456,6 @@ window.QUESTIONS = {
   },
   {
    "s": "D48 (dominos)",
-   "q": "À propos de la tâche demandée dans le D48 :",
-   "a": [
-    [
-     "Il faut découvrir la logique d'une disposition de dominos.",
-     true
-    ],
-    [
-     "Il faut trouver le domino ou la valeur manquante.",
-     true
-    ],
-    [
-     "Il faut lire un texte et répondre à des questions.",
-     false
-    ]
-   ],
-   "e": "On raisonne sur des configurations de points, sans recourir à la lecture.",
-   "p": "Matrices et tests non verbaux"
-  },
-  {
-   "s": "D48 (dominos)",
    "q": "À propos de l'utilisation du D48 :",
    "a": [
     [
@@ -3555,26 +4515,6 @@ window.QUESTIONS = {
    "p": "Matrices et tests non verbaux"
   },
   {
-   "s": "Cattell Culture Fair",
-   "q": "À propos de l'objectif du Culture Fair Test :",
-   "a": [
-    [
-     "Cattell visait à mesurer l'intelligence fluide.",
-     true
-    ],
-    [
-     "Il est valable dans toutes les cultures sans adaptation.",
-     false
-    ],
-    [
-     "Aucun test n'est totalement indépendant de la culture.",
-     true
-    ]
-   ],
-   "e": "Même un test non verbal suppose une certaine familiarité avec le format et le matériel.",
-   "p": "Matrices et tests non verbaux"
-  },
-  {
    "s": "Batteries d'aptitudes",
    "q": "À propos de la GATB (General Aptitude Test Battery) :",
    "a": [
@@ -3612,26 +4552,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "K correspond à la coordination motrice. L'aptitude verbale est notée V.",
-   "p": "Batteries d'aptitudes et admission"
-  },
-  {
-   "s": "Batteries d'aptitudes",
-   "q": "À propos des Differential Aptitude Tests (DAT) :",
-   "a": [
-    [
-     "Ils comprennent aussi des épreuves de raisonnement mécanique et de relations spatiales.",
-     true
-    ],
-    [
-     "Ils comprennent notamment des épreuves de raisonnement verbal, numérique et abstrait.",
-     true
-    ],
-    [
-     "Ils mesurent les intérêts professionnels.",
-     false
-    ]
-   ],
-   "e": "Ils sont utilisés surtout pour l'orientation scolaire et professionnelle.",
    "p": "Batteries d'aptitudes et admission"
   },
   {
@@ -3692,26 +4612,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il est utilisé en sélection pour des métiers comme mécanicien ou technicien.",
-   "p": "Batteries d'aptitudes et admission"
-  },
-  {
-   "s": "Batteries d'aptitudes",
-   "q": "À propos du Wonderlic Personnel Test :",
-   "a": [
-    [
-     "Il comporte plusieurs centaines d'items.",
-     false
-    ],
-    [
-     "Il doit être terminé en 12 minutes.",
-     true
-    ],
-    [
-     "Il comporte 50 items.",
-     true
-    ]
-   ],
-   "e": "C'est un test court d'aptitude cognitive générale, utilisé en sélection.",
    "p": "Batteries d'aptitudes et admission"
   },
   {
@@ -3816,26 +4716,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Cubes de Kohs",
-   "q": "À propos des cubes de Kohs :",
-   "a": [
-    [
-     "C'est une épreuve verbale.",
-     false
-    ],
-    [
-     "L'épreuve évalue le raisonnement visuo-spatial.",
-     true
-    ],
-    [
-     "Le sujet reproduit un modèle avec des cubes à faces colorées.",
-     true
-    ]
-   ],
-   "e": "Les cubes se manipulent : la langue joue très peu.",
-   "p": "Espace, perception et mécanique"
-  },
-  {
-   "s": "Cubes de Kohs",
    "q": "À propos de l'héritage des cubes de Kohs :",
    "a": [
     [
@@ -3892,26 +4772,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Les erreurs persévératives indiquent une difficulté à changer de stratégie.",
-   "p": "Fonctions exécutives"
-  },
-  {
-   "s": "Wisconsin Card Sorting Test",
-   "q": "À propos de l'usage du WCST :",
-   "a": [
-    [
-     "Il est un test de personnalité.",
-     false
-    ],
-    [
-     "Il a été utilisé en neuropsychologie pour explorer le fonctionnement frontal.",
-     true
-    ],
-    [
-     "Il a été introduit par Berg en 1948.",
-     true
-    ]
-   ],
-   "e": "Le WCST est une épreuve cognitive, pas un questionnaire.",
    "p": "Fonctions exécutives"
   },
   {
@@ -4076,26 +4936,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests de dextérité",
-   "q": "À propos de la cotation du Purdue Pegboard :",
-   "a": [
-    [
-     "On compte le nombre de chevilles placées dans un temps limité.",
-     true
-    ],
-    [
-     "Il comprend aussi une épreuve d'assemblage.",
-     true
-    ],
-    [
-     "Il se cote sur un barème de QI.",
-     false
-    ]
-   ],
-   "e": "Les épreuves principales durent 30 secondes, et l'assemblage dure plus longtemps.",
-   "p": "Neuropsychologie et motricité"
-  },
-  {
-   "s": "Tests de dextérité",
    "q": "À propos du Minnesota Rate of Manipulation Test :",
    "a": [
     [
@@ -4113,26 +4953,6 @@ window.QUESTIONS = {
    ],
    "e": "Il mesure la dextérité manuelle grossière, utile pour certains postes manuels.",
    "p": "Neuropsychologie et motricité"
-  },
-  {
-   "s": "Rotation mentale",
-   "q": "À propos de l'expérience de Shepard et Metzler (1971) :",
-   "a": [
-    [
-     "Le temps de réponse augmente avec l'angle de rotation.",
-     true
-    ],
-    [
-     "Les sujets comparent des figures tridimensionnelles tournées.",
-     true
-    ],
-    [
-     "Le temps de réponse diminue avec l'angle de rotation.",
-     false
-    ]
-   ],
-   "e": "Cet effet suggère que l'on fait tourner mentalement une image de la figure.",
-   "p": "Espace, perception et mécanique"
   },
   {
    "s": "Rotation mentale",
@@ -4215,26 +5035,6 @@ window.QUESTIONS = {
    "p": "Batteries d'aptitudes et admission"
   },
   {
-   "s": "WASI",
-   "q": "Subtests de la WASI à quatre subtests :",
-   "a": [
-    [
-     "Cubes et Matrices.",
-     true
-    ],
-    [
-     "Mémoire des chiffres et Code.",
-     false
-    ],
-    [
-     "Vocabulaire et Similitudes.",
-     true
-    ]
-   ],
-   "e": "La WASI ne comporte pas ces deux derniers subtests, présents dans le WAIS.",
-   "p": "Batteries d'aptitudes et admission"
-  },
-  {
    "s": "Mill Hill Vocabulary Scale",
    "q": "À propos de l'échelle de vocabulaire Mill Hill :",
    "a": [
@@ -4253,26 +5053,6 @@ window.QUESTIONS = {
    ],
    "e": "Elle complète une épreuve non verbale par une mesure verbale.",
    "p": "Batteries d'aptitudes et admission"
-  },
-  {
-   "s": "Tests d'attention (SDMT, PASAT, Ruff)",
-   "q": "À propos du Symbol Digit Modalities Test (SDMT) :",
-   "a": [
-    [
-     "Il évalue la vitesse de traitement de l'information.",
-     true
-    ],
-    [
-     "Il dure 90 secondes.",
-     true
-    ],
-    [
-     "Il évalue la mémoire des visages.",
-     false
-    ]
-   ],
-   "e": "Le sujet associe des chiffres à des symboles selon une clé.",
-   "p": "Attention et vitesse"
   },
   {
    "s": "Tests d'attention (SDMT, PASAT, Ruff)",
@@ -4313,26 +5093,6 @@ window.QUESTIONS = {
    ],
    "e": "On compare la vitesse et la précision selon les conditions de distraction.",
    "p": "Attention et vitesse"
-  },
-  {
-   "s": "Tests de mémoire",
-   "q": "À propos du Benton Visual Retention Test :",
-   "a": [
-    [
-     "Il évalue l'attention auditive.",
-     false
-    ],
-    [
-     "Il évalue la mémoire visuelle et la perception visuo-spatiale.",
-     true
-    ],
-    [
-     "Il comprend 10 figures à reproduire.",
-     true
-    ]
-   ],
-   "e": "Le sujet regarde chaque figure quelques secondes, puis la dessine de mémoire.",
-   "p": "Mémoire"
   },
   {
    "s": "Tests de mémoire",
@@ -4412,26 +5172,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il explore la planification, la flexibilité et la résolution de problèmes.",
-   "p": "Fonctions exécutives"
-  },
-  {
-   "s": "Fonctions exécutives",
-   "q": "À propos de l'Iowa Gambling Task (Bechara) :",
-   "a": [
-    [
-     "Il évalue le vocabulaire.",
-     false
-    ],
-    [
-     "Il comporte quatre paquets de cartes.",
-     true
-    ],
-    [
-     "Il évalue la prise de décision en situation d'incertitude.",
-     true
-    ]
-   ],
-   "e": "Certains paquets rapportent beaucoup mais font perdre davantage à long terme.",
    "p": "Fonctions exécutives"
   },
   {
@@ -4536,26 +5276,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests d'acquis et d'aptitudes spécifiques",
-   "q": "À propos des Measures of Musical Talents de Seashore :",
-   "a": [
-    [
-     "Elles évaluent le raisonnement mathématique.",
-     false
-    ],
-    [
-     "Elles datent de 1919.",
-     true
-    ],
-    [
-     "Elles évaluent des capacités de discrimination, par exemple de hauteur ou de rythme.",
-     true
-    ]
-   ],
-   "e": "Elles mesurent surtout la perception auditive de base.",
-   "p": "Acquis scolaires, lecture et langues"
-  },
-  {
-   "s": "Tests d'acquis et d'aptitudes spécifiques",
    "q": "À propos du Minnesota Clerical Test :",
    "a": [
     [
@@ -4616,26 +5336,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Créativité (TTCT, AUT, RAT)",
-   "q": "À propos du Remote Associates Test (Mednick) :",
-   "a": [
-    [
-     "Il évalue la dextérité.",
-     false
-    ],
-    [
-     "Il évalue la pensée convergente.",
-     true
-    ],
-    [
-     "Le sujet trouve un mot qui relie trois mots donnés.",
-     true
-    ]
-   ],
-   "e": "Il existe une seule bonne réponse par item.",
-   "p": "Batteries d'aptitudes et admission"
-  },
-  {
-   "s": "Créativité (TTCT, AUT, RAT)",
    "q": "Pensée divergente et pensée convergente :",
    "a": [
     [
@@ -4692,26 +5392,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il évalue l'organisation visuelle et la reconnaissance d'objets.",
-   "p": "Neuropsychologie et motricité"
-  },
-  {
-   "s": "Tests neuropsychologiques spécifiques",
-   "q": "À propos du test de jugement d'orientation de lignes de Benton :",
-   "a": [
-    [
-     "Il évalue la mémoire des mots.",
-     false
-    ],
-    [
-     "Le sujet associe l'orientation de lignes à un modèle en éventail.",
-     true
-    ],
-    [
-     "Il évalue la perception visuo-spatiale.",
-     true
-    ]
-   ],
-   "e": "Il comporte 30 items.",
    "p": "Neuropsychologie et motricité"
   },
   {
@@ -4816,26 +5496,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests non verbaux",
-   "q": "À propos du NNAT (Naglieri Nonverbal Ability Test) :",
-   "a": [
-    [
-     "Il s'adresse à des enfants et à des adolescents.",
-     true
-    ],
-    [
-     "Il repose sur des items de type matrices.",
-     true
-    ],
-    [
-     "Il repose sur la lecture de textes.",
-     false
-    ]
-   ],
-   "e": "On y trouve du raisonnement par analogie, des séries et de la visualisation spatiale.",
-   "p": "Matrices et tests non verbaux"
-  },
-  {
-   "s": "Tests non verbaux",
    "q": "À propos de la Wechsler Nonverbal Scale of Ability (WNV) :",
    "a": [
     [
@@ -4892,26 +5552,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Elles s'adressent à des enfants et adolescents d'environ 2 ans et demi à 17 ans.",
-   "p": "Batteries d'aptitudes et admission"
-  },
-  {
-   "s": "Échelles cognitives générales",
-   "q": "À propos des Reynolds Intellectual Assessment Scales (RIAS) :",
-   "a": [
-    [
-     "Elles fournissent un indice verbal et un indice non verbal.",
-     true
-    ],
-    [
-     "Elles incluent un indice de mémoire.",
-     true
-    ],
-    [
-     "Elles ne comportent aucune épreuve non verbale.",
-     false
-    ]
-   ],
-   "e": "Elles sont plutôt courtes, avec un nombre réduit de subtests.",
    "p": "Batteries d'aptitudes et admission"
   },
   {
@@ -4976,26 +5616,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests de sélection militaire et universitaire",
-   "q": "À propos du GRE General Test :",
-   "a": [
-    [
-     "Il comprend une épreuve d'écriture analytique.",
-     true
-    ],
-    [
-     "Il évalue la dextérité manuelle.",
-     false
-    ],
-    [
-     "Il évalue le raisonnement verbal et quantitatif.",
-     true
-    ]
-   ],
-   "e": "Il est utilisé pour l'admission à des études supérieures.",
-   "p": "Batteries d'aptitudes et admission"
-  },
-  {
-   "s": "Tests de sélection militaire et universitaire",
    "q": "À propos de l'Army General Classification Test (AGCT) :",
    "a": [
     [
@@ -5056,26 +5676,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests de langue",
-   "q": "À propos du TCF et du TEF :",
-   "a": [
-    [
-     "Ce sont des tests d'évaluation du niveau de français.",
-     true
-    ],
-    [
-     "Ils sont utilisés notamment pour des démarches d'études ou d'immigration.",
-     true
-    ],
-    [
-     "Ils évaluent les aptitudes mécaniques.",
-     false
-    ]
-   ],
-   "e": "Les résultats sont exprimés selon les niveaux du CECRL.",
-   "p": "Acquis scolaires, lecture et langues"
-  },
-  {
-   "s": "Tests de langue",
    "q": "À propos du TOEFL iBT et de l'IELTS :",
    "a": [
     [
@@ -5116,26 +5716,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests d'attention",
-   "q": "À propos du TOVA (Test of Variables of Attention) :",
-   "a": [
-    [
-     "C'est un test de performance continue informatisé.",
-     true
-    ],
-    [
-     "Il évalue le raisonnement verbal.",
-     false
-    ],
-    [
-     "Il est utilisé dans l'évaluation du TDAH.",
-     true
-    ]
-   ],
-   "e": "Il mesure l'attention soutenue et l'impulsivité.",
-   "p": "Attention et vitesse"
-  },
-  {
-   "s": "Tests d'attention",
    "q": "À propos du test de Stroop de Golden :",
    "a": [
     [
@@ -5156,26 +5736,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Cognitive Reflection Test",
-   "q": "Test de réflexion cognitive de Frederick : « Une batte et une balle coûtent 1,10 $ ; la batte coûte 1 $ de plus que la balle ».",
-   "a": [
-    [
-     "La réponse intuitive « 0,10 $ » est erronée.",
-     true
-    ],
-    [
-     "La balle coûte 0,10 $.",
-     false
-    ],
-    [
-     "La balle coûte 0,05 $.",
-     true
-    ]
-   ],
-   "e": "Si la balle coûtait 0,10 $, la batte coûterait 1,10 $ et le total serait de 1,20 $.",
-   "p": "Logique et déduction"
-  },
-  {
-   "s": "Cognitive Reflection Test",
    "q": "Test de réflexion cognitive : « 5 machines fabriquent 5 objets en 5 minutes. Combien de temps faut-il à 100 machines pour fabriquer 100 objets ? »",
    "a": [
     [
@@ -5193,26 +5753,6 @@ window.QUESTIONS = {
    ],
    "e": "Ce test oppose la réponse intuitive à la réponse réfléchie.",
    "p": "Logique et déduction"
-  },
-  {
-   "s": "Tests de mémoire",
-   "q": "À propos du Hopkins Verbal Learning Test (HVLT-R) :",
-   "a": [
-    [
-     "La liste comporte 12 mots.",
-     true
-    ],
-    [
-     "Il comprend trois essais d'apprentissage.",
-     true
-    ],
-    [
-     "La liste comporte 50 mots.",
-     false
-    ]
-   ],
-   "e": "Il inclut aussi un rappel différé et une reconnaissance.",
-   "p": "Mémoire"
   },
   {
    "s": "Tests de mémoire",
@@ -5316,26 +5856,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Aptitudes scolaires",
-   "q": "À propos du KTEA (Kaufman Test of Educational Achievement) :",
-   "a": [
-    [
-     "Il évalue aussi le langage écrit et oral.",
-     true
-    ],
-    [
-     "Il évalue des acquis scolaires, comme la lecture et les mathématiques.",
-     true
-    ],
-    [
-     "Il évalue la personnalité.",
-     false
-    ]
-   ],
-   "e": "Il est utilisé dans les bilans d'apprentissage.",
-   "p": "Acquis scolaires, lecture et langues"
-  },
-  {
-   "s": "Aptitudes scolaires",
    "q": "À propos du WIAT (Wechsler Individual Achievement Test) :",
    "a": [
     [
@@ -5395,46 +5915,6 @@ window.QUESTIONS = {
    "p": "Acquis scolaires, lecture et langues"
   },
   {
-   "s": "Tests de lecture",
-   "q": "À propos du TOWRE (Test of Word Reading Efficiency) :",
-   "a": [
-    [
-     "Il évalue l'efficacité de lecture de mots.",
-     true
-    ],
-    [
-     "Il évalue le raisonnement abstrait.",
-     false
-    ],
-    [
-     "Il comprend la lecture de mots irréguliers et de pseudo-mots.",
-     true
-    ]
-   ],
-   "e": "Chaque épreuve est limitée dans le temps, ce qui mesure la fluence.",
-   "p": "Acquis scolaires, lecture et langues"
-  },
-  {
-   "s": "Fonctions exécutives",
-   "q": "À propos du test de Hayling (Burgess et Shallice) :",
-   "a": [
-    [
-     "Le sujet complète des phrases dont il manque le dernier mot.",
-     true
-    ],
-    [
-     "Dans la seconde partie, il doit donner un mot sans rapport avec la phrase.",
-     true
-    ],
-    [
-     "Il évalue la dextérité manuelle.",
-     false
-    ]
-   ],
-   "e": "Il évalue l'initiation et surtout l'inhibition de réponses automatiques.",
-   "p": "Fonctions exécutives"
-  },
-  {
    "s": "Fonctions exécutives",
    "q": "À propos des épreuves de fluence verbale :",
    "a": [
@@ -5492,26 +5972,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "La carte 7 pourrait cacher une voyelle, ce qui violerait la règle. La carte 4 ne peut pas la contredire.",
-   "p": "Logique et déduction"
-  },
-  {
-   "s": "Raisonnement et sélection",
-   "q": "Problème de Monty Hall : trois portes, une voiture. Après le choix du joueur, l'animateur ouvre une porte vide et propose de changer.",
-   "a": [
-    [
-     "Les deux portes restantes ont 1 chance sur 2.",
-     false
-    ],
-    [
-     "Garder sa porte donne 1 chance sur 3 de gagner.",
-     true
-    ],
-    [
-     "Changer de porte donne 2 chances sur 3 de gagner.",
-     true
-    ]
-   ],
-   "e": "L'animateur connaît la porte gagnante, donc son choix apporte une information.",
    "p": "Logique et déduction"
   },
   {
@@ -5576,26 +6036,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Raisonnement et sélection",
-   "q": "À propos de l'UCAT :",
-   "a": [
-    [
-     "Il évalue la dextérité manuelle.",
-     false
-    ],
-    [
-     "Il comprend un volet de jugement situationnel.",
-     true
-    ],
-    [
-     "Il est utilisé pour l'admission à des études de médecine et d'odontologie.",
-     true
-    ]
-   ],
-   "e": "Il comprend aussi des épreuves de raisonnement verbal, de prise de décision et de raisonnement quantitatif.",
-   "p": "Logique et déduction"
-  },
-  {
-   "s": "Raisonnement et sélection",
    "q": "À propos de l'admission à Mensa :",
    "a": [
     [
@@ -5632,26 +6072,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Elle comprend aussi le Trail Making et un test d'oscillation digitale.",
-   "p": "Neuropsychologie et motricité"
-  },
-  {
-   "s": "Batteries neuropsychologiques",
-   "q": "À propos du test de tapotement digital (Finger Tapping) :",
-   "a": [
-    [
-     "Il évalue le vocabulaire.",
-     false
-    ],
-    [
-     "Il évalue la vitesse motrice fine.",
-     true
-    ],
-    [
-     "Le sujet tapote le plus vite possible avec un doigt.",
-     true
-    ]
-   ],
-   "e": "Il fait partie de la batterie de Halstead-Reitan.",
    "p": "Neuropsychologie et motricité"
   },
   {
@@ -5712,26 +6132,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il explore la compréhension, l'expression, la répétition et la dénomination.",
-   "p": "Neuropsychologie et motricité"
-  },
-  {
-   "s": "Batteries neuropsychologiques",
-   "q": "À propos de la Western Aphasia Battery (WAB) :",
-   "a": [
-    [
-     "Elle évalue l'aphasie.",
-     true
-    ],
-    [
-     "Elle évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Elle fournit un quotient d'aphasie.",
-     true
-    ]
-   ],
-   "e": "Elle a été proposée par Kertesz.",
    "p": "Neuropsychologie et motricité"
   },
   {
@@ -5816,26 +6216,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Perception et style cognitif",
-   "q": "À propos de l'illusion de Müller-Lyer :",
-   "a": [
-    [
-     "Deux segments de même longueur paraissent différents.",
-     true
-    ],
-    [
-     "Elle prouve que les segments sont de longueurs différentes.",
-     false
-    ],
-    [
-     "La direction des pointes de flèche influence la perception.",
-     true
-    ]
-   ],
-   "e": "C'est un exemple d'illusion géométrique.",
-   "p": "Espace, perception et mécanique"
-  },
-  {
-   "s": "Perception et style cognitif",
    "q": "À propos du Test of Visual-Perceptual Skills (TVPS) :",
    "a": [
     [
@@ -5873,26 +6253,6 @@ window.QUESTIONS = {
    ],
    "e": "Il repère surtout les déficiences rouge-vert.",
    "p": "Espace, perception et mécanique"
-  },
-  {
-   "s": "Tests moteurs",
-   "q": "À propos du Movement ABC-2 :",
-   "a": [
-    [
-     "Il évalue la coordination motrice de l'enfant.",
-     true
-    ],
-    [
-     "Il est utilisé dans le repérage du trouble de l'acquisition de la coordination.",
-     true
-    ],
-    [
-     "Il évalue le vocabulaire.",
-     false
-    ]
-   ],
-   "e": "Il explore la dextérité manuelle, la visée et l'équilibre.",
-   "p": "Neuropsychologie et motricité"
   },
   {
    "s": "Tests moteurs",
@@ -5996,26 +6356,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Mémoire et développement de l'enfant",
-   "q": "À propos des échelles de Griffiths :",
-   "a": [
-    [
-     "Elles évaluent le développement du jeune enfant.",
-     true
-    ],
-    [
-     "Elles explorent notamment le langage et la coordination oeil-main.",
-     true
-    ],
-    [
-     "Elles évaluent la personnalité de l'adulte.",
-     false
-    ]
-   ],
-   "e": "Elles sont utilisées pour repérer des retards de développement.",
-   "p": "Mémoire"
-  },
-  {
-   "s": "Mémoire et développement de l'enfant",
    "q": "À propos de l'échelle Merrill-Palmer-R :",
    "a": [
     [
@@ -6096,26 +6436,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Fonctions exécutives de l'enfant",
-   "q": "À propos de la tâche Jour-Nuit de Stroop pour enfants :",
-   "a": [
-    [
-     "Elle évalue la lecture.",
-     false
-    ],
-    [
-     "Elle évalue le contrôle de l'inhibition.",
-     true
-    ],
-    [
-     "L'enfant dit « nuit » devant un soleil et « jour » devant une lune.",
-     true
-    ]
-   ],
-   "e": "Elle est accessible à de jeunes enfants qui ne lisent pas encore.",
-   "p": "Fonctions exécutives"
-  },
-  {
-   "s": "Fonctions exécutives de l'enfant",
    "q": "À propos du DCCS (Dimensional Change Card Sort) :",
    "a": [
     [
@@ -6153,26 +6473,6 @@ window.QUESTIONS = {
    ],
    "e": "Elle inclut aussi des épreuves d'attention, de langage et de mémoire épisodique.",
    "p": "Fonctions exécutives"
-  },
-  {
-   "s": "Tâches cognitives expérimentales",
-   "q": "À propos de la SART (Sustained Attention to Response Task) :",
-   "a": [
-    [
-     "Le sujet répond à presque tous les chiffres, sauf à un chiffre cible.",
-     true
-    ],
-    [
-     "Les erreurs de commission reflètent des lapsus d'attention.",
-     true
-    ],
-    [
-     "Elle évalue la dextérité manuelle.",
-     false
-    ]
-   ],
-   "e": "Robertson et ses collègues l'ont proposée en 1997.",
-   "p": "Attention et vitesse"
   },
   {
    "s": "Tâches cognitives expérimentales",
@@ -6236,26 +6536,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tâches cognitives expérimentales",
-   "q": "À propos de la tâche de signal d'arrêt (stop-signal) :",
-   "a": [
-    [
-     "Elle évalue la compréhension verbale.",
-     false
-    ],
-    [
-     "Logan et Cowan l'ont décrite en 1984.",
-     true
-    ],
-    [
-     "Elle évalue la capacité d'inhiber une réponse déjà initiée.",
-     true
-    ]
-   ],
-   "e": "Un signal d'arrêt apparaît après le stimulus, et le sujet doit retenir sa réponse.",
-   "p": "Attention et vitesse"
-  },
-  {
-   "s": "Tâches cognitives expérimentales",
    "q": "À propos de la tâche n-back :",
    "a": [
     [
@@ -6312,26 +6592,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Sternberg a décrit cet effet en 1966.",
-   "p": "Attention et vitesse"
-  },
-  {
-   "s": "Tâches cognitives expérimentales",
-   "q": "À propos de l'Attention Network Test (ANT) :",
-   "a": [
-    [
-     "Il évalue trois réseaux : alerte, orientation et contrôle exécutif.",
-     true
-    ],
-    [
-     "Fan et ses collègues l'ont proposé en 2002.",
-     true
-    ],
-    [
-     "Il évalue le vocabulaire.",
-     false
-    ]
-   ],
-   "e": "Il combine une tâche d'indiçage et une tâche de Flanker.",
    "p": "Attention et vitesse"
   },
   {
@@ -6416,26 +6676,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Langage et lecture",
-   "q": "À propos de la Neale Analysis of Reading Ability :",
-   "a": [
-    [
-     "Elle évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Elle évalue la lecture orale de textes.",
-     true
-    ],
-    [
-     "On y mesure la précision et la compréhension.",
-     true
-    ]
-   ],
-   "e": "Le sujet lit des textes de difficulté croissante.",
-   "p": "Acquis scolaires, lecture et langues"
-  },
-  {
-   "s": "Langage et lecture",
    "q": "À propos de l'ECLA-16+ :",
    "a": [
     [
@@ -6496,26 +6736,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Mathématiques et échelles françaises",
-   "q": "À propos du TEDI-MATH :",
-   "a": [
-    [
-     "Il évalue des compétences de base en mathématiques chez l'enfant.",
-     true
-    ],
-    [
-     "Il évalue la personnalité.",
-     false
-    ],
-    [
-     "Il est d'origine francophone.",
-     true
-    ]
-   ],
-   "e": "Il explore le dénombrement, la numération et le calcul.",
-   "p": "Acquis scolaires, lecture et langues"
-  },
-  {
-   "s": "Mathématiques et échelles françaises",
    "q": "À propos du KeyMath-3 :",
    "a": [
     [
@@ -6553,26 +6773,6 @@ window.QUESTIONS = {
    ],
    "e": "Elle est associée aux travaux de Zazzo.",
    "p": "Acquis scolaires, lecture et langues"
-  },
-  {
-   "s": "Batteries informatisées",
-   "q": "À propos du Vienna Test System :",
-   "a": [
-    [
-     "Il se passe uniquement sur papier.",
-     false
-    ],
-    [
-     "C'est un système de tests psychologiques informatisés.",
-     true
-    ],
-    [
-     "Il est largement utilisé pour des applications de transport et de sélection.",
-     true
-    ]
-   ],
-   "e": "Il est édité par Schuhfried.",
-   "p": "Neuropsychologie et motricité"
   },
   {
    "s": "Batteries informatisées",
@@ -6635,26 +6835,6 @@ window.QUESTIONS = {
    "p": "Neuropsychologie et motricité"
   },
   {
-   "s": "Batteries informatisées",
-   "q": "À propos de Cogstate :",
-   "a": [
-    [
-     "Elle est utilisée en recherche clinique.",
-     true
-    ],
-    [
-     "C'est une batterie informatisée de tests cognitifs.",
-     true
-    ],
-    [
-     "Elle évalue les traits de personnalité.",
-     false
-    ]
-   ],
-   "e": "Ses épreuves sont brèves et conçues pour être répétées.",
-   "p": "Neuropsychologie et motricité"
-  },
-  {
    "s": "Mémoire",
    "q": "À propos de la tâche de Brown-Peterson :",
    "a": [
@@ -6672,26 +6852,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Plus le délai de distraction augmente, plus le rappel diminue.",
-   "p": "Mémoire"
-  },
-  {
-   "s": "Mémoire",
-   "q": "À propos du Recognition Memory Test de Warrington :",
-   "a": [
-    [
-     "Le sujet choisit entre deux options.",
-     true
-    ],
-    [
-     "Il comprend des mots et des visages.",
-     true
-    ],
-    [
-     "Il évalue la dextérité.",
-     false
-    ]
-   ],
-   "e": "Il évalue la mémoire de reconnaissance.",
    "p": "Mémoire"
   },
   {
@@ -6776,26 +6936,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Praxies et latéralité",
-   "q": "À propos des tests de dominance latérale de Harris :",
-   "a": [
-    [
-     "Ils évaluent la préférence manuelle, oculaire et pédestre.",
-     true
-    ],
-    [
-     "Ils évaluent les aptitudes numériques.",
-     false
-    ],
-    [
-     "Ils s'utilisent notamment chez l'enfant.",
-     true
-    ]
-   ],
-   "e": "Ils déterminent la latéralité de façon plus complète que la seule main.",
-   "p": "Neuropsychologie et motricité"
-  },
-  {
-   "s": "Praxies et latéralité",
    "q": "À propos de l'échelle de Snellen :",
    "a": [
     [
@@ -6835,26 +6975,6 @@ window.QUESTIONS = {
    "p": "Espace, perception et mécanique"
   },
   {
-   "s": "Figures complexes",
-   "q": "À propos de l'arrangement d'images du Wechsler (Picture Arrangement) :",
-   "a": [
-    [
-     "Il évalue la dextérité.",
-     false
-    ],
-    [
-     "Il évalue notamment la compréhension de situations sociales.",
-     true
-    ],
-    [
-     "Le sujet ordonne des images pour raconter une histoire logique.",
-     true
-    ]
-   ],
-   "e": "Il était présent dans les premières versions des échelles de Wechsler.",
-   "p": "Espace, perception et mécanique"
-  },
-  {
    "s": "Sous-tests du WAIS-IV",
    "q": "À propos du sous-test Similitudes du WAIS-IV :",
    "a": [
@@ -6872,26 +6992,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Par exemple : « en quoi une orange et une banane se ressemblent-elles ? ».",
-   "p": "Sous-tests du WAIS et du WISC"
-  },
-  {
-   "s": "Sous-tests du WAIS-IV",
-   "q": "À propos du sous-test Vocabulaire du WAIS-IV :",
-   "a": [
-    [
-     "Il évalue la mémoire visuelle.",
-     false
-    ],
-    [
-     "Le sujet définit des mots.",
-     true
-    ],
-    [
-     "Il évalue les connaissances lexicales et l'expression verbale.",
-     true
-    ]
-   ],
-   "e": "Les définitions sont cotées selon leur précision.",
    "p": "Sous-tests du WAIS et du WISC"
   },
   {
@@ -6956,26 +7056,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Sous-tests du WAIS-IV",
-   "q": "À propos du sous-test Balances du WAIS-IV :",
-   "a": [
-    [
-     "Il présente des balances avec des formes et demande de trouver la forme manquante.",
-     true
-    ],
-    [
-     "Il évalue le raisonnement quantitatif.",
-     true
-    ],
-    [
-     "Il évalue la mémoire des mots.",
-     false
-    ]
-   ],
-   "e": "Il est un sous-test complémentaire du raisonnement perceptif.",
-   "p": "Sous-tests du WAIS et du WISC"
-  },
-  {
-   "s": "Sous-tests du WAIS-IV",
    "q": "À propos du sous-test Arithmétique du WAIS-IV :",
    "a": [
     [
@@ -7012,26 +7092,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il fait partie de l'indice de mémoire de travail.",
-   "p": "Sous-tests du WAIS et du WISC"
-  },
-  {
-   "s": "Sous-tests du WAIS-IV",
-   "q": "À propos du sous-test Séquence lettres-chiffres du WAIS-IV :",
-   "a": [
-    [
-     "Il évalue le vocabulaire.",
-     false
-    ],
-    [
-     "Le sujet remet en ordre des chiffres et des lettres entendus.",
-     true
-    ],
-    [
-     "Il évalue la mémoire de travail.",
-     true
-    ]
-   ],
-   "e": "Il est un sous-test complémentaire de l'indice de mémoire de travail.",
    "p": "Sous-tests du WAIS et du WISC"
   },
   {
@@ -7092,26 +7152,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il est un sous-test complémentaire.",
-   "p": "Sous-tests du WAIS et du WISC"
-  },
-  {
-   "s": "Sous-tests du WISC-V et du SB5",
-   "q": "À propos du sous-test Empan d'images du WISC-V :",
-   "a": [
-    [
-     "Le sujet retient des images et les retrouve dans l'ordre ou non.",
-     true
-    ],
-    [
-     "Il évalue le vocabulaire.",
-     false
-    ],
-    [
-     "Il évalue la mémoire de travail visuelle.",
-     true
-    ]
-   ],
-   "e": "Il a été introduit avec le WISC-V.",
    "p": "Sous-tests du WAIS et du WISC"
   },
   {
@@ -7196,26 +7236,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Problèmes de raisonnement",
-   "q": "4 ouvriers terminent un travail en 6 jours (même rythme pour chacun).",
-   "a": [
-    [
-     "8 ouvriers le terminent en 3 jours.",
-     true
-    ],
-    [
-     "8 ouvriers le terminent en 12 jours.",
-     false
-    ],
-    [
-     "Le travail représente 24 journées d'ouvrier.",
-     true
-    ]
-   ],
-   "e": "Plus il y a d'ouvriers, moins il faut de jours : 24 ÷ 8 = 3.",
-   "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Problèmes de raisonnement",
    "q": "Un trajet aller se fait à 60 km/h et le retour à 40 km/h, sur la même distance.",
    "a": [
     [
@@ -7253,26 +7273,6 @@ window.QUESTIONS = {
    ],
    "e": "3/5 × 2/4 = 6/20 = 3/10. 9/25 correspondrait à un tirage avec remise.",
    "p": "Raisonnement numérique et calcul"
-  },
-  {
-   "s": "Séries logiques",
-   "q": "Soit la série : 5, 11, 23, 47, …",
-   "a": [
-    [
-     "Le terme suivant est 95.",
-     true
-    ],
-    [
-     "La règle est « multiplier par 2, puis ajouter 1 ».",
-     true
-    ],
-    [
-     "Le terme suivant est 94.",
-     false
-    ]
-   ],
-   "e": "47 × 2 + 1 = 95.",
-   "p": "Séries logiques"
   },
   {
    "s": "Séries logiques",
@@ -7336,6 +7336,1506 @@ window.QUESTIONS = {
   }
  ],
  "per": [
+  {
+   "s": "Big Five",
+   "q": "À propos du névrosisme dans le Big Five :",
+   "a": [
+    [
+     "Un score élevé indique une forte stabilité émotionnelle.",
+     false
+    ],
+    [
+     "Il renvoie à la tendance à éprouver des émotions négatives.",
+     true
+    ],
+    [
+     "Il est synonyme d'extraversion.",
+     false
+    ]
+   ],
+   "e": "Un score élevé en névrosisme signifie une plus grande réactivité émotionnelle. La stabilité émotionnelle correspond au pôle opposé.",
+   "p": "Big Five"
+  },
+  {
+   "s": "Big Five",
+   "q": "À propos de l'ouverture à l'expérience (Big Five) :",
+   "a": [
+    [
+     "Elle est un synonyme d'intelligence.",
+     false
+    ],
+    [
+     "Elle est associée à l'intérêt pour la nouveauté.",
+     true
+    ],
+    [
+     "Elle renvoie à la curiosité et à l'imagination.",
+     true
+    ]
+   ],
+   "e": "L'ouverture est liée à l'intelligence, mais ce sont deux notions différentes.",
+   "p": "Big Five"
+  },
+  {
+   "s": "Big Five",
+   "q": "À propos du modèle HEXACO :",
+   "a": [
+    [
+     "Il ajoute le facteur honnêteté-humilité.",
+     true
+    ],
+    [
+     "Il comprend cinq facteurs, comme le Big Five.",
+     false
+    ],
+    [
+     "Il comprend six facteurs.",
+     true
+    ]
+   ],
+   "e": "HEXACO signifie Honnêteté-Humilité, Émotivité, eXtraversion, Agréabilité, Conscienciosité, Ouverture.",
+   "p": "Big Five"
+  },
+  {
+   "s": "Big Five",
+   "q": "À propos des facettes de l'extraversion (NEO) :",
+   "a": [
+    [
+     "L'ordre en est une facette.",
+     false
+    ],
+    [
+     "La chaleur en est une facette.",
+     true
+    ],
+    [
+     "L'assertivité en est une facette.",
+     true
+    ]
+   ],
+   "e": "L'ordre est une facette de la conscienciosité.",
+   "p": "Big Five"
+  },
+  {
+   "s": "Big Five",
+   "q": "À propos des facettes de la conscienciosité (NEO) :",
+   "a": [
+    [
+     "Le sens du devoir en est une facette.",
+     true
+    ],
+    [
+     "La chaleur en est une facette.",
+     false
+    ],
+    [
+     "L'autodiscipline en est une facette.",
+     true
+    ]
+   ],
+   "e": "La chaleur est une facette de l'extraversion.",
+   "p": "Big Five"
+  },
+  {
+   "s": "Big Five",
+   "q": "À propos du NEO-PI-R :",
+   "a": [
+    [
+     "Il évalue 30 facettes.",
+     true
+    ],
+    [
+     "Il comporte 60 items.",
+     false
+    ],
+    [
+     "Il comporte 240 items.",
+     true
+    ]
+   ],
+   "e": "La version courte de 60 items est le NEO-FFI.",
+   "p": "Big Five"
+  },
+  {
+   "s": "Big Five",
+   "q": "À propos du TIPI (Ten-Item Personality Inventory) :",
+   "a": [
+    [
+     "Il convient quand le temps de passation est très limité.",
+     true
+    ],
+    [
+     "Il comporte 10 items.",
+     true
+    ],
+    [
+     "Il offre la même précision que le NEO-PI-R.",
+     false
+    ]
+   ],
+   "e": "Il est très court, donc moins précis.",
+   "p": "Big Five"
+  },
+  {
+   "s": "MBTI",
+   "q": "Les lettres du MBTI :",
+   "a": [
+    [
+     "N signifie Normalité.",
+     false
+    ],
+    [
+     "P signifie Perception.",
+     true
+    ],
+    [
+     "E signifie Extraversion.",
+     true
+    ]
+   ],
+   "e": "N signifie Intuition (iNtuition), pour la distinguer de S (Sensation).",
+   "p": "MBTI"
+  },
+  {
+   "s": "MBTI",
+   "q": "Pensée (T) et Sentiment (F) :",
+   "a": [
+    [
+     "F décide surtout selon les valeurs et l'impact sur les personnes.",
+     true
+    ],
+    [
+     "T décide surtout selon la logique et des critères objectifs.",
+     true
+    ],
+    [
+     "F signifie « fidélité ».",
+     false
+    ]
+   ],
+   "e": "F = Feeling (Sentiment).",
+   "p": "MBTI"
+  },
+  {
+   "s": "MBTI",
+   "q": "À propos de la forme M du MBTI :",
+   "a": [
+    [
+     "Elle comporte 93 échelles.",
+     false
+    ],
+    [
+     "Elle évalue des préférences sur quatre dichotomies.",
+     true
+    ],
+    [
+     "Elle comporte 93 items.",
+     true
+    ]
+   ],
+   "e": "Les 93 items servent à classer une personne dans l'un des 16 types.",
+   "p": "MBTI"
+  },
+  {
+   "s": "Inventaires de personnalité",
+   "q": "À propos du modèle DISC :",
+   "a": [
+    [
+     "Sa validité scientifique est aussi solide que celle du Big Five.",
+     false
+    ],
+    [
+     "Il décrit quatre styles : dominance, influence, stabilité, conformité.",
+     true
+    ],
+    [
+     "Il est souvent utilisé en entreprise.",
+     true
+    ]
+   ],
+   "e": "Il est populaire en formation, mais les preuves de validité sont plus limitées que pour le Big Five.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Inventaires de personnalité",
+   "q": "À propos de l'échelle d'estime de soi de Rosenberg :",
+   "a": [
+    [
+     "C'est un questionnaire d'auto-évaluation.",
+     true
+    ],
+    [
+     "Elle comporte 10 items.",
+     true
+    ],
+    [
+     "C'est un test projectif.",
+     false
+    ]
+   ],
+   "e": "Elle est très utilisée en recherche et en psychologie clinique.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Inventaires de personnalité",
+   "q": "À propos du test d'orientation de vie (LOT) :",
+   "a": [
+    [
+     "Il mesure les intérêts professionnels.",
+     false
+    ],
+    [
+     "Il a été conçu par Scheier et Carver.",
+     true
+    ],
+    [
+     "Il mesure l'optimisme dispositionnel.",
+     true
+    ]
+   ],
+   "e": "Il évalue la tendance générale à s'attendre à des résultats positifs.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Inventaires de personnalité",
+   "q": "À propos du Hogan Personality Inventory (HPI) :",
+   "a": [
+    [
+     "Il évalue la psychopathologie.",
+     false
+    ],
+    [
+     "Il comporte 7 échelles principales.",
+     true
+    ],
+    [
+     "Il décrit la personnalité normale en contexte professionnel.",
+     true
+    ]
+   ],
+   "e": "Le HPI cible le comportement quotidien au travail.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Inventaires de personnalité",
+   "q": "À propos du BFI-2 :",
+   "a": [
+    [
+     "Il décrit 15 facettes.",
+     true
+    ],
+    [
+     "Il comporte 60 items.",
+     true
+    ],
+    [
+     "Il comporte 44 items.",
+     false
+    ]
+   ],
+   "e": "Le BFI-2 est la version révisée du BFI de 44 items.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Inventaires de personnalité",
+   "q": "À propos du TEIQue de Petrides :",
+   "a": [
+    [
+     "C'est un test de capacité avec bonnes et mauvaises réponses.",
+     false
+    ],
+    [
+     "Sa forme complète comporte 153 items.",
+     true
+    ],
+    [
+     "Il évalue l'intelligence émotionnelle comme trait.",
+     true
+    ]
+   ],
+   "e": "Il se réalise en auto-évaluation, comme un inventaire de personnalité.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Traits sombres et sociaux",
+   "q": "À propos de l'échelle Mach-IV :",
+   "a": [
+    [
+     "Elle comporte 20 items.",
+     true
+    ],
+    [
+     "Elle évalue l'anxiété.",
+     false
+    ],
+    [
+     "Elle évalue le machiavélisme.",
+     true
+    ]
+   ],
+   "e": "Christie et Geis l'ont conçue dans les années 1970.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Inventaires classiques",
+   "q": "À propos du Guilford-Zimmerman Temperament Survey :",
+   "a": [
+    [
+     "Il se remplit en auto-évaluation.",
+     true
+    ],
+    [
+     "Il évalue 10 traits de tempérament.",
+     true
+    ],
+    [
+     "Il évalue les aptitudes mécaniques.",
+     false
+    ]
+   ],
+   "e": "Parmi ces traits : l'activité générale, la sociabilité et la stabilité émotionnelle.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Personnalité de l'enfant",
+   "q": "À propos du JEPQ (Junior Eysenck Personality Questionnaire) :",
+   "a": [
+    [
+     "Il évalue le QI.",
+     false
+    ],
+    [
+     "Il est destiné aux enfants et aux adolescents.",
+     true
+    ],
+    [
+     "Il évalue notamment l'extraversion et le névrosisme.",
+     true
+    ]
+   ],
+   "e": "C'est la version pour jeunes de l'EPQ.",
+   "p": "Inventaires de personnalité"
+  },
+  {
+   "s": "Tests projectifs",
+   "q": "À propos du TAT (Thematic Apperception Test) :",
+   "a": [
+    [
+     "Il mesure l'aptitude numérique.",
+     false
+    ],
+    [
+     "Le sujet raconte des histoires à partir d'images.",
+     true
+    ],
+    [
+     "Il a été conçu par Murray et Morgan.",
+     true
+    ]
+   ],
+   "e": "Le TAT est un test projectif de personnalité. On y analyse les thèmes, les besoins et les conflits exprimés dans les récits.",
+   "p": "Tests projectifs"
+  },
+  {
+   "s": "Tests projectifs",
+   "q": "À propos des limites des tests projectifs :",
+   "a": [
+    [
+     "L'interprétation dépend en partie de l'examinateur.",
+     true
+    ],
+    [
+     "Leurs résultats sont toujours objectifs et incontestables.",
+     false
+    ],
+    [
+     "Leur fidélité et leur validité sont discutées.",
+     true
+    ]
+   ],
+   "e": "D'où l'importance d'une formation rigoureuse et de ne jamais s'appuyer sur un seul outil.",
+   "p": "Tests projectifs"
+  },
+  {
+   "s": "Tests projectifs",
+   "q": "À propos du TAT :",
+   "a": [
+    [
+     "C'est un test de QI.",
+     false
+    ],
+    [
+     "L'analyse porte sur les besoins et les pressions de l'environnement.",
+     true
+    ],
+    [
+     "Il comporte 31 planches, dont une blanche.",
+     true
+    ]
+   ],
+   "e": "Murray a défini une théorie des besoins pour interpréter les récits.",
+   "p": "Tests projectifs"
+  },
+  {
+   "s": "Tests projectifs",
+   "q": "Rorschach et TAT :",
+   "a": [
+    [
+     "Le Rorschach utilise des taches d'encre sans forme précise.",
+     true
+    ],
+    [
+     "Le Rorschach comprend des scènes sociales détaillées.",
+     false
+    ],
+    [
+     "Le TAT utilise des scènes avec des personnages.",
+     true
+    ]
+   ],
+   "e": "Ce sont les planches du TAT qui montrent des scènes avec des personnages.",
+   "p": "Tests projectifs"
+  },
+  {
+   "s": "Tests projectifs",
+   "q": "À propos du test de l'arbre de Koch (Baumtest) :",
+   "a": [
+    [
+     "Il se cote par un score de QI.",
+     false
+    ],
+    [
+     "Il est utilisé comme test projectif.",
+     true
+    ],
+    [
+     "Le sujet dessine un arbre.",
+     true
+    ]
+   ],
+   "e": "Koch l'a proposé vers 1949, et il se pratique avec prudence.",
+   "p": "Tests projectifs"
+  },
+  {
+   "s": "Tests projectifs",
+   "q": "À propos de l'Holtzman Inkblot Technique :",
+   "a": [
+    [
+     "Chaque réponse du sujet se limite à « oui » ou « non ».",
+     false
+    ],
+    [
+     "Il a été conçu pour une cotation plus standardisée que le Rorschach.",
+     true
+    ],
+    [
+     "C'est un test de taches d'encre.",
+     true
+    ]
+   ],
+   "e": "Il comporte 45 taches en deux formes parallèles, avec une réponse par planche.",
+   "p": "Tests projectifs"
+  },
+  {
+   "s": "Inventaires cliniques",
+   "q": "À propos de l'inventaire de dépression de Beck (BDI) :",
+   "a": [
+    [
+     "Il mesure l'intensité des symptômes dépressifs.",
+     true
+    ],
+    [
+     "C'est un questionnaire d'auto-évaluation.",
+     true
+    ],
+    [
+     "C'est un test projectif.",
+     false
+    ]
+   ],
+   "e": "Le BDI donne un score de sévérité, mais ne remplace pas un diagnostic clinique.",
+   "p": "MMPI et inventaires cliniques"
+  },
+  {
+   "s": "Inventaires cliniques",
+   "q": "À propos de l'échelle de Hamilton pour la dépression (HAM-D) :",
+   "a": [
+    [
+     "Elle évalue la dépression.",
+     true
+    ],
+    [
+     "Elle est cotée par un clinicien.",
+     true
+    ],
+    [
+     "Elle est remplie seule par la personne.",
+     false
+    ]
+   ],
+   "e": "C'est une échelle d'hétéro-évaluation.",
+   "p": "MMPI et inventaires cliniques"
+  },
+  {
+   "s": "Inventaires cliniques",
+   "q": "À propos du MMPI-2-RF :",
+   "a": [
+    [
+     "Il comporte 338 items.",
+     true
+    ],
+    [
+     "Il comporte 567 items.",
+     false
+    ],
+    [
+     "C'est une version restructurée du MMPI-2.",
+     true
+    ]
+   ],
+   "e": "Le MMPI-2 compte 567 items, et le MMPI-2-RF est plus court.",
+   "p": "MMPI et inventaires cliniques"
+  },
+  {
+   "s": "Inventaires cliniques",
+   "q": "À propos de l'inventaire de dépression de Beck (BDI-II) :",
+   "a": [
+    [
+     "Il comporte 21 items.",
+     true
+    ],
+    [
+     "Son score va de 0 à 63.",
+     true
+    ],
+    [
+     "Il comporte 90 items.",
+     false
+    ]
+   ],
+   "e": "Il évalue la sévérité des symptômes dépressifs sur les deux dernières semaines.",
+   "p": "MMPI et inventaires cliniques"
+  },
+  {
+   "s": "Inventaires cliniques",
+   "q": "À propos de la MADRS (Montgomery-Åsberg) :",
+   "a": [
+    [
+     "Elle comporte 10 items.",
+     true
+    ],
+    [
+     "Son score va de 0 à 60.",
+     true
+    ],
+    [
+     "Elle évalue l'intelligence.",
+     false
+    ]
+   ],
+   "e": "Elle évalue la sévérité de la dépression, avec cotation par un clinicien.",
+   "p": "MMPI et inventaires cliniques"
+  },
+  {
+   "s": "Inventaires cliniques",
+   "q": "À propos de l'échelle d'alexithymie de Toronto (TAS-20) :",
+   "a": [
+    [
+     "Elle évalue l'optimisme.",
+     false
+    ],
+    [
+     "Elle évalue la difficulté à identifier et à décrire ses émotions.",
+     true
+    ],
+    [
+     "Elle comporte 20 items.",
+     true
+    ]
+   ],
+   "e": "Elle inclut aussi une pensée tournée vers l'extérieur.",
+   "p": "MMPI et inventaires cliniques"
+  },
+  {
+   "s": "Échelles de dépistage",
+   "q": "À propos de la DASS-21 :",
+   "a": [
+    [
+     "Elle évalue les aptitudes numériques.",
+     false
+    ],
+    [
+     "Elle évalue la dépression, l'anxiété et le stress.",
+     true
+    ],
+    [
+     "Elle comporte 21 items.",
+     true
+    ]
+   ],
+   "e": "Chaque sous-échelle comporte 7 items.",
+   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
+  },
+  {
+   "s": "Échelles de dépistage",
+   "q": "À propos du MDQ (Mood Disorder Questionnaire) :",
+   "a": [
+    [
+     "Il sert à repérer un possible trouble bipolaire.",
+     true
+    ],
+    [
+     "Il comporte 13 items de type oui ou non.",
+     true
+    ],
+    [
+     "Il évalue les aptitudes mécaniques.",
+     false
+    ]
+   ],
+   "e": "C'est un outil de dépistage, qui ne remplace pas une évaluation clinique.",
+   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
+  },
+  {
+   "s": "Questionnaires de sommeil",
+   "q": "À propos de l'index de sévérité de l'insomnie (ISI) :",
+   "a": [
+    [
+     "Il comporte 7 items.",
+     true
+    ],
+    [
+     "Son score va de 0 à 28.",
+     true
+    ],
+    [
+     "Il comporte 90 items.",
+     false
+    ]
+   ],
+   "e": "Il a été proposé par Morin.",
+   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
+  },
+  {
+   "s": "Anxiété et traits cognitifs",
+   "q": "À propos du Penn State Worry Questionnaire (PSWQ) :",
+   "a": [
+    [
+     "Il évalue la tendance à s'inquiéter.",
+     true
+    ],
+    [
+     "Il évalue les intérêts professionnels.",
+     false
+    ],
+    [
+     "Il comporte 16 items.",
+     true
+    ]
+   ],
+   "e": "Il est associé à l'anxiété généralisée.",
+   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
+  },
+  {
+   "s": "Troubles anxieux et trauma",
+   "q": "À propos de la CAPS-5 :",
+   "a": [
+    [
+     "C'est un entretien structuré pour le trouble de stress post-traumatique.",
+     true
+    ],
+    [
+     "Elle comporte 30 items.",
+     true
+    ],
+    [
+     "C'est un test projectif.",
+     false
+    ]
+   ],
+   "e": "Elle est considérée comme une référence pour évaluer ce trouble.",
+   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
+  },
+  {
+   "s": "Troubles anxieux et trauma",
+   "q": "À propos du SPIN (Social Phobia Inventory) :",
+   "a": [
+    [
+     "Il évalue l'intelligence verbale.",
+     false
+    ],
+    [
+     "Il comporte 17 items.",
+     true
+    ],
+    [
+     "Il évalue la peur, l'évitement et des symptômes physiques de l'anxiété sociale.",
+     true
+    ]
+   ],
+   "e": "Connor et ses collègues l'ont proposé en 2000.",
+   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
+  },
+  {
+   "s": "Échelles pour enfants",
+   "q": "À propos des échelles de Conners :",
+   "a": [
+    [
+     "Elles remplacent l'évaluation clinique pour poser un diagnostic.",
+     false
+    ],
+    [
+     "Elles servent notamment à évaluer des symptômes de trouble déficitaire de l'attention avec hyperactivité (TDAH).",
+     true
+    ],
+    [
+     "Elles existent en versions pour parents et enseignants.",
+     true
+    ]
+   ],
+   "e": "Elles apportent des informations, sans remplacer un bilan complet.",
+   "p": "Entretiens cliniques, enfants et famille"
+  },
+  {
+   "s": "Relations et famille",
+   "q": "À propos de l'Adult Attachment Interview (AAI) :",
+   "a": [
+    [
+     "C'est un entretien semi-structuré.",
+     true
+    ],
+    [
+     "Il explore les souvenirs d'enfance liés à l'attachement.",
+     true
+    ],
+    [
+     "C'est un questionnaire à choix multiples.",
+     false
+    ]
+   ],
+   "e": "Elle a été développée par George, Kaplan et Main.",
+   "p": "Entretiens cliniques, enfants et famille"
+  },
+  {
+   "s": "Entretiens et échelles cliniques",
+   "q": "À propos de la PANSS :",
+   "a": [
+    [
+     "Elle évalue le QI.",
+     false
+    ],
+    [
+     "Elle comporte 30 items.",
+     true
+    ],
+    [
+     "Elle évalue les symptômes de la schizophrénie.",
+     true
+    ]
+   ],
+   "e": "Elle comprend des échelles positive, négative et de psychopathologie générale.",
+   "p": "Entretiens cliniques, enfants et famille"
+  },
+  {
+   "s": "Humeur et échelles pour enfants",
+   "q": "À propos de la Young Mania Rating Scale (YMRS) :",
+   "a": [
+    [
+     "Elle comporte 11 items.",
+     true
+    ],
+    [
+     "Elle est cotée par un clinicien.",
+     true
+    ],
+    [
+     "Elle évalue l'intelligence.",
+     false
+    ]
+   ],
+   "e": "Elle évalue la sévérité des symptômes maniaques.",
+   "p": "Entretiens cliniques, enfants et famille"
+  },
+  {
+   "s": "Humeur et échelles pour enfants",
+   "q": "À propos de l'échelle de Vanderbilt :",
+   "a": [
+    [
+     "Elle évalue le QI.",
+     false
+    ],
+    [
+     "Elle sert à repérer des symptômes de TDAH.",
+     true
+    ],
+    [
+     "Elle existe en versions pour les parents et les enseignants.",
+     true
+    ]
+   ],
+   "e": "C'est un outil de repérage, pas de diagnostic.",
+   "p": "Entretiens cliniques, enfants et famille"
+  },
+  {
+   "s": "Intérêts professionnels",
+   "q": "À propos des tests d'intérêts :",
+   "a": [
+    [
+     "L'orientation combine intérêts, aptitudes et valeurs.",
+     true
+    ],
+    [
+     "Aimer une activité ne garantit pas d'y réussir.",
+     true
+    ],
+    [
+     "Ils mesurent le QI.",
+     false
+    ]
+   ],
+   "e": "Un bon conseil d'orientation croise plusieurs sources d'information.",
+   "p": "Intérêts, valeurs et styles"
+  },
+  {
+   "s": "Styles individuels",
+   "q": "À propos de l'inventaire des styles d'apprentissage de Kolb :",
+   "a": [
+    [
+     "Il s'appuie sur l'expérience concrète, l'observation réfléchie, la conceptualisation abstraite et l'expérimentation active.",
+     true
+    ],
+    [
+     "Son soutien empirique est considéré comme solide et incontesté.",
+     false
+    ],
+    [
+     "Il décrit quatre styles d'apprentissage.",
+     true
+    ]
+   ],
+   "e": "Les styles d'apprentissage sont l'objet de nombreuses critiques.",
+   "p": "Intérêts, valeurs et styles"
+  },
+  {
+   "s": "Valeurs et motivation",
+   "q": "À propos de l'Échelle de motivation en éducation (AMS) de Vallerand :",
+   "a": [
+    [
+     "Elle évalue la dextérité.",
+     false
+    ],
+    [
+     "Elle comporte 28 items.",
+     true
+    ],
+    [
+     "Elle distingue motivation intrinsèque, extrinsèque et amotivation.",
+     true
+    ]
+   ],
+   "e": "Elle s'appuie sur la théorie de l'autodétermination.",
+   "p": "Intérêts, valeurs et styles"
+  },
+  {
+   "s": "Psychologie du travail",
+   "q": "À propos de la hiérarchie des besoins de Maslow :",
+   "a": [
+    [
+     "L'accomplissement de soi est au sommet.",
+     true
+    ],
+    [
+     "Les besoins physiologiques sont à la base.",
+     true
+    ],
+    [
+     "L'accomplissement de soi est à la base.",
+     false
+    ]
+   ],
+   "e": "Besoins physiologiques, sécurité, appartenance, estime, puis accomplissement de soi.",
+   "p": "Psychologie du travail"
+  },
+  {
+   "s": "Psychologie du travail",
+   "q": "À propos de la satisfaction au travail :",
+   "a": [
+    [
+     "Elle peut être mesurée par des questionnaires.",
+     true
+    ],
+    [
+     "Elle prédit la performance avec une corrélation de 1.",
+     false
+    ],
+    [
+     "Elle est liée à la performance, mais pas de façon parfaite.",
+     true
+    ]
+   ],
+   "e": "La relation est positive mais modérée : d'autres facteurs interviennent.",
+   "p": "Psychologie du travail"
+  },
+  {
+   "s": "Psychologie du travail",
+   "q": "À propos de la théorie des objectifs (Locke et Latham) :",
+   "a": [
+    [
+     "« Faites de votre mieux » est moins efficace qu'un objectif précis.",
+     true
+    ],
+    [
+     "Des objectifs précis et difficiles, mais atteignables, favorisent la performance.",
+     true
+    ],
+    [
+     "Les objectifs impossibles sont les plus motivants.",
+     false
+    ]
+   ],
+   "e": "Un objectif irréalisable décourage.",
+   "p": "Psychologie du travail"
+  },
+  {
+   "s": "Psychologie du travail",
+   "q": "À propos de la théorie de l'équité d'Adams :",
+   "a": [
+    [
+     "Adams a créé les matrices progressives.",
+     false
+    ],
+    [
+     "On compare ses contributions et ses résultats à ceux des autres.",
+     true
+    ],
+    [
+     "Une iniquité perçue peut réduire la motivation.",
+     true
+    ]
+   ],
+   "e": "Les matrices progressives sont l'œuvre de Raven.",
+   "p": "Psychologie du travail"
+  },
+  {
+   "s": "Psychologie du travail",
+   "q": "Culture et climat organisationnels :",
+   "a": [
+    [
+     "Culture et climat sont exactement la même chose.",
+     false
+    ],
+    [
+     "La culture désigne des valeurs et des normes partagées (Schein).",
+     true
+    ],
+    [
+     "Le climat désigne la perception partagée de l'environnement de travail.",
+     true
+    ]
+   ],
+   "e": "La culture est plus profonde et plus stable que le climat.",
+   "p": "Psychologie du travail"
+  },
+  {
+   "s": "Mesures au travail",
+   "q": "À propos du Job Diagnostic Survey de Hackman et Oldham :",
+   "a": [
+    [
+     "L'autonomie en fait partie.",
+     true
+    ],
+    [
+     "Il évalue cinq dimensions centrales d'un poste.",
+     true
+    ],
+    [
+     "Il évalue des traits de personnalité du salarié.",
+     false
+    ]
+   ],
+   "e": "Les autres dimensions : variété des compétences, identité de la tâche, signification et feedback.",
+   "p": "Psychologie du travail"
+  },
+  {
+   "s": "Équipes et leadership",
+   "q": "À propos du Thomas-Kilmann Conflict Mode Instrument (TKI) :",
+   "a": [
+    [
+     "Il décrit cinq modes de gestion des conflits.",
+     true
+    ],
+    [
+     "Il décrit trois styles seulement.",
+     false
+    ],
+    [
+     "On y trouve la compétition et la collaboration.",
+     true
+    ]
+   ],
+   "e": "Les cinq modes sont la compétition, la collaboration, le compromis, l'évitement et l'accommodement.",
+   "p": "Psychologie du travail"
+  },
+  {
+   "s": "Équipes et leadership",
+   "q": "À propos des ancres de carrière de Schein :",
+   "a": [
+    [
+     "Elles sont au nombre de deux.",
+     false
+    ],
+    [
+     "Elles sont au nombre de huit.",
+     true
+    ],
+    [
+     "La sécurité et la stabilité en font partie.",
+     true
+    ]
+   ],
+   "e": "Elles décrivent ce qui est le plus important dans un parcours professionnel.",
+   "p": "Psychologie du travail"
+  },
+  {
+   "s": "Recrutement",
+   "q": "À propos des centres d'évaluation (assessment centers) :",
+   "a": [
+    [
+     "Ils se limitent à un questionnaire papier unique.",
+     false
+    ],
+    [
+     "Ils sont souvent utilisés pour évaluer des cadres.",
+     true
+    ],
+    [
+     "Ils utilisent des mises en situation, des jeux de rôle et des exercices en groupe.",
+     true
+    ]
+   ],
+   "e": "Plusieurs évaluateurs observent le candidat dans plusieurs exercices.",
+   "p": "Recrutement et sélection"
+  },
+  {
+   "s": "Recrutement",
+   "q": "À propos des mises en situation de travail (work samples) :",
+   "a": [
+    [
+     "Elles évaluent uniquement la personnalité.",
+     false
+    ],
+    [
+     "Elles ont une bonne validité prédictive.",
+     true
+    ],
+    [
+     "Elles consistent à faire réaliser un échantillon du travail réel.",
+     true
+    ]
+   ],
+   "e": "Elles mesurent directement des comportements proches de ceux du poste.",
+   "p": "Recrutement et sélection"
+  },
+  {
+   "s": "Recrutement",
+   "q": "À propos des tests d'intégrité :",
+   "a": [
+    [
+     "Ils sont infaillibles.",
+     false
+    ],
+    [
+     "Ce sont souvent des questionnaires d'auto-évaluation.",
+     true
+    ],
+    [
+     "Ils évaluent l'honnêteté et la fiabilité.",
+     true
+    ]
+   ],
+   "e": "Comme toute auto-évaluation, ils restent sensibles à la désirabilité sociale.",
+   "p": "Recrutement et sélection"
+  },
+  {
+   "s": "Intelligence émotionnelle",
+   "q": "À propos des critiques de l'intelligence émotionnelle :",
+   "a": [
+    [
+     "Les tests de capacité sont souvent cotés par consensus d'experts.",
+     true
+    ],
+    [
+     "Mesurée par auto-questionnaire, elle peut se confondre avec la personnalité.",
+     true
+    ],
+    [
+     "Elle se confond parfaitement avec le QI.",
+     false
+    ]
+   ],
+   "e": "Les corrélations avec le QI sont modérées, pas parfaites.",
+   "p": "Bien-être, stress et psychologie positive"
+  },
+  {
+   "s": "Santé et bien-être",
+   "q": "À propos du WHOQOL-BREF :",
+   "a": [
+    [
+     "Il comporte 26 items.",
+     true
+    ],
+    [
+     "Il évalue quatre domaines, dont le physique et le psychologique.",
+     true
+    ],
+    [
+     "Il comporte 100 items.",
+     false
+    ]
+   ],
+   "e": "Il évalue aussi les relations sociales et l'environnement.",
+   "p": "Bien-être, stress et psychologie positive"
+  },
+  {
+   "s": "Psychologie positive",
+   "q": "À propos du FFMQ (Five Facet Mindfulness Questionnaire) :",
+   "a": [
+    [
+     "Il comprend trois facettes seulement.",
+     false
+    ],
+    [
+     "Il comprend cinq facettes, dont l'observation et la non-réactivité.",
+     true
+    ],
+    [
+     "Il comporte 39 items.",
+     true
+    ]
+   ],
+   "e": "Les autres facettes sont décrire, agir en conscience et ne pas juger.",
+   "p": "Bien-être, stress et psychologie positive"
+  },
+  {
+   "s": "Concept de soi",
+   "q": "À propos du test d'association implicite (IAT) :",
+   "a": [
+    [
+     "Il se base sur une auto-évaluation par questionnaire.",
+     false
+    ],
+    [
+     "Il mesure la force d'associations par des temps de réaction.",
+     true
+    ],
+    [
+     "Il a été proposé par Greenwald et ses collègues en 1998.",
+     true
+    ]
+   ],
+   "e": "Sa fidélité test-retest est discutée.",
+   "p": "Bien-être, stress et psychologie positive"
+  },
+  {
+   "s": "Soutien social et cognitions",
+   "q": "À propos de l'échelle d'attitudes dysfonctionnelles (DAS) :",
+   "a": [
+    [
+     "Elle évalue la dextérité.",
+     false
+    ],
+    [
+     "Weissman et Beck en sont les auteurs.",
+     true
+    ],
+    [
+     "Elle évalue des croyances associées à la vulnérabilité à la dépression.",
+     true
+    ]
+   ],
+   "e": "La version la plus connue comporte 40 items.",
+   "p": "Bien-être, stress et psychologie positive"
+  },
+  {
+   "s": "Coping et stress",
+   "q": "À propos du Ways of Coping Questionnaire :",
+   "a": [
+    [
+     "Lazarus et Folkman en sont à l'origine.",
+     true
+    ],
+    [
+     "Il distingue le coping centré sur le problème et le coping centré sur l'émotion.",
+     true
+    ],
+    [
+     "Il évalue les aptitudes mécaniques.",
+     false
+    ]
+   ],
+   "e": "Il s'appuie sur leur modèle transactionnel du stress.",
+   "p": "Bien-être, stress et psychologie positive"
+  },
+  {
+   "s": "Psychologie positive",
+   "q": "À propos du questionnaire de gratitude GQ-6 :",
+   "a": [
+    [
+     "Il comporte 6 items.",
+     true
+    ],
+    [
+     "Il évalue le QI.",
+     false
+    ],
+    [
+     "Il évalue la tendance à éprouver de la gratitude.",
+     true
+    ]
+   ],
+   "e": "McCullough et ses collègues l'ont proposé.",
+   "p": "Bien-être, stress et psychologie positive"
+  },
+  {
+   "s": "Méthodologie",
+   "q": "À propos de l'échelle de Likert :",
+   "a": [
+    [
+     "C'est une échelle d'attitude.",
+     true
+    ],
+    [
+     "Elle a été développée par Rensis Likert.",
+     true
+    ],
+    [
+     "Elle ne propose que deux réponses : 0 ou 1.",
+     false
+    ]
+   ],
+   "e": "Elle propose généralement 5 ou 7 niveaux d'accord (de « pas du tout » à « tout à fait »).",
+   "p": "Méthodologie des questionnaires"
+  },
+  {
+   "s": "Biais de réponse",
+   "q": "À propos des styles de réponse :",
+   "a": [
+    [
+     "Un style de réponse prouve toujours un trouble psychologique.",
+     false
+    ],
+    [
+     "Le style extrême consiste à choisir surtout les extrémités.",
+     true
+    ],
+    [
+     "La tendance centrale consiste à choisir surtout le milieu de l'échelle.",
+     true
+    ]
+   ],
+   "e": "Ce sont des habitudes de réponse, qui varient notamment selon la culture.",
+   "p": "Méthodologie des questionnaires"
+  },
+  {
+   "s": "Biais de réponse",
+   "q": "À propos de l'effet de halo :",
+   "a": [
+    [
+     "Une qualité perçue influence l'évaluation d'autres qualités.",
+     true
+    ],
+    [
+     "Il consiste à répondre au hasard.",
+     false
+    ],
+    [
+     "Il est fréquent dans les évaluations faites par un supérieur.",
+     true
+    ]
+   ],
+   "e": "Exemple : juger quelqu'un compétent dans tous les domaines parce qu'il est très sympathique.",
+   "p": "Méthodologie des questionnaires"
+  },
+  {
+   "s": "Biais de réponse",
+   "q": "À propos de l'effet Pygmalion (Rosenthal et Jacobson) :",
+   "a": [
+    [
+     "Cet effet est nul.",
+     false
+    ],
+    [
+     "Les attentes d'un enseignant peuvent influencer les résultats des élèves.",
+     true
+    ],
+    [
+     "Des attentes positives peuvent améliorer la performance.",
+     true
+    ]
+   ],
+   "e": "L'enseignant adopte, sans le savoir, des comportements qui renforcent ses attentes.",
+   "p": "Méthodologie des questionnaires"
+  },
+  {
+   "s": "Méthodologie",
+   "q": "À propos de l'échelle de Guttman :",
+   "a": [
+    [
+     "Elle est identique à l'échelle de Likert.",
+     false
+    ],
+    [
+     "Les items y sont hiérarchisés.",
+     true
+    ],
+    [
+     "Accepter un item fort implique d'accepter les items plus faibles.",
+     true
+    ]
+   ],
+   "e": "C'est une échelle cumulative : chaque item est plus exigeant que le précédent.",
+   "p": "Méthodologie des questionnaires"
+  },
+  {
+   "s": "Cotation des questionnaires",
+   "q": "À propos de la cotation de l'échelle de stress perçu (PSS-10) :",
+   "a": [
+    [
+     "Aucun item n'est inversé.",
+     false
+    ],
+    [
+     "Certains items sont inversés avant d'être additionnés.",
+     true
+    ],
+    [
+     "Les items 4, 5, 7 et 8 sont à inverser.",
+     true
+    ]
+   ],
+   "e": "L'inversion permet de calculer un score total cohérent.",
+   "p": "Méthodologie des questionnaires"
+  },
+  {
+   "s": "Éthique et déontologie",
+   "q": "À propos du choix des outils :",
+   "a": [
+    [
+     "Il peut utiliser un test non validé s'il est gratuit.",
+     false
+    ],
+    [
+     "Un psychologue choisit des tests adaptés à la population évaluée.",
+     true
+    ],
+    [
+     "Il n'utilise que les outils pour lesquels il est formé.",
+     true
+    ]
+   ],
+   "e": "La gratuité ne remplace ni la validité ni la formation.",
+   "p": "Éthique et déontologie"
+  },
+  {
+   "s": "Éthique et déontologie",
+   "q": "À propos de la non-discrimination :",
+   "a": [
+    [
+     "On évite toute discrimination liée au sexe, à l'origine ou au handicap.",
+     true
+    ],
+    [
+     "On peut exclure d'emblée les personnes handicapées.",
+     false
+    ],
+    [
+     "On peut adapter les conditions de passation pour une personne en situation de handicap.",
+     true
+    ]
+   ],
+   "e": "Des aménagements raisonnables permettent d'évaluer chacun de façon équitable.",
+   "p": "Éthique et déontologie"
+  },
+  {
+   "s": "Éthique et déontologie",
+   "q": "À propos de l'accès aux résultats :",
+   "a": [
+    [
+     "Les résultats peuvent être transmis à l'employeur sans l'accord du candidat.",
+     false
+    ],
+    [
+     "Le psychologue explique les résultats de façon compréhensible.",
+     true
+    ],
+    [
+     "La personne évaluée a en général le droit d'être informée de ses résultats.",
+     true
+    ]
+   ],
+   "e": "La transmission à un tiers demande en principe l'accord de la personne.",
+   "p": "Éthique et déontologie"
+  },
+  {
+   "s": "Interprétation des profils",
+   "q": "À propos de l'analyse du TAT :",
+   "a": [
+    [
+     "Les récits sont interprétés avec l'entretien et l'histoire de la personne.",
+     true
+    ],
+    [
+     "On s'intéresse notamment au héros du récit, à ses besoins et aux pressions qui s'exercent sur lui.",
+     true
+    ],
+    [
+     "Elle repose sur un score unique de QI.",
+     false
+    ]
+   ],
+   "e": "C'est une analyse qualitative, qui demande une formation spécifique.",
+   "p": "Interprétation des profils"
+  },
+  {
+   "s": "Interprétation des profils",
+   "q": "À propos d'un item de pensées suicidaires au BDI-II :",
+   "a": [
+    [
+     "Le professionnel doit orienter la personne vers une aide adaptée.",
+     true
+    ],
+    [
+     "Une réponse qui indique un risque appelle une évaluation approfondie.",
+     true
+    ],
+    [
+     "Il faut ignorer l'item pour poursuivre la passation.",
+     false
+    ]
+   ],
+   "e": "Un risque détecté est toujours traité avec priorité, avant toute interprétation d'un score.",
+   "p": "Interprétation des profils"
+  },
+  {
+   "s": "Interprétation des profils",
+   "q": "Un score correspond au 16ᵉ percentile (z d'environ −1).",
+   "a": [
+    [
+     "Il est supérieur à celui de 84 % du groupe.",
+     false
+    ],
+    [
+     "Il se situe dans la zone basse de la moyenne.",
+     true
+    ],
+    [
+     "Il est situé environ un écart-type sous la moyenne.",
+     true
+    ]
+   ],
+   "e": "16 % des personnes obtiennent un score inférieur ou égal.",
+   "p": "Interprétation des profils"
+  },
   {
    "s": "Big Five",
    "q": "À propos du modèle de personnalité en cinq facteurs (Big Five) :",
@@ -7418,26 +8918,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Le sujet interprète des stimuli ambigus. La cotation et l'interprétation demandent une formation spécifique.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du TAT (Thematic Apperception Test) :",
-   "a": [
-    [
-     "Il mesure l'aptitude numérique.",
-     false
-    ],
-    [
-     "Le sujet raconte des histoires à partir d'images.",
-     true
-    ],
-    [
-     "Il a été conçu par Murray et Morgan.",
-     true
-    ]
-   ],
-   "e": "Le TAT est un test projectif de personnalité. On y analyse les thèmes, les besoins et les conflits exprimés dans les récits.",
    "p": "Tests projectifs"
   },
   {
@@ -7526,26 +9006,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Big Five",
-   "q": "À propos du névrosisme dans le Big Five :",
-   "a": [
-    [
-     "Un score élevé indique une forte stabilité émotionnelle.",
-     false
-    ],
-    [
-     "Il renvoie à la tendance à éprouver des émotions négatives.",
-     true
-    ],
-    [
-     "Il est synonyme d'extraversion.",
-     false
-    ]
-   ],
-   "e": "Un score élevé en névrosisme signifie une plus grande réactivité émotionnelle. La stabilité émotionnelle correspond au pôle opposé.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
    "q": "À propos de l'extraversion :",
    "a": [
     [
@@ -7626,26 +9086,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Big Five",
-   "q": "À propos de l'ouverture à l'expérience (Big Five) :",
-   "a": [
-    [
-     "Elle est un synonyme d'intelligence.",
-     false
-    ],
-    [
-     "Elle est associée à l'intérêt pour la nouveauté.",
-     true
-    ],
-    [
-     "Elle renvoie à la curiosité et à l'imagination.",
-     true
-    ]
-   ],
-   "e": "L'ouverture est liée à l'intelligence, mais ce sont deux notions différentes.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
    "q": "À propos des traits du Big Five :",
    "a": [
     [
@@ -7703,26 +9143,6 @@ window.QUESTIONS = {
    ],
    "e": "Le modèle a été étudié dans de nombreux pays, avec des résultats globalement convergents.",
    "p": "Big Five"
-  },
-  {
-   "s": "MBTI",
-   "q": "Les lettres du MBTI :",
-   "a": [
-    [
-     "N signifie Normalité.",
-     false
-    ],
-    [
-     "P signifie Perception.",
-     true
-    ],
-    [
-     "E signifie Extraversion.",
-     true
-    ]
-   ],
-   "e": "N signifie Intuition (iNtuition), pour la distinguer de S (Sensation).",
-   "p": "MBTI"
   },
   {
    "s": "MBTI",
@@ -7786,26 +9206,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Ces échelles servent à repérer les réponses défensives, exagérées ou incohérentes.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'inventaire de dépression de Beck (BDI) :",
-   "a": [
-    [
-     "Il mesure l'intensité des symptômes dépressifs.",
-     true
-    ],
-    [
-     "C'est un questionnaire d'auto-évaluation.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ]
-   ],
-   "e": "Le BDI donne un score de sévérité, mais ne remplace pas un diagnostic clinique.",
    "p": "MMPI et inventaires cliniques"
   },
   {
@@ -7893,26 +9293,6 @@ window.QUESTIONS = {
    "p": "Tests projectifs"
   },
   {
-   "s": "Tests projectifs",
-   "q": "À propos des limites des tests projectifs :",
-   "a": [
-    [
-     "L'interprétation dépend en partie de l'examinateur.",
-     true
-    ],
-    [
-     "Leurs résultats sont toujours objectifs et incontestables.",
-     false
-    ],
-    [
-     "Leur fidélité et leur validité sont discutées.",
-     true
-    ]
-   ],
-   "e": "D'où l'importance d'une formation rigoureuse et de ne jamais s'appuyer sur un seul outil.",
-   "p": "Tests projectifs"
-  },
-  {
    "s": "Inventaires de personnalité",
    "q": "À propos des questionnaires d'Eysenck (EPI/EPQ) :",
    "a": [
@@ -7930,26 +9310,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Eysenck décrit la personnalité par quelques grandes dimensions : E, N et P.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du modèle DISC :",
-   "a": [
-    [
-     "Sa validité scientifique est aussi solide que celle du Big Five.",
-     false
-    ],
-    [
-     "Il décrit quatre styles : dominance, influence, stabilité, conformité.",
-     true
-    ],
-    [
-     "Il est souvent utilisé en entreprise.",
-     true
-    ]
-   ],
-   "e": "Il est populaire en formation, mais les preuves de validité sont plus limitées que pour le Big Five.",
    "p": "Inventaires de personnalité"
   },
   {
@@ -7991,46 +9351,6 @@ window.QUESTIONS = {
    ],
    "e": "Le type artistique est le « A » de RIASEC. Le réaliste préfère les activités concrètes et techniques.",
    "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Intérêts professionnels",
-   "q": "À propos des tests d'intérêts :",
-   "a": [
-    [
-     "L'orientation combine intérêts, aptitudes et valeurs.",
-     true
-    ],
-    [
-     "Aimer une activité ne garantit pas d'y réussir.",
-     true
-    ],
-    [
-     "Ils mesurent le QI.",
-     false
-    ]
-   ],
-   "e": "Un bon conseil d'orientation croise plusieurs sources d'information.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos de l'échelle de Likert :",
-   "a": [
-    [
-     "C'est une échelle d'attitude.",
-     true
-    ],
-    [
-     "Elle a été développée par Rensis Likert.",
-     true
-    ],
-    [
-     "Elle ne propose que deux réponses : 0 ou 1.",
-     false
-    ]
-   ],
-   "e": "Elle propose généralement 5 ou 7 niveaux d'accord (de « pas du tout » à « tout à fait »).",
-   "p": "Méthodologie des questionnaires"
   },
   {
    "s": "Méthodologie",
@@ -8094,26 +9414,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Biais de réponse",
-   "q": "À propos des styles de réponse :",
-   "a": [
-    [
-     "Un style de réponse prouve toujours un trouble psychologique.",
-     false
-    ],
-    [
-     "Le style extrême consiste à choisir surtout les extrémités.",
-     true
-    ],
-    [
-     "La tendance centrale consiste à choisir surtout le milieu de l'échelle.",
-     true
-    ]
-   ],
-   "e": "Ce sont des habitudes de réponse, qui varient notamment selon la culture.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
    "q": "À propos de la simulation (faking) :",
    "a": [
     [
@@ -8131,26 +9431,6 @@ window.QUESTIONS = {
    ],
    "e": "D'où l'intérêt de croiser les questionnaires avec d'autres méthodes.",
    "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos des centres d'évaluation (assessment centers) :",
-   "a": [
-    [
-     "Ils se limitent à un questionnaire papier unique.",
-     false
-    ],
-    [
-     "Ils sont souvent utilisés pour évaluer des cadres.",
-     true
-    ],
-    [
-     "Ils utilisent des mises en situation, des jeux de rôle et des exercices en groupe.",
-     true
-    ]
-   ],
-   "e": "Plusieurs évaluateurs observent le candidat dans plusieurs exercices.",
-   "p": "Recrutement et sélection"
   },
   {
    "s": "Recrutement",
@@ -8234,26 +9514,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Psychologie du travail",
-   "q": "À propos de la hiérarchie des besoins de Maslow :",
-   "a": [
-    [
-     "L'accomplissement de soi est au sommet.",
-     true
-    ],
-    [
-     "Les besoins physiologiques sont à la base.",
-     true
-    ],
-    [
-     "L'accomplissement de soi est à la base.",
-     false
-    ]
-   ],
-   "e": "Besoins physiologiques, sécurité, appartenance, estime, puis accomplissement de soi.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
    "q": "À propos du burn-out :",
    "a": [
     [
@@ -8310,26 +9570,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Le laissez-faire laisse beaucoup de liberté, voire trop peu de direction.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la satisfaction au travail :",
-   "a": [
-    [
-     "Elle peut être mesurée par des questionnaires.",
-     true
-    ],
-    [
-     "Elle prédit la performance avec une corrélation de 1.",
-     false
-    ],
-    [
-     "Elle est liée à la performance, mais pas de façon parfaite.",
-     true
-    ]
-   ],
-   "e": "La relation est positive mais modérée : d'autres facteurs interviennent.",
    "p": "Psychologie du travail"
   },
   {
@@ -8394,26 +9634,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Éthique et déontologie",
-   "q": "À propos du choix des outils :",
-   "a": [
-    [
-     "Il peut utiliser un test non validé s'il est gratuit.",
-     false
-    ],
-    [
-     "Un psychologue choisit des tests adaptés à la population évaluée.",
-     true
-    ],
-    [
-     "Il n'utilise que les outils pour lesquels il est formé.",
-     true
-    ]
-   ],
-   "e": "La gratuité ne remplace ni la validité ni la formation.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
    "q": "À propos de la sécurité des tests :",
    "a": [
     [
@@ -8474,26 +9694,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Éthique et déontologie",
-   "q": "À propos de la non-discrimination :",
-   "a": [
-    [
-     "On évite toute discrimination liée au sexe, à l'origine ou au handicap.",
-     true
-    ],
-    [
-     "On peut exclure d'emblée les personnes handicapées.",
-     false
-    ],
-    [
-     "On peut adapter les conditions de passation pour une personne en situation de handicap.",
-     true
-    ]
-   ],
-   "e": "Des aménagements raisonnables permettent d'évaluer chacun de façon équitable.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
    "q": "À propos de la conservation des dossiers :",
    "a": [
     [
@@ -8511,26 +9711,6 @@ window.QUESTIONS = {
    ],
    "e": "Les données psychologiques sont particulièrement sensibles.",
    "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du modèle HEXACO :",
-   "a": [
-    [
-     "Il ajoute le facteur honnêteté-humilité.",
-     true
-    ],
-    [
-     "Il comprend cinq facteurs, comme le Big Five.",
-     false
-    ],
-    [
-     "Il comprend six facteurs.",
-     true
-    ]
-   ],
-   "e": "HEXACO signifie Honnêteté-Humilité, Émotivité, eXtraversion, Agréabilité, Conscienciosité, Ouverture.",
-   "p": "Big Five"
   },
   {
    "s": "Big Five",
@@ -8610,26 +9790,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Locus interne : « cela dépend de moi ». Locus externe : « cela dépend des circonstances ».",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos de l'échelle d'estime de soi de Rosenberg :",
-   "a": [
-    [
-     "C'est un questionnaire d'auto-évaluation.",
-     true
-    ],
-    [
-     "Elle comporte 10 items.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ]
-   ],
-   "e": "Elle est très utilisée en recherche et en psychologie clinique.",
    "p": "Inventaires de personnalité"
   },
   {
@@ -8714,26 +9874,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Biais de réponse",
-   "q": "À propos de l'effet de halo :",
-   "a": [
-    [
-     "Une qualité perçue influence l'évaluation d'autres qualités.",
-     true
-    ],
-    [
-     "Il consiste à répondre au hasard.",
-     false
-    ],
-    [
-     "Il est fréquent dans les évaluations faites par un supérieur.",
-     true
-    ]
-   ],
-   "e": "Exemple : juger quelqu'un compétent dans tous les domaines parce qu'il est très sympathique.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
    "q": "À propos des biais des évaluateurs :",
    "a": [
     [
@@ -8770,26 +9910,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Ce test a été développé par Mayer, Salovey et Caruso.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos des mises en situation de travail (work samples) :",
-   "a": [
-    [
-     "Elles évaluent uniquement la personnalité.",
-     false
-    ],
-    [
-     "Elles ont une bonne validité prédictive.",
-     true
-    ],
-    [
-     "Elles consistent à faire réaliser un échantillon du travail réel.",
-     true
-    ]
-   ],
-   "e": "Elles mesurent directement des comportements proches de ceux du poste.",
    "p": "Recrutement et sélection"
   },
   {
@@ -8830,26 +9950,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "C'est un outil de dépistage : un score élevé appelle une évaluation clinique.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'échelle de Hamilton pour la dépression (HAM-D) :",
-   "a": [
-    [
-     "Elle évalue la dépression.",
-     true
-    ],
-    [
-     "Elle est cotée par un clinicien.",
-     true
-    ],
-    [
-     "Elle est remplie seule par la personne.",
-     false
-    ]
-   ],
-   "e": "C'est une échelle d'hétéro-évaluation.",
    "p": "MMPI et inventaires cliniques"
   },
   {
@@ -8954,26 +10054,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Psychologie du travail",
-   "q": "À propos de la théorie des objectifs (Locke et Latham) :",
-   "a": [
-    [
-     "« Faites de votre mieux » est moins efficace qu'un objectif précis.",
-     true
-    ],
-    [
-     "Des objectifs précis et difficiles, mais atteignables, favorisent la performance.",
-     true
-    ],
-    [
-     "Les objectifs impossibles sont les plus motivants.",
-     false
-    ]
-   ],
-   "e": "Un objectif irréalisable décourage.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
    "q": "À propos de la théorie des attentes de Vroom :",
    "a": [
     [
@@ -9053,26 +10133,6 @@ window.QUESTIONS = {
    "p": "Bien-être, stress et psychologie positive"
   },
   {
-   "s": "Intelligence émotionnelle",
-   "q": "À propos des critiques de l'intelligence émotionnelle :",
-   "a": [
-    [
-     "Les tests de capacité sont souvent cotés par consensus d'experts.",
-     true
-    ],
-    [
-     "Mesurée par auto-questionnaire, elle peut se confondre avec la personnalité.",
-     true
-    ],
-    [
-     "Elle se confond parfaitement avec le QI.",
-     false
-    ]
-   ],
-   "e": "Les corrélations avec le QI sont modérées, pas parfaites.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
    "s": "MBTI",
    "q": "Sensation (S) et Intuition (N) :",
    "a": [
@@ -9090,26 +10150,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "S = Sensation (Sensing).",
-   "p": "MBTI"
-  },
-  {
-   "s": "MBTI",
-   "q": "Pensée (T) et Sentiment (F) :",
-   "a": [
-    [
-     "F décide surtout selon les valeurs et l'impact sur les personnes.",
-     true
-    ],
-    [
-     "T décide surtout selon la logique et des critères objectifs.",
-     true
-    ],
-    [
-     "F signifie « fidélité ».",
-     false
-    ]
-   ],
-   "e": "F = Feeling (Sentiment).",
    "p": "MBTI"
   },
   {
@@ -9174,26 +10214,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Big Five",
-   "q": "À propos des facettes de l'extraversion (NEO) :",
-   "a": [
-    [
-     "L'ordre en est une facette.",
-     false
-    ],
-    [
-     "La chaleur en est une facette.",
-     true
-    ],
-    [
-     "L'assertivité en est une facette.",
-     true
-    ]
-   ],
-   "e": "L'ordre est une facette de la conscienciosité.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
    "q": "À propos du Big Five et de la culture :",
    "a": [
     [
@@ -9250,26 +10270,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Les réponses sont codées selon plusieurs critères, puis interprétées.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du TAT :",
-   "a": [
-    [
-     "C'est un test de QI.",
-     false
-    ],
-    [
-     "L'analyse porte sur les besoins et les pressions de l'environnement.",
-     true
-    ],
-    [
-     "Il comporte 31 planches, dont une blanche.",
-     true
-    ]
-   ],
-   "e": "Murray a défini une théorie des besoins pour interpréter les récits.",
    "p": "Tests projectifs"
   },
   {
@@ -9394,26 +10394,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Big Five",
-   "q": "À propos des facettes de la conscienciosité (NEO) :",
-   "a": [
-    [
-     "Le sens du devoir en est une facette.",
-     true
-    ],
-    [
-     "La chaleur en est une facette.",
-     false
-    ],
-    [
-     "L'autodiscipline en est une facette.",
-     true
-    ]
-   ],
-   "e": "La chaleur est une facette de l'extraversion.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
    "q": "À propos de la conscienciosité et des études :",
    "a": [
     [
@@ -9533,26 +10513,6 @@ window.QUESTIONS = {
    "p": "Inventaires de personnalité"
   },
   {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du test d'orientation de vie (LOT) :",
-   "a": [
-    [
-     "Il mesure les intérêts professionnels.",
-     false
-    ],
-    [
-     "Il a été conçu par Scheier et Carver.",
-     true
-    ],
-    [
-     "Il mesure l'optimisme dispositionnel.",
-     true
-    ]
-   ],
-   "e": "Il évalue la tendance générale à s'attendre à des résultats positifs.",
-   "p": "Inventaires de personnalité"
-  },
-  {
    "s": "Psychologie du travail",
    "q": "À propos de l'engagement organisationnel (Allen et Meyer) :",
    "a": [
@@ -9570,26 +10530,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "L'engagement de continuité repose sur le coût perçu d'un départ.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la théorie de l'équité d'Adams :",
-   "a": [
-    [
-     "Adams a créé les matrices progressives.",
-     false
-    ],
-    [
-     "On compare ses contributions et ses résultats à ceux des autres.",
-     true
-    ],
-    [
-     "Une iniquité perçue peut réduire la motivation.",
-     true
-    ]
-   ],
-   "e": "Les matrices progressives sont l'œuvre de Raven.",
    "p": "Psychologie du travail"
   },
   {
@@ -9653,26 +10593,6 @@ window.QUESTIONS = {
    "p": "Psychologie du travail"
   },
   {
-   "s": "Psychologie du travail",
-   "q": "Culture et climat organisationnels :",
-   "a": [
-    [
-     "Culture et climat sont exactement la même chose.",
-     false
-    ],
-    [
-     "La culture désigne des valeurs et des normes partagées (Schein).",
-     true
-    ],
-    [
-     "Le climat désigne la perception partagée de l'environnement de travail.",
-     true
-    ]
-   ],
-   "e": "La culture est plus profonde et plus stable que le climat.",
-   "p": "Psychologie du travail"
-  },
-  {
    "s": "Éthique et déontologie",
    "q": "À propos des principes éthiques de la bioéthique :",
    "a": [
@@ -9710,26 +10630,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Les normes d'un test ne sont pas toujours valables hors de la langue de standardisation.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de l'accès aux résultats :",
-   "a": [
-    [
-     "Les résultats peuvent être transmis à l'employeur sans l'accord du candidat.",
-     false
-    ],
-    [
-     "Le psychologue explique les résultats de façon compréhensible.",
-     true
-    ],
-    [
-     "La personne évaluée a en général le droit d'être informée de ses résultats.",
-     true
-    ]
-   ],
-   "e": "La transmission à un tiers demande en principe l'accord de la personne.",
    "p": "Éthique et déontologie"
   },
   {
@@ -9774,26 +10674,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests projectifs",
-   "q": "Rorschach et TAT :",
-   "a": [
-    [
-     "Le Rorschach utilise des taches d'encre sans forme précise.",
-     true
-    ],
-    [
-     "Le Rorschach comprend des scènes sociales détaillées.",
-     false
-    ],
-    [
-     "Le TAT utilise des scènes avec des personnages.",
-     true
-    ]
-   ],
-   "e": "Ce sont les planches du TAT qui montrent des scènes avec des personnages.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
    "q": "À propos du test d'association de mots de Jung :",
    "a": [
     [
@@ -9811,26 +10691,6 @@ window.QUESTIONS = {
    ],
    "e": "Jung analysait les délais et les réponses inhabituelles pour repérer des « complexes ».",
    "p": "Tests projectifs"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos de l'effet Pygmalion (Rosenthal et Jacobson) :",
-   "a": [
-    [
-     "Cet effet est nul.",
-     false
-    ],
-    [
-     "Les attentes d'un enseignant peuvent influencer les résultats des élèves.",
-     true
-    ],
-    [
-     "Des attentes positives peuvent améliorer la performance.",
-     true
-    ]
-   ],
-   "e": "L'enseignant adopte, sans le savoir, des comportements qui renforcent ses attentes.",
-   "p": "Méthodologie des questionnaires"
   },
   {
    "s": "Biais de réponse",
@@ -9894,26 +10754,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Méthodologie",
-   "q": "À propos de l'échelle de Guttman :",
-   "a": [
-    [
-     "Elle est identique à l'échelle de Likert.",
-     false
-    ],
-    [
-     "Les items y sont hiérarchisés.",
-     true
-    ],
-    [
-     "Accepter un item fort implique d'accepter les items plus faibles.",
-     true
-    ]
-   ],
-   "e": "C'est une échelle cumulative : chaque item est plus exigeant que le précédent.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Méthodologie",
    "q": "À propos du biais de non-réponse :",
    "a": [
     [
@@ -9954,26 +10794,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Recrutement",
-   "q": "À propos des tests d'intégrité :",
-   "a": [
-    [
-     "Ils sont infaillibles.",
-     false
-    ],
-    [
-     "Ce sont souvent des questionnaires d'auto-évaluation.",
-     true
-    ],
-    [
-     "Ils évaluent l'honnêteté et la fiabilité.",
-     true
-    ]
-   ],
-   "e": "Comme toute auto-évaluation, ils restent sensibles à la désirabilité sociale.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Recrutement",
    "q": "À propos du profil de poste :",
    "a": [
     [
@@ -9991,26 +10811,6 @@ window.QUESTIONS = {
    ],
    "e": "Un candidat brillant n'est pas forcément adapté au poste concerné.",
    "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du NEO-PI-R :",
-   "a": [
-    [
-     "Il évalue 30 facettes.",
-     true
-    ],
-    [
-     "Il comporte 60 items.",
-     false
-    ],
-    [
-     "Il comporte 240 items.",
-     true
-    ]
-   ],
-   "e": "La version courte de 60 items est le NEO-FFI.",
-   "p": "Big Five"
   },
   {
    "s": "Big Five",
@@ -10074,26 +10874,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Big Five",
-   "q": "À propos du TIPI (Ten-Item Personality Inventory) :",
-   "a": [
-    [
-     "Il convient quand le temps de passation est très limité.",
-     true
-    ],
-    [
-     "Il comporte 10 items.",
-     true
-    ],
-    [
-     "Il offre la même précision que le NEO-PI-R.",
-     false
-    ]
-   ],
-   "e": "Il est très court, donc moins précis.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
    "q": "À propos de la stabilité des scores au NEO :",
    "a": [
     [
@@ -10111,26 +10891,6 @@ window.QUESTIONS = {
    ],
    "e": "Les traits évoluent lentement, notamment avec l'âge.",
    "p": "Big Five"
-  },
-  {
-   "s": "MBTI",
-   "q": "À propos de la forme M du MBTI :",
-   "a": [
-    [
-     "Elle comporte 93 échelles.",
-     false
-    ],
-    [
-     "Elle évalue des préférences sur quatre dichotomies.",
-     true
-    ],
-    [
-     "Elle comporte 93 items.",
-     true
-    ]
-   ],
-   "e": "Les 93 items servent à classer une personne dans l'un des 16 types.",
-   "p": "MBTI"
   },
   {
    "s": "MBTI",
@@ -10213,46 +10973,6 @@ window.QUESTIONS = {
    "p": "Inventaires de personnalité"
   },
   {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du Hogan Personality Inventory (HPI) :",
-   "a": [
-    [
-     "Il évalue la psychopathologie.",
-     false
-    ],
-    [
-     "Il comporte 7 échelles principales.",
-     true
-    ],
-    [
-     "Il décrit la personnalité normale en contexte professionnel.",
-     true
-    ]
-   ],
-   "e": "Le HPI cible le comportement quotidien au travail.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du MMPI-2-RF :",
-   "a": [
-    [
-     "Il comporte 338 items.",
-     true
-    ],
-    [
-     "Il comporte 567 items.",
-     false
-    ],
-    [
-     "C'est une version restructurée du MMPI-2.",
-     true
-    ]
-   ],
-   "e": "Le MMPI-2 compte 567 items, et le MMPI-2-RF est plus court.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
    "s": "Inventaires cliniques",
    "q": "À propos du MMPI-A :",
    "a": [
@@ -10330,26 +11050,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "La traduction ne garantit pas l'équivalence des normes.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'inventaire de dépression de Beck (BDI-II) :",
-   "a": [
-    [
-     "Il comporte 21 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 63.",
-     true
-    ],
-    [
-     "Il comporte 90 items.",
-     false
-    ]
-   ],
-   "e": "Il évalue la sévérité des symptômes dépressifs sur les deux dernières semaines.",
    "p": "MMPI et inventaires cliniques"
   },
   {
@@ -10573,26 +11273,6 @@ window.QUESTIONS = {
    "p": "Entretiens cliniques, enfants et famille"
   },
   {
-   "s": "Échelles pour enfants",
-   "q": "À propos des échelles de Conners :",
-   "a": [
-    [
-     "Elles remplacent l'évaluation clinique pour poser un diagnostic.",
-     false
-    ],
-    [
-     "Elles servent notamment à évaluer des symptômes de trouble déficitaire de l'attention avec hyperactivité (TDAH).",
-     true
-    ],
-    [
-     "Elles existent en versions pour parents et enseignants.",
-     true
-    ]
-   ],
-   "e": "Elles apportent des informations, sans remplacer un bilan complet.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
    "s": "Inventaires de personnalité",
    "q": "À propos de l'EPQ-R d'Eysenck :",
    "a": [
@@ -10650,26 +11330,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Jackson a insisté sur la validité de construit dès la conception des items.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du BFI-2 :",
-   "a": [
-    [
-     "Il décrit 15 facettes.",
-     true
-    ],
-    [
-     "Il comporte 60 items.",
-     true
-    ],
-    [
-     "Il comporte 44 items.",
-     false
-    ]
-   ],
-   "e": "Le BFI-2 est la version révisée du BFI de 44 items.",
    "p": "Inventaires de personnalité"
   },
   {
@@ -10734,26 +11394,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Inventaires de personnalité",
-   "q": "À propos du TEIQue de Petrides :",
-   "a": [
-    [
-     "C'est un test de capacité avec bonnes et mauvaises réponses.",
-     false
-    ],
-    [
-     "Sa forme complète comporte 153 items.",
-     true
-    ],
-    [
-     "Il évalue l'intelligence émotionnelle comme trait.",
-     true
-    ]
-   ],
-   "e": "Il se réalise en auto-évaluation, comme un inventaire de personnalité.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
    "q": "À propos de l'échelle de recherche de sensations de Zuckerman (SSS-V) :",
    "a": [
     [
@@ -10790,26 +11430,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "C'est une échelle d'hétéro-évaluation de l'anxiété.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de la MADRS (Montgomery-Åsberg) :",
-   "a": [
-    [
-     "Elle comporte 10 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 60.",
-     true
-    ],
-    [
-     "Elle évalue l'intelligence.",
-     false
-    ]
-   ],
-   "e": "Elle évalue la sévérité de la dépression, avec cotation par un clinicien.",
    "p": "MMPI et inventaires cliniques"
   },
   {
@@ -10870,26 +11490,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "C'est un questionnaire d'auto-évaluation.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'échelle d'alexithymie de Toronto (TAS-20) :",
-   "a": [
-    [
-     "Elle évalue l'optimisme.",
-     false
-    ],
-    [
-     "Elle évalue la difficulté à identifier et à décrire ses émotions.",
-     true
-    ],
-    [
-     "Elle comporte 20 items.",
-     true
-    ]
-   ],
-   "e": "Elle inclut aussi une pensée tournée vers l'extérieur.",
    "p": "MMPI et inventaires cliniques"
   },
   {
@@ -10974,26 +11574,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Traits sombres et sociaux",
-   "q": "À propos de l'échelle Mach-IV :",
-   "a": [
-    [
-     "Elle comporte 20 items.",
-     true
-    ],
-    [
-     "Elle évalue l'anxiété.",
-     false
-    ],
-    [
-     "Elle évalue le machiavélisme.",
-     true
-    ]
-   ],
-   "e": "Christie et Geis l'ont conçue dans les années 1970.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Traits sombres et sociaux",
    "q": "À propos de l'indice de réactivité interpersonnelle (IRI) de Davis :",
    "a": [
     [
@@ -11074,26 +11654,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Santé et bien-être",
-   "q": "À propos du WHOQOL-BREF :",
-   "a": [
-    [
-     "Il comporte 26 items.",
-     true
-    ],
-    [
-     "Il évalue quatre domaines, dont le physique et le psychologique.",
-     true
-    ],
-    [
-     "Il comporte 100 items.",
-     false
-    ]
-   ],
-   "e": "Il évalue aussi les relations sociales et l'environnement.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Santé et bien-être",
    "q": "À propos de l'échelle de stress perçu (PSS-10) :",
    "a": [
     [
@@ -11130,26 +11690,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il existe en versions longue et courte.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Mesures au travail",
-   "q": "À propos du Job Diagnostic Survey de Hackman et Oldham :",
-   "a": [
-    [
-     "L'autonomie en fait partie.",
-     true
-    ],
-    [
-     "Il évalue cinq dimensions centrales d'un poste.",
-     true
-    ],
-    [
-     "Il évalue des traits de personnalité du salarié.",
-     false
-    ]
-   ],
-   "e": "Les autres dimensions : variété des compétences, identité de la tâche, signification et feedback.",
    "p": "Psychologie du travail"
   },
   {
@@ -11214,26 +11754,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Équipes et leadership",
-   "q": "À propos du Thomas-Kilmann Conflict Mode Instrument (TKI) :",
-   "a": [
-    [
-     "Il décrit cinq modes de gestion des conflits.",
-     true
-    ],
-    [
-     "Il décrit trois styles seulement.",
-     false
-    ],
-    [
-     "On y trouve la compétition et la collaboration.",
-     true
-    ]
-   ],
-   "e": "Les cinq modes sont la compétition, la collaboration, le compromis, l'évitement et l'accommodement.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Équipes et leadership",
    "q": "À propos du Multifactor Leadership Questionnaire (MLQ) :",
    "a": [
     [
@@ -11293,46 +11813,6 @@ window.QUESTIONS = {
    "p": "Psychologie du travail"
   },
   {
-   "s": "Équipes et leadership",
-   "q": "À propos des ancres de carrière de Schein :",
-   "a": [
-    [
-     "Elles sont au nombre de deux.",
-     false
-    ],
-    [
-     "Elles sont au nombre de huit.",
-     true
-    ],
-    [
-     "La sécurité et la stabilité en font partie.",
-     true
-    ]
-   ],
-   "e": "Elles décrivent ce qui est le plus important dans un parcours professionnel.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Styles individuels",
-   "q": "À propos de l'inventaire des styles d'apprentissage de Kolb :",
-   "a": [
-    [
-     "Il s'appuie sur l'expérience concrète, l'observation réfléchie, la conceptualisation abstraite et l'expérimentation active.",
-     true
-    ],
-    [
-     "Son soutien empirique est considéré comme solide et incontesté.",
-     false
-    ],
-    [
-     "Il décrit quatre styles d'apprentissage.",
-     true
-    ]
-   ],
-   "e": "Les styles d'apprentissage sont l'objet de nombreuses critiques.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
    "s": "Styles individuels",
    "q": "À propos de CliftonStrengths (Gallup) :",
    "a": [
@@ -11390,26 +11870,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Elle a été conçue pour les patients des services de médecine.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos de la DASS-21 :",
-   "a": [
-    [
-     "Elle évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Elle évalue la dépression, l'anxiété et le stress.",
-     true
-    ],
-    [
-     "Elle comporte 21 items.",
-     true
-    ]
-   ],
-   "e": "Chaque sous-échelle comporte 7 items.",
    "p": "Dépistage : anxiété, trauma, humeur, sommeil"
   },
   {
@@ -11474,26 +11934,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Échelles de dépistage",
-   "q": "À propos du MDQ (Mood Disorder Questionnaire) :",
-   "a": [
-    [
-     "Il sert à repérer un possible trouble bipolaire.",
-     true
-    ],
-    [
-     "Il comporte 13 items de type oui ou non.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes mécaniques.",
-     false
-    ]
-   ],
-   "e": "C'est un outil de dépistage, qui ne remplace pas une évaluation clinique.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
    "q": "À propos du questionnaire CAGE :",
    "a": [
     [
@@ -11550,26 +11990,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Un score plus élevé indique un sommeil de moins bonne qualité.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Questionnaires de sommeil",
-   "q": "À propos de l'index de sévérité de l'insomnie (ISI) :",
-   "a": [
-    [
-     "Il comporte 7 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 28.",
-     true
-    ],
-    [
-     "Il comporte 90 items.",
-     false
-    ]
-   ],
-   "e": "Il a été proposé par Morin.",
    "p": "Dépistage : anxiété, trauma, humeur, sommeil"
   },
   {
@@ -11634,26 +12054,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Psychologie positive",
-   "q": "À propos du FFMQ (Five Facet Mindfulness Questionnaire) :",
-   "a": [
-    [
-     "Il comprend trois facettes seulement.",
-     false
-    ],
-    [
-     "Il comprend cinq facettes, dont l'observation et la non-réactivité.",
-     true
-    ],
-    [
-     "Il comporte 39 items.",
-     true
-    ]
-   ],
-   "e": "Les autres facettes sont décrire, agir en conscience et ne pas juger.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Psychologie positive",
    "q": "À propos de l'échelle d'espoir de Snyder :",
    "a": [
     [
@@ -11671,26 +12071,6 @@ window.QUESTIONS = {
    ],
    "e": "L'espoir est défini comme la combinaison de motivation et de plans pour atteindre un but.",
    "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test de l'arbre de Koch (Baumtest) :",
-   "a": [
-    [
-     "Il se cote par un score de QI.",
-     false
-    ],
-    [
-     "Il est utilisé comme test projectif.",
-     true
-    ],
-    [
-     "Le sujet dessine un arbre.",
-     true
-    ]
-   ],
-   "e": "Koch l'a proposé vers 1949, et il se pratique avec prudence.",
-   "p": "Tests projectifs"
   },
   {
    "s": "Tests projectifs",
@@ -11750,26 +12130,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il est plus court que le Rorschach et parfois utilisé en passation collective.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos de l'Holtzman Inkblot Technique :",
-   "a": [
-    [
-     "Chaque réponse du sujet se limite à « oui » ou « non ».",
-     false
-    ],
-    [
-     "Il a été conçu pour une cotation plus standardisée que le Rorschach.",
-     true
-    ],
-    [
-     "C'est un test de taches d'encre.",
-     true
-    ]
-   ],
-   "e": "Il comporte 45 taches en deux formes parallèles, avec une réponse par planche.",
    "p": "Tests projectifs"
   },
   {
@@ -11834,26 +12194,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Valeurs et motivation",
-   "q": "À propos de l'Échelle de motivation en éducation (AMS) de Vallerand :",
-   "a": [
-    [
-     "Elle évalue la dextérité.",
-     false
-    ],
-    [
-     "Elle comporte 28 items.",
-     true
-    ],
-    [
-     "Elle distingue motivation intrinsèque, extrinsèque et amotivation.",
-     true
-    ]
-   ],
-   "e": "Elle s'appuie sur la théorie de l'autodétermination.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Valeurs et motivation",
    "q": "À propos de l'inventaire des valeurs de travail de Super :",
    "a": [
     [
@@ -11910,26 +12250,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "La seconde édition comporte 60 items.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Concept de soi",
-   "q": "À propos du test d'association implicite (IAT) :",
-   "a": [
-    [
-     "Il se base sur une auto-évaluation par questionnaire.",
-     false
-    ],
-    [
-     "Il mesure la force d'associations par des temps de réaction.",
-     true
-    ],
-    [
-     "Il a été proposé par Greenwald et ses collègues en 1998.",
-     true
-    ]
-   ],
-   "e": "Sa fidélité test-retest est discutée.",
    "p": "Bien-être, stress et psychologie positive"
   },
   {
@@ -11994,26 +12314,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Relations et famille",
-   "q": "À propos de l'Adult Attachment Interview (AAI) :",
-   "a": [
-    [
-     "C'est un entretien semi-structuré.",
-     true
-    ],
-    [
-     "Il explore les souvenirs d'enfance liés à l'attachement.",
-     true
-    ],
-    [
-     "C'est un questionnaire à choix multiples.",
-     false
-    ]
-   ],
-   "e": "Elle a été développée par George, Kaplan et Main.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Relations et famille",
    "q": "À propos du Parenting Stress Index (PSI) :",
    "a": [
     [
@@ -12070,26 +12370,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il sert au repérage des principaux troubles psychiatriques.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Entretiens et échelles cliniques",
-   "q": "À propos de la PANSS :",
-   "a": [
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Elle comporte 30 items.",
-     true
-    ],
-    [
-     "Elle évalue les symptômes de la schizophrénie.",
-     true
-    ]
-   ],
-   "e": "Elle comprend des échelles positive, négative et de psychopathologie générale.",
    "p": "Entretiens cliniques, enfants et famille"
   },
   {
@@ -12194,26 +12474,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Inventaires classiques",
-   "q": "À propos du Guilford-Zimmerman Temperament Survey :",
-   "a": [
-    [
-     "Il se remplit en auto-évaluation.",
-     true
-    ],
-    [
-     "Il évalue 10 traits de tempérament.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes mécaniques.",
-     false
-    ]
-   ],
-   "e": "Parmi ces traits : l'activité générale, la sociabilité et la stabilité émotionnelle.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires classiques",
    "q": "À propos de l'Adjective Check List de Gough :",
    "a": [
     [
@@ -12314,26 +12574,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Anxiété et traits cognitifs",
-   "q": "À propos du Penn State Worry Questionnaire (PSWQ) :",
-   "a": [
-    [
-     "Il évalue la tendance à s'inquiéter.",
-     true
-    ],
-    [
-     "Il évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Il comporte 16 items.",
-     true
-    ]
-   ],
-   "e": "Il est associé à l'anxiété généralisée.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Anxiété et traits cognitifs",
    "q": "À propos de l'échelle d'intolérance à l'incertitude (IUS) :",
    "a": [
     [
@@ -12390,26 +12630,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "La version originale comporte 12 items.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Troubles anxieux et trauma",
-   "q": "À propos de la CAPS-5 :",
-   "a": [
-    [
-     "C'est un entretien structuré pour le trouble de stress post-traumatique.",
-     true
-    ],
-    [
-     "Elle comporte 30 items.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ]
-   ],
-   "e": "Elle est considérée comme une référence pour évaluer ce trouble.",
    "p": "Dépistage : anxiété, trauma, humeur, sommeil"
   },
   {
@@ -12474,26 +12694,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Troubles anxieux et trauma",
-   "q": "À propos du SPIN (Social Phobia Inventory) :",
-   "a": [
-    [
-     "Il évalue l'intelligence verbale.",
-     false
-    ],
-    [
-     "Il comporte 17 items.",
-     true
-    ],
-    [
-     "Il évalue la peur, l'évitement et des symptômes physiques de l'anxiété sociale.",
-     true
-    ]
-   ],
-   "e": "Connor et ses collègues l'ont proposé en 2000.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Troubles anxieux et trauma",
    "q": "À propos de l'indice de sensibilité à l'anxiété (ASI) :",
    "a": [
     [
@@ -12511,26 +12711,6 @@ window.QUESTIONS = {
    ],
    "e": "Reiss en est l'auteur.",
    "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Humeur et échelles pour enfants",
-   "q": "À propos de la Young Mania Rating Scale (YMRS) :",
-   "a": [
-    [
-     "Elle comporte 11 items.",
-     true
-    ],
-    [
-     "Elle est cotée par un clinicien.",
-     true
-    ],
-    [
-     "Elle évalue l'intelligence.",
-     false
-    ]
-   ],
-   "e": "Elle évalue la sévérité des symptômes maniaques.",
-   "p": "Entretiens cliniques, enfants et famille"
   },
   {
    "s": "Humeur et échelles pour enfants",
@@ -12594,26 +12774,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Humeur et échelles pour enfants",
-   "q": "À propos de l'échelle de Vanderbilt :",
-   "a": [
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Elle sert à repérer des symptômes de TDAH.",
-     true
-    ],
-    [
-     "Elle existe en versions pour les parents et les enseignants.",
-     true
-    ]
-   ],
-   "e": "C'est un outil de repérage, pas de diagnostic.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Humeur et échelles pour enfants",
    "q": "À propos du HiPIC :",
    "a": [
     [
@@ -12631,26 +12791,6 @@ window.QUESTIONS = {
    ],
    "e": "Il est rempli par les parents ou les enseignants.",
    "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Personnalité de l'enfant",
-   "q": "À propos du JEPQ (Junior Eysenck Personality Questionnaire) :",
-   "a": [
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il est destiné aux enfants et aux adolescents.",
-     true
-    ],
-    [
-     "Il évalue notamment l'extraversion et le névrosisme.",
-     true
-    ]
-   ],
-   "e": "C'est la version pour jeunes de l'EPQ.",
-   "p": "Inventaires de personnalité"
   },
   {
    "s": "Personnalité de l'enfant",
@@ -12734,26 +12874,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Soutien social et cognitions",
-   "q": "À propos de l'échelle d'attitudes dysfonctionnelles (DAS) :",
-   "a": [
-    [
-     "Elle évalue la dextérité.",
-     false
-    ],
-    [
-     "Weissman et Beck en sont les auteurs.",
-     true
-    ],
-    [
-     "Elle évalue des croyances associées à la vulnérabilité à la dépression.",
-     true
-    ]
-   ],
-   "e": "La version la plus connue comporte 40 items.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Soutien social et cognitions",
    "q": "À propos du questionnaire de pensées automatiques (ATQ) :",
    "a": [
     [
@@ -12810,26 +12930,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Carver l'a proposé en 1997.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Coping et stress",
-   "q": "À propos du Ways of Coping Questionnaire :",
-   "a": [
-    [
-     "Lazarus et Folkman en sont à l'origine.",
-     true
-    ],
-    [
-     "Il distingue le coping centré sur le problème et le coping centré sur l'émotion.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes mécaniques.",
-     false
-    ]
-   ],
-   "e": "Il s'appuie sur leur modèle transactionnel du stress.",
    "p": "Bien-être, stress et psychologie positive"
   },
   {
@@ -12934,26 +13034,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Psychologie positive",
-   "q": "À propos du questionnaire de gratitude GQ-6 :",
-   "a": [
-    [
-     "Il comporte 6 items.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il évalue la tendance à éprouver de la gratitude.",
-     true
-    ]
-   ],
-   "e": "McCullough et ses collègues l'ont proposé.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Psychologie positive",
    "q": "À propos de l'échelle de bonheur subjectif de Lyubomirsky :",
    "a": [
     [
@@ -13034,26 +13114,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Interprétation des profils",
-   "q": "À propos de l'analyse du TAT :",
-   "a": [
-    [
-     "Les récits sont interprétés avec l'entretien et l'histoire de la personne.",
-     true
-    ],
-    [
-     "On s'intéresse notamment au héros du récit, à ses besoins et aux pressions qui s'exercent sur lui.",
-     true
-    ],
-    [
-     "Elle repose sur un score unique de QI.",
-     false
-    ]
-   ],
-   "e": "C'est une analyse qualitative, qui demande une formation spécifique.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Interprétation des profils",
    "q": "À propos des facteurs du 16PF :",
    "a": [
     [
@@ -13114,26 +13174,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Interprétation des profils",
-   "q": "À propos d'un item de pensées suicidaires au BDI-II :",
-   "a": [
-    [
-     "Le professionnel doit orienter la personne vers une aide adaptée.",
-     true
-    ],
-    [
-     "Une réponse qui indique un risque appelle une évaluation approfondie.",
-     true
-    ],
-    [
-     "Il faut ignorer l'item pour poursuivre la passation.",
-     false
-    ]
-   ],
-   "e": "Un risque détecté est toujours traité avec priorité, avant toute interprétation d'un score.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Interprétation des profils",
    "q": "À propos de l'observation du comportement pendant une passation :",
    "a": [
     [
@@ -13190,26 +13230,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "On recoupe avec d'autres sources d'information.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Interprétation des profils",
-   "q": "Un score correspond au 16ᵉ percentile (z d'environ −1).",
-   "a": [
-    [
-     "Il est supérieur à celui de 84 % du groupe.",
-     false
-    ],
-    [
-     "Il se situe dans la zone basse de la moyenne.",
-     true
-    ],
-    [
-     "Il est situé environ un écart-type sous la moyenne.",
-     true
-    ]
-   ],
-   "e": "16 % des personnes obtiennent un score inférieur ou égal.",
    "p": "Interprétation des profils"
   },
   {
@@ -13294,26 +13314,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Cotation des questionnaires",
-   "q": "À propos de la cotation de l'échelle de stress perçu (PSS-10) :",
-   "a": [
-    [
-     "Aucun item n'est inversé.",
-     false
-    ],
-    [
-     "Certains items sont inversés avant d'être additionnés.",
-     true
-    ],
-    [
-     "Les items 4, 5, 7 et 8 sont à inverser.",
-     true
-    ]
-   ],
-   "e": "L'inversion permet de calculer un score total cohérent.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Cotation des questionnaires",
    "q": "À propos de la cotation de l'échelle d'estime de soi de Rosenberg :",
    "a": [
     [
@@ -13354,6 +13354,1674 @@ window.QUESTIONS = {
   }
  ],
  "theo": [
+  {
+   "s": "Histoire",
+   "q": "À propos des tests Army Alpha et Army Beta (1917) :",
+   "a": [
+    [
+     "Ils ont été conçus pour évaluer rapidement un grand nombre de recrues.",
+     true
+    ],
+    [
+     "Le Beta s'adressait aux recrues qui ne lisaient pas ou peu l'anglais.",
+     true
+    ],
+    [
+     "L'Alpha est un test entièrement non verbal.",
+     false
+    ]
+   ],
+   "e": "L'Alpha était écrit. Le Beta utilisait des consignes et des items non verbaux.",
+   "p": "Histoire de la psychométrie"
+  },
+  {
+   "s": "Histoire",
+   "q": "À propos de Wechsler :",
+   "a": [
+    [
+     "Il a publié le Wechsler-Bellevue en 1939.",
+     true
+    ],
+    [
+     "Il a critiqué la notion d'âge mental pour les adultes.",
+     true
+    ],
+    [
+     "Il a publié son premier test en 1905.",
+     false
+    ]
+   ],
+   "e": "1905 est la date de l'échelle de Binet-Simon.",
+   "p": "Histoire de la psychométrie"
+  },
+  {
+   "s": "Histoire",
+   "q": "À propos de l'histoire de quelques tests :",
+   "a": [
+    [
+     "Le 16PF de Cattell date de 1949.",
+     true
+    ],
+    [
+     "Le TAT a été publié en 1935 par Morgan et Murray.",
+     true
+    ],
+    [
+     "Le WAIS date de 1905.",
+     false
+    ]
+   ],
+   "e": "Le WAIS est paru en 1955. 1905 est la date de l'échelle de Binet-Simon.",
+   "p": "Histoire de la psychométrie"
+  },
+  {
+   "s": "Histoire des méthodes",
+   "q": "À propos du coefficient alpha :",
+   "a": [
+    [
+     "Il estime la validité de critère.",
+     false
+    ],
+    [
+     "Cronbach l'a publié en 1951.",
+     true
+    ],
+    [
+     "Il estime la cohérence interne.",
+     true
+    ]
+   ],
+   "e": "Il généralise les travaux de Kuder et Richardson.",
+   "p": "Histoire de la psychométrie"
+  },
+  {
+   "s": "Histoire des méthodes",
+   "q": "À propos du modèle de Rasch (origine) :",
+   "a": [
+    [
+     "Il date de 1920.",
+     false
+    ],
+    [
+     "Georg Rasch l'a publié en 1960.",
+     true
+    ],
+    [
+     "Il relève de la théorie de réponse à l'item.",
+     true
+    ]
+   ],
+   "e": "Il a été proposé dans son ouvrage sur des tests d'intelligence et de lecture.",
+   "p": "Histoire de la psychométrie"
+  },
+  {
+   "s": "Histoire des tests",
+   "q": "À propos des éditions successives du MMPI :",
+   "a": [
+    [
+     "Le MMPI a été publié en 1943.",
+     true
+    ],
+    [
+     "Le MMPI-2 date de 1989.",
+     true
+    ],
+    [
+     "Le MMPI-2 date de 1943.",
+     false
+    ]
+   ],
+   "e": "Le MMPI-2-RF est arrivé plus tard, en 2008.",
+   "p": "Histoire de la psychométrie"
+  },
+  {
+   "s": "Histoire des tests",
+   "q": "À propos de l'échelle de distance sociale de Bogardus :",
+   "a": [
+    [
+     "Elle mesure l'acceptation de contact avec un groupe social.",
+     true
+    ],
+    [
+     "Elle date de 1925.",
+     true
+    ],
+    [
+     "Elle mesure les aptitudes spatiales.",
+     false
+    ]
+   ],
+   "e": "C'est l'une des premières échelles d'attitudes.",
+   "p": "Histoire de la psychométrie"
+  },
+  {
+   "s": "Fidélité",
+   "q": "À propos de la méthode de bissection (split-half) :",
+   "a": [
+    [
+     "Elle mesure la validité de critère.",
+     false
+    ],
+    [
+     "Le test est scindé en deux moitiés comparées entre elles.",
+     true
+    ],
+    [
+     "La formule de Spearman-Brown corrige l'effet de la longueur.",
+     true
+    ]
+   ],
+   "e": "On estime la cohérence interne, puis on corrige pour retrouver la fidélité du test entier.",
+   "p": "Fidélité et théorie classique"
+  },
+  {
+   "s": "Fidélité",
+   "q": "À propos des formes parallèles d'un test :",
+   "a": [
+    [
+     "Elles limitent l'effet de mémorisation du test-retest.",
+     true
+    ],
+    [
+     "Elles servent à mesurer la validité prédictive.",
+     false
+    ],
+    [
+     "Ce sont deux versions équivalentes du même test.",
+     true
+    ]
+   ],
+   "e": "On compare les scores obtenus aux deux formes pour estimer la fidélité.",
+   "p": "Fidélité et théorie classique"
+  },
+  {
+   "s": "Théorie classique des tests",
+   "q": "À propos de l'erreur standard de mesure : SEM = σ × √(1 − r).",
+   "a": [
+    [
+     "Si r = 1, le SEM vaut 0.",
+     true
+    ],
+    [
+     "Si r = 0, le SEM est égal à l'écart-type.",
+     true
+    ],
+    [
+     "Si r = 1, le SEM est égal à l'écart-type.",
+     false
+    ]
+   ],
+   "e": "Une mesure parfaitement fidèle n'a aucune erreur.",
+   "p": "Fidélité et théorie classique"
+  },
+  {
+   "s": "Fidélité",
+   "q": "À propos des scores de différence (par exemple QI verbal moins QI de performance) :",
+   "a": [
+    [
+     "Ils sont souvent moins fiables que les scores dont ils sont issus.",
+     true
+    ],
+    [
+     "Ils sont toujours plus fiables que les scores d'origine.",
+     false
+    ],
+    [
+     "Leur fidélité dépend de la corrélation entre les deux scores.",
+     true
+    ]
+   ],
+   "e": "Plus les deux scores sont corrélés, moins leur différence est fiable.",
+   "p": "Fidélité et théorie classique"
+  },
+  {
+   "s": "Mesure du changement",
+   "q": "À propos de l'effet de pratique :",
+   "a": [
+    [
+     "Les scores peuvent augmenter lors de passations répétées, sans changement réel.",
+     true
+    ],
+    [
+     "Des formes parallèles peuvent le réduire.",
+     true
+    ],
+    [
+     "Il disparaît toujours dès la deuxième passation.",
+     false
+    ]
+   ],
+   "e": "Il complique l'interprétation des évaluations répétées.",
+   "p": "Fidélité et théorie classique"
+  },
+  {
+   "s": "Fidélité",
+   "q": "Calcul avec la formule de Spearman-Brown : un test a une fidélité de 0,60. On double sa longueur avec des items équivalents.",
+   "a": [
+    [
+     "La fidélité estimée devient 0,75.",
+     true
+    ],
+    [
+     "La formule est 2r ÷ (1 + r).",
+     true
+    ],
+    [
+     "La fidélité estimée devient 1,20.",
+     false
+    ]
+   ],
+   "e": "2 × 0,60 ÷ 1,60 = 0,75. Une fidélité ne peut pas dépasser 1.",
+   "p": "Fidélité et théorie classique"
+  },
+  {
+   "s": "Équité",
+   "q": "À propos du biais culturel dans les tests :",
+   "a": [
+    [
+     "Un item peut favoriser un groupe plutôt qu'un autre.",
+     true
+    ],
+    [
+     "Une adaptation et une validation locales sont recommandées.",
+     true
+    ],
+    [
+     "Un test traduit est automatiquement équivalent à l'original.",
+     false
+    ]
+   ],
+   "e": "Une traduction littérale peut changer le sens d'un item. On vérifie l'équivalence par des analyses statistiques et des essais auprès de la population visée.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Validité",
+   "q": "À propos de la démonstration de la validité :",
+   "a": [
+    [
+     "La matrice multitraits-multiméthodes de Campbell et Fiske sert à l'étudier.",
+     true
+    ],
+    [
+     "Un seul coefficient suffit à la démontrer de façon définitive.",
+     false
+    ],
+    [
+     "L'analyse factorielle peut aider à étudier la validité de construit.",
+     true
+    ]
+   ],
+   "e": "La validité s'établit par un ensemble de preuves, accumulées au fil du temps.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Validité",
+   "q": "Sensibilité et spécificité :",
+   "a": [
+    [
+     "Un test très sensible n'a jamais de faux positifs.",
+     false
+    ],
+    [
+     "La sensibilité est la proportion de personnes concernées correctement détectées.",
+     true
+    ],
+    [
+     "La spécificité est la proportion de personnes non concernées correctement identifiées.",
+     true
+    ]
+   ],
+   "e": "Un test peut détecter presque tout le monde, mais aussi signaler à tort des personnes saines.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Équité",
+   "q": "À propos de l'influence de l'examinateur :",
+   "a": [
+    [
+     "La passation standardisée limite ces effets.",
+     true
+    ],
+    [
+     "Le comportement de l'examinateur peut influencer les résultats.",
+     true
+    ],
+    [
+     "L'examinateur n'a aucune influence si le test est écrit.",
+     false
+    ]
+   ],
+   "e": "Même pour un test écrit, les consignes et l'attitude de l'examinateur comptent.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Validité",
+   "q": "À propos du biais de prédiction :",
+   "a": [
+    [
+     "Une différence de moyennes équivaut à un biais de prédiction.",
+     false
+    ],
+    [
+     "Un test peut mieux prédire un critère dans un groupe que dans un autre.",
+     true
+    ],
+    [
+     "On le repère par des analyses de régression pour chaque groupe.",
+     true
+    ]
+   ],
+   "e": "Les moyennes peuvent différer sans que la prédiction soit biaisée.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Validité",
+   "q": "À propos de la méthode de Mantel-Haenszel :",
+   "a": [
+    [
+     "Elle compare la réussite de deux groupes de même niveau global.",
+     true
+    ],
+    [
+     "Elle compare uniquement les moyennes totales de deux groupes.",
+     false
+    ],
+    [
+     "Elle sert à repérer un fonctionnement différentiel des items (DIF).",
+     true
+    ]
+   ],
+   "e": "On apparie les personnes selon leur score total, puis on compare leur réussite à l'item.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Validité des méthodes de sélection",
+   "q": "À propos des travaux de Schmidt et Hunter (1998) sur la sélection :",
+   "a": [
+    [
+     "L'entretien structuré prédit mieux que l'entretien non structuré.",
+     true
+    ],
+    [
+     "Les tests d'aptitude cognitive font partie des meilleurs prédicteurs de performance.",
+     true
+    ],
+    [
+     "La graphologie est un très bon prédicteur de performance.",
+     false
+    ]
+   ],
+   "e": "La validité de la graphologie est proche de zéro.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Validité des performances",
+   "q": "À propos des épreuves à choix forcé :",
+   "a": [
+    [
+     "Un résultat significativement inférieur au hasard suggère des réponses volontairement fausses.",
+     true
+    ],
+    [
+     "Un résultat inférieur au hasard est toujours un résultat normal.",
+     false
+    ],
+    [
+     "Un résultat proche du hasard n'est pas forcément un signe de simulation.",
+     true
+    ]
+   ],
+   "e": "Un résultat très inférieur au hasard est improbable sans intention de se tromper.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Sélection du personnel",
+   "q": "À propos du modèle de Cleary :",
+   "a": [
+    [
+     "Un test est jugé équitable si la droite de régression est la même pour les groupes.",
+     true
+    ],
+    [
+     "Il s'intéresse au biais de prédiction.",
+     true
+    ],
+    [
+     "Il ne s'applique qu'aux tests de personnalité.",
+     false
+    ]
+   ],
+   "e": "Il compare la prédiction d'un critère entre groupes.",
+   "p": "Validité, équité et sélection"
+  },
+  {
+   "s": "Étalonnage",
+   "q": "À propos de la note T :",
+   "a": [
+    [
+     "Une note T de 40 est au-dessus de la moyenne.",
+     false
+    ],
+    [
+     "Sa moyenne est de 50.",
+     true
+    ],
+    [
+     "Son écart-type est de 10.",
+     true
+    ]
+   ],
+   "e": "T = 40 se situe un écart-type sous la moyenne.",
+   "p": "Étalonnage et notes standard"
+  },
+  {
+   "s": "Étalonnage",
+   "q": "À propos de la stratification des normes :",
+   "a": [
+    [
+     "Elles permettent des comparaisons plus justes.",
+     true
+    ],
+    [
+     "Il ne faut jamais tenir compte de l'âge.",
+     false
+    ],
+    [
+     "Les normes peuvent être établies par âge, sexe ou niveau d'études.",
+     true
+    ]
+   ],
+   "e": "Comparer un enfant de 6 ans à un adolescent n'aurait aucun sens.",
+   "p": "Étalonnage et notes standard"
+  },
+  {
+   "s": "Étalonnage",
+   "q": "Équivalences entre un QI (moyenne 100, écart-type 15) et un rang percentile :",
+   "a": [
+    [
+     "Un QI de 100 correspond environ au percentile 50.",
+     true
+    ],
+    [
+     "Un QI de 115 correspond environ au percentile 84.",
+     true
+    ],
+    [
+     "Un QI de 130 correspond environ au percentile 84.",
+     false
+    ]
+   ],
+   "e": "130 est à +2 écarts-types, soit environ le percentile 98.",
+   "p": "Étalonnage et notes standard"
+  },
+  {
+   "s": "Interprétation de scores",
+   "q": "À propos des seuils d'interprétation du PHQ-9 :",
+   "a": [
+    [
+     "Un score de 20 ou plus indique des symptômes sévères.",
+     true
+    ],
+    [
+     "Un score de 5 à 9 indique des symptômes légers.",
+     true
+    ],
+    [
+     "Un score de 1 à 4 indique des symptômes sévères.",
+     false
+    ]
+   ],
+   "e": "Les seuils sont 5, 10, 15 et 20. Ils orientent, sans remplacer l'évaluation clinique.",
+   "p": "Étalonnage et notes standard"
+  },
+  {
+   "s": "Calculs psychométriques",
+   "q": "Corrélation observée de 0,36 entre deux tests dont les fidélités sont 0,64 et 0,81.",
+   "a": [
+    [
+     "Le dénominateur de la correction vaut 0,72.",
+     true
+    ],
+    [
+     "La corrélation corrigée de l'atténuation est de 0,50.",
+     true
+    ],
+    [
+     "La corrélation corrigée est de 0,18.",
+     false
+    ]
+   ],
+   "e": "0,36 ÷ √(0,64 × 0,81) = 0,36 ÷ 0,72 = 0,50.",
+   "p": "Calculs psychométriques"
+  },
+  {
+   "s": "Calculs psychométriques",
+   "q": "Pour un item, 20 personnes sur 25 du groupe supérieur et 8 sur 25 du groupe inférieur le réussissent.",
+   "a": [
+    [
+     "L'indice de discrimination est de 12.",
+     false
+    ],
+    [
+     "Il se calcule comme (U − L) ÷ n.",
+     true
+    ],
+    [
+     "L'indice de discrimination est de 0,48.",
+     true
+    ]
+   ],
+   "e": "(20 − 8) ÷ 25 = 0,48.",
+   "p": "Calculs psychométriques"
+  },
+  {
+   "s": "Calculs psychométriques",
+   "q": "Deux groupes ont des moyennes de 110 et de 100, avec un écart-type commun de 15.",
+   "a": [
+    [
+     "La différence est de 10 points.",
+     true
+    ],
+    [
+     "Le d de Cohen est de 10.",
+     false
+    ],
+    [
+     "Le d de Cohen est d'environ 0,67.",
+     true
+    ]
+   ],
+   "e": "d = 10 ÷ 15 ≈ 0,67.",
+   "p": "Calculs psychométriques"
+  },
+  {
+   "s": "Calculs de base",
+   "q": "Une note de 10 a un coefficient de 1, une note de 16 a un coefficient de 2, et une note de 12 a un coefficient de 3.",
+   "a": [
+    [
+     "La somme pondérée est de 78.",
+     true
+    ],
+    [
+     "La moyenne pondérée est de 12.",
+     false
+    ],
+    [
+     "La moyenne pondérée est de 13.",
+     true
+    ]
+   ],
+   "e": "10 + 32 + 36 = 78, et 78 ÷ 6 = 13.",
+   "p": "Calculs psychométriques"
+  },
+  {
+   "s": "Statistiques",
+   "q": "À propos de l'écart-type :",
+   "a": [
+    [
+     "La variance est le carré de l'écart-type.",
+     true
+    ],
+    [
+     "Il mesure la dispersion autour de la moyenne.",
+     true
+    ],
+    [
+     "Il peut être négatif.",
+     false
+    ],
+    [
+     "Si tous les scores sont identiques, l'écart-type vaut 0.",
+     true
+    ]
+   ],
+   "e": "Un écart-type est toujours supérieur ou égal à 0.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Statistiques",
+   "q": "À propos du mode :",
+   "a": [
+    [
+     "C'est la valeur la plus fréquente.",
+     true
+    ],
+    [
+     "Il y a toujours exactement un mode.",
+     false
+    ],
+    [
+     "Une distribution peut avoir plusieurs modes.",
+     true
+    ]
+   ],
+   "e": "Une distribution peut être bimodale, ou n'avoir aucun mode.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Statistiques",
+   "q": "À propos du d de Cohen :",
+   "a": [
+    [
+     "0,2 est un effet petit, 0,5 moyen et 0,8 grand.",
+     true
+    ],
+    [
+     "Il exprime une différence de moyennes en écarts-types.",
+     true
+    ],
+    [
+     "d = 0,8 correspond à un petit effet.",
+     false
+    ]
+   ],
+   "e": "Ce sont des repères conventionnels : ils s'interprètent selon le contexte.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Statistiques",
+   "q": "À propos de l'asymétrie d'une distribution :",
+   "a": [
+    [
+     "Avec une asymétrie négative, la queue est à gauche.",
+     true
+    ],
+    [
+     "Avec une asymétrie positive, la queue est à droite et la moyenne dépasse la médiane.",
+     true
+    ],
+    [
+     "La moyenne est toujours égale à la médiane.",
+     false
+    ]
+   ],
+   "e": "Elles ne coïncident que pour une distribution symétrique.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Statistiques",
+   "q": "À propos des coefficients de corrélation :",
+   "a": [
+    [
+     "Le rho de Spearman repose sur les rangs.",
+     true
+    ],
+    [
+     "Le coefficient phi relie deux variables continues.",
+     false
+    ],
+    [
+     "La corrélation point-bisériale relie une variable dichotomique et une variable continue.",
+     true
+    ]
+   ],
+   "e": "Le coefficient phi relie deux variables dichotomiques.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Statistiques",
+   "q": "À propos de la puissance statistique :",
+   "a": [
+    [
+     "Elle diminue quand la taille d'échantillon augmente.",
+     false
+    ],
+    [
+     "Un seuil conventionnel est de 0,80.",
+     true
+    ],
+    [
+     "C'est la probabilité de détecter un effet réel.",
+     true
+    ]
+   ],
+   "e": "Plus l'échantillon est grand, plus la puissance est élevée.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Statistiques",
+   "q": "À propos de la méta-analyse :",
+   "a": [
+    [
+     "Elle combine les résultats de plusieurs études.",
+     true
+    ],
+    [
+     "Elle se limite à une seule étude.",
+     false
+    ],
+    [
+     "Elle permet d'estimer une validité moyenne, avec corrections éventuelles.",
+     true
+    ]
+   ],
+   "e": "Elle est très utilisée pour établir la validité des outils de sélection.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Statistiques",
+   "q": "À propos de la kurtosis :",
+   "a": [
+    [
+     "Une distribution leptokurtique a un pic aigu et des queues épaisses.",
+     true
+    ],
+    [
+     "Elle mesure la fidélité d'un test.",
+     false
+    ],
+    [
+     "Elle décrit la forme des queues de la distribution.",
+     true
+    ]
+   ],
+   "e": "Une kurtosis nulle est celle de la loi normale, selon la définition usuelle.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Choix des tests statistiques",
+   "q": "À propos du khi-deux d'indépendance :",
+   "a": [
+    [
+     "Il compare deux moyennes.",
+     false
+    ],
+    [
+     "Il compare des effectifs observés et des effectifs attendus.",
+     true
+    ],
+    [
+     "Il teste l'association entre deux variables catégorielles.",
+     true
+    ]
+   ],
+   "e": "Par exemple : le lien entre le sexe et le choix d'une filière.",
+   "p": "Statistiques et choix des tests"
+  },
+  {
+   "s": "Construction de tests",
+   "q": "À propos du tableau de spécification :",
+   "a": [
+    [
+     "Il relie les contenus à évaluer au nombre d'items.",
+     true
+    ],
+    [
+     "Il remplace l'analyse d'items.",
+     false
+    ],
+    [
+     "Il aide à assurer la validité de contenu.",
+     true
+    ]
+   ],
+   "e": "C'est un plan de construction, pas une analyse des résultats.",
+   "p": "Construction de tests et analyse d'items"
+  },
+  {
+   "s": "Construction de tests",
+   "q": "À propos des consignes d'un test :",
+   "a": [
+    [
+     "Chaque examinateur peut improviser les consignes.",
+     false
+    ],
+    [
+     "Elles doivent être claires et standardisées.",
+     true
+    ],
+    [
+     "Des exemples d'entraînement peuvent être proposés.",
+     true
+    ]
+   ],
+   "e": "La standardisation garantit que tous passent le test dans les mêmes conditions.",
+   "p": "Construction de tests et analyse d'items"
+  },
+  {
+   "s": "Analyse d'items",
+   "q": "À propos des distracteurs d'un QCM :",
+   "a": [
+    [
+     "Un bon distracteur doit être absurde.",
+     false
+    ],
+    [
+     "Un distracteur que personne ne choisit doit être revu.",
+     true
+    ],
+    [
+     "Un bon distracteur est plausible.",
+     true
+    ]
+   ],
+   "e": "Un distracteur absurde n'a aucun intérêt : il est éliminé d'emblée.",
+   "p": "Construction de tests et analyse d'items"
+  },
+  {
+   "s": "Construction de tests",
+   "q": "À propos du nombre de points d'une échelle de Likert :",
+   "a": [
+    [
+     "Un trop petit nombre de niveaux peut perdre de l'information.",
+     true
+    ],
+    [
+     "Une échelle à 2 niveaux contient toujours plus d'information.",
+     false
+    ],
+    [
+     "On utilise souvent 5 ou 7 niveaux de réponse.",
+     true
+    ]
+   ],
+   "e": "Plus de niveaux permettent plus de nuances, mais peuvent aussi compliquer la tâche.",
+   "p": "Construction de tests et analyse d'items"
+  },
+  {
+   "s": "Théorie de réponse à l'item",
+   "q": "À propos des modèles à 1, 2 et 3 paramètres :",
+   "a": [
+    [
+     "Le modèle 1PL possède trois paramètres.",
+     false
+    ],
+    [
+     "Le modèle 3PL ajoute un paramètre de pseudo-hasard.",
+     true
+    ],
+    [
+     "Le modèle 2PL ajoute la discrimination.",
+     true
+    ]
+   ],
+   "e": "1PL : difficulté. 2PL : difficulté et discrimination. 3PL : plus la devinette.",
+   "p": "TRI, analyse factorielle et fondements"
+  },
+  {
+   "s": "Analyse factorielle",
+   "q": "Analyse factorielle exploratoire et confirmatoire :",
+   "a": [
+    [
+     "La confirmatoire teste un modèle défini à l'avance.",
+     true
+    ],
+    [
+     "L'exploratoire cherche la structure des données.",
+     true
+    ],
+    [
+     "La confirmatoire ne fait aucune hypothèse.",
+     false
+    ]
+   ],
+   "e": "La confirmatoire vérifie si un modèle théorique s'ajuste aux données.",
+   "p": "TRI, analyse factorielle et fondements"
+  },
+  {
+   "s": "Théorie de réponse à l'item",
+   "q": "À propos du système PROMIS :",
+   "a": [
+    [
+     "Il s'appuie sur la théorie de réponse à l'item.",
+     true
+    ],
+    [
+     "Il utilise la formule de Stern pour calculer un QI.",
+     false
+    ],
+    [
+     "Il exprime les scores en notes T (moyenne 50, écart-type 10).",
+     true
+    ]
+   ],
+   "e": "Il mesure des résultats rapportés par les patients, souvent avec des tests adaptatifs.",
+   "p": "TRI, analyse factorielle et fondements"
+  },
+  {
+   "s": "Psychométrie avancée",
+   "q": "À propos du modèle bifactoriel :",
+   "a": [
+    [
+     "Chaque item dépend d'un facteur général et d'un facteur spécifique.",
+     true
+    ],
+    [
+     "L'oméga hiérarchique estime la part de variance due au facteur général.",
+     true
+    ],
+    [
+     "Il suppose qu'il n'y a pas de facteur général.",
+     false
+    ]
+   ],
+   "e": "Il est utilisé notamment pour l'étude de la structure de l'intelligence.",
+   "p": "TRI, analyse factorielle et fondements"
+  },
+  {
+   "s": "Fondements de la psychométrie",
+   "q": "À propos de Meehl (1954) :",
+   "a": [
+    [
+     "Il a conclu que le jugement clinique est toujours supérieur.",
+     false
+    ],
+    [
+     "Il a comparé la prédiction clinique et la prédiction statistique.",
+     true
+    ],
+    [
+     "Il a montré que les méthodes statistiques sont en général au moins aussi bonnes que le jugement clinique.",
+     true
+    ]
+   ],
+   "e": "Son livre a influencé l'usage de méthodes actuarielles.",
+   "p": "TRI, analyse factorielle et fondements"
+  },
+  {
+   "s": "Fondements de la psychométrie",
+   "q": "À propos du concept de validité de Borsboom :",
+   "a": [
+    [
+     "Cette conception met l'accent sur un lien causal.",
+     true
+    ],
+    [
+     "Elle réduit la validité à la fidélité.",
+     false
+    ],
+    [
+     "Un test est valide si l'attribut mesuré existe et cause les résultats.",
+     true
+    ]
+   ],
+   "e": "Elle a ouvert un débat avec la conception de Messick.",
+   "p": "TRI, analyse factorielle et fondements"
+  },
+  {
+   "s": "Tests chez l'enfant",
+   "q": "À propos de l'échelle de Brunet-Lézine :",
+   "a": [
+    [
+     "C'est un test de personnalité pour adultes.",
+     false
+    ],
+    [
+     "Elle s'adresse aux jeunes enfants.",
+     true
+    ],
+    [
+     "Elle évalue le développement psychomoteur de la petite enfance.",
+     true
+    ]
+   ],
+   "e": "Elle explore la posture, la coordination, le langage et la sociabilité.",
+   "p": "Tests chez l'enfant"
+  },
+  {
+   "s": "Tests chez l'enfant",
+   "q": "Conditions de passation chez l'enfant :",
+   "a": [
+    [
+     "Il faut établir le contact et adapter la durée, avec des pauses si nécessaire.",
+     true
+    ],
+    [
+     "L'enfant doit être évalué sans aucun contact préalable.",
+     false
+    ],
+    [
+     "La fatigue et l'anxiété peuvent influencer les résultats.",
+     true
+    ]
+   ],
+   "e": "Un enfant mis en confiance donne une meilleure image de ses capacités.",
+   "p": "Tests chez l'enfant"
+  },
+  {
+   "s": "Tests chez l'enfant",
+   "q": "À propos de l'échelle de Bayley-III :",
+   "a": [
+    [
+     "Elle évalue les adolescents de 14 ans.",
+     false
+    ],
+    [
+     "Elle comprend des échelles cognitive, de langage et motrice.",
+     true
+    ],
+    [
+     "Elle évalue des enfants de 1 à 42 mois.",
+     true
+    ]
+   ],
+   "e": "Des questionnaires complètent l'évaluation, notamment pour le comportement adaptatif.",
+   "p": "Tests chez l'enfant"
+  },
+  {
+   "s": "Tests chez l'enfant",
+   "q": "À propos du Denver II :",
+   "a": [
+    [
+     "Il évalue les adultes.",
+     false
+    ],
+    [
+     "C'est un outil de dépistage du développement de la naissance à 6 ans.",
+     true
+    ],
+    [
+     "Il ne permet pas à lui seul de poser un diagnostic.",
+     true
+    ]
+   ],
+   "e": "Un résultat suspect conduit à une évaluation plus approfondie.",
+   "p": "Tests chez l'enfant"
+  },
+  {
+   "s": "Tests chez l'enfant",
+   "q": "À propos des Ages and Stages Questionnaires (ASQ-3) :",
+   "a": [
+    [
+     "Ils explorent notamment la communication et la motricité.",
+     true
+    ],
+    [
+     "Ils sont remplis par les parents.",
+     true
+    ],
+    [
+     "Ils évaluent la personnalité de l'adulte.",
+     false
+    ]
+   ],
+   "e": "Ils comprennent aussi la résolution de problèmes et le domaine personnel-social.",
+   "p": "Tests chez l'enfant"
+  },
+  {
+   "s": "Tests chez l'enfant",
+   "q": "À propos de l'inventaire MacArthur-Bates (CDI) :",
+   "a": [
+    [
+     "Il évalue le vocabulaire et les gestes du jeune enfant.",
+     true
+    ],
+    [
+     "Il est rempli par les parents.",
+     true
+    ],
+    [
+     "Il s'adresse aux adolescents de 16 ans.",
+     false
+    ]
+   ],
+   "e": "Il concerne des enfants d'environ 8 à 30 mois.",
+   "p": "Tests chez l'enfant"
+  },
+  {
+   "s": "Évaluation de l'autisme",
+   "q": "À propos de l'ADOS-2 :",
+   "a": [
+    [
+     "C'est une observation semi-structurée.",
+     true
+    ],
+    [
+     "Le module employé dépend de l'âge et du niveau de langage.",
+     true
+    ],
+    [
+     "C'est un questionnaire d'auto-évaluation.",
+     false
+    ]
+   ],
+   "e": "L'examinateur propose des activités et observe la communication et les interactions.",
+   "p": "Tests chez l'enfant"
+  },
+  {
+   "s": "Langage de l'enfant",
+   "q": "À propos de l'EVIP :",
+   "a": [
+    [
+     "Elle évalue les aptitudes mécaniques.",
+     false
+    ],
+    [
+     "C'est l'adaptation française du Peabody Picture Vocabulary Test.",
+     true
+    ],
+    [
+     "Elle évalue le vocabulaire réceptif.",
+     true
+    ]
+   ],
+   "e": "L'enfant désigne l'image correspondant au mot entendu.",
+   "p": "Tests chez l'enfant"
+  },
+  {
+   "s": "Échelles de Wechsler",
+   "q": "À propos des subtests de Wechsler :",
+   "a": [
+    [
+     "« Similitudes » est une épreuve verbale.",
+     true
+    ],
+    [
+     "« Cubes » évalue le raisonnement visuo-spatial.",
+     true
+    ],
+    [
+     "« Vocabulaire » est un subtest non verbal.",
+     false
+    ]
+   ],
+   "e": "Le subtest « Vocabulaire » fait appel au langage.",
+   "p": "Échelles de Wechsler"
+  },
+  {
+   "s": "Échelles de Wechsler",
+   "q": "À propos des échelles de Wechsler selon l'âge :",
+   "a": [
+    [
+     "Le WAIS s'adresse aux jeunes enfants.",
+     false
+    ],
+    [
+     "Le WISC s'adresse aux enfants et aux adolescents.",
+     true
+    ],
+    [
+     "Le WPPSI s'adresse aux jeunes enfants.",
+     true
+    ]
+   ],
+   "e": "WPPSI : préscolaire. WISC : enfants et adolescents. WAIS : adultes.",
+   "p": "Échelles de Wechsler"
+  },
+  {
+   "s": "Échelles de Wechsler",
+   "q": "À propos de la structure du WISC-V :",
+   "a": [
+    [
+     "Le QI total repose sur 7 subtests.",
+     true
+    ],
+    [
+     "Il s'adresse aux adultes de 16 à 90 ans.",
+     false
+    ],
+    [
+     "Il fournit cinq indices primaires.",
+     true
+    ]
+   ],
+   "e": "Le WISC-V s'adresse aux enfants de 6 à 16 ans.",
+   "p": "Échelles de Wechsler"
+  },
+  {
+   "s": "Tests d'intelligence",
+   "q": "À propos de la K-ABC II :",
+   "a": [
+    [
+     "Elle ne propose aucune échelle non verbale.",
+     false
+    ],
+    [
+     "Elle s'adresse aux enfants de 3 à 18 ans.",
+     true
+    ],
+    [
+     "Elle s'appuie sur deux modèles, celui de Luria et celui de Cattell-Horn-Carroll.",
+     true
+    ]
+   ],
+   "e": "Une échelle non verbale permet d'évaluer des enfants peu à l'aise avec la langue de passation.",
+   "p": "Échelles de Wechsler"
+  },
+  {
+   "s": "Tests d'intelligence",
+   "q": "À propos de la relation entre Wechsler et Raven :",
+   "a": [
+    [
+     "Les corrélations entre les deux sont généralement élevées.",
+     true
+    ],
+    [
+     "Les deux sont fortement liés au facteur g.",
+     true
+    ],
+    [
+     "Les deux ne sont jamais corrélés.",
+     false
+    ]
+   ],
+   "e": "Ils mesurent des aspects proches de l'intelligence générale.",
+   "p": "Échelles de Wechsler"
+  },
+  {
+   "s": "Facteur g",
+   "q": "À propos des matrices de Raven :",
+   "a": [
+    [
+     "Elles sont considérées comme une bonne mesure du facteur g.",
+     true
+    ],
+    [
+     "John Raven les a conçues en 1936.",
+     true
+    ],
+    [
+     "Ce sont des épreuves essentiellement verbales.",
+     false
+    ]
+   ],
+   "e": "Elles sont non verbales et très saturées en facteur g, l'intelligence générale décrite par Spearman.",
+   "p": "QI et théories de l'intelligence"
+  },
+  {
+   "s": "Notion de QI",
+   "q": "À propos du QI de déviation :",
+   "a": [
+    [
+     "Sa moyenne est fixée à 100.",
+     true
+    ],
+    [
+     "Il se calcule en divisant l'âge mental par l'âge réel.",
+     false
+    ],
+    [
+     "Le score est comparé à celui de personnes du même âge.",
+     true
+    ],
+    [
+     "Il a remplacé la formule de Stern dans les échelles modernes.",
+     true
+    ]
+   ],
+   "e": "Dans les échelles de Wechsler, le QI est un score standardisé et non un rapport d'âges.",
+   "p": "QI et théories de l'intelligence"
+  },
+  {
+   "s": "Théories de l'intelligence",
+   "q": "À propos des théories de l'intelligence :",
+   "a": [
+    [
+     "Sternberg a créé le test de Rorschach.",
+     false
+    ],
+    [
+     "Gardner a proposé la théorie des intelligences multiples.",
+     true
+    ],
+    [
+     "Sternberg a proposé une théorie triarchique (analytique, créative, pratique).",
+     true
+    ]
+   ],
+   "e": "Ces théories élargissent la notion d'intelligence, mais restent débattues sur le plan empirique.",
+   "p": "QI et théories de l'intelligence"
+  },
+  {
+   "s": "Facteur g",
+   "q": "À propos du vieillissement et de l'intelligence :",
+   "a": [
+    [
+     "L'intelligence cristallisée peut continuer à progresser avec l'âge.",
+     true
+    ],
+    [
+     "L'intelligence fluide augmente jusqu'à 80 ans.",
+     false
+    ],
+    [
+     "L'intelligence fluide diminue plus tôt que l'intelligence cristallisée.",
+     true
+    ]
+   ],
+   "e": "Les connaissances et le vocabulaire se maintiennent mieux que le raisonnement face à la nouveauté.",
+   "p": "QI et théories de l'intelligence"
+  },
+  {
+   "s": "Notion de QI",
+   "q": "À propos de la régression vers la moyenne :",
+   "a": [
+    [
+     "Un score extrême tend à être moins extrême à la seconde passation.",
+     true
+    ],
+    [
+     "Elle est liée à la fidélité imparfaite des scores.",
+     true
+    ],
+    [
+     "Elle prouve que le test est biaisé.",
+     false
+    ]
+   ],
+   "e": "Elle apparaît dès qu'une mesure contient une part d'erreur.",
+   "p": "QI et théories de l'intelligence"
+  },
+  {
+   "s": "Facteur g",
+   "q": "À propos de l'organisation des aptitudes cognitives :",
+   "a": [
+    [
+     "Les corrélations entre tests d'aptitudes sont presque toujours positives.",
+     true
+    ],
+    [
+     "Outre g, il existe des facteurs de groupe.",
+     true
+    ],
+    [
+     "Le facteur g est une région précise du cerveau, prouvée.",
+     false
+    ]
+   ],
+   "e": "Le facteur g est un résultat statistique, non une localisation cérébrale établie.",
+   "p": "QI et théories de l'intelligence"
+  },
+  {
+   "s": "Tests de lecture",
+   "q": "À propos du test de l'Alouette (Lefavrais) :",
+   "a": [
+    [
+     "Il évalue le calcul mental.",
+     false
+    ],
+    [
+     "Il dure au maximum 3 minutes.",
+     true
+    ],
+    [
+     "Il évalue la lecture, en vitesse et en précision.",
+     true
+    ]
+   ],
+   "e": "Le texte est volontairement dépourvu de sens, pour limiter l'aide du contexte.",
+   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
+  },
+  {
+   "s": "Évaluation fonctionnelle",
+   "q": "À propos de l'indice de Barthel :",
+   "a": [
+    [
+     "Son score va de 0 à 100.",
+     true
+    ],
+    [
+     "Il évalue l'autonomie dans les activités de la vie quotidienne.",
+     true
+    ],
+    [
+     "Il évalue la créativité.",
+     false
+    ]
+   ],
+   "e": "Un score plus élevé indique une meilleure autonomie.",
+   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
+  },
+  {
+   "s": "Évaluation fonctionnelle",
+   "q": "À propos de l'échelle de fardeau de Zarit :",
+   "a": [
+    [
+     "Elle évalue le fardeau ressenti par l'aidant d'une personne dépendante.",
+     true
+    ],
+    [
+     "Elle évalue le QI de la personne aidée.",
+     false
+    ],
+    [
+     "La version de base comporte 22 items.",
+     true
+    ]
+   ],
+   "e": "Il existe aussi une version courte de 12 items.",
+   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
+  },
+  {
+   "s": "Dépistage cognitif",
+   "q": "À propos du MoCA et du niveau d'études :",
+   "a": [
+    [
+     "On ajoute 1 point si la personne a 12 ans d'études ou moins.",
+     true
+    ],
+    [
+     "Le score maximal est de 30.",
+     true
+    ],
+    [
+     "On retire 5 points si la personne a un faible niveau d'études.",
+     false
+    ]
+   ],
+   "e": "Cette correction vise à limiter l'effet du niveau d'études sur le score.",
+   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
+  },
+  {
+   "s": "Interprétation neuropsychologique",
+   "q": "À propos du National Adult Reading Test (NART) :",
+   "a": [
+    [
+     "Il sert à estimer le niveau intellectuel antérieur à un trouble.",
+     true
+    ],
+    [
+     "Il évalue la dextérité.",
+     false
+    ],
+    [
+     "Le sujet lit des mots irréguliers.",
+     true
+    ]
+   ],
+   "e": "Nelson l'a proposé en 1982.",
+   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
+  },
+  {
+   "s": "Dépendances et changement",
+   "q": "À propos de l'échelle URICA :",
+   "a": [
+    [
+     "Elle évalue les aptitudes spatiales.",
+     false
+    ],
+    [
+     "Elle s'appuie sur le modèle de Prochaska et DiClemente.",
+     true
+    ],
+    [
+     "Elle évalue le stade de motivation au changement.",
+     true
+    ]
+   ],
+   "e": "Elle distingue notamment la précontemplation et l'action.",
+   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
+  },
+  {
+   "s": "Qualité de vie",
+   "q": "À propos du Brief Pain Inventory :",
+   "a": [
+    [
+     "Il évalue l'intelligence.",
+     false
+    ],
+    [
+     "Il évalue l'intensité de la douleur.",
+     true
+    ],
+    [
+     "Il évalue aussi son retentissement sur les activités.",
+     true
+    ]
+   ],
+   "e": "Cleeland en est l'auteur.",
+   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
+  },
+  {
+   "s": "Définitions",
+   "q": "Tests normatifs et tests critériés :",
+   "a": [
+    [
+     "Un test normatif compare le score à celui d'un groupe.",
+     true
+    ],
+    [
+     "Un test critérié compare le score à un seuil de maîtrise.",
+     true
+    ],
+    [
+     "Un test critérié classe toujours les personnes par percentile.",
+     false
+    ]
+   ],
+   "e": "Un permis de conduire est un exemple de test critérié : on est reçu ou non selon un seuil.",
+   "p": "Pratique professionnelle et éthique"
+  },
+  {
+   "s": "Définitions",
+   "q": "Tests collectifs et tests individuels :",
+   "a": [
+    [
+     "Un test collectif permet toujours d'observer le comportement de chacun.",
+     false
+    ],
+    [
+     "Un test individuel permet une observation qualitative plus fine.",
+     true
+    ],
+    [
+     "Un test collectif se passe à plusieurs personnes à la fois.",
+     true
+    ]
+   ],
+   "e": "Avec un groupe, l'examinateur ne peut pas suivre chaque personne de près.",
+   "p": "Pratique professionnelle et éthique"
+  },
+  {
+   "s": "Définitions",
+   "q": "À propos des niveaux de mesure de Stevens :",
+   "a": [
+    [
+     "L'échelle de rapport n'a pas de zéro absolu.",
+     false
+    ],
+    [
+     "L'échelle nominale classe sans ordre.",
+     true
+    ],
+    [
+     "L'échelle ordinale classe avec un ordre.",
+     true
+    ]
+   ],
+   "e": "L'échelle de rapport possède un zéro absolu, comme la masse en kilogrammes.",
+   "p": "Pratique professionnelle et éthique"
+  },
+  {
+   "s": "Usage professionnel des tests",
+   "q": "À propos du choix d'un test :",
+   "a": [
+    [
+     "Il faut tenir compte de l'objectif de l'évaluation et de la population.",
+     true
+    ],
+    [
+     "Le prix du test est le seul critère à retenir.",
+     false
+    ],
+    [
+     "Il faut vérifier la qualité des normes, de la fidélité et de la validité.",
+     true
+    ]
+   ],
+   "e": "Le coût compte, mais jamais plus que la qualité psychométrique.",
+   "p": "Pratique professionnelle et éthique"
+  },
+  {
+   "s": "Usage professionnel des tests",
+   "q": "À propos de l'expérience de passation des tests (testwiseness) :",
+   "a": [
+    [
+     "Elle peut utiliser des stratégies comme éliminer des réponses.",
+     true
+    ],
+    [
+     "Elle ne dépend jamais de l'expérience.",
+     false
+    ],
+    [
+     "Une personne habituée aux tests peut mieux gérer son temps.",
+     true
+    ]
+   ],
+   "e": "Ces habiletés peuvent avantager certains candidats, sans lien avec le trait mesuré.",
+   "p": "Pratique professionnelle et éthique"
+  },
+  {
+   "s": "Standardisation de la passation",
+   "q": "À propos du chronométrage :",
+   "a": [
+    [
+     "Les limites de temps indiquées dans le manuel doivent être respectées.",
+     true
+    ],
+    [
+     "Un dépassement peut invalider la comparaison aux normes.",
+     true
+    ],
+    [
+     "Le temps est toujours indicatif et sans importance.",
+     false
+    ]
+   ],
+   "e": "Le chronométrage fait partie de la procédure standard.",
+   "p": "Pratique professionnelle et éthique"
+  },
+  {
+   "s": "Tests emblématiques",
+   "q": "À propos des planches du Rorschach :",
+   "a": [
+    [
+     "Les planches VIII, IX et X sont multicolores.",
+     true
+    ],
+    [
+     "Toutes les planches sont multicolores.",
+     false
+    ],
+    [
+     "Les planches II et III comportent du rouge.",
+     true
+    ]
+   ],
+   "e": "Les planches I, IV, V, VI et VII sont achromatiques.",
+   "p": "Pratique professionnelle et éthique"
+  },
+  {
+   "s": "Éthique et déontologie",
+   "q": "À propos de la confidentialité au début d'une évaluation :",
+   "a": [
+    [
+     "La personne est informée des limites de la confidentialité.",
+     true
+    ],
+    [
+     "Elle est informée de l'usage des résultats.",
+     true
+    ],
+    [
+     "Il n'est pas nécessaire de l'informer.",
+     false
+    ]
+   ],
+   "e": "Cela fait partie du consentement éclairé.",
+   "p": "Pratique professionnelle et éthique"
+  },
   {
    "s": "Histoire",
    "q": "À propos de l'échelle de Binet-Simon :",
@@ -13483,26 +15151,6 @@ window.QUESTIONS = {
    "p": "Échelles de Wechsler"
   },
   {
-   "s": "Facteur g",
-   "q": "À propos des matrices de Raven :",
-   "a": [
-    [
-     "Elles sont considérées comme une bonne mesure du facteur g.",
-     true
-    ],
-    [
-     "John Raven les a conçues en 1936.",
-     true
-    ],
-    [
-     "Ce sont des épreuves essentiellement verbales.",
-     false
-    ]
-   ],
-   "e": "Elles sont non verbales et très saturées en facteur g, l'intelligence générale décrite par Spearman.",
-   "p": "QI et théories de l'intelligence"
-  },
-  {
    "s": "Statistiques",
    "q": "À propos de la courbe normale :",
    "a": [
@@ -13525,26 +15173,6 @@ window.QUESTIONS = {
    ],
    "e": "Ce sont les propriétés classiques de la loi normale, très utilisées pour interpréter les scores standardisés.",
    "p": "Statistiques et choix des tests"
-  },
-  {
-   "s": "Équité",
-   "q": "À propos du biais culturel dans les tests :",
-   "a": [
-    [
-     "Un item peut favoriser un groupe plutôt qu'un autre.",
-     true
-    ],
-    [
-     "Une adaptation et une validation locales sont recommandées.",
-     true
-    ],
-    [
-     "Un test traduit est automatiquement équivalent à l'original.",
-     false
-    ]
-   ],
-   "e": "Une traduction littérale peut changer le sens d'un item. On vérifie l'équivalence par des analyses statistiques et des essais auprès de la population visée.",
-   "p": "Validité, équité et sélection"
   },
   {
    "s": "Définitions",
@@ -13632,26 +15260,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Histoire",
-   "q": "À propos des tests Army Alpha et Army Beta (1917) :",
-   "a": [
-    [
-     "Ils ont été conçus pour évaluer rapidement un grand nombre de recrues.",
-     true
-    ],
-    [
-     "Le Beta s'adressait aux recrues qui ne lisaient pas ou peu l'anglais.",
-     true
-    ],
-    [
-     "L'Alpha est un test entièrement non verbal.",
-     false
-    ]
-   ],
-   "e": "L'Alpha était écrit. Le Beta utilisait des consignes et des items non verbaux.",
-   "p": "Histoire de la psychométrie"
-  },
-  {
-   "s": "Histoire",
    "q": "À propos du Stanford-Binet :",
    "a": [
     [
@@ -13692,30 +15300,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Notion de QI",
-   "q": "À propos du QI de déviation :",
-   "a": [
-    [
-     "Sa moyenne est fixée à 100.",
-     true
-    ],
-    [
-     "Il se calcule en divisant l'âge mental par l'âge réel.",
-     false
-    ],
-    [
-     "Le score est comparé à celui de personnes du même âge.",
-     true
-    ],
-    [
-     "Il a remplacé la formule de Stern dans les échelles modernes.",
-     true
-    ]
-   ],
-   "e": "Dans les échelles de Wechsler, le QI est un score standardisé et non un rapport d'âges.",
-   "p": "QI et théories de l'intelligence"
-  },
-  {
-   "s": "Notion de QI",
    "q": "À propos de l'interprétation d'un QI :",
    "a": [
     [
@@ -13752,26 +15336,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Plus il se rapproche de 1, plus les résultats sont stables.",
-   "p": "Fidélité et théorie classique"
-  },
-  {
-   "s": "Fidélité",
-   "q": "À propos de la méthode de bissection (split-half) :",
-   "a": [
-    [
-     "Elle mesure la validité de critère.",
-     false
-    ],
-    [
-     "Le test est scindé en deux moitiés comparées entre elles.",
-     true
-    ],
-    [
-     "La formule de Spearman-Brown corrige l'effet de la longueur.",
-     true
-    ]
-   ],
-   "e": "On estime la cohérence interne, puis on corrige pour retrouver la fidélité du test entier.",
    "p": "Fidélité et théorie classique"
   },
   {
@@ -13875,26 +15439,6 @@ window.QUESTIONS = {
    "p": "Validité, équité et sélection"
   },
   {
-   "s": "Validité",
-   "q": "À propos de la démonstration de la validité :",
-   "a": [
-    [
-     "La matrice multitraits-multiméthodes de Campbell et Fiske sert à l'étudier.",
-     true
-    ],
-    [
-     "Un seul coefficient suffit à la démontrer de façon définitive.",
-     false
-    ],
-    [
-     "L'analyse factorielle peut aider à étudier la validité de construit.",
-     true
-    ]
-   ],
-   "e": "La validité s'établit par un ensemble de preuves, accumulées au fil du temps.",
-   "p": "Validité, équité et sélection"
-  },
-  {
    "s": "Étalonnage",
    "q": "À propos de la note z :",
    "a": [
@@ -13912,26 +15456,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "z = +1 signifie un écart-type au-dessus de la moyenne.",
-   "p": "Étalonnage et notes standard"
-  },
-  {
-   "s": "Étalonnage",
-   "q": "À propos de la note T :",
-   "a": [
-    [
-     "Une note T de 40 est au-dessus de la moyenne.",
-     false
-    ],
-    [
-     "Sa moyenne est de 50.",
-     true
-    ],
-    [
-     "Son écart-type est de 10.",
-     true
-    ]
-   ],
-   "e": "T = 40 se situe un écart-type sous la moyenne.",
    "p": "Étalonnage et notes standard"
   },
   {
@@ -13972,26 +15496,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Le WISC est destiné aux enfants et aux adolescents.",
-   "p": "Échelles de Wechsler"
-  },
-  {
-   "s": "Échelles de Wechsler",
-   "q": "À propos des subtests de Wechsler :",
-   "a": [
-    [
-     "« Similitudes » est une épreuve verbale.",
-     true
-    ],
-    [
-     "« Cubes » évalue le raisonnement visuo-spatial.",
-     true
-    ],
-    [
-     "« Vocabulaire » est un subtest non verbal.",
-     false
-    ]
-   ],
-   "e": "Le subtest « Vocabulaire » fait appel au langage.",
    "p": "Échelles de Wechsler"
   },
   {
@@ -14076,30 +15580,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Moyenne : 28 ÷ 4 = 7. Médiane : moyenne des deux valeurs centrales, (6 + 8) ÷ 2 = 7. Aucune valeur ne se répète.",
-   "p": "Statistiques et choix des tests"
-  },
-  {
-   "s": "Statistiques",
-   "q": "À propos de l'écart-type :",
-   "a": [
-    [
-     "La variance est le carré de l'écart-type.",
-     true
-    ],
-    [
-     "Il mesure la dispersion autour de la moyenne.",
-     true
-    ],
-    [
-     "Il peut être négatif.",
-     false
-    ],
-    [
-     "Si tous les scores sont identiques, l'écart-type vaut 0.",
-     true
-    ]
-   ],
-   "e": "Un écart-type est toujours supérieur ou égal à 0.",
    "p": "Statistiques et choix des tests"
   },
   {
@@ -14211,26 +15691,6 @@ window.QUESTIONS = {
    "p": "Pratique professionnelle et éthique"
   },
   {
-   "s": "Théories de l'intelligence",
-   "q": "À propos des théories de l'intelligence :",
-   "a": [
-    [
-     "Sternberg a créé le test de Rorschach.",
-     false
-    ],
-    [
-     "Gardner a proposé la théorie des intelligences multiples.",
-     true
-    ],
-    [
-     "Sternberg a proposé une théorie triarchique (analytique, créative, pratique).",
-     true
-    ]
-   ],
-   "e": "Ces théories élargissent la notion d'intelligence, mais restent débattues sur le plan empirique.",
-   "p": "QI et théories de l'intelligence"
-  },
-  {
    "s": "Tests chez l'enfant",
    "q": "À propos du test du dessin du bonhomme de Goodenough :",
    "a": [
@@ -14268,26 +15728,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "C'est une batterie d'évaluation cognitive pour enfants.",
-   "p": "Tests chez l'enfant"
-  },
-  {
-   "s": "Tests chez l'enfant",
-   "q": "À propos de l'échelle de Brunet-Lézine :",
-   "a": [
-    [
-     "C'est un test de personnalité pour adultes.",
-     false
-    ],
-    [
-     "Elle s'adresse aux jeunes enfants.",
-     true
-    ],
-    [
-     "Elle évalue le développement psychomoteur de la petite enfance.",
-     true
-    ]
-   ],
-   "e": "Elle explore la posture, la coordination, le langage et la sociabilité.",
    "p": "Tests chez l'enfant"
   },
   {
@@ -14352,26 +15792,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests chez l'enfant",
-   "q": "Conditions de passation chez l'enfant :",
-   "a": [
-    [
-     "Il faut établir le contact et adapter la durée, avec des pauses si nécessaire.",
-     true
-    ],
-    [
-     "L'enfant doit être évalué sans aucun contact préalable.",
-     false
-    ],
-    [
-     "La fatigue et l'anxiété peuvent influencer les résultats.",
-     true
-    ]
-   ],
-   "e": "Un enfant mis en confiance donne une meilleure image de ses capacités.",
-   "p": "Tests chez l'enfant"
-  },
-  {
-   "s": "Tests chez l'enfant",
    "q": "À propos de la déficience intellectuelle :",
    "a": [
     [
@@ -14408,26 +15828,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Un kappa de 1 signifie un accord parfait. Un kappa proche de 0 correspond à l'accord attendu par hasard.",
-   "p": "Fidélité et théorie classique"
-  },
-  {
-   "s": "Fidélité",
-   "q": "À propos des formes parallèles d'un test :",
-   "a": [
-    [
-     "Elles limitent l'effet de mémorisation du test-retest.",
-     true
-    ],
-    [
-     "Elles servent à mesurer la validité prédictive.",
-     false
-    ],
-    [
-     "Ce sont deux versions équivalentes du même test.",
-     true
-    ]
-   ],
-   "e": "On compare les scores obtenus aux deux formes pour estimer la fidélité.",
    "p": "Fidélité et théorie classique"
   },
   {
@@ -14472,26 +15872,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Validité",
-   "q": "Sensibilité et spécificité :",
-   "a": [
-    [
-     "Un test très sensible n'a jamais de faux positifs.",
-     false
-    ],
-    [
-     "La sensibilité est la proportion de personnes concernées correctement détectées.",
-     true
-    ],
-    [
-     "La spécificité est la proportion de personnes non concernées correctement identifiées.",
-     true
-    ]
-   ],
-   "e": "Un test peut détecter presque tout le monde, mais aussi signaler à tort des personnes saines.",
-   "p": "Validité, équité et sélection"
-  },
-  {
-   "s": "Validité",
    "q": "À propos de la validité écologique :",
    "a": [
     [
@@ -14528,26 +15908,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Quelques revenus très élevés tirent la moyenne vers le haut.",
-   "p": "Statistiques et choix des tests"
-  },
-  {
-   "s": "Statistiques",
-   "q": "À propos du mode :",
-   "a": [
-    [
-     "C'est la valeur la plus fréquente.",
-     true
-    ],
-    [
-     "Il y a toujours exactement un mode.",
-     false
-    ],
-    [
-     "Une distribution peut avoir plusieurs modes.",
-     true
-    ]
-   ],
-   "e": "Une distribution peut être bimodale, ou n'avoir aucun mode.",
    "p": "Statistiques et choix des tests"
   },
   {
@@ -14751,26 +16111,6 @@ window.QUESTIONS = {
    "p": "Validité, équité et sélection"
   },
   {
-   "s": "Équité",
-   "q": "À propos de l'influence de l'examinateur :",
-   "a": [
-    [
-     "La passation standardisée limite ces effets.",
-     true
-    ],
-    [
-     "Le comportement de l'examinateur peut influencer les résultats.",
-     true
-    ],
-    [
-     "L'examinateur n'a aucune influence si le test est écrit.",
-     false
-    ]
-   ],
-   "e": "Même pour un test écrit, les consignes et l'attitude de l'examinateur comptent.",
-   "p": "Validité, équité et sélection"
-  },
-  {
    "s": "Histoire",
    "q": "À propos de l'origine du test de Binet :",
    "a": [
@@ -14808,26 +16148,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Murray est l'un des auteurs du TAT.",
-   "p": "Histoire de la psychométrie"
-  },
-  {
-   "s": "Histoire",
-   "q": "À propos de Wechsler :",
-   "a": [
-    [
-     "Il a publié le Wechsler-Bellevue en 1939.",
-     true
-    ],
-    [
-     "Il a critiqué la notion d'âge mental pour les adultes.",
-     true
-    ],
-    [
-     "Il a publié son premier test en 1905.",
-     false
-    ]
-   ],
-   "e": "1905 est la date de l'échelle de Binet-Simon.",
    "p": "Histoire de la psychométrie"
   },
   {
@@ -14871,46 +16191,6 @@ window.QUESTIONS = {
    "p": "Échelles de Wechsler"
   },
   {
-   "s": "Facteur g",
-   "q": "À propos du vieillissement et de l'intelligence :",
-   "a": [
-    [
-     "L'intelligence cristallisée peut continuer à progresser avec l'âge.",
-     true
-    ],
-    [
-     "L'intelligence fluide augmente jusqu'à 80 ans.",
-     false
-    ],
-    [
-     "L'intelligence fluide diminue plus tôt que l'intelligence cristallisée.",
-     true
-    ]
-   ],
-   "e": "Les connaissances et le vocabulaire se maintiennent mieux que le raisonnement face à la nouveauté.",
-   "p": "QI et théories de l'intelligence"
-  },
-  {
-   "s": "Définitions",
-   "q": "Tests normatifs et tests critériés :",
-   "a": [
-    [
-     "Un test normatif compare le score à celui d'un groupe.",
-     true
-    ],
-    [
-     "Un test critérié compare le score à un seuil de maîtrise.",
-     true
-    ],
-    [
-     "Un test critérié classe toujours les personnes par percentile.",
-     false
-    ]
-   ],
-   "e": "Un permis de conduire est un exemple de test critérié : on est reçu ou non selon un seuil.",
-   "p": "Pratique professionnelle et éthique"
-  },
-  {
    "s": "Définitions",
    "q": "À propos des scores bruts :",
    "a": [
@@ -14948,26 +16228,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "On définit, on écrit, on essaie, on analyse, puis on étudie fidélité, validité et normes.",
-   "p": "Construction de tests et analyse d'items"
-  },
-  {
-   "s": "Construction de tests",
-   "q": "À propos du tableau de spécification :",
-   "a": [
-    [
-     "Il relie les contenus à évaluer au nombre d'items.",
-     true
-    ],
-    [
-     "Il remplace l'analyse d'items.",
-     false
-    ],
-    [
-     "Il aide à assurer la validité de contenu.",
-     true
-    ]
-   ],
-   "e": "C'est un plan de construction, pas une analyse des résultats.",
    "p": "Construction de tests et analyse d'items"
   },
   {
@@ -15031,26 +16291,6 @@ window.QUESTIONS = {
    "p": "Construction de tests et analyse d'items"
   },
   {
-   "s": "Construction de tests",
-   "q": "À propos des consignes d'un test :",
-   "a": [
-    [
-     "Chaque examinateur peut improviser les consignes.",
-     false
-    ],
-    [
-     "Elles doivent être claires et standardisées.",
-     true
-    ],
-    [
-     "Des exemples d'entraînement peuvent être proposés.",
-     true
-    ]
-   ],
-   "e": "La standardisation garantit que tous passent le test dans les mêmes conditions.",
-   "p": "Construction de tests et analyse d'items"
-  },
-  {
    "s": "Théorie de réponse à l'item",
    "q": "À propos de la théorie de réponse à l'item (TRI) :",
    "a": [
@@ -15088,26 +16328,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "La discrimination y est supposée identique pour tous les items.",
-   "p": "TRI, analyse factorielle et fondements"
-  },
-  {
-   "s": "Théorie de réponse à l'item",
-   "q": "À propos des modèles à 1, 2 et 3 paramètres :",
-   "a": [
-    [
-     "Le modèle 1PL possède trois paramètres.",
-     false
-    ],
-    [
-     "Le modèle 3PL ajoute un paramètre de pseudo-hasard.",
-     true
-    ],
-    [
-     "Le modèle 2PL ajoute la discrimination.",
-     true
-    ]
-   ],
-   "e": "1PL : difficulté. 2PL : difficulté et discrimination. 3PL : plus la devinette.",
    "p": "TRI, analyse factorielle et fondements"
   },
   {
@@ -15168,26 +16388,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Le test s'ajuste au niveau de chaque personne.",
-   "p": "TRI, analyse factorielle et fondements"
-  },
-  {
-   "s": "Analyse factorielle",
-   "q": "Analyse factorielle exploratoire et confirmatoire :",
-   "a": [
-    [
-     "La confirmatoire teste un modèle défini à l'avance.",
-     true
-    ],
-    [
-     "L'exploratoire cherche la structure des données.",
-     true
-    ],
-    [
-     "La confirmatoire ne fait aucune hypothèse.",
-     false
-    ]
-   ],
-   "e": "La confirmatoire vérifie si un modèle théorique s'ajuste aux données.",
    "p": "TRI, analyse factorielle et fondements"
   },
   {
@@ -15292,26 +16492,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Théorie classique des tests",
-   "q": "À propos de l'erreur standard de mesure : SEM = σ × √(1 − r).",
-   "a": [
-    [
-     "Si r = 1, le SEM vaut 0.",
-     true
-    ],
-    [
-     "Si r = 0, le SEM est égal à l'écart-type.",
-     true
-    ],
-    [
-     "Si r = 1, le SEM est égal à l'écart-type.",
-     false
-    ]
-   ],
-   "e": "Une mesure parfaitement fidèle n'a aucune erreur.",
-   "p": "Fidélité et théorie classique"
-  },
-  {
-   "s": "Théorie classique des tests",
    "q": "À propos de l'intervalle de confiance d'un score :",
    "a": [
     [
@@ -15372,26 +16552,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Analyse d'items",
-   "q": "À propos des distracteurs d'un QCM :",
-   "a": [
-    [
-     "Un bon distracteur doit être absurde.",
-     false
-    ],
-    [
-     "Un distracteur que personne ne choisit doit être revu.",
-     true
-    ],
-    [
-     "Un bon distracteur est plausible.",
-     true
-    ]
-   ],
-   "e": "Un distracteur absurde n'a aucun intérêt : il est éliminé d'emblée.",
-   "p": "Construction de tests et analyse d'items"
-  },
-  {
-   "s": "Analyse d'items",
    "q": "À propos de la difficulté idéale des items :",
    "a": [
     [
@@ -15409,26 +16569,6 @@ window.QUESTIONS = {
    ],
    "e": "Un item que tout le monde réussit n'apporte aucune information.",
    "p": "Construction de tests et analyse d'items"
-  },
-  {
-   "s": "Statistiques",
-   "q": "À propos du d de Cohen :",
-   "a": [
-    [
-     "0,2 est un effet petit, 0,5 moyen et 0,8 grand.",
-     true
-    ],
-    [
-     "Il exprime une différence de moyennes en écarts-types.",
-     true
-    ],
-    [
-     "d = 0,8 correspond à un petit effet.",
-     false
-    ]
-   ],
-   "e": "Ce sont des repères conventionnels : ils s'interprètent selon le contexte.",
-   "p": "Statistiques et choix des tests"
   },
   {
    "s": "Statistiques",
@@ -15615,26 +16755,6 @@ window.QUESTIONS = {
    "p": "Validité, équité et sélection"
   },
   {
-   "s": "Validité",
-   "q": "À propos du biais de prédiction :",
-   "a": [
-    [
-     "Une différence de moyennes équivaut à un biais de prédiction.",
-     false
-    ],
-    [
-     "Un test peut mieux prédire un critère dans un groupe que dans un autre.",
-     true
-    ],
-    [
-     "On le repère par des analyses de régression pour chaque groupe.",
-     true
-    ]
-   ],
-   "e": "Les moyennes peuvent différer sans que la prédiction soit biaisée.",
-   "p": "Validité, équité et sélection"
-  },
-  {
    "s": "Notion de QI",
    "q": "À propos d'un QI de 130 :",
    "a": [
@@ -15675,46 +16795,6 @@ window.QUESTIONS = {
    "p": "QI et théories de l'intelligence"
   },
   {
-   "s": "Notion de QI",
-   "q": "À propos de la régression vers la moyenne :",
-   "a": [
-    [
-     "Un score extrême tend à être moins extrême à la seconde passation.",
-     true
-    ],
-    [
-     "Elle est liée à la fidélité imparfaite des scores.",
-     true
-    ],
-    [
-     "Elle prouve que le test est biaisé.",
-     false
-    ]
-   ],
-   "e": "Elle apparaît dès qu'une mesure contient une part d'erreur.",
-   "p": "QI et théories de l'intelligence"
-  },
-  {
-   "s": "Étalonnage",
-   "q": "À propos de la stratification des normes :",
-   "a": [
-    [
-     "Elles permettent des comparaisons plus justes.",
-     true
-    ],
-    [
-     "Il ne faut jamais tenir compte de l'âge.",
-     false
-    ],
-    [
-     "Les normes peuvent être établies par âge, sexe ou niveau d'études.",
-     true
-    ]
-   ],
-   "e": "Comparer un enfant de 6 ans à un adolescent n'aurait aucun sens.",
-   "p": "Étalonnage et notes standard"
-  },
-  {
    "s": "Étalonnage",
    "q": "À propos des âges équivalents :",
    "a": [
@@ -15752,26 +16832,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Une somme de carrés ne peut pas être négative.",
-   "p": "Statistiques et choix des tests"
-  },
-  {
-   "s": "Statistiques",
-   "q": "À propos de l'asymétrie d'une distribution :",
-   "a": [
-    [
-     "Avec une asymétrie négative, la queue est à gauche.",
-     true
-    ],
-    [
-     "Avec une asymétrie positive, la queue est à droite et la moyenne dépasse la médiane.",
-     true
-    ],
-    [
-     "La moyenne est toujours égale à la médiane.",
-     false
-    ]
-   ],
-   "e": "Elles ne coïncident que pour une distribution symétrique.",
    "p": "Statistiques et choix des tests"
   },
   {
@@ -15896,26 +16956,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Échelles de Wechsler",
-   "q": "À propos des échelles de Wechsler selon l'âge :",
-   "a": [
-    [
-     "Le WAIS s'adresse aux jeunes enfants.",
-     false
-    ],
-    [
-     "Le WISC s'adresse aux enfants et aux adolescents.",
-     true
-    ],
-    [
-     "Le WPPSI s'adresse aux jeunes enfants.",
-     true
-    ]
-   ],
-   "e": "WPPSI : préscolaire. WISC : enfants et adolescents. WAIS : adultes.",
-   "p": "Échelles de Wechsler"
-  },
-  {
-   "s": "Échelles de Wechsler",
    "q": "À propos de ce que mesurent certains subtests de Wechsler :",
    "a": [
     [
@@ -15995,26 +17035,6 @@ window.QUESTIONS = {
    "p": "QI et théories de l'intelligence"
   },
   {
-   "s": "Facteur g",
-   "q": "À propos de l'organisation des aptitudes cognitives :",
-   "a": [
-    [
-     "Les corrélations entre tests d'aptitudes sont presque toujours positives.",
-     true
-    ],
-    [
-     "Outre g, il existe des facteurs de groupe.",
-     true
-    ],
-    [
-     "Le facteur g est une région précise du cerveau, prouvée.",
-     false
-    ]
-   ],
-   "e": "Le facteur g est un résultat statistique, non une localisation cérébrale établie.",
-   "p": "QI et théories de l'intelligence"
-  },
-  {
    "s": "Équité",
    "q": "À propos des tests dits « culture-fair » :",
    "a": [
@@ -16072,26 +17092,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Dans un test de vitesse, on mesure surtout la rapidité.",
-   "p": "Pratique professionnelle et éthique"
-  },
-  {
-   "s": "Définitions",
-   "q": "Tests collectifs et tests individuels :",
-   "a": [
-    [
-     "Un test collectif permet toujours d'observer le comportement de chacun.",
-     false
-    ],
-    [
-     "Un test individuel permet une observation qualitative plus fine.",
-     true
-    ],
-    [
-     "Un test collectif se passe à plusieurs personnes à la fois.",
-     true
-    ]
-   ],
-   "e": "Avec un groupe, l'examinateur ne peut pas suivre chaque personne de près.",
    "p": "Pratique professionnelle et éthique"
   },
   {
@@ -16176,26 +17176,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Échelles de Wechsler",
-   "q": "À propos de la structure du WISC-V :",
-   "a": [
-    [
-     "Le QI total repose sur 7 subtests.",
-     true
-    ],
-    [
-     "Il s'adresse aux adultes de 16 à 90 ans.",
-     false
-    ],
-    [
-     "Il fournit cinq indices primaires.",
-     true
-    ]
-   ],
-   "e": "Le WISC-V s'adresse aux enfants de 6 à 16 ans.",
-   "p": "Échelles de Wechsler"
-  },
-  {
-   "s": "Échelles de Wechsler",
    "q": "À propos des indices complémentaires du WISC-V :",
    "a": [
     [
@@ -16256,26 +17236,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests d'intelligence",
-   "q": "À propos de la K-ABC II :",
-   "a": [
-    [
-     "Elle ne propose aucune échelle non verbale.",
-     false
-    ],
-    [
-     "Elle s'adresse aux enfants de 3 à 18 ans.",
-     true
-    ],
-    [
-     "Elle s'appuie sur deux modèles, celui de Luria et celui de Cattell-Horn-Carroll.",
-     true
-    ]
-   ],
-   "e": "Une échelle non verbale permet d'évaluer des enfants peu à l'aise avec la langue de passation.",
-   "p": "Échelles de Wechsler"
-  },
-  {
-   "s": "Tests d'intelligence",
    "q": "À propos du Woodcock-Johnson IV :",
    "a": [
     [
@@ -16293,26 +17253,6 @@ window.QUESTIONS = {
    ],
    "e": "Il combine mesure des aptitudes et mesure des acquis scolaires.",
    "p": "Échelles de Wechsler"
-  },
-  {
-   "s": "Tests chez l'enfant",
-   "q": "À propos de l'échelle de Bayley-III :",
-   "a": [
-    [
-     "Elle évalue les adolescents de 14 ans.",
-     false
-    ],
-    [
-     "Elle comprend des échelles cognitive, de langage et motrice.",
-     true
-    ],
-    [
-     "Elle évalue des enfants de 1 à 42 mois.",
-     true
-    ]
-   ],
-   "e": "Des questionnaires complètent l'évaluation, notamment pour le comportement adaptatif.",
-   "p": "Tests chez l'enfant"
   },
   {
    "s": "Tests chez l'enfant",
@@ -16433,46 +17373,6 @@ window.QUESTIONS = {
    ],
    "e": "Kuder et Richardson l'ont proposé pour les items cotés 0 ou 1.",
    "p": "Fidélité et théorie classique"
-  },
-  {
-   "s": "Fidélité",
-   "q": "À propos des scores de différence (par exemple QI verbal moins QI de performance) :",
-   "a": [
-    [
-     "Ils sont souvent moins fiables que les scores dont ils sont issus.",
-     true
-    ],
-    [
-     "Ils sont toujours plus fiables que les scores d'origine.",
-     false
-    ],
-    [
-     "Leur fidélité dépend de la corrélation entre les deux scores.",
-     true
-    ]
-   ],
-   "e": "Plus les deux scores sont corrélés, moins leur différence est fiable.",
-   "p": "Fidélité et théorie classique"
-  },
-  {
-   "s": "Validité",
-   "q": "À propos de la méthode de Mantel-Haenszel :",
-   "a": [
-    [
-     "Elle compare la réussite de deux groupes de même niveau global.",
-     true
-    ],
-    [
-     "Elle compare uniquement les moyennes totales de deux groupes.",
-     false
-    ],
-    [
-     "Elle sert à repérer un fonctionnement différentiel des items (DIF).",
-     true
-    ]
-   ],
-   "e": "On apparie les personnes selon leur score total, puis on compare leur réussite à l'item.",
-   "p": "Validité, équité et sélection"
   },
   {
    "s": "Construction de tests",
@@ -16695,46 +17595,6 @@ window.QUESTIONS = {
    "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
   },
   {
-   "s": "Tests de lecture",
-   "q": "À propos du test de l'Alouette (Lefavrais) :",
-   "a": [
-    [
-     "Il évalue le calcul mental.",
-     false
-    ],
-    [
-     "Il dure au maximum 3 minutes.",
-     true
-    ],
-    [
-     "Il évalue la lecture, en vitesse et en précision.",
-     true
-    ]
-   ],
-   "e": "Le texte est volontairement dépourvu de sens, pour limiter l'aide du contexte.",
-   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
-  },
-  {
-   "s": "Tests d'intelligence",
-   "q": "À propos de la relation entre Wechsler et Raven :",
-   "a": [
-    [
-     "Les corrélations entre les deux sont généralement élevées.",
-     true
-    ],
-    [
-     "Les deux sont fortement liés au facteur g.",
-     true
-    ],
-    [
-     "Les deux ne sont jamais corrélés.",
-     false
-    ]
-   ],
-   "e": "Ils mesurent des aspects proches de l'intelligence générale.",
-   "p": "Échelles de Wechsler"
-  },
-  {
    "s": "Tests d'attention",
    "q": "À propos du Conners CPT (Continuous Performance Test) :",
    "a": [
@@ -16772,26 +17632,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il est proche du Bender dans son principe, avec une cotation standardisée.",
-   "p": "Tests chez l'enfant"
-  },
-  {
-   "s": "Tests chez l'enfant",
-   "q": "À propos du Denver II :",
-   "a": [
-    [
-     "Il évalue les adultes.",
-     false
-    ],
-    [
-     "C'est un outil de dépistage du développement de la naissance à 6 ans.",
-     true
-    ],
-    [
-     "Il ne permet pas à lui seul de poser un diagnostic.",
-     true
-    ]
-   ],
-   "e": "Un résultat suspect conduit à une évaluation plus approfondie.",
    "p": "Tests chez l'enfant"
   },
   {
@@ -16833,26 +17673,6 @@ window.QUESTIONS = {
    ],
    "e": "Elles complètent les normes sans les remplacer.",
    "p": "Échelles de Wechsler"
-  },
-  {
-   "s": "Histoire",
-   "q": "À propos de l'histoire de quelques tests :",
-   "a": [
-    [
-     "Le 16PF de Cattell date de 1949.",
-     true
-    ],
-    [
-     "Le TAT a été publié en 1935 par Morgan et Murray.",
-     true
-    ],
-    [
-     "Le WAIS date de 1905.",
-     false
-    ]
-   ],
-   "e": "Le WAIS est paru en 1955. 1905 est la date de l'échelle de Binet-Simon.",
-   "p": "Histoire de la psychométrie"
   },
   {
    "s": "Histoire",
@@ -16912,26 +17732,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Holland est l'auteur du modèle RIASEC.",
-   "p": "Histoire de la psychométrie"
-  },
-  {
-   "s": "Histoire des méthodes",
-   "q": "À propos du coefficient alpha :",
-   "a": [
-    [
-     "Il estime la validité de critère.",
-     false
-    ],
-    [
-     "Cronbach l'a publié en 1951.",
-     true
-    ],
-    [
-     "Il estime la cohérence interne.",
-     true
-    ]
-   ],
-   "e": "Il généralise les travaux de Kuder et Richardson.",
    "p": "Histoire de la psychométrie"
   },
   {
@@ -16996,26 +17796,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Histoire des méthodes",
-   "q": "À propos du modèle de Rasch (origine) :",
-   "a": [
-    [
-     "Il date de 1920.",
-     false
-    ],
-    [
-     "Georg Rasch l'a publié en 1960.",
-     true
-    ],
-    [
-     "Il relève de la théorie de réponse à l'item.",
-     true
-    ]
-   ],
-   "e": "Il a été proposé dans son ouvrage sur des tests d'intelligence et de lecture.",
-   "p": "Histoire de la psychométrie"
-  },
-  {
-   "s": "Histoire des méthodes",
    "q": "À propos de l'échelle de Likert (origine) :",
    "a": [
     [
@@ -17033,26 +17813,6 @@ window.QUESTIONS = {
    ],
    "e": "Elle est aujourd'hui l'un des formats de réponse les plus courants.",
    "p": "Histoire de la psychométrie"
-  },
-  {
-   "s": "Statistiques",
-   "q": "À propos des coefficients de corrélation :",
-   "a": [
-    [
-     "Le rho de Spearman repose sur les rangs.",
-     true
-    ],
-    [
-     "Le coefficient phi relie deux variables continues.",
-     false
-    ],
-    [
-     "La corrélation point-bisériale relie une variable dichotomique et une variable continue.",
-     true
-    ]
-   ],
-   "e": "Le coefficient phi relie deux variables dichotomiques.",
-   "p": "Statistiques et choix des tests"
   },
   {
    "s": "Statistiques",
@@ -17116,26 +17876,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Statistiques",
-   "q": "À propos de la puissance statistique :",
-   "a": [
-    [
-     "Elle diminue quand la taille d'échantillon augmente.",
-     false
-    ],
-    [
-     "Un seuil conventionnel est de 0,80.",
-     true
-    ],
-    [
-     "C'est la probabilité de détecter un effet réel.",
-     true
-    ]
-   ],
-   "e": "Plus l'échantillon est grand, plus la puissance est élevée.",
-   "p": "Statistiques et choix des tests"
-  },
-  {
-   "s": "Statistiques",
    "q": "À propos des effets plafond et plancher :",
    "a": [
     [
@@ -17176,26 +17916,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Mesure du changement",
-   "q": "À propos de l'effet de pratique :",
-   "a": [
-    [
-     "Les scores peuvent augmenter lors de passations répétées, sans changement réel.",
-     true
-    ],
-    [
-     "Des formes parallèles peuvent le réduire.",
-     true
-    ],
-    [
-     "Il disparaît toujours dès la deuxième passation.",
-     false
-    ]
-   ],
-   "e": "Il complique l'interprétation des évaluations répétées.",
-   "p": "Fidélité et théorie classique"
-  },
-  {
-   "s": "Mesure du changement",
    "q": "À propos du score vrai estimé (formule de Kelley) :",
    "a": [
     [
@@ -17213,26 +17933,6 @@ window.QUESTIONS = {
    ],
    "e": "Un score extrême comporte souvent une part d'erreur : le score vrai estimé est plus modéré.",
    "p": "Fidélité et théorie classique"
-  },
-  {
-   "s": "Étalonnage",
-   "q": "Équivalences entre un QI (moyenne 100, écart-type 15) et un rang percentile :",
-   "a": [
-    [
-     "Un QI de 100 correspond environ au percentile 50.",
-     true
-    ],
-    [
-     "Un QI de 115 correspond environ au percentile 84.",
-     true
-    ],
-    [
-     "Un QI de 130 correspond environ au percentile 84.",
-     false
-    ]
-   ],
-   "e": "130 est à +2 écarts-types, soit environ le percentile 98.",
-   "p": "Étalonnage et notes standard"
   },
   {
    "s": "Éthique et normes professionnelles",
@@ -17316,26 +18016,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests chez l'enfant",
-   "q": "À propos des Ages and Stages Questionnaires (ASQ-3) :",
-   "a": [
-    [
-     "Ils explorent notamment la communication et la motricité.",
-     true
-    ],
-    [
-     "Ils sont remplis par les parents.",
-     true
-    ],
-    [
-     "Ils évaluent la personnalité de l'adulte.",
-     false
-    ]
-   ],
-   "e": "Ils comprennent aussi la résolution de problèmes et le domaine personnel-social.",
-   "p": "Tests chez l'enfant"
-  },
-  {
-   "s": "Tests chez l'enfant",
    "q": "À propos du test de Frostig :",
    "a": [
     [
@@ -17415,26 +18095,6 @@ window.QUESTIONS = {
    "p": "Statistiques et choix des tests"
   },
   {
-   "s": "Définitions",
-   "q": "À propos des niveaux de mesure de Stevens :",
-   "a": [
-    [
-     "L'échelle de rapport n'a pas de zéro absolu.",
-     false
-    ],
-    [
-     "L'échelle nominale classe sans ordre.",
-     true
-    ],
-    [
-     "L'échelle ordinale classe avec un ordre.",
-     true
-    ]
-   ],
-   "e": "L'échelle de rapport possède un zéro absolu, comme la masse en kilogrammes.",
-   "p": "Pratique professionnelle et éthique"
-  },
-  {
    "s": "Étalonnage",
    "q": "À propos des méthodes d'échantillonnage :",
    "a": [
@@ -17495,26 +18155,6 @@ window.QUESTIONS = {
    "p": "Validité, équité et sélection"
   },
   {
-   "s": "Fidélité",
-   "q": "Calcul avec la formule de Spearman-Brown : un test a une fidélité de 0,60. On double sa longueur avec des items équivalents.",
-   "a": [
-    [
-     "La fidélité estimée devient 0,75.",
-     true
-    ],
-    [
-     "La formule est 2r ÷ (1 + r).",
-     true
-    ],
-    [
-     "La fidélité estimée devient 1,20.",
-     false
-    ]
-   ],
-   "e": "2 × 0,60 ÷ 1,60 = 0,75. Une fidélité ne peut pas dépasser 1.",
-   "p": "Fidélité et théorie classique"
-  },
-  {
    "s": "Étalonnage",
    "q": "Calculs de notes standard :",
    "a": [
@@ -17536,26 +18176,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Validité des méthodes de sélection",
-   "q": "À propos des travaux de Schmidt et Hunter (1998) sur la sélection :",
-   "a": [
-    [
-     "L'entretien structuré prédit mieux que l'entretien non structuré.",
-     true
-    ],
-    [
-     "Les tests d'aptitude cognitive font partie des meilleurs prédicteurs de performance.",
-     true
-    ],
-    [
-     "La graphologie est un très bon prédicteur de performance.",
-     false
-    ]
-   ],
-   "e": "La validité de la graphologie est proche de zéro.",
-   "p": "Validité, équité et sélection"
-  },
-  {
-   "s": "Validité des méthodes de sélection",
    "q": "À propos des critères sans validité prédictive solide :",
    "a": [
     [
@@ -17573,46 +18193,6 @@ window.QUESTIONS = {
    ],
    "e": "Il faut s'appuyer sur des méthodes dont la validité est démontrée.",
    "p": "Validité, équité et sélection"
-  },
-  {
-   "s": "Statistiques",
-   "q": "À propos de la méta-analyse :",
-   "a": [
-    [
-     "Elle combine les résultats de plusieurs études.",
-     true
-    ],
-    [
-     "Elle se limite à une seule étude.",
-     false
-    ],
-    [
-     "Elle permet d'estimer une validité moyenne, avec corrections éventuelles.",
-     true
-    ]
-   ],
-   "e": "Elle est très utilisée pour établir la validité des outils de sélection.",
-   "p": "Statistiques et choix des tests"
-  },
-  {
-   "s": "Théorie de réponse à l'item",
-   "q": "À propos du système PROMIS :",
-   "a": [
-    [
-     "Il s'appuie sur la théorie de réponse à l'item.",
-     true
-    ],
-    [
-     "Il utilise la formule de Stern pour calculer un QI.",
-     false
-    ],
-    [
-     "Il exprime les scores en notes T (moyenne 50, écart-type 10).",
-     true
-    ]
-   ],
-   "e": "Il mesure des résultats rapportés par les patients, souvent avec des tests adaptatifs.",
-   "p": "TRI, analyse factorielle et fondements"
   },
   {
    "s": "Étalonnage",
@@ -17676,26 +18256,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Tests chez l'enfant",
-   "q": "À propos de l'inventaire MacArthur-Bates (CDI) :",
-   "a": [
-    [
-     "Il évalue le vocabulaire et les gestes du jeune enfant.",
-     true
-    ],
-    [
-     "Il est rempli par les parents.",
-     true
-    ],
-    [
-     "Il s'adresse aux adolescents de 16 ans.",
-     false
-    ]
-   ],
-   "e": "Il concerne des enfants d'environ 8 à 30 mois.",
-   "p": "Tests chez l'enfant"
-  },
-  {
-   "s": "Tests chez l'enfant",
    "q": "À propos des échelles de langage de Reynell :",
    "a": [
     [
@@ -17752,26 +18312,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il est rempli par les parents ou les enseignants.",
-   "p": "Tests chez l'enfant"
-  },
-  {
-   "s": "Évaluation de l'autisme",
-   "q": "À propos de l'ADOS-2 :",
-   "a": [
-    [
-     "C'est une observation semi-structurée.",
-     true
-    ],
-    [
-     "Le module employé dépend de l'âge et du niveau de langage.",
-     true
-    ],
-    [
-     "C'est un questionnaire d'auto-évaluation.",
-     false
-    ]
-   ],
-   "e": "L'examinateur propose des activités et observe la communication et les interactions.",
    "p": "Tests chez l'enfant"
   },
   {
@@ -17855,26 +18395,6 @@ window.QUESTIONS = {
    "p": "Validité, équité et sélection"
   },
   {
-   "s": "Validité des performances",
-   "q": "À propos des épreuves à choix forcé :",
-   "a": [
-    [
-     "Un résultat significativement inférieur au hasard suggère des réponses volontairement fausses.",
-     true
-    ],
-    [
-     "Un résultat inférieur au hasard est toujours un résultat normal.",
-     false
-    ],
-    [
-     "Un résultat proche du hasard n'est pas forcément un signe de simulation.",
-     true
-    ]
-   ],
-   "e": "Un résultat très inférieur au hasard est improbable sans intention de se tromper.",
-   "p": "Validité, équité et sélection"
-  },
-  {
    "s": "Évaluation fonctionnelle",
    "q": "À propos de l'EQ-5D :",
    "a": [
@@ -17912,26 +18432,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il existe en versions de 36 items et de 12 items.",
-   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
-  },
-  {
-   "s": "Évaluation fonctionnelle",
-   "q": "À propos de l'indice de Barthel :",
-   "a": [
-    [
-     "Son score va de 0 à 100.",
-     true
-    ],
-    [
-     "Il évalue l'autonomie dans les activités de la vie quotidienne.",
-     true
-    ],
-    [
-     "Il évalue la créativité.",
-     false
-    ]
-   ],
-   "e": "Un score plus élevé indique une meilleure autonomie.",
    "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
   },
   {
@@ -17992,26 +18492,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Elles sont très utilisées en gériatrie.",
-   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
-  },
-  {
-   "s": "Évaluation fonctionnelle",
-   "q": "À propos de l'échelle de fardeau de Zarit :",
-   "a": [
-    [
-     "Elle évalue le fardeau ressenti par l'aidant d'une personne dépendante.",
-     true
-    ],
-    [
-     "Elle évalue le QI de la personne aidée.",
-     false
-    ],
-    [
-     "La version de base comporte 22 items.",
-     true
-    ]
-   ],
-   "e": "Il existe aussi une version courte de 12 items.",
    "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
   },
   {
@@ -18092,26 +18572,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il date de 1975, et son interprétation tient compte du niveau d'études.",
-   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
-  },
-  {
-   "s": "Dépistage cognitif",
-   "q": "À propos du MoCA et du niveau d'études :",
-   "a": [
-    [
-     "On ajoute 1 point si la personne a 12 ans d'études ou moins.",
-     true
-    ],
-    [
-     "Le score maximal est de 30.",
-     true
-    ],
-    [
-     "On retire 5 points si la personne a un faible niveau d'études.",
-     false
-    ]
-   ],
-   "e": "Cette correction vise à limiter l'effet du niveau d'études sur le score.",
    "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
   },
   {
@@ -18276,26 +18736,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Psychométrie avancée",
-   "q": "À propos du modèle bifactoriel :",
-   "a": [
-    [
-     "Chaque item dépend d'un facteur général et d'un facteur spécifique.",
-     true
-    ],
-    [
-     "L'oméga hiérarchique estime la part de variance due au facteur général.",
-     true
-    ],
-    [
-     "Il suppose qu'il n'y a pas de facteur général.",
-     false
-    ]
-   ],
-   "e": "Il est utilisé notamment pour l'étude de la structure de l'intelligence.",
-   "p": "TRI, analyse factorielle et fondements"
-  },
-  {
-   "s": "Psychométrie avancée",
    "q": "À propos du modèle CHC de l'intelligence :",
    "a": [
     [
@@ -18356,26 +18796,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Construction de tests",
-   "q": "À propos du nombre de points d'une échelle de Likert :",
-   "a": [
-    [
-     "Un trop petit nombre de niveaux peut perdre de l'information.",
-     true
-    ],
-    [
-     "Une échelle à 2 niveaux contient toujours plus d'information.",
-     false
-    ],
-    [
-     "On utilise souvent 5 ou 7 niveaux de réponse.",
-     true
-    ]
-   ],
-   "e": "Plus de niveaux permettent plus de nuances, mais peuvent aussi compliquer la tâche.",
-   "p": "Construction de tests et analyse d'items"
-  },
-  {
-   "s": "Construction de tests",
    "q": "À propos de la modalité de réponse « neutre » :",
    "a": [
     [
@@ -18393,26 +18813,6 @@ window.QUESTIONS = {
    ],
    "e": "Le choix dépend de l'objectif de la mesure.",
    "p": "Construction de tests et analyse d'items"
-  },
-  {
-   "s": "Interprétation de scores",
-   "q": "À propos des seuils d'interprétation du PHQ-9 :",
-   "a": [
-    [
-     "Un score de 20 ou plus indique des symptômes sévères.",
-     true
-    ],
-    [
-     "Un score de 5 à 9 indique des symptômes légers.",
-     true
-    ],
-    [
-     "Un score de 1 à 4 indique des symptômes sévères.",
-     false
-    ]
-   ],
-   "e": "Les seuils sont 5, 10, 15 et 20. Ils orientent, sans remplacer l'évaluation clinique.",
-   "p": "Étalonnage et notes standard"
   },
   {
    "s": "Interprétation de scores",
@@ -18516,26 +18916,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Usage professionnel des tests",
-   "q": "À propos du choix d'un test :",
-   "a": [
-    [
-     "Il faut tenir compte de l'objectif de l'évaluation et de la population.",
-     true
-    ],
-    [
-     "Le prix du test est le seul critère à retenir.",
-     false
-    ],
-    [
-     "Il faut vérifier la qualité des normes, de la fidélité et de la validité.",
-     true
-    ]
-   ],
-   "e": "Le coût compte, mais jamais plus que la qualité psychométrique.",
-   "p": "Pratique professionnelle et éthique"
-  },
-  {
-   "s": "Usage professionnel des tests",
    "q": "À propos des sources d'information sur les tests :",
    "a": [
     [
@@ -18616,26 +18996,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Sélection du personnel",
-   "q": "À propos du modèle de Cleary :",
-   "a": [
-    [
-     "Un test est jugé équitable si la droite de régression est la même pour les groupes.",
-     true
-    ],
-    [
-     "Il s'intéresse au biais de prédiction.",
-     true
-    ],
-    [
-     "Il ne s'applique qu'aux tests de personnalité.",
-     false
-    ]
-   ],
-   "e": "Il compare la prédiction d'un critère entre groupes.",
-   "p": "Validité, équité et sélection"
-  },
-  {
-   "s": "Sélection du personnel",
    "q": "À propos de la préparation aux tests :",
    "a": [
     [
@@ -18692,26 +19052,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il en existe plusieurs éditions entre ces deux dates.",
-   "p": "Histoire de la psychométrie"
-  },
-  {
-   "s": "Histoire des tests",
-   "q": "À propos des éditions successives du MMPI :",
-   "a": [
-    [
-     "Le MMPI a été publié en 1943.",
-     true
-    ],
-    [
-     "Le MMPI-2 date de 1989.",
-     true
-    ],
-    [
-     "Le MMPI-2 date de 1943.",
-     false
-    ]
-   ],
-   "e": "Le MMPI-2-RF est arrivé plus tard, en 2008.",
    "p": "Histoire de la psychométrie"
   },
   {
@@ -18795,26 +19135,6 @@ window.QUESTIONS = {
    "p": "QI et théories de l'intelligence"
   },
   {
-   "s": "Histoire des tests",
-   "q": "À propos de l'échelle de distance sociale de Bogardus :",
-   "a": [
-    [
-     "Elle mesure l'acceptation de contact avec un groupe social.",
-     true
-    ],
-    [
-     "Elle date de 1925.",
-     true
-    ],
-    [
-     "Elle mesure les aptitudes spatiales.",
-     false
-    ]
-   ],
-   "e": "C'est l'une des premières échelles d'attitudes.",
-   "p": "Histoire de la psychométrie"
-  },
-  {
    "s": "Anxiété d'évaluation",
    "q": "À propos de l'anxiété face aux tests :",
    "a": [
@@ -18895,26 +19215,6 @@ window.QUESTIONS = {
    "p": "Pratique professionnelle et éthique"
   },
   {
-   "s": "Usage professionnel des tests",
-   "q": "À propos de l'expérience de passation des tests (testwiseness) :",
-   "a": [
-    [
-     "Elle peut utiliser des stratégies comme éliminer des réponses.",
-     true
-    ],
-    [
-     "Elle ne dépend jamais de l'expérience.",
-     false
-    ],
-    [
-     "Une personne habituée aux tests peut mieux gérer son temps.",
-     true
-    ]
-   ],
-   "e": "Ces habiletés peuvent avantager certains candidats, sans lien avec le trait mesuré.",
-   "p": "Pratique professionnelle et éthique"
-  },
-  {
    "s": "Histoire des tests",
    "q": "À propos de l'effet Stroop :",
    "a": [
@@ -18952,26 +19252,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "SEM = 15 × √(1 − 0,91) = 15 × 0,3 = 4,5. Puis 1,96 × 4,5 ≈ 8,8.",
-   "p": "Calculs psychométriques"
-  },
-  {
-   "s": "Calculs psychométriques",
-   "q": "Corrélation observée de 0,36 entre deux tests dont les fidélités sont 0,64 et 0,81.",
-   "a": [
-    [
-     "Le dénominateur de la correction vaut 0,72.",
-     true
-    ],
-    [
-     "La corrélation corrigée de l'atténuation est de 0,50.",
-     true
-    ],
-    [
-     "La corrélation corrigée est de 0,18.",
-     false
-    ]
-   ],
-   "e": "0,36 ÷ √(0,64 × 0,81) = 0,36 ÷ 0,72 = 0,50.",
    "p": "Calculs psychométriques"
   },
   {
@@ -19036,26 +19316,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Calculs psychométriques",
-   "q": "Pour un item, 20 personnes sur 25 du groupe supérieur et 8 sur 25 du groupe inférieur le réussissent.",
-   "a": [
-    [
-     "L'indice de discrimination est de 12.",
-     false
-    ],
-    [
-     "Il se calcule comme (U − L) ÷ n.",
-     true
-    ],
-    [
-     "L'indice de discrimination est de 0,48.",
-     true
-    ]
-   ],
-   "e": "(20 − 8) ÷ 25 = 0,48.",
-   "p": "Calculs psychométriques"
-  },
-  {
-   "s": "Calculs psychométriques",
    "q": "Deux juges s'accordent dans 90 % des cas. Le hasard produirait 50 % d'accords.",
    "a": [
     [
@@ -19096,26 +19356,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Calculs psychométriques",
-   "q": "Deux groupes ont des moyennes de 110 et de 100, avec un écart-type commun de 15.",
-   "a": [
-    [
-     "La différence est de 10 points.",
-     true
-    ],
-    [
-     "Le d de Cohen est de 10.",
-     false
-    ],
-    [
-     "Le d de Cohen est d'environ 0,67.",
-     true
-    ]
-   ],
-   "e": "d = 10 ÷ 15 ≈ 0,67.",
-   "p": "Calculs psychométriques"
-  },
-  {
-   "s": "Calculs psychométriques",
    "q": "Une corrélation de 0,6, avec un écart-type de 15 pour y et de 10 pour x.",
    "a": [
     [
@@ -19133,26 +19373,6 @@ window.QUESTIONS = {
    ],
    "e": "b = 0,6 × 15 ÷ 10 = 0,9.",
    "p": "Calculs psychométriques"
-  },
-  {
-   "s": "Fondements de la psychométrie",
-   "q": "À propos de Meehl (1954) :",
-   "a": [
-    [
-     "Il a conclu que le jugement clinique est toujours supérieur.",
-     false
-    ],
-    [
-     "Il a comparé la prédiction clinique et la prédiction statistique.",
-     true
-    ],
-    [
-     "Il a montré que les méthodes statistiques sont en général au moins aussi bonnes que le jugement clinique.",
-     true
-    ]
-   ],
-   "e": "Son livre a influencé l'usage de méthodes actuarielles.",
-   "p": "TRI, analyse factorielle et fondements"
   },
   {
    "s": "Fondements de la psychométrie",
@@ -19216,26 +19436,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Fondements de la psychométrie",
-   "q": "À propos du concept de validité de Borsboom :",
-   "a": [
-    [
-     "Cette conception met l'accent sur un lien causal.",
-     true
-    ],
-    [
-     "Elle réduit la validité à la fidélité.",
-     false
-    ],
-    [
-     "Un test est valide si l'attribut mesuré existe et cause les résultats.",
-     true
-    ]
-   ],
-   "e": "Elle a ouvert un débat avec la conception de Messick.",
-   "p": "TRI, analyse factorielle et fondements"
-  },
-  {
-   "s": "Fondements de la psychométrie",
    "q": "À propos des premiers standards professionnels :",
    "a": [
     [
@@ -19272,26 +19472,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il faut interpréter l'ensemble du profil, pas un seul résultat.",
-   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
-  },
-  {
-   "s": "Interprétation neuropsychologique",
-   "q": "À propos du National Adult Reading Test (NART) :",
-   "a": [
-    [
-     "Il sert à estimer le niveau intellectuel antérieur à un trouble.",
-     true
-    ],
-    [
-     "Il évalue la dextérité.",
-     false
-    ],
-    [
-     "Le sujet lit des mots irréguliers.",
-     true
-    ]
-   ],
-   "e": "Nelson l'a proposé en 1982.",
    "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
   },
   {
@@ -19333,26 +19513,6 @@ window.QUESTIONS = {
    ],
    "e": "Un score inférieur ou égal à 7 est souvent considéré comme un signal d'alerte.",
    "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
-  },
-  {
-   "s": "Langage de l'enfant",
-   "q": "À propos de l'EVIP :",
-   "a": [
-    [
-     "Elle évalue les aptitudes mécaniques.",
-     false
-    ],
-    [
-     "C'est l'adaptation française du Peabody Picture Vocabulary Test.",
-     true
-    ],
-    [
-     "Elle évalue le vocabulaire réceptif.",
-     true
-    ]
-   ],
-   "e": "L'enfant désigne l'image correspondant au mot entendu.",
-   "p": "Tests chez l'enfant"
   },
   {
    "s": "Langage de l'enfant",
@@ -19416,26 +19576,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Dépendances et changement",
-   "q": "À propos de l'échelle URICA :",
-   "a": [
-    [
-     "Elle évalue les aptitudes spatiales.",
-     false
-    ],
-    [
-     "Elle s'appuie sur le modèle de Prochaska et DiClemente.",
-     true
-    ],
-    [
-     "Elle évalue le stade de motivation au changement.",
-     true
-    ]
-   ],
-   "e": "Elle distingue notamment la précontemplation et l'action.",
-   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
-  },
-  {
-   "s": "Dépendances et changement",
    "q": "À propos du modèle transthéorique de Prochaska et DiClemente :",
    "a": [
     [
@@ -19492,26 +19632,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Il explore le bien-être physique, social, émotionnel et fonctionnel.",
-   "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
-  },
-  {
-   "s": "Qualité de vie",
-   "q": "À propos du Brief Pain Inventory :",
-   "a": [
-    [
-     "Il évalue l'intelligence.",
-     false
-    ],
-    [
-     "Il évalue l'intensité de la douleur.",
-     true
-    ],
-    [
-     "Il évalue aussi son retentissement sur les activités.",
-     true
-    ]
-   ],
-   "e": "Cleeland en est l'auteur.",
    "p": "Évaluation clinique, fonctionnelle et neuropsychologique"
   },
   {
@@ -19596,26 +19716,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Statistiques",
-   "q": "À propos de la kurtosis :",
-   "a": [
-    [
-     "Une distribution leptokurtique a un pic aigu et des queues épaisses.",
-     true
-    ],
-    [
-     "Elle mesure la fidélité d'un test.",
-     false
-    ],
-    [
-     "Elle décrit la forme des queues de la distribution.",
-     true
-    ]
-   ],
-   "e": "Une kurtosis nulle est celle de la loi normale, selon la définition usuelle.",
-   "p": "Statistiques et choix des tests"
-  },
-  {
-   "s": "Statistiques",
    "q": "À propos des tests de normalité :",
    "a": [
     [
@@ -19696,26 +19796,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Standardisation de la passation",
-   "q": "À propos du chronométrage :",
-   "a": [
-    [
-     "Les limites de temps indiquées dans le manuel doivent être respectées.",
-     true
-    ],
-    [
-     "Un dépassement peut invalider la comparaison aux normes.",
-     true
-    ],
-    [
-     "Le temps est toujours indicatif et sans importance.",
-     false
-    ]
-   ],
-   "e": "Le chronométrage fait partie de la procédure standard.",
-   "p": "Pratique professionnelle et éthique"
-  },
-  {
-   "s": "Standardisation de la passation",
    "q": "À propos des erreurs de cotation :",
    "a": [
     [
@@ -19772,26 +19852,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Hs, D, Hy, Pd, Mf, Pa, Pt, Sc, Ma et Si.",
-   "p": "Pratique professionnelle et éthique"
-  },
-  {
-   "s": "Tests emblématiques",
-   "q": "À propos des planches du Rorschach :",
-   "a": [
-    [
-     "Les planches VIII, IX et X sont multicolores.",
-     true
-    ],
-    [
-     "Toutes les planches sont multicolores.",
-     false
-    ],
-    [
-     "Les planches II et III comportent du rouge.",
-     true
-    ]
-   ],
-   "e": "Les planches I, IV, V, VI et VII sont achromatiques.",
    "p": "Pratique professionnelle et éthique"
   },
   {
@@ -19876,26 +19936,6 @@ window.QUESTIONS = {
   },
   {
    "s": "Choix des tests statistiques",
-   "q": "À propos du khi-deux d'indépendance :",
-   "a": [
-    [
-     "Il compare deux moyennes.",
-     false
-    ],
-    [
-     "Il compare des effectifs observés et des effectifs attendus.",
-     true
-    ],
-    [
-     "Il teste l'association entre deux variables catégorielles.",
-     true
-    ]
-   ],
-   "e": "Par exemple : le lien entre le sexe et le choix d'une filière.",
-   "p": "Statistiques et choix des tests"
-  },
-  {
-   "s": "Choix des tests statistiques",
    "q": "À propos des comparaisons post hoc après une ANOVA :",
    "a": [
     [
@@ -19932,26 +19972,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Un profane peut mal interpréter des données brutes.",
-   "p": "Pratique professionnelle et éthique"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de la confidentialité au début d'une évaluation :",
-   "a": [
-    [
-     "La personne est informée des limites de la confidentialité.",
-     true
-    ],
-    [
-     "Elle est informée de l'usage des résultats.",
-     true
-    ],
-    [
-     "Il n'est pas nécessaire de l'informer.",
-     false
-    ]
-   ],
-   "e": "Cela fait partie du consentement éclairé.",
    "p": "Pratique professionnelle et éthique"
   },
   {
@@ -20032,26 +20052,6 @@ window.QUESTIONS = {
     ]
    ],
    "e": "Le rang percentile correspond à la proportion de scores inférieurs.",
-   "p": "Calculs psychométriques"
-  },
-  {
-   "s": "Calculs de base",
-   "q": "Une note de 10 a un coefficient de 1, une note de 16 a un coefficient de 2, et une note de 12 a un coefficient de 3.",
-   "a": [
-    [
-     "La somme pondérée est de 78.",
-     true
-    ],
-    [
-     "La moyenne pondérée est de 12.",
-     false
-    ],
-    [
-     "La moyenne pondérée est de 13.",
-     true
-    ]
-   ],
-   "e": "10 + 32 + 36 = 78, et 78 ÷ 6 = 13.",
    "p": "Calculs psychométriques"
   },
   {

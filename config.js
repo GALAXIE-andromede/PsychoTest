@@ -9,7 +9,8 @@
 
   WHATSAPP: "243850800833",
 
-  FREE_PER_CAT: 5,
+  // Questions gratuites par catégorie (92 + 75 + 83 = 250). Les autres sont réservées à la version Pro.
+  FREE: { apt: 92, per: 75, theo: 83 },
 
   PAYMENTS: [
     { name: "Airtel Money", value: "Retrait sur 0972175034 (SIM agent)" },
