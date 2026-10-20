@@ -3,7 +3,7 @@
   const Q = window.QUESTIONS;
   const CATS = [
     { id: "apt", t: "Aptitudes", d: "Logique, calcul, langage, attention, mémoire", c: "#1FA971", i: "grid" },
-    { id: "per", t: "Personnalité", d: "Big Five, MMPI, échelles cliniques, projectifs", c: "#F5B301", i: "user" },
+    { id: "per", t: "Administration et projets", d: "Administration publique, finances publiques, gestion de projets", c: "#F5B301", i: "briefcase" },
     { id: "theo", t: "Théorie psychométrique", d: "QI, fidélité, validité, statistiques, éthique", c: "#FF7A59", i: "book" }
   ];
   const catOf = (id) => CATS.find((c) => c.id === id);
@@ -11,7 +11,7 @@
   const FREE_TOTAL = CATS.reduce((s, c) => s + C.FREE[c.id], 0);
 
   const PROGRAMS = [
-    { id: "conc", t: "Concours et recrutement", c: "#1FA971", d: "Les épreuves d'aptitudes les plus fréquentes, des suites logiques à l'entretien de recrutement.", steps: [
+    { id: "conc", t: "Concours et recrutement", c: "#1FA971", d: "Les épreuves d'aptitudes les plus fréquentes, des suites logiques aux batteries d'admission.", steps: [
       { t: "Séries logiques", cat: "apt", packs: ["Séries logiques"] },
       { t: "Calcul et tableaux de données", cat: "apt", packs: ["Raisonnement numérique et calcul", "Tableaux et pourcentages"] },
       { t: "Raisonnement verbal et langue", cat: "apt", packs: ["Raisonnement verbal et langue"] },
@@ -19,40 +19,49 @@
       { t: "Matrices et tests non verbaux", cat: "apt", packs: ["Matrices et tests non verbaux"] },
       { t: "Espace, perception et mécanique", cat: "apt", packs: ["Espace, perception et mécanique"] },
       { t: "Batteries d'aptitudes et acquis", cat: "apt", packs: ["Batteries d'aptitudes et admission", "Acquis scolaires, lecture et langues"] },
-      { t: "Attention et vitesse", cat: "apt", packs: ["Attention et vitesse"] },
-      { t: "Recrutement et sélection", cat: "per", packs: ["Recrutement et sélection"] }] },
-    { id: "pers", t: "Tests de personnalité", c: "#F5B301", d: "Des modèles aux inventaires utilisés en orientation et en entreprise.", steps: [
-      { t: "Big Five", cat: "per", packs: ["Big Five"] },
-      { t: "MBTI et inventaires de personnalité", cat: "per", packs: ["MBTI", "Inventaires de personnalité"] },
-      { t: "Intérêts, valeurs et styles", cat: "per", packs: ["Intérêts, valeurs et styles"] },
-      { t: "Tests projectifs", cat: "per", packs: ["Tests projectifs"] },
-      { t: "Méthodologie et biais de réponse", cat: "per", packs: ["Méthodologie des questionnaires"] },
-      { t: "Interprétation des profils", cat: "per", packs: ["Interprétation des profils"] }] },
-    { id: "clin", t: "Psychologie clinique et santé", c: "#FF7A59", d: "Inventaires cliniques, échelles de dépistage, entretiens et évaluation fonctionnelle.", steps: [
-      { t: "MMPI et inventaires cliniques", cat: "per", packs: ["MMPI et inventaires cliniques"] },
-      { t: "Dépistage : anxiété, trauma, humeur, sommeil", cat: "per", packs: ["Dépistage : anxiété, trauma, humeur, sommeil"] },
-      { t: "Entretiens cliniques, enfants et famille", cat: "per", packs: ["Entretiens cliniques, enfants et famille"] },
-      { t: "Bien-être, stress et psychologie positive", cat: "per", packs: ["Bien-être, stress et psychologie positive"] },
-      { t: "Évaluation clinique et fonctionnelle", cat: "theo", packs: ["Évaluation clinique, fonctionnelle et neuropsychologique"] }] },
-    { id: "intel", t: "Tests d'intelligence", c: "#3D5AFE", d: "WAIS, WISC, Raven et théories de l'intelligence.", steps: [
+      { t: "Attention et vitesse", cat: "apt", packs: ["Attention et vitesse"] }] },
+    { id: "adm1", t: "Administration publique : les bases", c: "#F5B301", d: "L'État congolais, la décentralisation, l'organisation des administrations et le droit administratif.", steps: [
+      { t: "Organisation de l'État congolais", cat: "per", packs: ["Organisation de l'État congolais"] },
+      { t: "Décentralisation et provinces", cat: "per", packs: ["Décentralisation et provinces"] },
+      { t: "Organisation administrative", cat: "per", packs: ["Organisation administrative"] },
+      { t: "Droit administratif et service public", cat: "per", packs: ["Droit administratif et service public"] },
+      { t: "Théories de l'administration", cat: "per", packs: ["Théories de l'administration"] }] },
+    { id: "adm2", t: "Fonction publique, éthique et rédaction", c: "#FF9F1C", d: "Carrière des agents, déontologie, bonne gouvernance et rédaction administrative.", steps: [
+      { t: "Fonction publique et carrière", cat: "per", packs: ["Fonction publique et carrière"] },
+      { t: "Éthique et bonne gouvernance", cat: "per", packs: ["Éthique et bonne gouvernance"] },
+      { t: "Rédaction et communication administratives", cat: "per", packs: ["Rédaction et communication administratives"] }] },
+    { id: "adm3", t: "Finances publiques et marchés publics", c: "#E5484D", d: "Budget de l'État, exécution de la dépense, contrôle, marchés publics et planification.", steps: [
+      { t: "Finances publiques et budget", cat: "per", packs: ["Finances publiques et budget"] },
+      { t: "Marchés publics", cat: "per", packs: ["Marchés publics"] },
+      { t: "Planification et politiques publiques", cat: "per", packs: ["Planification et politiques publiques"] }] },
+    { id: "proj1", t: "Gestion de projets : les bases", c: "#3D5AFE", d: "Cycle de projet, cadre logique, planification, coûts et risques.", steps: [
+      { t: "Cycle de projet et cadre logique", cat: "per", packs: ["Cycle de projet et cadre logique"] },
+      { t: "Planification : WBS, Gantt et chemin critique", cat: "per", packs: ["Planification : WBS, Gantt et chemin critique"] },
+      { t: "Coûts, valeur acquise et rentabilité", cat: "per", packs: ["Coûts, valeur acquise et rentabilité"] },
+      { t: "Gestion des risques", cat: "per", packs: ["Gestion des risques"] }] },
+    { id: "proj2", t: "Gestion de projets : approfondissement", c: "#7C5CFA", d: "Parties prenantes, Agile et Scrum, PMBOK et PRINCE2, suivi-évaluation, qualité, contrats, équipe et clôture.", steps: [
+      { t: "Parties prenantes et communication", cat: "per", packs: ["Parties prenantes et communication"] },
+      { t: "Agile et Scrum", cat: "per", packs: ["Agile et Scrum"] },
+      { t: "PMBOK et PRINCE2", cat: "per", packs: ["PMBOK et PRINCE2"] },
+      { t: "Suivi-évaluation", cat: "per", packs: ["Suivi-évaluation"] },
+      { t: "Qualité et changements", cat: "per", packs: ["Qualité et changements"] },
+      { t: "Approvisionnement et contrats", cat: "per", packs: ["Approvisionnement et contrats"] },
+      { t: "Leadership et gestion d'équipe", cat: "per", packs: ["Leadership et gestion d'équipe"] },
+      { t: "Clôture et gouvernance de projet", cat: "per", packs: ["Clôture et gouvernance de projet"] },
+      { t: "Projets de développement et bailleurs", cat: "per", packs: ["Projets de développement et bailleurs"] }] },
+    { id: "intel", t: "Tests d'intelligence", c: "#19B6A0", d: "WAIS, WISC, Raven et théories de l'intelligence.", steps: [
       { t: "Sous-tests du WAIS et du WISC", cat: "apt", packs: ["Sous-tests du WAIS et du WISC"] },
       { t: "Échelles de Wechsler", cat: "theo", packs: ["Échelles de Wechsler"] },
       { t: "QI et théories de l'intelligence", cat: "theo", packs: ["QI et théories de l'intelligence"] },
       { t: "Matrices et tests non verbaux", cat: "apt", packs: ["Matrices et tests non verbaux"] },
       { t: "Tests chez l'enfant", cat: "theo", packs: ["Tests chez l'enfant"] }] },
-    { id: "neuro", t: "Neuropsychologie", c: "#7C5CFA", d: "Attention, mémoire, fonctions exécutives et batteries neuropsychologiques.", steps: [
+    { id: "neuro", t: "Neuropsychologie", c: "#FF7A59", d: "Attention, mémoire, fonctions exécutives et batteries neuropsychologiques.", steps: [
       { t: "Attention et vitesse", cat: "apt", packs: ["Attention et vitesse"] },
       { t: "Mémoire", cat: "apt", packs: ["Mémoire"] },
       { t: "Fonctions exécutives", cat: "apt", packs: ["Fonctions exécutives"] },
       { t: "Neuropsychologie et motricité", cat: "apt", packs: ["Neuropsychologie et motricité"] },
       { t: "Évaluation clinique et fonctionnelle", cat: "theo", packs: ["Évaluation clinique, fonctionnelle et neuropsychologique"] }] },
-    { id: "trav", t: "Travail et sélection du personnel", c: "#19B6A0", d: "Psychologie du travail, sélection, validité des méthodes et équité.", steps: [
-      { t: "Psychologie du travail", cat: "per", packs: ["Psychologie du travail"] },
-      { t: "Recrutement et sélection", cat: "per", packs: ["Recrutement et sélection"] },
-      { t: "Intérêts, valeurs et styles", cat: "per", packs: ["Intérêts, valeurs et styles"] },
-      { t: "Batteries d'aptitudes et admission", cat: "apt", packs: ["Batteries d'aptitudes et admission"] },
-      { t: "Validité, équité et sélection", cat: "theo", packs: ["Validité, équité et sélection"] }] },
-    { id: "theo", t: "Théorie pour étudiants", c: "#E5484D", d: "Les bases de la psychométrie pour réussir vos examens.", steps: [
+    { id: "theo", t: "Théorie pour étudiants (psychométrie)", c: "#C2307C", d: "Les bases de la psychométrie pour réussir vos examens.", steps: [
       { t: "Histoire de la psychométrie", cat: "theo", packs: ["Histoire de la psychométrie"] },
       { t: "Fidélité et théorie classique", cat: "theo", packs: ["Fidélité et théorie classique"] },
       { t: "Validité, équité et sélection", cat: "theo", packs: ["Validité, équité et sélection"] },
@@ -60,12 +69,8 @@
       { t: "Construction de tests et analyse d'items", cat: "theo", packs: ["Construction de tests et analyse d'items"] },
       { t: "TRI, analyse factorielle et fondements", cat: "theo", packs: ["TRI, analyse factorielle et fondements"] },
       { t: "Statistiques et choix des tests", cat: "theo", packs: ["Statistiques et choix des tests"] },
-      { t: "Calculs psychométriques", cat: "theo", packs: ["Calculs psychométriques"] }] },
-    { id: "ethic", t: "Éthique et pratique professionnelle", c: "#FF9F1C", d: "Déontologie, passation, cotation et interprétation responsable des tests.", steps: [
-      { t: "Éthique et déontologie", cat: "per", packs: ["Éthique et déontologie"] },
-      { t: "Pratique professionnelle et éthique", cat: "theo", packs: ["Pratique professionnelle et éthique"] },
-      { t: "Interprétation des profils", cat: "per", packs: ["Interprétation des profils"] },
-      { t: "Méthodologie des questionnaires", cat: "per", packs: ["Méthodologie des questionnaires"] }] }
+      { t: "Calculs psychométriques", cat: "theo", packs: ["Calculs psychométriques"] },
+      { t: "Pratique professionnelle et éthique", cat: "theo", packs: ["Pratique professionnelle et éthique"] }] }
   ];
   const TABS = ["home", "packs", "progress", "settings"];
   const ACCENTS = {
@@ -91,6 +96,7 @@
     '<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></symbol>' +
     '<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></symbol>' +
     '<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M8 7h7"/></symbol>' +
+    '<symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 13h18"/></symbol>' +
     '<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>' +
     '<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1a3 3 0 0 0 3 3M16 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8M10 17h4"/></symbol>' +
     '<symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 19c1-4 3-6 5-7M14 5c3 0 5 2 5 5-3 0-5 2-7 5l-3-3c3-2 5-4 5-7z"/><circle cx="14.5" cy="9.5" r="1.2"/></symbol>' +

@@ -1,4 +1,4 @@
-﻿// Application PsychoTest : 1000 questions. Les 250 premières (92 + 75 + 83) sont gratuites, réparties dans tous les paquets.
+﻿// Application PsychoTest : 1000 questions. Gratuites : 92 (aptitudes) + 75 (administration et projets) + 83 (théorie) = 250, réparties dans tous les paquets.
 // Format : { p: paquet, s: sous-thème, q: énoncé, a: [[assertion, vrai?], ...], e: explication }
 window.QUESTIONS = {
  "apt": [
@@ -7337,6020 +7337,6004 @@ window.QUESTIONS = {
  ],
  "per": [
   {
-   "s": "Big Five",
-   "q": "À propos du névrosisme dans le Big Five :",
+   "p": "Organisation de l'État congolais",
+   "s": "Pouvoirs",
+   "q": "À propos de la séparation des pouvoirs en RDC :",
    "a": [
     [
-     "Un score élevé indique une forte stabilité émotionnelle.",
-     false
-    ],
-    [
-     "Il renvoie à la tendance à éprouver des émotions négatives.",
+     "Le pouvoir exécutif est exercé par le Président de la République et le Gouvernement.",
      true
     ],
     [
-     "Il est synonyme d'extraversion.",
-     false
-    ]
-   ],
-   "e": "Un score élevé en névrosisme signifie une plus grande réactivité émotionnelle. La stabilité émotionnelle correspond au pôle opposé.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de l'ouverture à l'expérience (Big Five) :",
-   "a": [
-    [
-     "Elle est un synonyme d'intelligence.",
+     "Le Parlement ne comprend qu'une seule chambre.",
      false
     ],
     [
-     "Elle est associée à l'intérêt pour la nouveauté.",
-     true
-    ],
-    [
-     "Elle renvoie à la curiosité et à l'imagination.",
+     "Le pouvoir législatif est exercé par le Parlement, composé de l'Assemblée nationale et du Sénat.",
      true
     ]
    ],
-   "e": "L'ouverture est liée à l'intelligence, mais ce sont deux notions différentes.",
-   "p": "Big Five"
+   "e": "Le Parlement congolais est bicaméral : Assemblée nationale et Sénat."
   },
   {
-   "s": "Big Five",
-   "q": "À propos du modèle HEXACO :",
+   "p": "Organisation de l'État congolais",
+   "s": "Séparation des pouvoirs",
+   "q": "À propos du principe de séparation des pouvoirs :",
    "a": [
     [
-     "Il ajoute le facteur honnêteté-humilité.",
+     "Il distingue le pouvoir exécutif, le pouvoir législatif et le pouvoir judiciaire.",
      true
     ],
     [
-     "Il comprend cinq facteurs, comme le Big Five.",
+     "Il interdit toute forme de collaboration entre les pouvoirs.",
      false
     ],
     [
-     "Il comprend six facteurs.",
+     "Il vise à éviter la concentration du pouvoir entre les mêmes mains.",
      true
     ]
    ],
-   "e": "HEXACO signifie Honnêteté-Humilité, Émotivité, eXtraversion, Agréabilité, Conscienciosité, Ouverture.",
-   "p": "Big Five"
+   "e": "Les pouvoirs sont séparés, mais ils collaborent : par exemple, le Gouvernement est responsable devant l'Assemblée nationale."
   },
   {
-   "s": "Big Five",
-   "q": "À propos des facettes de l'extraversion (NEO) :",
+   "p": "Organisation de l'État congolais",
+   "s": "Nature de l'État",
+   "q": "À propos de la nature de l'État congolais :",
    "a": [
     [
-     "L'ordre en est une facette.",
+     "La RDC est un État fédéral.",
      false
     ],
     [
-     "La chaleur en est une facette.",
+     "La RDC est un État de droit.",
      true
     ],
     [
-     "L'assertivité en est une facette.",
+     "La Constitution proclame le caractère uni et indivisible de la RDC.",
      true
     ]
    ],
-   "e": "L'ordre est une facette de la conscienciosité.",
-   "p": "Big Five"
+   "e": "La RDC est un État unitaire décentralisé, avec des provinces dotées de compétences propres."
   },
   {
-   "s": "Big Five",
-   "q": "À propos des facettes de la conscienciosité (NEO) :",
+   "p": "Organisation de l'État congolais",
+   "s": "Pouvoir judiciaire",
+   "q": "À propos de l'indépendance de la justice :",
    "a": [
     [
-     "Le sens du devoir en est une facette.",
-     true
-    ],
-    [
-     "La chaleur en est une facette.",
+     "Le ministre de la Justice peut dicter sa décision à un juge.",
      false
     ],
     [
-     "L'autodiscipline en est une facette.",
+     "Le pouvoir judiciaire est indépendant des pouvoirs exécutif et législatif.",
+     true
+    ],
+    [
+     "Le Conseil supérieur de la magistrature est une institution prévue par la Constitution.",
      true
     ]
    ],
-   "e": "La chaleur est une facette de l'extraversion.",
-   "p": "Big Five"
+   "e": "L'indépendance du juge est une garantie du procès équitable."
   },
   {
-   "s": "Big Five",
-   "q": "À propos du NEO-PI-R :",
+   "p": "Décentralisation et provinces",
+   "s": "Province",
+   "q": "À propos de la province et des ETD :",
    "a": [
     [
-     "Il évalue 30 facettes.",
+     "La province est dotée de la personnalité juridique.",
      true
     ],
     [
-     "Il comporte 60 items.",
-     false
-    ],
-    [
-     "Il comporte 240 items.",
-     true
-    ]
-   ],
-   "e": "La version courte de 60 items est le NEO-FFI.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du TIPI (Ten-Item Personality Inventory) :",
-   "a": [
-    [
-     "Il convient quand le temps de passation est très limité.",
+     "La commune est une subdivision de la ville.",
      true
     ],
     [
-     "Il comporte 10 items.",
-     true
-    ],
-    [
-     "Il offre la même précision que le NEO-PI-R.",
+     "La province fait partie des ETD.",
      false
     ]
    ],
-   "e": "Il est très court, donc moins précis.",
-   "p": "Big Five"
+   "e": "La province est une composante politique et administrative de la République, distincte des ETD."
   },
   {
-   "s": "MBTI",
-   "q": "Les lettres du MBTI :",
+   "p": "Décentralisation et provinces",
+   "s": "Décentralisation",
+   "q": "À propos de la décentralisation et de la déconcentration :",
    "a": [
     [
-     "N signifie Normalité.",
+     "La déconcentration confie des pouvoirs à des agents locaux de l'État.",
+     true
+    ],
+    [
+     "La déconcentration crée des collectivités autonomes dirigées par des élus.",
      false
     ],
     [
-     "P signifie Perception.",
-     true
-    ],
-    [
-     "E signifie Extraversion.",
+     "La décentralisation transfère des compétences à des entités dotées de la personnalité juridique.",
      true
     ]
    ],
-   "e": "N signifie Intuition (iNtuition), pour la distinguer de S (Sensation).",
-   "p": "MBTI"
+   "e": "La déconcentration reste dans le cadre d'une même personne juridique, l'État."
   },
   {
-   "s": "MBTI",
-   "q": "Pensée (T) et Sentiment (F) :",
+   "p": "Décentralisation et provinces",
+   "s": "Ressources",
+   "q": "À propos des ressources des provinces :",
    "a": [
     [
-     "F décide surtout selon les valeurs et l'impact sur les personnes.",
+     "La Constitution prévoit qu'une part de 40 % des recettes à caractère national revient aux provinces.",
      true
     ],
     [
-     "T décide surtout selon la logique et des critères objectifs.",
+     "Une Caisse nationale de péréquation est prévue pour financer des projets d'investissement.",
      true
     ],
     [
-     "F signifie « fidélité ».",
+     "Les provinces ne perçoivent aucune recette.",
      false
     ]
    ],
-   "e": "F = Feeling (Sentiment).",
-   "p": "MBTI"
+   "e": "Les provinces disposent de recettes propres et d'une quote-part des recettes nationales."
   },
   {
-   "s": "MBTI",
-   "q": "À propos de la forme M du MBTI :",
+   "p": "Décentralisation et provinces",
+   "s": "Libre administration",
+   "q": "À propos de la libre administration des provinces :",
    "a": [
     [
-     "Elle comporte 93 échelles.",
-     false
-    ],
-    [
-     "Elle évalue des préférences sur quatre dichotomies.",
+     "Elle suppose des organes locaux élus et des ressources propres.",
      true
     ],
     [
-     "Elle comporte 93 items.",
-     true
-    ]
-   ],
-   "e": "Les 93 items servent à classer une personne dans l'un des 16 types.",
-   "p": "MBTI"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du modèle DISC :",
-   "a": [
-    [
-     "Sa validité scientifique est aussi solide que celle du Big Five.",
-     false
-    ],
-    [
-     "Il décrit quatre styles : dominance, influence, stabilité, conformité.",
+     "Les provinces gèrent librement leurs affaires dans le cadre de la Constitution et des lois.",
      true
     ],
     [
-     "Il est souvent utilisé en entreprise.",
-     true
-    ]
-   ],
-   "e": "Il est populaire en formation, mais les preuves de validité sont plus limitées que pour le Big Five.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos de l'échelle d'estime de soi de Rosenberg :",
-   "a": [
-    [
-     "C'est un questionnaire d'auto-évaluation.",
-     true
-    ],
-    [
-     "Elle comporte 10 items.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
+     "Elle exclut tout contrôle de l'État.",
      false
     ]
    ],
-   "e": "Elle est très utilisée en recherche et en psychologie clinique.",
-   "p": "Inventaires de personnalité"
+   "e": "La libre administration n'exclut pas un contrôle de légalité."
   },
   {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du test d'orientation de vie (LOT) :",
-   "a": [
-    [
-     "Il mesure les intérêts professionnels.",
-     false
-    ],
-    [
-     "Il a été conçu par Scheier et Carver.",
-     true
-    ],
-    [
-     "Il mesure l'optimisme dispositionnel.",
-     true
-    ]
-   ],
-   "e": "Il évalue la tendance générale à s'attendre à des résultats positifs.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du Hogan Personality Inventory (HPI) :",
-   "a": [
-    [
-     "Il évalue la psychopathologie.",
-     false
-    ],
-    [
-     "Il comporte 7 échelles principales.",
-     true
-    ],
-    [
-     "Il décrit la personnalité normale en contexte professionnel.",
-     true
-    ]
-   ],
-   "e": "Le HPI cible le comportement quotidien au travail.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du BFI-2 :",
-   "a": [
-    [
-     "Il décrit 15 facettes.",
-     true
-    ],
-    [
-     "Il comporte 60 items.",
-     true
-    ],
-    [
-     "Il comporte 44 items.",
-     false
-    ]
-   ],
-   "e": "Le BFI-2 est la version révisée du BFI de 44 items.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du TEIQue de Petrides :",
-   "a": [
-    [
-     "C'est un test de capacité avec bonnes et mauvaises réponses.",
-     false
-    ],
-    [
-     "Sa forme complète comporte 153 items.",
-     true
-    ],
-    [
-     "Il évalue l'intelligence émotionnelle comme trait.",
-     true
-    ]
-   ],
-   "e": "Il se réalise en auto-évaluation, comme un inventaire de personnalité.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Traits sombres et sociaux",
-   "q": "À propos de l'échelle Mach-IV :",
-   "a": [
-    [
-     "Elle comporte 20 items.",
-     true
-    ],
-    [
-     "Elle évalue l'anxiété.",
-     false
-    ],
-    [
-     "Elle évalue le machiavélisme.",
-     true
-    ]
-   ],
-   "e": "Christie et Geis l'ont conçue dans les années 1970.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires classiques",
-   "q": "À propos du Guilford-Zimmerman Temperament Survey :",
-   "a": [
-    [
-     "Il se remplit en auto-évaluation.",
-     true
-    ],
-    [
-     "Il évalue 10 traits de tempérament.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes mécaniques.",
-     false
-    ]
-   ],
-   "e": "Parmi ces traits : l'activité générale, la sociabilité et la stabilité émotionnelle.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Personnalité de l'enfant",
-   "q": "À propos du JEPQ (Junior Eysenck Personality Questionnaire) :",
-   "a": [
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il est destiné aux enfants et aux adolescents.",
-     true
-    ],
-    [
-     "Il évalue notamment l'extraversion et le névrosisme.",
-     true
-    ]
-   ],
-   "e": "C'est la version pour jeunes de l'EPQ.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du TAT (Thematic Apperception Test) :",
-   "a": [
-    [
-     "Il mesure l'aptitude numérique.",
-     false
-    ],
-    [
-     "Le sujet raconte des histoires à partir d'images.",
-     true
-    ],
-    [
-     "Il a été conçu par Murray et Morgan.",
-     true
-    ]
-   ],
-   "e": "Le TAT est un test projectif de personnalité. On y analyse les thèmes, les besoins et les conflits exprimés dans les récits.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos des limites des tests projectifs :",
-   "a": [
-    [
-     "L'interprétation dépend en partie de l'examinateur.",
-     true
-    ],
-    [
-     "Leurs résultats sont toujours objectifs et incontestables.",
-     false
-    ],
-    [
-     "Leur fidélité et leur validité sont discutées.",
-     true
-    ]
-   ],
-   "e": "D'où l'importance d'une formation rigoureuse et de ne jamais s'appuyer sur un seul outil.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du TAT :",
-   "a": [
-    [
-     "C'est un test de QI.",
-     false
-    ],
-    [
-     "L'analyse porte sur les besoins et les pressions de l'environnement.",
-     true
-    ],
-    [
-     "Il comporte 31 planches, dont une blanche.",
-     true
-    ]
-   ],
-   "e": "Murray a défini une théorie des besoins pour interpréter les récits.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "Rorschach et TAT :",
-   "a": [
-    [
-     "Le Rorschach utilise des taches d'encre sans forme précise.",
-     true
-    ],
-    [
-     "Le Rorschach comprend des scènes sociales détaillées.",
-     false
-    ],
-    [
-     "Le TAT utilise des scènes avec des personnages.",
-     true
-    ]
-   ],
-   "e": "Ce sont les planches du TAT qui montrent des scènes avec des personnages.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test de l'arbre de Koch (Baumtest) :",
-   "a": [
-    [
-     "Il se cote par un score de QI.",
-     false
-    ],
-    [
-     "Il est utilisé comme test projectif.",
-     true
-    ],
-    [
-     "Le sujet dessine un arbre.",
-     true
-    ]
-   ],
-   "e": "Koch l'a proposé vers 1949, et il se pratique avec prudence.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos de l'Holtzman Inkblot Technique :",
-   "a": [
-    [
-     "Chaque réponse du sujet se limite à « oui » ou « non ».",
-     false
-    ],
-    [
-     "Il a été conçu pour une cotation plus standardisée que le Rorschach.",
-     true
-    ],
-    [
-     "C'est un test de taches d'encre.",
-     true
-    ]
-   ],
-   "e": "Il comporte 45 taches en deux formes parallèles, avec une réponse par planche.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'inventaire de dépression de Beck (BDI) :",
-   "a": [
-    [
-     "Il mesure l'intensité des symptômes dépressifs.",
-     true
-    ],
-    [
-     "C'est un questionnaire d'auto-évaluation.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ]
-   ],
-   "e": "Le BDI donne un score de sévérité, mais ne remplace pas un diagnostic clinique.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'échelle de Hamilton pour la dépression (HAM-D) :",
-   "a": [
-    [
-     "Elle évalue la dépression.",
-     true
-    ],
-    [
-     "Elle est cotée par un clinicien.",
-     true
-    ],
-    [
-     "Elle est remplie seule par la personne.",
-     false
-    ]
-   ],
-   "e": "C'est une échelle d'hétéro-évaluation.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du MMPI-2-RF :",
-   "a": [
-    [
-     "Il comporte 338 items.",
-     true
-    ],
-    [
-     "Il comporte 567 items.",
-     false
-    ],
-    [
-     "C'est une version restructurée du MMPI-2.",
-     true
-    ]
-   ],
-   "e": "Le MMPI-2 compte 567 items, et le MMPI-2-RF est plus court.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'inventaire de dépression de Beck (BDI-II) :",
-   "a": [
-    [
-     "Il comporte 21 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 63.",
-     true
-    ],
-    [
-     "Il comporte 90 items.",
-     false
-    ]
-   ],
-   "e": "Il évalue la sévérité des symptômes dépressifs sur les deux dernières semaines.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de la MADRS (Montgomery-Åsberg) :",
-   "a": [
-    [
-     "Elle comporte 10 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 60.",
-     true
-    ],
-    [
-     "Elle évalue l'intelligence.",
-     false
-    ]
-   ],
-   "e": "Elle évalue la sévérité de la dépression, avec cotation par un clinicien.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'échelle d'alexithymie de Toronto (TAS-20) :",
-   "a": [
-    [
-     "Elle évalue l'optimisme.",
-     false
-    ],
-    [
-     "Elle évalue la difficulté à identifier et à décrire ses émotions.",
-     true
-    ],
-    [
-     "Elle comporte 20 items.",
-     true
-    ]
-   ],
-   "e": "Elle inclut aussi une pensée tournée vers l'extérieur.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos de la DASS-21 :",
-   "a": [
-    [
-     "Elle évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Elle évalue la dépression, l'anxiété et le stress.",
-     true
-    ],
-    [
-     "Elle comporte 21 items.",
-     true
-    ]
-   ],
-   "e": "Chaque sous-échelle comporte 7 items.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos du MDQ (Mood Disorder Questionnaire) :",
-   "a": [
-    [
-     "Il sert à repérer un possible trouble bipolaire.",
-     true
-    ],
-    [
-     "Il comporte 13 items de type oui ou non.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes mécaniques.",
-     false
-    ]
-   ],
-   "e": "C'est un outil de dépistage, qui ne remplace pas une évaluation clinique.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Questionnaires de sommeil",
-   "q": "À propos de l'index de sévérité de l'insomnie (ISI) :",
-   "a": [
-    [
-     "Il comporte 7 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 28.",
-     true
-    ],
-    [
-     "Il comporte 90 items.",
-     false
-    ]
-   ],
-   "e": "Il a été proposé par Morin.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Anxiété et traits cognitifs",
-   "q": "À propos du Penn State Worry Questionnaire (PSWQ) :",
-   "a": [
-    [
-     "Il évalue la tendance à s'inquiéter.",
-     true
-    ],
-    [
-     "Il évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Il comporte 16 items.",
-     true
-    ]
-   ],
-   "e": "Il est associé à l'anxiété généralisée.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Troubles anxieux et trauma",
-   "q": "À propos de la CAPS-5 :",
-   "a": [
-    [
-     "C'est un entretien structuré pour le trouble de stress post-traumatique.",
-     true
-    ],
-    [
-     "Elle comporte 30 items.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ]
-   ],
-   "e": "Elle est considérée comme une référence pour évaluer ce trouble.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Troubles anxieux et trauma",
-   "q": "À propos du SPIN (Social Phobia Inventory) :",
-   "a": [
-    [
-     "Il évalue l'intelligence verbale.",
-     false
-    ],
-    [
-     "Il comporte 17 items.",
-     true
-    ],
-    [
-     "Il évalue la peur, l'évitement et des symptômes physiques de l'anxiété sociale.",
-     true
-    ]
-   ],
-   "e": "Connor et ses collègues l'ont proposé en 2000.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles pour enfants",
-   "q": "À propos des échelles de Conners :",
-   "a": [
-    [
-     "Elles remplacent l'évaluation clinique pour poser un diagnostic.",
-     false
-    ],
-    [
-     "Elles servent notamment à évaluer des symptômes de trouble déficitaire de l'attention avec hyperactivité (TDAH).",
-     true
-    ],
-    [
-     "Elles existent en versions pour parents et enseignants.",
-     true
-    ]
-   ],
-   "e": "Elles apportent des informations, sans remplacer un bilan complet.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Relations et famille",
-   "q": "À propos de l'Adult Attachment Interview (AAI) :",
-   "a": [
-    [
-     "C'est un entretien semi-structuré.",
-     true
-    ],
-    [
-     "Il explore les souvenirs d'enfance liés à l'attachement.",
-     true
-    ],
-    [
-     "C'est un questionnaire à choix multiples.",
-     false
-    ]
-   ],
-   "e": "Elle a été développée par George, Kaplan et Main.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Entretiens et échelles cliniques",
-   "q": "À propos de la PANSS :",
-   "a": [
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Elle comporte 30 items.",
-     true
-    ],
-    [
-     "Elle évalue les symptômes de la schizophrénie.",
-     true
-    ]
-   ],
-   "e": "Elle comprend des échelles positive, négative et de psychopathologie générale.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Humeur et échelles pour enfants",
-   "q": "À propos de la Young Mania Rating Scale (YMRS) :",
-   "a": [
-    [
-     "Elle comporte 11 items.",
-     true
-    ],
-    [
-     "Elle est cotée par un clinicien.",
-     true
-    ],
-    [
-     "Elle évalue l'intelligence.",
-     false
-    ]
-   ],
-   "e": "Elle évalue la sévérité des symptômes maniaques.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Humeur et échelles pour enfants",
-   "q": "À propos de l'échelle de Vanderbilt :",
-   "a": [
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Elle sert à repérer des symptômes de TDAH.",
-     true
-    ],
-    [
-     "Elle existe en versions pour les parents et les enseignants.",
-     true
-    ]
-   ],
-   "e": "C'est un outil de repérage, pas de diagnostic.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Intérêts professionnels",
-   "q": "À propos des tests d'intérêts :",
-   "a": [
-    [
-     "L'orientation combine intérêts, aptitudes et valeurs.",
-     true
-    ],
-    [
-     "Aimer une activité ne garantit pas d'y réussir.",
-     true
-    ],
-    [
-     "Ils mesurent le QI.",
-     false
-    ]
-   ],
-   "e": "Un bon conseil d'orientation croise plusieurs sources d'information.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Styles individuels",
-   "q": "À propos de l'inventaire des styles d'apprentissage de Kolb :",
-   "a": [
-    [
-     "Il s'appuie sur l'expérience concrète, l'observation réfléchie, la conceptualisation abstraite et l'expérimentation active.",
-     true
-    ],
-    [
-     "Son soutien empirique est considéré comme solide et incontesté.",
-     false
-    ],
-    [
-     "Il décrit quatre styles d'apprentissage.",
-     true
-    ]
-   ],
-   "e": "Les styles d'apprentissage sont l'objet de nombreuses critiques.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Valeurs et motivation",
-   "q": "À propos de l'Échelle de motivation en éducation (AMS) de Vallerand :",
-   "a": [
-    [
-     "Elle évalue la dextérité.",
-     false
-    ],
-    [
-     "Elle comporte 28 items.",
-     true
-    ],
-    [
-     "Elle distingue motivation intrinsèque, extrinsèque et amotivation.",
-     true
-    ]
-   ],
-   "e": "Elle s'appuie sur la théorie de l'autodétermination.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la hiérarchie des besoins de Maslow :",
-   "a": [
-    [
-     "L'accomplissement de soi est au sommet.",
-     true
-    ],
-    [
-     "Les besoins physiologiques sont à la base.",
-     true
-    ],
-    [
-     "L'accomplissement de soi est à la base.",
-     false
-    ]
-   ],
-   "e": "Besoins physiologiques, sécurité, appartenance, estime, puis accomplissement de soi.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la satisfaction au travail :",
-   "a": [
-    [
-     "Elle peut être mesurée par des questionnaires.",
-     true
-    ],
-    [
-     "Elle prédit la performance avec une corrélation de 1.",
-     false
-    ],
-    [
-     "Elle est liée à la performance, mais pas de façon parfaite.",
-     true
-    ]
-   ],
-   "e": "La relation est positive mais modérée : d'autres facteurs interviennent.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la théorie des objectifs (Locke et Latham) :",
-   "a": [
-    [
-     "« Faites de votre mieux » est moins efficace qu'un objectif précis.",
-     true
-    ],
-    [
-     "Des objectifs précis et difficiles, mais atteignables, favorisent la performance.",
-     true
-    ],
-    [
-     "Les objectifs impossibles sont les plus motivants.",
-     false
-    ]
-   ],
-   "e": "Un objectif irréalisable décourage.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la théorie de l'équité d'Adams :",
-   "a": [
-    [
-     "Adams a créé les matrices progressives.",
-     false
-    ],
-    [
-     "On compare ses contributions et ses résultats à ceux des autres.",
-     true
-    ],
-    [
-     "Une iniquité perçue peut réduire la motivation.",
-     true
-    ]
-   ],
-   "e": "Les matrices progressives sont l'œuvre de Raven.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "Culture et climat organisationnels :",
-   "a": [
-    [
-     "Culture et climat sont exactement la même chose.",
-     false
-    ],
-    [
-     "La culture désigne des valeurs et des normes partagées (Schein).",
-     true
-    ],
-    [
-     "Le climat désigne la perception partagée de l'environnement de travail.",
-     true
-    ]
-   ],
-   "e": "La culture est plus profonde et plus stable que le climat.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Mesures au travail",
-   "q": "À propos du Job Diagnostic Survey de Hackman et Oldham :",
-   "a": [
-    [
-     "L'autonomie en fait partie.",
-     true
-    ],
-    [
-     "Il évalue cinq dimensions centrales d'un poste.",
-     true
-    ],
-    [
-     "Il évalue des traits de personnalité du salarié.",
-     false
-    ]
-   ],
-   "e": "Les autres dimensions : variété des compétences, identité de la tâche, signification et feedback.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Équipes et leadership",
-   "q": "À propos du Thomas-Kilmann Conflict Mode Instrument (TKI) :",
-   "a": [
-    [
-     "Il décrit cinq modes de gestion des conflits.",
-     true
-    ],
-    [
-     "Il décrit trois styles seulement.",
-     false
-    ],
-    [
-     "On y trouve la compétition et la collaboration.",
-     true
-    ]
-   ],
-   "e": "Les cinq modes sont la compétition, la collaboration, le compromis, l'évitement et l'accommodement.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Équipes et leadership",
-   "q": "À propos des ancres de carrière de Schein :",
-   "a": [
-    [
-     "Elles sont au nombre de deux.",
-     false
-    ],
-    [
-     "Elles sont au nombre de huit.",
-     true
-    ],
-    [
-     "La sécurité et la stabilité en font partie.",
-     true
-    ]
-   ],
-   "e": "Elles décrivent ce qui est le plus important dans un parcours professionnel.",
-   "p": "Psychologie du travail"
-  },
-  {
+   "p": "Fonction publique et carrière",
    "s": "Recrutement",
-   "q": "À propos des centres d'évaluation (assessment centers) :",
+   "q": "Selon la loi de 2016, à propos de l'âge de recrutement :",
    "a": [
     [
-     "Ils se limitent à un questionnaire papier unique.",
+     "L'âge maximum est en principe de 35 ans, avec une dérogation possible jusqu'à 40 ans.",
+     true
+    ],
+    [
+     "L'âge minimum est de 18 ans.",
+     true
+    ],
+    [
+     "L'âge maximum est de 60 ans.",
+     false
+    ]
+   ],
+   "e": "Ces limites d'âge concernent l'entrée dans la carrière."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Positions",
+   "q": "À propos des positions de l'agent de carrière :",
+   "a": [
+    [
+     "L'agent peut être placé en détachement.",
+     true
+    ],
+    [
+     "La suspension équivaut à une révocation.",
      false
     ],
     [
-     "Ils sont souvent utilisés pour évaluer des cadres.",
-     true
-    ],
-    [
-     "Ils utilisent des mises en situation, des jeux de rôle et des exercices en groupe.",
+     "La suspension est une mesure conservatoire, et non une sanction.",
      true
     ]
    ],
-   "e": "Plusieurs évaluateurs observent le candidat dans plusieurs exercices.",
-   "p": "Recrutement et sélection"
+   "e": "La suspension permet d'écarter provisoirement l'agent présumé fautif, dans l'intérêt du service."
   },
   {
+   "p": "Fonction publique et carrière",
+   "s": "Concours",
+   "q": "À propos de l'organisation d'un concours administratif :",
+   "a": [
+    [
+     "Il repose sur l'égalité des candidats.",
+     true
+    ],
+    [
+     "Le jury peut favoriser un candidat qu'il connaît.",
+     false
+    ],
+    [
+     "Les épreuves sont notées selon un barème connu.",
+     true
+    ]
+   ],
+   "e": "Le favoritisme est contraire au principe d'égalité d'accès aux emplois publics."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Délégation",
+   "q": "À propos de la délégation dans l'administration :",
+   "a": [
+    [
+     "La délégation de pouvoir doit reposer sur un texte.",
+     true
+    ],
+    [
+     "Une délégation peut être donnée sans aucune limite ni texte.",
+     false
+    ],
+    [
+     "La délégation de signature permet à un subordonné de signer au nom de son supérieur.",
+     true
+    ]
+   ],
+   "e": "La délégation est encadrée pour garantir la responsabilité de l'autorité."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Budget-programme",
+   "q": "À propos du budget-programme :",
+   "a": [
+    [
+     "Il repose sur une logique de résultats.",
+     true
+    ],
+    [
+     "Il alloue des crédits sans lien avec les résultats.",
+     false
+    ],
+    [
+     "Il alloue des crédits à des actions menées dans le cadre de politiques publiques.",
+     true
+    ]
+   ],
+   "e": "Le budget-programme relie les moyens aux objectifs et à la performance."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Exécution",
+   "q": "À propos de la séparation de l'ordonnateur et du comptable :",
+   "a": [
+    [
+     "Le comptable public est celui qui engage la dépense.",
+     false
+    ],
+    [
+     "Le comptable public paie la dépense après contrôle de sa régularité.",
+     true
+    ],
+    [
+     "L'ordonnateur prescrit l'exécution des recettes et des dépenses.",
+     true
+    ]
+   ],
+   "e": "Cette séparation vise à prévenir les détournements en divisant les rôles."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Régies financières",
+   "q": "À propos des régies financières :",
+   "a": [
+    [
+     "La DGI est chargée des douanes et accises.",
+     false
+    ],
+    [
+     "La DGDA est chargée des douanes et accises.",
+     true
+    ],
+    [
+     "La DGI est chargée des impôts.",
+     true
+    ]
+   ],
+   "e": "La DGRAD s'occupe des recettes administratives, judiciaires, domaniales et de participations."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Recettes",
+   "q": "À propos des recettes publiques :",
+   "a": [
+    [
+     "L'impôt est un prélèvement obligatoire sans contrepartie directe et individualisée.",
+     true
+    ],
+    [
+     "La redevance rémunère un service rendu à l'usager.",
+     true
+    ],
+    [
+     "L'impôt donne droit à une contrepartie directe et individualisée.",
+     false
+    ]
+   ],
+   "e": "La redevance suppose une contrepartie ; l'impôt finance les charges publiques en général."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Planification budgétaire",
+   "q": "À propos du cadre de dépenses à moyen terme (CDMT) :",
+   "a": [
+    [
+     "Il fixe des enveloppes de dépenses sur plusieurs années.",
+     true
+    ],
+    [
+     "Il ne concerne que l'exercice en cours.",
+     false
+    ],
+    [
+     "Il aide à relier la planification et le budget.",
+     true
+    ]
+   ],
+   "e": "Il donne une vision pluriannuelle des priorités."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Catégories",
+   "q": "À propos des catégories de marchés publics :",
+   "a": [
+    [
+     "Il y a des marchés de travaux.",
+     true
+    ],
+    [
+     "Il n'existe que des marchés de travaux.",
+     false
+    ],
+    [
+     "Il y a des marchés de prestations intellectuelles.",
+     true
+    ]
+   ],
+   "e": "La loi distingue travaux, fournitures, services et prestations intellectuelles."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Institutions",
+   "q": "À propos de la Direction générale de contrôle des marchés publics (DGCMP) :",
+   "a": [
+    [
+     "Elle contrôle a priori les procédures de passation et d'attribution.",
+     true
+    ],
+    [
+     "Elle valide et met à jour la législation sur les marchés publics.",
+     false
+    ],
+    [
+     "Elle a été créée par le décret n° 10/27 du 28 juin 2010.",
+     true
+    ]
+   ],
+   "e": "La validation et la mise à jour de la législation relèvent de l'ARMP."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Acteurs",
+   "q": "À propos de l'autorité contractante :",
+   "a": [
+    [
+     "C'est la personne publique qui passe le marché.",
+     true
+    ],
+    [
+     "Une entreprise privée est toujours autorité contractante.",
+     false
+    ],
+    [
+     "Elle peut être un ministère, une province ou un établissement public.",
+     true
+    ]
+   ],
+   "e": "Le champ de la loi comprend aussi les services déconcentrés et les entités décentralisées."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Planification",
+   "q": "À propos de la planification des marchés publics :",
+   "a": [
+    [
+     "La publicité des avis d'appel d'offres favorise la concurrence.",
+     true
+    ],
+    [
+     "Un marché peut être passé sans plan ni publicité.",
+     false
+    ],
+    [
+     "Un plan de passation prévoit les marchés à passer pendant l'année.",
+     true
+    ]
+   ],
+   "e": "Planifier et publier sont deux garanties de transparence."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Fayol",
+   "q": "À propos d'Henri Fayol :",
+   "a": [
+    [
+     "Il a proposé 14 principes de gestion.",
+     true
+    ],
+    [
+     "Il est l'auteur de l'organisation scientifique du travail.",
+     false
+    ],
+    [
+     "Il décrit cinq fonctions : prévoir, organiser, commander, coordonner, contrôler.",
+     true
+    ]
+   ],
+   "e": "L'organisation scientifique du travail est associée à Taylor."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Crozier",
+   "q": "À propos de Michel Crozier :",
+   "a": [
+    [
+     "Il montre que le contrôle d'une zone d'incertitude donne du pouvoir.",
+     true
+    ],
+    [
+     "Il est le théoricien du taylorisme.",
+     false
+    ],
+    [
+     "Il est l'auteur de « Le phénomène bureaucratique ».",
+     true
+    ]
+   ],
+   "e": "Crozier étudie le pouvoir dans les organisations."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Service public",
+   "q": "À propos des lois de Rolland sur le service public :",
+   "a": [
+    [
+     "Le principe de continuité exige que le service public ne soit pas interrompu à volonté.",
+     true
+    ],
+    [
+     "Le principe d'égalité impose un traitement identique à des usagers dans la même situation.",
+     true
+    ],
+    [
+     "Le principe de continuité autorise l'administration à interrompre le service à volonté.",
+     false
+    ]
+   ],
+   "e": "Le troisième principe est l'adaptation (mutabilité) du service aux besoins."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Structures",
+   "q": "À propos des structures d'organisation :",
+   "a": [
+    [
+     "La structure matricielle comporte une double ligne d'autorité.",
+     true
+    ],
+    [
+     "La structure fonctionnelle regroupe les unités par produit.",
+     false
+    ],
+    [
+     "La structure fonctionnelle regroupe les unités par fonction.",
+     true
+    ]
+   ],
+   "e": "Regrouper par produit ou par marché correspond à la structure divisionnelle."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Légalité",
+   "q": "À propos du principe de légalité :",
+   "a": [
+    [
+     "Le recours pour excès de pouvoir vise à faire annuler un acte illégal.",
+     true
+    ],
+    [
+     "Le recours pour excès de pouvoir vise à obtenir des dommages-intérêts.",
+     false
+    ],
+    [
+     "L'administration doit agir conformément à la loi.",
+     true
+    ]
+   ],
+   "e": "La réparation relève plutôt du recours en responsabilité."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Contrats",
+   "q": "À propos des contrats administratifs :",
+   "a": [
+    [
+     "L'administration y dispose de prérogatives de puissance publique.",
+     true
+    ],
+    [
+     "Ils sont régis uniquement par le droit civil.",
+     false
+    ],
+    [
+     "Les marchés publics sont des contrats administratifs.",
+     true
+    ]
+   ],
+   "e": "Le régime des contrats administratifs déroge au droit commun des contrats."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Actes",
+   "q": "À propos des actes réglementaires et individuels :",
+   "a": [
+    [
+     "Une décision de nomination d'un agent est un acte réglementaire.",
+     false
+    ],
+    [
+     "Un acte réglementaire a une portée générale et impersonnelle.",
+     true
+    ],
+    [
+     "Un acte individuel vise une ou plusieurs personnes déterminées.",
+     true
+    ]
+   ],
+   "e": "Une nomination vise une personne déterminée : c'est un acte individuel."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Contrôle",
+   "q": "À propos de la Cour des comptes :",
+   "a": [
+    [
+     "Elle n'a aucun pouvoir de contrôle sur les comptes publics.",
+     false
+    ],
+    [
+     "Elle exerce un contrôle juridictionnel sur les comptes publics.",
+     true
+    ],
+    [
+     "Elle est l'institution supérieure de contrôle des finances publiques.",
+     true
+    ]
+   ],
+   "e": "Son rôle est de juger les comptes des comptables publics et de vérifier la régularité de l'exécution du budget."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Corruption",
+   "q": "À propos de la corruption :",
+   "a": [
+    [
+     "Accepter un pot-de-vin relève de la corruption active.",
+     false
+    ],
+    [
+     "La corruption passive consiste, pour un agent public, à solliciter ou accepter un avantage indu.",
+     true
+    ],
+    [
+     "La corruption active consiste à offrir un avantage indu à un agent public.",
+     true
+    ]
+   ],
+   "e": "Celui qui offre commet la corruption active, celui qui reçoit commet la corruption passive."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Valeurs",
+   "q": "À propos des valeurs du service public :",
+   "a": [
+    [
+     "L'impartialité en fait partie.",
+     true
+    ],
+    [
+     "L'intégrité en fait partie.",
+     true
+    ],
+    [
+     "La recherche du profit personnel en fait partie.",
+     false
+    ]
+   ],
+   "e": "L'agent public sert l'intérêt général, et non son intérêt personnel."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Cadres internationaux",
+   "q": "À propos de l'Agenda 2063 de l'Union africaine :",
+   "a": [
+    [
+     "Il a été adopté par l'ONU en 2015.",
+     false
+    ],
+    [
+     "C'est un cadre stratégique de l'Union africaine.",
+     true
+    ],
+    [
+     "Il vise la transformation socio-économique du continent.",
+     true
+    ]
+   ],
+   "e": "L'ONU a adopté l'Agenda 2030, avec les ODD."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Budget et performance",
+   "q": "À propos du décret portant gouvernance budgétaire (2022) :",
+   "a": [
+    [
+     "Il vise à renforcer la discipline budgétaire.",
+     true
+    ],
+    [
+     "Il organise la déconcentration de l'ordonnancement.",
+     true
+    ],
+    [
+     "Il supprime le budget-programme.",
+     false
+    ]
+   ],
+   "e": "Il précise les modalités de mise en œuvre des innovations de la loi de 2011 sur les finances publiques."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Planification locale",
+   "q": "À propos d'un plan de développement local :",
+   "a": [
+    [
+     "Il est élaboré avec la participation de la population.",
+     true
+    ],
+    [
+     "Il est établi sans aucune consultation.",
+     false
+    ],
+    [
+     "Il fixe les priorités de développement d'une entité.",
+     true
+    ]
+   ],
+   "e": "Un plan élaboré avec les populations est mieux adapté et mieux accepté."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Circulaire",
+   "q": "À propos de la circulaire :",
+   "a": [
+    [
+     "Elle émane d'une autorité hiérarchique.",
+     true
+    ],
+    [
+     "C'est un contrat conclu avec un fournisseur.",
+     false
+    ],
+    [
+     "Elle précise l'application d'un texte aux services.",
+     true
+    ]
+   ],
+   "e": "La circulaire explique comment appliquer une loi ou un règlement."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Voie hiérarchique",
+   "q": "À propos de la voie hiérarchique :",
+   "a": [
+    [
+     "Une demande d'un agent est en principe transmise par son chef hiérarchique.",
+     true
+    ],
+    [
+     "L'agent doit toujours contourner son chef.",
+     false
+    ],
+    [
+     "La transmission se fait sous le couvert de la hiérarchie.",
+     true
+    ]
+   ],
+   "e": "Respecter la voie hiérarchique garantit l'information de chaque niveau."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Style administratif",
+   "q": "À propos du style administratif :",
+   "a": [
+    [
+     "Il est clair et concis.",
+     true
+    ],
+    [
+     "Il utilise du jargon pour impressionner le lecteur.",
+     false
+    ],
+    [
+     "Il privilégie des phrases courtes.",
+     true
+    ]
+   ],
+   "e": "Un message administratif doit être compris du premier coup."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Secrétaire général",
+   "q": "À propos du secrétaire général d'un ministère :",
+   "a": [
+    [
+     "Il est nommé par ordonnance présidentielle, sur proposition du ministre de la Fonction publique.",
+     true
+    ],
+    [
+     "Il est l'autorité administrative du ministère.",
+     true
+    ],
+    [
+     "Il est élu par les agents du ministère.",
+     false
+    ]
+   ],
+   "e": "Il assure la liaison entre le cabinet politique et l'administration du ministère."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Loi organique 16/001",
+   "q": "À propos du champ d'application de la loi organique n° 16/001 du 3 mai 2016 :",
+   "a": [
+    [
+     "Elle ne concerne que les provinces.",
+     false
+    ],
+    [
+     "Elle s'applique aussi aux administrations de l'Assemblée nationale et du Sénat.",
+     true
+    ],
+    [
+     "Elle s'applique à l'administration des ministères.",
+     true
+    ]
+   ],
+   "e": "Elle couvre aussi l'administration de la Cour des comptes et celles des provinces et des ETD."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Primature",
+   "q": "À propos de la Primature :",
+   "a": [
+    [
+     "Le Premier ministre dispose d'un cabinet.",
+     true
+    ],
+    [
+     "Un secrétariat général à la Primature assure l'administration.",
+     true
+    ],
+    [
+     "Le Premier ministre n'a pas de cabinet.",
+     false
+    ]
+   ],
+   "e": "La structure suit la même logique qu'un ministère : cabinet politique et secrétariat général."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Coordination",
+   "q": "À propos de la coordination gouvernementale :",
+   "a": [
+    [
+     "Le Conseil des ministres est une juridiction.",
+     false
+    ],
+    [
+     "Des comités interministériels peuvent coordonner des dossiers transversaux.",
+     true
+    ],
+    [
+     "Le Conseil des ministres réunit le Gouvernement.",
+     true
+    ]
+   ],
+   "e": "Les décisions du Gouvernement sont prises collectivement dans le cadre de son programme."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Triple contrainte",
+   "q": "À propos de la triple contrainte :",
+   "a": [
+    [
+     "Modifier l'une des contraintes influence les autres.",
+     true
+    ],
+    [
+     "Elle associe notamment les délais, les coûts et le périmètre.",
+     true
+    ],
+    [
+     "Les trois contraintes sont indépendantes.",
+     false
+    ]
+   ],
+   "e": "Par exemple, ajouter du périmètre augmente souvent les délais ou les coûts."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Initiation",
+   "q": "À propos de la charte de projet :",
+   "a": [
+    [
+     "Elle nomme le chef de projet.",
+     true
+    ],
+    [
+     "Elle autorise formellement le projet.",
+     true
+    ],
+    [
+     "Elle est rédigée après la clôture du projet.",
+     false
+    ]
+   ],
+   "e": "La charte donne au chef de projet l'autorité d'engager des ressources."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Jalons",
+   "q": "À propos des jalons :",
+   "a": [
+    [
+     "Il marque l'achèvement d'une étape importante.",
+     true
+    ],
+    [
+     "Un jalon est un événement sans durée.",
+     true
+    ],
+    [
+     "Un jalon dure toujours trois mois.",
+     false
+    ]
+   ],
+   "e": "Un jalon n'a pas de durée propre."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Gantt",
+   "q": "À propos du diagramme de Gantt :",
+   "a": [
+    [
+     "Il représente les tâches dans le temps.",
+     true
+    ],
+    [
+     "Il ne montre jamais les durées.",
+     false
+    ],
+    [
+     "C'est un diagramme à barres.",
+     true
+    ]
+   ],
+   "e": "Il porte le nom de Henry Gantt."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "PERT",
+   "q": "Estimations PERT d'une tâche : optimiste 2, probable 4, pessimiste 12.",
+   "a": [
+    [
+     "L'écart-type vaut environ 1,67.",
+     true
+    ],
+    [
+     "La durée espérée est de 5.",
+     true
+    ],
+    [
+     "La durée espérée est de 4.",
+     false
+    ]
+   ],
+   "e": "(2 + 4 × 4 + 12) ÷ 6 = 5. Écart-type : (12 − 2) ÷ 6 ≈ 1,67."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Réserves de délai",
+   "q": "À propos des réserves de délai :",
+   "a": [
+    [
+     "Elles absorbent une partie des incertitudes.",
+     true
+    ],
+    [
+     "Elles remplacent le suivi du projet.",
+     false
+    ],
+    [
+     "Elles peuvent être ajoutées au calendrier.",
+     true
+    ]
+   ],
+   "e": "Une réserve ne dispense pas de suivre l'avancement."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Valeur acquise",
+   "q": "À propos de la méthode de la valeur acquise :",
+   "a": [
+    [
+     "PV est la valeur planifiée.",
+     true
+    ],
+    [
+     "EV est la valeur acquise du travail réalisé.",
+     true
+    ],
+    [
+     "AC est la valeur planifiée.",
+     false
+    ]
+   ],
+   "e": "AC est le coût réel (actual cost)."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Rentabilité",
+   "q": "À propos de la valeur actuelle nette (VAN) :",
+   "a": [
+    [
+     "Une VAN positive indique en principe un projet rentable.",
+     true
+    ],
+    [
+     "C'est la somme des flux actualisés.",
+     true
+    ],
+    [
+     "La VAN est toujours positive.",
+     false
+    ]
+   ],
+   "e": "La VAN tient compte de la valeur du temps."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Processus de gestion des coûts",
+   "q": "À propos de la gestion des coûts d'un projet :",
+   "a": [
+    [
+     "La maîtrise des coûts intervient avant toute estimation.",
+     false
+    ],
+    [
+     "Elle comprend l'estimation des coûts et la détermination du budget.",
+     true
+    ],
+    [
+     "Elle comprend la maîtrise des coûts pendant l'exécution.",
+     true
+    ]
+   ],
+   "e": "On estime d'abord, on fixe le budget, puis on suit les écarts pendant l'exécution."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Réponses",
+   "q": "À propos des stratégies face aux menaces :",
+   "a": [
+    [
+     "Atténuer signifie ignorer le risque.",
+     false
+    ],
+    [
+     "Éviter, transférer, atténuer et accepter sont des stratégies.",
+     true
+    ],
+    [
+     "Souscrire une assurance est une forme de transfert.",
+     true
+    ]
+   ],
+   "e": "Atténuer vise à réduire la probabilité ou l'impact."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Identification",
+   "q": "À propos des techniques d'identification des risques :",
+   "a": [
+    [
+     "L'identification des risques est interdite en phase de planification.",
+     false
+    ],
+    [
+     "Le brainstorming en fait partie.",
+     true
+    ],
+    [
+     "La méthode Delphi consulte des experts de façon anonyme.",
+     true
+    ]
+   ],
+   "e": "Les risques peuvent être identifiés dès l'initiation."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Parties prenantes",
+   "q": "À propos du registre des parties prenantes :",
+   "a": [
+    [
+     "Il est rédigé une fois, puis jamais revu.",
+     false
+    ],
+    [
+     "Il est mis à jour au fil du projet.",
+     true
+    ],
+    [
+     "Il identifie les parties prenantes et leurs attentes.",
+     true
+    ]
+   ],
+   "e": "Les attentes et l'influence évoluent au cours du projet."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Réunions",
+   "q": "À propos des réunions de projet :",
+   "a": [
+    [
+     "Un compte rendu précise les actions et leurs responsables.",
+     true
+    ],
+    [
+     "Un ordre du jour annonce les points à traiter.",
+     true
+    ],
+    [
+     "Une réunion efficace n'a pas besoin d'objectif.",
+     false
+    ]
+   ],
+   "e": "Sans objectif, une réunion fait perdre du temps."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Communication interculturelle",
+   "q": "À propos de la communication dans un contexte multiculturel :",
+   "a": [
+    [
+     "Un message adapté au contexte local est mieux compris.",
+     true
+    ],
+    [
+     "La culture n'influence pas la communication.",
+     false
+    ],
+    [
+     "Il faut tenir compte des langues et des cultures.",
+     true
+    ]
+   ],
+   "e": "Les codes, les silences et les formules varient d'une culture à l'autre."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Sprint",
+   "q": "À propos du sprint :",
+   "a": [
+    [
+     "Un sprint dure toujours six mois.",
+     false
+    ],
+    [
+     "Il produit un incrément utilisable.",
+     true
+    ],
+    [
+     "Sa durée est fixe, d'un mois au plus.",
+     true
+    ]
+   ],
+   "e": "Des sprints courts permettent d'ajuster rapidement."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Estimation agile",
+   "q": "À propos de l'estimation agile :",
+   "a": [
+    [
+     "Un point d'effort correspond exactement à une heure.",
+     false
+    ],
+    [
+     "Les points d'effort mesurent un effort relatif.",
+     true
+    ],
+    [
+     "Le planning poker aide l'équipe à estimer ensemble.",
+     true
+    ]
+   ],
+   "e": "Les points comparent les tâches entre elles."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Burndown",
+   "q": "À propos du diagramme d'avancement (burndown) :",
+   "a": [
+    [
+     "Il montre le budget dépensé uniquement.",
+     false
+    ],
+    [
+     "Il permet de visualiser l'avancement d'un sprint.",
+     true
+    ],
+    [
+     "Il montre le travail restant dans le temps.",
+     true
+    ]
+   ],
+   "e": "La courbe descend à mesure que le travail est terminé."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "PMBOK 7",
+   "q": "À propos du Guide PMBOK (7ᵉ édition) :",
+   "a": [
+    [
+     "Il ne contient aucun principe.",
+     false
+    ],
+    [
+     "Il présente 12 principes.",
+     true
+    ],
+    [
+     "Il présente 8 domaines de performance.",
+     true
+    ]
+   ],
+   "e": "La 7ᵉ édition est davantage centrée sur les principes et la valeur."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "PRINCE2",
+   "q": "À propos de l'organisation selon PRINCE2 :",
+   "a": [
+    [
+     "La méthode exclut toute gestion par exception.",
+     false
+    ],
+    [
+     "La méthode utilise une gestion par étapes.",
+     true
+    ],
+    [
+     "Le comité de pilotage (Project Board) dirige le projet.",
+     true
+    ]
+   ],
+   "e": "La gestion par exception délègue dans des tolérances définies."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "PMO",
+   "q": "À propos du bureau de gestion de projets (PMO) :",
+   "a": [
+    [
+     "Il exécute à lui seul tous les projets.",
+     false
+    ],
+    [
+     "Il standardise les méthodes et les outils.",
+     true
+    ],
+    [
+     "Il peut fournir un soutien et une gouvernance.",
+     true
+    ]
+   ],
+   "e": "Le PMO soutient les chefs de projet, mais ne les remplace pas."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Théorie du changement",
+   "q": "À propos de la théorie du changement :",
+   "a": [
+    [
+     "Elle explicite des hypothèses causales.",
+     true
+    ],
+    [
+     "Elle explique comment les activités conduisent aux résultats attendus.",
+     true
+    ],
+    [
+     "C'est un calendrier de paiement des fournisseurs.",
+     false
+    ]
+   ],
+   "e": "Elle rend visible la logique d'intervention."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Collecte de données",
+   "q": "À propos de la collecte de données :",
+   "a": [
+    [
+     "On peut utiliser des enquêtes, des entretiens et des groupes de discussion.",
+     true
+    ],
+    [
+     "Un seul outil suffit toujours.",
+     false
+    ],
+    [
+     "Combiner des données quantitatives et qualitatives est fréquent.",
+     true
+    ]
+   ],
+   "e": "Plusieurs outils permettent de croiser les informations."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Redevabilité",
+   "q": "À propos de la redevabilité envers les bénéficiaires :",
+   "a": [
+    [
+     "Partager les résultats avec les bénéficiaires est une bonne pratique.",
+     true
+    ],
+    [
+     "Elle est inutile dans un projet de développement.",
+     false
+    ],
+    [
+     "Un mécanisme de plaintes et de retour d'information est utile.",
+     true
+    ]
+   ],
+   "e": "Les bénéficiaires doivent pouvoir exprimer leurs préoccupations."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Outils de qualité",
+   "q": "À propos du diagramme d'Ishikawa :",
+   "a": [
+    [
+     "Il sert à calculer le chemin critique.",
+     false
+    ],
+    [
+     "On l'appelle aussi diagramme en arête de poisson.",
+     true
+    ],
+    [
+     "Il organise les causes possibles d'un problème en catégories.",
+     true
+    ]
+   ],
+   "e": "Il sert à l'analyse des causes."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Périmètre",
+   "q": "À propos de la dérive du périmètre (scope creep) :",
+   "a": [
+    [
+     "On la limite par une maîtrise rigoureuse du périmètre.",
+     true
+    ],
+    [
+     "Elle est toujours souhaitable.",
+     false
+    ],
+    [
+     "Elle correspond à des ajouts non contrôlés.",
+     true
+    ]
+   ],
+   "e": "Elle augmente les coûts et les délais sans validation."
+  },
+  {
+   "p": "Approvisionnement et contrats",
+   "s": "Contrats",
+   "q": "À propos des types de contrats d'approvisionnement :",
+   "a": [
+    [
+     "Le contrat forfaitaire fixe un prix global.",
+     true
+    ],
+    [
+     "Le contrat remboursable rémunère les coûts plus des honoraires.",
+     true
+    ],
+    [
+     "Le contrat en régie supprime tout risque pour le client.",
+     false
+    ]
+   ],
+   "e": "En régie, le client paie le temps passé, donc il supporte le risque de dérapage."
+  },
+  {
+   "p": "Approvisionnement et contrats",
+   "s": "Évaluation des offres",
+   "q": "À propos de l'évaluation des offres :",
+   "a": [
+    [
+     "L'offre économiquement la plus avantageuse combine plusieurs critères.",
+     true
+    ],
+    [
+     "Elle examine généralement la conformité et l'aspect technique avant le prix.",
+     true
+    ],
+    [
+     "Il faut toujours choisir le prix le plus bas.",
+     false
+    ]
+   ],
+   "e": "Le prix le plus bas n'est pas toujours la meilleure offre."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Théories de la motivation",
+   "q": "À propos des théories X et Y de McGregor :",
+   "a": [
+    [
+     "La théorie Y suppose que les employés peuvent rechercher des responsabilités.",
+     true
+    ],
+    [
+     "La théorie X est fondée sur la confiance.",
+     false
+    ],
+    [
+     "La théorie X suppose que les employés évitent le travail et ont besoin de contrôle.",
+     true
+    ]
+   ],
+   "e": "La théorie Y suppose la confiance et l'initiative."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Cohésion",
+   "q": "À propos de la charte d'équipe :",
+   "a": [
+    [
+     "Elle est imposée sans discussion et jamais révisée.",
+     false
+    ],
+    [
+     "Elle est élaborée avec l'équipe.",
+     true
+    ],
+    [
+     "Elle fixe des règles de fonctionnement communes.",
+     true
+    ]
+   ],
+   "e": "Une charte construite ensemble est mieux appliquée."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Éthique du chef de projet",
+   "q": "À propos du code d'éthique du PMI :",
+   "a": [
+    [
+     "Il s'applique aux membres de la profession.",
+     true
+    ],
+    [
+     "Il repose sur la responsabilité, le respect, l'équité et l'honnêteté.",
+     true
+    ],
+    [
+     "Il autorise de dissimuler des informations importantes.",
+     false
+    ]
+   ],
+   "e": "L'honnêteté implique de ne pas dissimuler des informations essentielles."
+  },
+  {
+   "p": "Clôture et gouvernance de projet",
+   "s": "Bilan",
+   "q": "À propos du bilan final de projet :",
+   "a": [
+    [
+     "Il comprend la libération des ressources.",
+     true
+    ],
+    [
+     "Il comprend un rapport final.",
+     true
+    ],
+    [
+     "Il se limite à un message de remerciement.",
+     false
+    ]
+   ],
+   "e": "Le rapport final documente les résultats, les écarts et les enseignements."
+  },
+  {
+   "p": "Clôture et gouvernance de projet",
+   "s": "Archivage",
+   "q": "À propos de l'archivage des documents de projet :",
+   "a": [
+    [
+     "Il facilite l'audit et la capitalisation.",
+     true
+    ],
+    [
+     "Il demande un classement clair et des règles de conservation.",
+     true
+    ],
+    [
+     "Il est inutile après la clôture.",
+     false
+    ]
+   ],
+   "e": "Les archives de projet servent aussi aux projets futurs."
+  },
+  {
+   "p": "Projets de développement et bailleurs",
+   "s": "Appel à propositions",
+   "q": "À propos d'un appel à propositions :",
+   "a": [
+    [
+     "La sélection se fait sans critères.",
+     false
+    ],
+    [
+     "Les propositions sont jugées selon des critères de sélection.",
+     true
+    ],
+    [
+     "Il comprend souvent une note conceptuelle avant la proposition complète.",
+     true
+    ]
+   ],
+   "e": "La note conceptuelle présente l'idée avant le dossier détaillé."
+  },
+  {
+   "p": "Projets de développement et bailleurs",
+   "s": "Cycle de projet",
+   "q": "À propos du cycle d'un projet de développement :",
+   "a": [
+    [
+     "Il commence par l'évaluation finale.",
+     false
+    ],
+    [
+     "Il comprend l'analyse des besoins et la conception.",
+     true
+    ],
+    [
+     "Il comprend la mise en œuvre et le suivi-évaluation.",
+     true
+    ]
+   ],
+   "e": "L'évaluation finale clôt le cycle et nourrit les projets suivants."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Constitution",
+   "q": "À propos de la Constitution du 18 février 2006 :",
+   "a": [
+    [
+     "Elle a été adoptée par référendum.",
+     true
+    ],
+    [
+     "Elle a instauré la IIIᵉ République.",
+     true
+    ],
+    [
+     "Elle a été adoptée par un décret du Premier ministre.",
+     false
+    ]
+   ],
+   "e": "La Constitution a été soumise au référendum populaire, puis promulguée, et elle est en vigueur depuis le 18 février 2006."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Gouvernement",
+   "q": "À propos de la responsabilité du Gouvernement devant l'Assemblée nationale :",
+   "a": [
+    [
+     "Le Gouvernement est comptable de son action devant l'Assemblée nationale.",
+     true
+    ],
+    [
+     "La motion de censure met en cause la responsabilité collective du Gouvernement.",
+     true
+    ],
+    [
+     "La motion de défiance vise le Gouvernement tout entier.",
+     false
+    ]
+   ],
+   "e": "La motion de défiance vise la responsabilité individuelle d'un membre du Gouvernement."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Président de la République",
+   "q": "Selon la Constitution du 18 février 2006, à propos du Président de la République :",
+   "a": [
+    [
+     "Il est élu par le Parlement réuni en Congrès.",
+     false
+    ],
+    [
+     "Son mandat est de cinq ans, renouvelable une seule fois.",
+     true
+    ],
+    [
+     "Il est élu au suffrage universel direct.",
+     true
+    ]
+   ],
+   "e": "Le Congrès réunit l'Assemblée nationale et le Sénat, notamment pour déférer le Président de la République devant la Cour constitutionnelle."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Pouvoir judiciaire",
+   "q": "À propos des hautes juridictions prévues par la Constitution de 2006 :",
+   "a": [
+    [
+     "Le Conseil d'État est la juridiction suprême de l'ordre administratif.",
+     true
+    ],
+    [
+     "Elle prévoit une Cour constitutionnelle, une Cour de cassation et un Conseil d'État.",
+     true
+    ],
+    [
+     "La Cour de cassation est la juridiction suprême de l'ordre administratif.",
+     false
+    ]
+   ],
+   "e": "La Cour de cassation est au sommet de l'ordre judiciaire, le Conseil d'État au sommet de l'ordre administratif."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Services publics",
+   "q": "À propos de la loi organique n° 16/001 du 3 mai 2016 :",
+   "a": [
+    [
+     "C'est une loi organique.",
+     true
+    ],
+    [
+     "Elle porte organisation et fonctionnement des services publics du pouvoir central, des provinces et des entités territoriales décentralisées.",
+     true
+    ],
+    [
+     "Elle date de 2008.",
+     false
+    ]
+   ],
+   "e": "Elle date du 3 mai 2016."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Territoire",
+   "q": "À propos de l'organisation territoriale de la RDC :",
+   "a": [
+    [
+     "Les provinces sont dotées de la personnalité juridique.",
+     true
+    ],
+    [
+     "La RDC est composée de la ville de Kinshasa et de 25 provinces.",
+     true
+    ],
+    [
+     "La Constitution de 2006 prévoit seulement 11 provinces.",
+     false
+    ]
+   ],
+   "e": "L'article 2 de la Constitution prévoit Kinshasa et 25 provinces, soit 26 entités."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Répartition des compétences",
+   "q": "À propos de la répartition des compétences entre le pouvoir central et les provinces :",
+   "a": [
+    [
+     "Certaines compétences sont concurrentes entre le pouvoir central et les provinces.",
+     true
+    ],
+    [
+     "Certaines compétences sont exclusives au pouvoir central.",
+     true
+    ],
+    [
+     "Les provinces n'ont aucune compétence propre.",
+     false
+    ]
+   ],
+   "e": "La Constitution détermine la sphère exclusive du pouvoir central, celle des provinces et une zone concurrente."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Institutions d'appui",
+   "q": "À propos des institutions d'appui à la démocratie :",
+   "a": [
+    [
+     "La CENI fait partie du pouvoir judiciaire.",
+     false
+    ],
+    [
+     "Le CSAC régule l'audiovisuel et la communication.",
+     true
+    ],
+    [
+     "La CENI est chargée d'organiser le processus électoral.",
+     true
+    ]
+   ],
+   "e": "La CENI (Commission électorale nationale indépendante) et le CSAC (Conseil supérieur de l'audiovisuel et de la communication) sont des institutions d'appui à la démocratie."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Gouvernement",
+   "q": "À propos de la composition du Gouvernement :",
+   "a": [
+    [
+     "Le Gouvernement comprend notamment le Premier ministre et des ministres.",
+     true
+    ],
+    [
+     "Le Premier ministre est le chef du Gouvernement.",
+     true
+    ],
+    [
+     "Le Président de la République est le chef du Gouvernement.",
+     false
+    ]
+   ],
+   "e": "Le Président de la République est le chef de l'État. Le Premier ministre dirige le Gouvernement."
+  },
+  {
+   "p": "Organisation de l'État congolais",
+   "s": "Langues",
+   "q": "À propos des langues en RDC :",
+   "a": [
+    [
+     "Le kikongo, le lingala, le swahili et le tshiluba sont des langues nationales.",
+     true
+    ],
+    [
+     "Le français est la langue officielle.",
+     true
+    ],
+    [
+     "L'anglais est une langue nationale.",
+     false
+    ]
+   ],
+   "e": "Les quatre langues nationales sont le kikongo, le lingala, le swahili et le tshiluba."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "ETD",
+   "q": "À propos des entités territoriales décentralisées (ETD) :",
+   "a": [
+    [
+     "La province est une ETD.",
+     false
+    ],
+    [
+     "La ville est une ETD.",
+     true
+    ],
+    [
+     "La chefferie est une ETD.",
+     true
+    ]
+   ],
+   "e": "Selon l'article 3 de la Constitution, les ETD sont la ville, la commune, le secteur et la chefferie. La province est une entité distincte."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "Textes",
+   "q": "À propos des lois de 2008 sur la décentralisation :",
+   "a": [
+    [
+     "La loi n° 08/012 du 31 juillet 2008 porte sur la libre administration des provinces.",
+     true
+    ],
+    [
+     "La loi n° 08/016 du 7 octobre 2008 porte sur la composition, l'organisation et le fonctionnement des ETD.",
+     true
+    ],
+    [
+     "La loi n° 08/016 porte statut des agents de carrière.",
+     false
+    ]
+   ],
+   "e": "Le statut des agents de carrière a été fixé par la loi n° 16/013 du 15 juillet 2016."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "Institutions provinciales",
+   "q": "À propos des institutions provinciales :",
+   "a": [
+    [
+     "La province est administrée par un gouvernement provincial et une assemblée provinciale.",
+     true
+    ],
+    [
+     "Les députés provinciaux sont élus au suffrage universel direct pour cinq ans.",
+     true
+    ],
+    [
+     "Le gouverneur est nommé par le Premier ministre.",
+     false
+    ]
+   ],
+   "e": "Le gouverneur est élu par les députés provinciaux."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "Gouverneur",
+   "q": "À propos du gouverneur et du vice-gouverneur de province :",
+   "a": [
+    [
+     "Leur mandat est de cinq ans, renouvelable une seule fois.",
+     true
+    ],
+    [
+     "Ils sont élus au suffrage universel direct.",
+     false
+    ],
+    [
+     "Ils sont élus par les députés provinciaux.",
+     true
+    ]
+   ],
+   "e": "Le suffrage universel direct est utilisé pour les députés provinciaux."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "Tutelle",
+   "q": "À propos de la tutelle et du pouvoir hiérarchique :",
+   "a": [
+    [
+     "La tutelle s'exerce sans aucun texte légal.",
+     false
+    ],
+    [
+     "Il n'y a pas de tutelle sans texte.",
+     true
+    ],
+    [
+     "La tutelle est un contrôle exercé sur une entité décentralisée.",
+     true
+    ]
+   ],
+   "e": "Le pouvoir hiérarchique, lui, existe au sein d'une même administration, entre supérieur et subordonné."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "Subsidiarité",
+   "q": "À propos du principe de subsidiarité :",
+   "a": [
+    [
+     "Il signifie que le pouvoir central décide de tout.",
+     false
+    ],
+    [
+     "Il privilégie l'échelon le plus proche des citoyens pour traiter une question.",
+     true
+    ],
+    [
+     "Il justifie un échelon supérieur lorsque l'échelon local ne peut pas agir efficacement.",
+     true
+    ]
+   ],
+   "e": "La subsidiarité répartit les responsabilités selon l'efficacité de chaque échelon."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "Découpage",
+   "q": "À propos du découpage territorial de 2015 :",
+   "a": [
+    [
+     "Il a porté le nombre de provinces à 25, plus la ville de Kinshasa.",
+     true
+    ],
+    [
+     "Avant le découpage, la RDC comptait 11 provinces, Kinshasa comprise.",
+     true
+    ],
+    [
+     "Il a créé 50 provinces.",
+     false
+    ]
+   ],
+   "e": "Les 25 provinces et Kinshasa forment 26 entités provinciales."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "Compétences des ETD",
+   "q": "À propos des compétences de la ville et de la commune :",
+   "a": [
+    [
+     "La commune a des compétences proches de celles de la ville.",
+     true
+    ],
+    [
+     "La ville a des compétences en matière de voirie urbaine.",
+     true
+    ],
+    [
+     "La ville n'a aucune compétence en matière d'assainissement.",
+     false
+    ]
+   ],
+   "e": "La ville intervient notamment en voirie, eau potable, électricité, assainissement et assistance sociale."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "ETD rurales",
+   "q": "À propos du secteur, de la chefferie et du territoire :",
+   "a": [
+    [
+     "Le secteur et la chefferie sont des ETD.",
+     true
+    ],
+    [
+     "La commune est une subdivision du secteur.",
+     false
+    ],
+    [
+     "Le territoire est une entité administrative déconcentrée.",
+     true
+    ]
+   ],
+   "e": "La commune est une subdivision de la ville."
+  },
+  {
+   "p": "Décentralisation et provinces",
+   "s": "Décentralisation",
+   "q": "À propos des avantages attendus de la décentralisation :",
+   "a": [
+    [
+     "Elle rapproche l'administration des administrés.",
+     true
+    ],
+    [
+     "Elle supprime le rôle de l'État.",
+     false
+    ],
+    [
+     "Elle vise à créer des centres d'impulsion et de développement à la base.",
+     true
+    ]
+   ],
+   "e": "Le constituant a voulu consolider l'unité nationale et rapprocher les décisions des populations."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Statut",
+   "q": "À propos de la loi n° 16/013 du 15 juillet 2016 :",
+   "a": [
+    [
+     "Elle date de 1981.",
+     false
+    ],
+    [
+     "Elle a remplacé le statut de 1981.",
+     true
+    ],
+    [
+     "Elle porte statut des agents de carrière des services publics de l'État.",
+     true
+    ]
+   ],
+   "e": "La loi du 17 juillet 1981 portant statut du personnel de carrière a été remplacée par la loi de 2016."
+  },
+  {
+   "p": "Fonction publique et carrière",
    "s": "Recrutement",
-   "q": "À propos des mises en situation de travail (work samples) :",
+   "q": "À propos du recrutement dans les services publics de l'État :",
    "a": [
     [
-     "Elles évaluent uniquement la personnalité.",
+     "Le recrutement se fait en principe sur concours.",
+     true
+    ],
+    [
+     "L'égalité d'accès aux emplois publics est un principe constitutionnel.",
+     true
+    ],
+    [
+     "Le recrutement se fait par simple lettre de recommandation.",
+     false
+    ]
+   ],
+   "e": "Le concours est la voie de recrutement par défaut."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Carrière",
+   "q": "À propos de la période probatoire :",
+   "a": [
+    [
+     "Elle précède la nomination à titre définitif.",
+     true
+    ],
+    [
+     "Elle permet d'apprécier l'aptitude de l'agent.",
+     true
+    ],
+    [
+     "La nomination est définitive dès le premier jour, sans évaluation.",
+     false
+    ]
+   ],
+   "e": "Le statut conditionne la nomination à titre définitif à une période probatoire."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Statuts",
+   "q": "À propos des statuts des agents publics :",
+   "a": [
+    [
+     "La Constitution institue des statuts distincts pour les agents de carrière, l'enseignement supérieur, les militaires et la police.",
+     true
+    ],
+    [
+     "Tous les agents de l'État relèvent d'un statut unique.",
      false
     ],
     [
-     "Elles ont une bonne validité prédictive.",
-     true
-    ],
-    [
-     "Elles consistent à faire réaliser un échantillon du travail réel.",
+     "Les membres des Forces armées ont un statut propre.",
      true
     ]
    ],
-   "e": "Elles mesurent directement des comportements proches de ceux du poste.",
-   "p": "Recrutement et sélection"
+   "e": "La RDC ne retient plus le principe d'un statut unique pour tous les agents publics."
   },
   {
-   "s": "Recrutement",
-   "q": "À propos des tests d'intégrité :",
+   "p": "Fonction publique et carrière",
+   "s": "Code du travail",
+   "q": "À propos du Code du travail et des services publics :",
    "a": [
     [
-     "Ils sont infaillibles.",
+     "Le Code du travail date de 2016.",
      false
     ],
     [
-     "Ce sont souvent des questionnaires d'auto-évaluation.",
+     "Certains travailleurs des services publics relèvent du Code du travail, en vertu d'un contrat.",
      true
     ],
     [
-     "Ils évaluent l'honnêteté et la fiabilité.",
+     "Le Code du travail est la loi n° 015-2002 du 16 octobre 2002.",
      true
     ]
    ],
-   "e": "Comme toute auto-évaluation, ils restent sensibles à la désirabilité sociale.",
-   "p": "Recrutement et sélection"
+   "e": "La loi n° 16/010 du 15 juillet 2016 a modifié et complété ce code."
   },
   {
+   "p": "Fonction publique et carrière",
+   "s": "Devoirs",
+   "q": "À propos des droits et devoirs de l'agent public :",
+   "a": [
+    [
+     "L'agent public est tenu à la discrétion professionnelle.",
+     true
+    ],
+    [
+     "L'agent public a droit à une rémunération.",
+     true
+    ],
+    [
+     "L'agent public peut utiliser les biens de l'État à titre personnel.",
+     false
+    ]
+   ],
+   "e": "Les biens de l'État servent le service public, non les intérêts privés."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Discipline",
+   "q": "À propos de la discipline des agents publics :",
+   "a": [
+    [
+     "Les droits de la défense doivent être respectés.",
+     true
+    ],
+    [
+     "Une sanction peut être prononcée sans entendre l'agent.",
+     false
+    ],
+    [
+     "Une faute disciplinaire peut entraîner une sanction.",
+     true
+    ]
+   ],
+   "e": "Le respect de la défense est une garantie fondamentale."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Neutralité",
+   "q": "À propos de la neutralité du service public :",
+   "a": [
+    [
+     "L'agent public doit servir l'intérêt général.",
+     true
+    ],
+    [
+     "Il doit traiter les usagers sans discrimination.",
+     true
+    ],
+    [
+     "Il peut refuser de servir un usager en raison de son origine.",
+     false
+    ]
+   ],
+   "e": "La neutralité et l'égalité sont des principes du service public."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Organisation",
+   "q": "À propos des outils d'organisation d'une administration :",
+   "a": [
+    [
+     "Une fiche de poste décrit les missions et les compétences requises.",
+     true
+    ],
+    [
+     "Un organigramme décrit le budget annuel.",
+     false
+    ],
+    [
+     "Un organigramme représente la structure et les liens hiérarchiques.",
+     true
+    ]
+   ],
+   "e": "Ces outils servent à clarifier qui fait quoi et sous l'autorité de qui."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Performance",
+   "q": "À propos de l'évaluation de la performance des agents :",
+   "a": [
+    [
+     "Elle est inutile dans l'administration.",
+     false
+    ],
+    [
+     "Elle vise à apprécier les résultats et les compétences de l'agent.",
+     true
+    ],
+    [
+     "Elle peut être prise en compte pour l'avancement.",
+     true
+    ]
+   ],
+   "e": "Elle aide à orienter la formation et la promotion."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Hiérarchie des normes",
+   "q": "À propos de la hiérarchie des normes :",
+   "a": [
+    [
+     "Un arrêté ne peut pas contredire une loi.",
+     true
+    ],
+    [
+     "La Constitution se situe au sommet de la hiérarchie des normes.",
+     true
+    ],
+    [
+     "Un arrêté peut abroger la Constitution.",
+     false
+    ]
+   ],
+   "e": "Les normes inférieures doivent respecter les normes supérieures : Constitution, lois, décrets, arrêtés."
+  },
+  {
+   "p": "Fonction publique et carrière",
+   "s": "Fin de carrière",
+   "q": "À propos de la fin de carrière des agents :",
+   "a": [
+    [
+     "Des allocations de fin de carrière sont prévues.",
+     true
+    ],
+    [
+     "Les agents de carrière ne bénéficient d'aucune protection sociale.",
+     false
+    ],
+    [
+     "Les agents de carrière ont droit à une pension de retraite.",
+     true
+    ]
+   ],
+   "e": "Le statut organise la retraite, l'honorariat et les droits sociaux des agents."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Loi sur les finances publiques",
+   "q": "À propos de la loi n° 11/011 du 13 juillet 2011 :",
+   "a": [
+    [
+     "Elle est relative aux finances publiques.",
+     true
+    ],
+    [
+     "Elle a été modifiée par la loi n° 18/010 du 9 juillet 2018.",
+     true
+    ],
+    [
+     "Elle exclut tout budget-programme.",
+     false
+    ]
+   ],
+   "e": "Elle a introduit les budgets-programmes et la gestion axée sur les résultats."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Loi sur les finances publiques",
+   "q": "À propos des innovations de la loi de 2011 :",
+   "a": [
+    [
+     "Elle prend en compte la libre administration des provinces.",
+     true
+    ],
+    [
+     "Elle prévoit une approche budgétaire pluriannuelle.",
+     true
+    ],
+    [
+     "Elle ne concerne que les entreprises privées.",
+     false
+    ]
+   ],
+   "e": "Elle a été adoptée pour tenir compte de la Constitution de 2006 et de la décentralisation."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Principes budgétaires",
+   "q": "À propos des principes budgétaires classiques :",
+   "a": [
+    [
+     "Le principe d'universalité exige d'inscrire toutes les recettes et toutes les dépenses.",
+     true
+    ],
+    [
+     "Le principe d'annualité limite l'autorisation du budget à un exercice.",
+     true
+    ],
+    [
+     "Le principe d'unité impose un budget distinct par ministère.",
+     false
+    ]
+   ],
+   "e": "L'unité signifie que l'ensemble des recettes et des dépenses figure dans un document unique."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Exécution",
+   "q": "À propos des phases de la dépense publique :",
+   "a": [
+    [
+     "L'ordonnancement intervient après le paiement.",
+     false
+    ],
+    [
+     "Les quatre phases sont l'engagement, la liquidation, l'ordonnancement et le paiement.",
+     true
+    ],
+    [
+     "L'engagement précède la liquidation.",
+     true
+    ]
+   ],
+   "e": "Le paiement est la dernière phase, après l'ordonnancement."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Loi de finances",
+   "q": "À propos de la loi de finances :",
+   "a": [
+    [
+     "Elle est votée par le Parlement.",
+     true
+    ],
+    [
+     "Elle prévoit et autorise les recettes et les dépenses de l'exercice.",
+     true
+    ],
+    [
+     "Elle est décidée seule par le ministre des Finances.",
+     false
+    ]
+   ],
+   "e": "Le vote du Parlement donne l'autorisation budgétaire."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Loi de règlement",
+   "q": "À propos de la loi de règlement :",
+   "a": [
+    [
+     "Elle constate les résultats de l'exécution du budget.",
+     true
+    ],
+    [
+     "Elle précède l'examen du budget de l'exercice suivant.",
+     true
+    ],
+    [
+     "Elle autorise de nouvelles dépenses pour l'année suivante.",
+     false
+    ]
+   ],
+   "e": "Elle permet au Parlement de contrôler comment le budget voté a été exécuté."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Exercice budgétaire",
+   "q": "À propos de l'exercice budgétaire :",
+   "a": [
+    [
+     "Il commence le 1ᵉʳ janvier.",
+     true
+    ],
+    [
+     "Il commence le 1ᵉʳ juillet.",
+     false
+    ],
+    [
+     "Il correspond en principe à l'année civile.",
+     true
+    ]
+   ],
+   "e": "L'exercice va du 1ᵉʳ janvier au 31 décembre."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Contrôle",
+   "q": "À propos du contrôle des finances publiques :",
+   "a": [
+    [
+     "Le contrôle est inutile quand les gestionnaires sont honnêtes.",
+     false
+    ],
+    [
+     "La Cour des comptes exerce un contrôle juridictionnel.",
+     true
+    ],
+    [
+     "Le Parlement contrôle notamment lors du vote de la loi de finances et de la loi de règlement.",
+     true
+    ]
+   ],
+   "e": "Le contrôle garantit la légalité et le respect de l'autorisation budgétaire."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Contrôle",
+   "q": "À propos des formes de contrôle :",
+   "a": [
+    [
+     "Le contrôle a priori intervient après le paiement.",
+     false
+    ],
+    [
+     "Le contrôle a priori intervient avant la dépense.",
+     true
+    ],
+    [
+     "Le contrôle a posteriori intervient après la dépense.",
+     true
+    ]
+   ],
+   "e": "Les deux formes se complètent."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Dépenses",
+   "q": "À propos des dépenses publiques :",
+   "a": [
+    [
+     "Les dépenses de fonctionnement permettent le fonctionnement courant des services.",
+     true
+    ],
+    [
+     "Les dépenses d'investissement augmentent le patrimoine public.",
+     true
+    ],
+    [
+     "Les salaires sont des dépenses d'investissement.",
+     false
+    ]
+   ],
+   "e": "Les salaires sont des dépenses de fonctionnement."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Équilibre budgétaire",
+   "q": "À propos du déficit budgétaire :",
+   "a": [
+    [
+     "Il apparaît lorsque les recettes dépassent les dépenses.",
+     false
+    ],
+    [
+     "Il peut être financé par l'emprunt.",
+     true
+    ],
+    [
+     "Il apparaît lorsque les dépenses dépassent les recettes.",
+     true
+    ]
+   ],
+   "e": "Lorsque les recettes dépassent les dépenses, on parle d'excédent."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Budgets provinciaux",
+   "q": "À propos des budgets des provinces :",
+   "a": [
+    [
+     "Les provinces ont leur propre budget.",
+     true
+    ],
+    [
+     "Les provinces n'ont pas de budget propre.",
+     false
+    ],
+    [
+     "Le budget provincial est adopté par l'assemblée provinciale.",
+     true
+    ]
+   ],
+   "e": "La libre administration suppose une autonomie budgétaire."
+  },
+  {
+   "p": "Finances publiques et budget",
+   "s": "Transparence",
+   "q": "À propos de la transparence budgétaire :",
+   "a": [
+    [
+     "Un budget citoyen est une version simplifiée destinée au public.",
+     true
+    ],
+    [
+     "Elle suppose la publication des documents budgétaires.",
+     true
+    ],
+    [
+     "Le secret total sur le budget est un principe de bonne gouvernance.",
+     false
+    ]
+   ],
+   "e": "La transparence permet aux citoyens et au Parlement de contrôler l'action publique."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Cadre légal",
+   "q": "À propos de la loi n° 10/010 du 27 avril 2010 :",
+   "a": [
+    [
+     "Elle date de 2020.",
+     false
+    ],
+    [
+     "Elle remplace l'ordonnance-loi n° 69-054 du 5 décembre 1969.",
+     true
+    ],
+    [
+     "Elle est relative aux marchés publics.",
+     true
+    ]
+   ],
+   "e": "L'ancien système ne répondait plus aux exigences de transparence et d'efficacité."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Procédures",
+   "q": "À propos des procédures de passation :",
+   "a": [
+    [
+     "Le gré à gré est la règle générale.",
+     false
+    ],
+    [
+     "Le gré à gré est une procédure dérogatoire.",
+     true
+    ],
+    [
+     "L'appel d'offres ouvert est la règle générale.",
+     true
+    ]
+   ],
+   "e": "Les procédures dérogatoires sont limitativement encadrées par la loi."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Procédures",
+   "q": "À propos des procédures dérogatoires :",
+   "a": [
+    [
+     "Les marchés spéciaux en font partie.",
+     true
+    ],
+    [
+     "L'appel d'offres restreint en fait partie.",
+     true
+    ],
+    [
+     "L'appel d'offres ouvert est une procédure dérogatoire.",
+     false
+    ]
+   ],
+   "e": "L'appel d'offres ouvert est la procédure de droit commun."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Institutions",
+   "q": "À propos de l'Autorité de régulation des marchés publics (ARMP) :",
+   "a": [
+    [
+     "Elle assure la régulation du système de passation des marchés publics.",
+     true
+    ],
+    [
+     "C'est un établissement public à caractère administratif créé par le décret n° 10/21 du 2 juin 2010.",
+     true
+    ],
+    [
+     "Elle contrôle a priori chaque marché à la place de la DGCMP.",
+     false
+    ]
+   ],
+   "e": "Le contrôle a priori relève de la Direction générale de contrôle des marchés publics."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Séparation des fonctions",
+   "q": "À propos de la séparation des fonctions dans les marchés publics :",
+   "a": [
+    [
+     "La même personne doit gérer, passer et contrôler le marché.",
+     false
+    ],
+    [
+     "La régulation est confiée à un organe distinct des autorités contractantes.",
+     true
+    ],
+    [
+     "La loi distingue la gestion, la passation, le contrôle et la régulation.",
+     true
+    ]
+   ],
+   "e": "La séparation réduit les risques de conflits d'intérêts."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Principes",
+   "q": "À propos des principes des marchés publics :",
+   "a": [
+    [
+     "Le favoritisme local est un principe de la passation.",
+     false
+    ],
+    [
+     "La transparence est un principe de la passation.",
+     true
+    ],
+    [
+     "L'égalité de traitement des candidats est un principe de la passation.",
+     true
+    ]
+   ],
+   "e": "Les marchés publics reposent sur la transparence, la concurrence et l'égalité de traitement."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Seuils",
+   "q": "À propos des seuils des marchés publics :",
+   "a": [
+    [
+     "Ils sont fixés par décret.",
+     true
+    ],
+    [
+     "Sous les seuils, une mise en concurrence d'au moins trois fournisseurs est exigée.",
+     true
+    ],
+    [
+     "Chaque ministre les fixe librement pour chaque contrat.",
+     false
+    ]
+   ],
+   "e": "Les seuils déterminent la procédure, le contrôle et l'approbation."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Provinces",
+   "q": "À propos des marchés publics au niveau provincial :",
+   "a": [
+    [
+     "Les provinces sont exclues du champ de la loi.",
+     false
+    ],
+    [
+     "Des édits provinciaux organisent les dispositions spécifiques aux provinces.",
+     true
+    ],
+    [
+     "Chaque province indique les seuils applicables dans sa juridiction.",
+     true
+    ]
+   ],
+   "e": "La décentralisation s'étend aussi à la commande publique."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Contentieux",
+   "q": "À propos de la structure de la loi sur les marchés publics :",
+   "a": [
+    [
+     "Elle comporte un titre sur le contentieux des marchés publics.",
+     true
+    ],
+    [
+     "Elle comporte des titres sur la passation, l'exécution et le contrôle.",
+     true
+    ],
+    [
+     "Elle ne prévoit aucune voie de recours.",
+     false
+    ]
+   ],
+   "e": "Les litiges nés à l'occasion des marchés publics sont encadrés par la loi."
+  },
+  {
+   "p": "Marchés publics",
+   "s": "Fraude",
+   "q": "À propos des pratiques frauduleuses dans les marchés publics :",
+   "a": [
+    [
+     "Le fractionnement artificiel d'un marché pour éviter les seuils est une bonne pratique.",
+     false
+    ],
+    [
+     "La collusion entre soumissionnaires fausse la concurrence.",
+     true
+    ],
+    [
+     "Le conflit d'intérêts compromet l'impartialité de la décision.",
+     true
+    ]
+   ],
+   "e": "Fractionner artificiellement un marché pour échapper au contrôle est une fraude."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Weber",
+   "q": "À propos de Max Weber et de la bureaucratie :",
+   "a": [
+    [
+     "Il décrit une bureaucratie rationnelle-légale.",
+     true
+    ],
+    [
+     "Il a proposé 14 principes de gestion.",
+     false
+    ],
+    [
+     "Il met en avant la hiérarchie, les règles écrites et la spécialisation.",
+     true
+    ]
+   ],
+   "e": "Les 14 principes de gestion sont attribués à Fayol."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Taylor",
+   "q": "À propos de Frederick Taylor :",
+   "a": [
+    [
+     "Il a utilisé l'étude des temps et des mouvements.",
+     true
+    ],
+    [
+     "Il est le père de l'organisation scientifique du travail.",
+     true
+    ],
+    [
+     "Il est le fondateur de l'école des relations humaines.",
+     false
+    ]
+   ],
+   "e": "L'école des relations humaines est associée à Elton Mayo."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Mayo",
+   "q": "À propos d'Elton Mayo :",
+   "a": [
+    [
+     "Il a conçu la bureaucratie rationnelle-légale.",
+     false
+    ],
+    [
+     "Il est associé à l'école des relations humaines.",
+     true
+    ],
+    [
+     "Il est associé aux expériences de Hawthorne.",
+     true
+    ]
+   ],
+   "e": "Il a montré l'importance des facteurs sociaux et de l'attention portée aux travailleurs."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Simon",
+   "q": "À propos de Herbert Simon :",
+   "a": [
+    [
+     "Selon lui, les décideurs recherchent souvent une solution satisfaisante plutôt qu'optimale.",
+     true
+    ],
+    [
+     "Il a défendu une rationalité parfaite des décideurs.",
+     false
+    ],
+    [
+     "Il a développé le concept de rationalité limitée.",
+     true
+    ]
+   ],
+   "e": "La rationalité est limitée par l'information, le temps et les capacités de traitement."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Nouveau management public",
+   "q": "À propos du nouveau management public :",
+   "a": [
+    [
+     "Il met l'accent sur la performance et les résultats.",
+     true
+    ],
+    [
+     "Il rejette toute mesure de la performance.",
+     false
+    ],
+    [
+     "Il a inspiré le budget-programme.",
+     true
+    ]
+   ],
+   "e": "Il emprunte au secteur privé des outils de gestion axée sur les résultats."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Gouvernance",
+   "q": "À propos de la bonne gouvernance :",
+   "a": [
+    [
+     "La redevabilité est l'obligation de rendre compte de son action.",
+     true
+    ],
+    [
+     "Elle suppose la transparence et la redevabilité.",
+     true
+    ],
+    [
+     "Elle exclut la participation des citoyens.",
+     false
+    ]
+   ],
+   "e": "La participation, l'État de droit et l'efficacité en font partie."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Drucker",
+   "q": "À propos de Peter Drucker :",
+   "a": [
+    [
+     "Il est l'auteur de la bureaucratie rationnelle-légale.",
+     false
+    ],
+    [
+     "Il est associé au management par objectifs.",
+     true
+    ],
+    [
+     "Il l'a popularisé dans les années 1950.",
+     true
+    ]
+   ],
+   "e": "Le management par objectifs fixe des cibles et évalue les résultats."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Mintzberg",
+   "q": "À propos de Henry Mintzberg :",
+   "a": [
+    [
+     "Il est l'auteur de la théorie du phénomène bureaucratique.",
+     false
+    ],
+    [
+     "Il décrit des configurations d'organisation, comme la bureaucratie mécaniste.",
+     true
+    ],
+    [
+     "Il décrit plusieurs mécanismes de coordination.",
+     true
+    ]
+   ],
+   "e": "Le phénomène bureaucratique est associé à Crozier."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Fayol",
+   "q": "À propos des principes de Fayol :",
+   "a": [
+    [
+     "L'unité de direction est l'un de ses principes.",
+     true
+    ],
+    [
+     "L'unité de commandement est l'un de ses principes.",
+     true
+    ],
+    [
+     "Fayol rejette la division du travail.",
+     false
+    ]
+   ],
+   "e": "Fayol défend au contraire la division du travail."
+  },
+  {
+   "p": "Théories de l'administration",
+   "s": "Changement",
+   "q": "À propos de la gestion du changement :",
+   "a": [
+    [
+     "Lewin décrit trois étapes : décongeler, changer, recongeler.",
+     true
+    ],
+    [
+     "Kotter propose un modèle en huit étapes.",
+     true
+    ],
+    [
+     "Lewin est l'auteur du taylorisme.",
+     false
+    ]
+   ],
+   "e": "Ces modèles servent à conduire le changement dans les organisations."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Acte administratif",
+   "q": "À propos de l'acte administratif unilatéral :",
+   "a": [
+    [
+     "C'est une décision prise par une autorité administrative.",
+     true
+    ],
+    [
+     "Il résulte toujours d'un contrat entre deux parties.",
+     false
+    ],
+    [
+     "Il peut faire grief aux administrés.",
+     true
+    ]
+   ],
+   "e": "L'acte unilatéral s'impose sans l'accord des intéressés."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Juridictions",
+   "q": "À propos des juridictions administratives :",
+   "a": [
+    [
+     "La loi organique n° 16/027 organise les juridictions de l'ordre administratif.",
+     true
+    ],
+    [
+     "Le Conseil d'État est au sommet de l'ordre administratif.",
+     true
+    ],
+    [
+     "Elles jugent les litiges entre particuliers.",
+     false
+    ]
+   ],
+   "e": "Les litiges entre particuliers relèvent de l'ordre judiciaire."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Domaine",
+   "q": "À propos du domaine public et du domaine privé de l'État :",
+   "a": [
+    [
+     "L'administration peut vendre librement un bien du domaine public.",
+     false
+    ],
+    [
+     "Le domaine public est en principe inaliénable.",
+     true
+    ],
+    [
+     "Le domaine privé est soumis à un régime proche du droit privé.",
+     true
+    ]
+   ],
+   "e": "Un bien du domaine public doit d'abord être déclassé pour pouvoir être vendu."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Responsabilité",
+   "q": "À propos de la responsabilité de l'administration :",
+   "a": [
+    [
+     "L'administration n'est jamais responsable.",
+     false
+    ],
+    [
+     "La victime peut demander réparation du préjudice subi.",
+     true
+    ],
+    [
+     "L'administration peut voir sa responsabilité engagée en cas de faute de service.",
+     true
+    ]
+   ],
+   "e": "La responsabilité administrative est un élément de l'État de droit."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Établissements publics",
+   "q": "À propos de la loi n° 08/009 du 7 juillet 2008 :",
+   "a": [
+    [
+     "Un établissement public est doté de la personnalité juridique.",
+     true
+    ],
+    [
+     "Elle porte dispositions générales applicables aux établissements publics.",
+     true
+    ],
+    [
+     "Un établissement public n'a pas de patrimoine propre.",
+     false
+    ]
+   ],
+   "e": "Un établissement public dispose d'une autonomie administrative et financière."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Entreprises publiques",
+   "q": "À propos de la loi n° 08/007 du 7 juillet 2008 :",
+   "a": [
+    [
+     "Elle date de 2008.",
+     true
+    ],
+    [
+     "Elle porte sur le Code du travail.",
+     false
+    ],
+    [
+     "Elle porte dispositions générales relatives à la transformation des entreprises publiques.",
+     true
+    ]
+   ],
+   "e": "Elle fait partie des réformes des entreprises du portefeuille de l'État."
+  },
+  {
+   "p": "Droit administratif et service public",
+   "s": "Recours",
+   "q": "À propos des recours contre un acte administratif :",
+   "a": [
+    [
+     "Le recours gracieux est adressé à l'auteur de l'acte.",
+     true
+    ],
+    [
+     "Le recours contentieux est adressé à l'auteur de l'acte.",
+     false
+    ],
+    [
+     "Le recours hiérarchique est adressé au supérieur de l'auteur de l'acte.",
+     true
+    ]
+   ],
+   "e": "Le recours contentieux est porté devant un juge."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Code de conduite",
+   "q": "À propos du Code de conduite de l'agent public de l'État :",
+   "a": [
+    [
+     "Il a été institué par le décret-loi n° 017/2002.",
+     true
+    ],
+    [
+     "À son entrée en fonction, l'agent doit en prendre connaissance et s'engager par écrit à le respecter.",
+     true
+    ],
+    [
+     "Il ne s'applique qu'aux ministres.",
+     false
+    ]
+   ],
+   "e": "Ce code concerne tous les agents publics de l'État et fixe des exigences de compétence, d'intégrité et de loyauté."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Lutte contre la corruption",
+   "q": "À propos de l'APLC (Agence de prévention et de lutte contre la corruption) :",
+   "a": [
+    [
+     "Elle remplace la Cour des comptes.",
+     false
+    ],
+    [
+     "Elle est l'autorité nationale de référence en matière de lutte contre la corruption.",
+     true
+    ],
+    [
+     "Elle a été créée en mars 2020.",
+     true
+    ]
+   ],
+   "e": "L'APLC coordonne les services de lutte contre la corruption, mais elle n'a pas pris la place des institutions de contrôle."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Contrôle",
+   "q": "À propos de l'Inspection générale des finances (IGF) :",
+   "a": [
+    [
+     "C'est une régie financière chargée de percevoir les impôts.",
+     false
+    ],
+    [
+     "C'est un organe de contrôle des finances publiques.",
+     true
+    ],
+    [
+     "Elle intervient dans le dispositif de lutte contre la corruption.",
+     true
+    ]
+   ],
+   "e": "Les régies financières sont la DGI, la DGDA et la DGRAD."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Cadre international",
+   "q": "À propos du cadre international de lutte contre la corruption :",
+   "a": [
+    [
+     "L'Union africaine dispose d'une convention de prévention et de lutte contre la corruption.",
+     true
+    ],
+    [
+     "Ces conventions n'ont aucune portée pour les États qui les ratifient.",
+     false
+    ],
+    [
+     "La Convention des Nations unies contre la corruption est un instrument de référence.",
+     true
+    ]
+   ],
+   "e": "Les États qui les ratifient s'engagent à adopter des mesures de prévention et de répression."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Conflit d'intérêts",
+   "q": "À propos du conflit d'intérêts :",
+   "a": [
+    [
+     "Il n'existe que pour les élus.",
+     false
+    ],
+    [
+     "Il apparaît quand un intérêt privé interfère avec l'intérêt public.",
+     true
+    ],
+    [
+     "L'agent concerné doit se déporter ou se récuser.",
+     true
+    ]
+   ],
+   "e": "Tout agent public peut être concerné, y compris dans un jury de concours ou une commission d'appel d'offres."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Transparence",
+   "q": "À propos de la déclaration de patrimoine :",
+   "a": [
+    [
+     "Elle contribue à prévenir l'enrichissement illicite.",
+     true
+    ],
+    [
+     "Selon la Constitution, certains hauts responsables doivent déclarer leur patrimoine.",
+     true
+    ],
+    [
+     "Elle ne peut jamais être contrôlée.",
+     false
+    ]
+   ],
+   "e": "La déclaration de patrimoine rend possible un contrôle de l'évolution de la situation d'un responsable."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Redevabilité",
+   "q": "À propos de la redevabilité :",
+   "a": [
+    [
+     "C'est l'obligation de rendre compte de son action.",
+     true
+    ],
+    [
+     "Elle s'applique uniquement au secteur privé.",
+     false
+    ],
+    [
+     "Le contrôle parlementaire est un mécanisme de redevabilité.",
+     true
+    ]
+   ],
+   "e": "Les autorités publiques rendent compte devant les citoyens, le Parlement et les organes de contrôle."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Lanceurs d'alerte",
+   "q": "À propos du lanceur d'alerte :",
+   "a": [
+    [
+     "Il doit être protégé contre les représailles.",
+     true
+    ],
+    [
+     "Il signale un comportement illégal ou dangereux.",
+     true
+    ],
+    [
+     "Il doit toujours être sanctionné.",
+     false
+    ]
+   ],
+   "e": "La protection des lanceurs d'alerte encourage le signalement des abus."
+  },
+  {
+   "p": "Éthique et bonne gouvernance",
+   "s": "Éthique professionnelle",
+   "q": "À propos du contrôle de l'éthique professionnelle en RDC :",
+   "a": [
+    [
+     "Un observatoire de surveillance de la corruption et de l'éthique professionnelle a été créé.",
+     true
+    ],
+    [
+     "Il fait partie des institutions impliquées dans la lutte contre la corruption.",
+     true
+    ],
+    [
+     "Il n'existe aucun organe de surveillance de l'éthique professionnelle en RDC.",
+     false
+    ]
+   ],
+   "e": "Il s'ajoute à d'autres institutions, comme l'APLC et l'IGF."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Politiques publiques",
+   "q": "À propos du cycle d'une politique publique :",
+   "a": [
+    [
+     "Il comprend la mise à l'agenda, la formulation, la décision, la mise en œuvre et l'évaluation.",
+     true
+    ],
+    [
+     "L'évaluation précède la mise à l'agenda.",
+     false
+    ],
+    [
+     "L'évaluation permet d'ajuster la politique.",
+     true
+    ]
+   ],
+   "e": "L'évaluation intervient après la mise en œuvre et peut ouvrir un nouveau cycle."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Cadres internationaux",
+   "q": "À propos des Objectifs de développement durable (ODD) :",
+   "a": [
+    [
+     "Ils ne concernent que l'environnement.",
+     false
+    ],
+    [
+     "Ils font partie de l'Agenda 2030, adopté en 2015.",
+     true
+    ],
+    [
+     "Il y a 17 ODD.",
+     true
+    ]
+   ],
+   "e": "Les ODD couvrent aussi la pauvreté, la santé, l'éducation, l'égalité et les institutions."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Planification stratégique",
+   "q": "À propos de la planification stratégique :",
+   "a": [
+    [
+     "Elle comprend un diagnostic, une vision et des objectifs.",
+     true
+    ],
+    [
+     "L'analyse SWOT identifie forces, faiblesses, opportunités et menaces.",
+     true
+    ],
+    [
+     "Un plan stratégique est une simple liste d'activités sans objectifs.",
+     false
+    ]
+   ],
+   "e": "Un plan stratégique relie la vision aux objectifs, aux actions et aux indicateurs."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Indicateurs",
+   "q": "À propos des indicateurs :",
+   "a": [
+    [
+     "Une valeur de référence permet de mesurer le progrès.",
+     true
+    ],
+    [
+     "Un indicateur permet de mesurer un résultat.",
+     true
+    ],
+    [
+     "Un bon indicateur se passe de toute cible.",
+     false
+    ]
+   ],
+   "e": "Un indicateur doit être associé à une valeur de départ et à une cible."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Objectifs",
+   "q": "À propos des objectifs SMART :",
+   "a": [
+    [
+     "Il comporte une échéance.",
+     true
+    ],
+    [
+     "Un objectif SMART est mesurable.",
+     true
+    ],
+    [
+     "Il peut rester vague.",
+     false
+    ]
+   ],
+   "e": "SMART : spécifique, mesurable, atteignable, réaliste, temporel."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Évaluation",
+   "q": "À propos des critères d'évaluation d'une politique ou d'un projet :",
+   "a": [
+    [
+     "La pertinence en fait partie.",
+     true
+    ],
+    [
+     "L'efficacité et l'efficience en font partie.",
+     true
+    ],
+    [
+     "L'efficience mesure la popularité d'une politique.",
+     false
+    ]
+   ],
+   "e": "L'efficience compare les résultats obtenus aux ressources utilisées."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Participation",
+   "q": "À propos de la participation citoyenne :",
+   "a": [
+    [
+     "Un budget participatif associe les citoyens aux choix budgétaires.",
+     true
+    ],
+    [
+     "La participation est incompatible avec une bonne gouvernance.",
+     false
+    ],
+    [
+     "La consultation améliore l'acceptation d'une politique.",
+     true
+    ]
+   ],
+   "e": "La participation fait partie des principes de la bonne gouvernance."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Suivi",
+   "q": "À propos d'un tableau de bord :",
+   "a": [
+    [
+     "Il aide à la décision.",
+     true
+    ],
+    [
+     "Il n'est produit qu'une fois, à la fin de l'année.",
+     false
+    ],
+    [
+     "C'est un outil de suivi d'indicateurs.",
+     true
+    ]
+   ],
+   "e": "Il est mis à jour régulièrement pour suivre l'avancement."
+  },
+  {
+   "p": "Planification et politiques publiques",
+   "s": "Chaîne des résultats",
+   "q": "À propos de la chaîne des résultats :",
+   "a": [
+    [
+     "Elle relie les intrants, les activités, les extrants, les effets et l'impact.",
+     true
+    ],
+    [
+     "L'impact est une ressource utilisée au départ.",
+     false
+    ],
+    [
+     "Un extrant est un produit direct d'une activité.",
+     true
+    ]
+   ],
+   "e": "Les ressources sont des intrants. L'impact est un changement à long terme."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Lettre administrative",
+   "q": "À propos d'une lettre administrative :",
+   "a": [
+    [
+     "L'objet résume son contenu.",
+     true
+    ],
+    [
+     "La référence permet de retrouver le dossier.",
+     true
+    ],
+    [
+     "L'objet est facultatif et ne doit jamais figurer.",
+     false
+    ]
+   ],
+   "e": "L'objet permet au destinataire de comprendre l'essentiel dès la lecture."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Note de service",
+   "q": "À propos de la note de service :",
+   "a": [
+    [
+     "Elle est adressée au grand public.",
+     false
+    ],
+    [
+     "Elle est adressée aux agents d'un service.",
+     true
+    ],
+    [
+     "C'est un écrit interne qui donne des instructions.",
+     true
+    ]
+   ],
+   "e": "Elle sert à diffuser rapidement une consigne ou une information dans un service."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Procès-verbal",
+   "q": "À propos du procès-verbal :",
+   "a": [
+    [
+     "Il peut contenir des éléments inventés.",
+     false
+    ],
+    [
+     "Il est signé par les personnes qualifiées.",
+     true
+    ],
+    [
+     "Il consigne fidèlement ce qui a été dit ou décidé.",
+     true
+    ]
+   ],
+   "e": "Le procès-verbal a une valeur de preuve."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Compte rendu",
+   "q": "À propos du compte rendu et du procès-verbal :",
+   "a": [
+    [
+     "Le procès-verbal est plus formel et plus détaillé.",
+     true
+    ],
+    [
+     "Le compte rendu est toujours plus long que le procès-verbal.",
+     false
+    ],
+    [
+     "Le compte rendu résume l'essentiel d'une réunion.",
+     true
+    ]
+   ],
+   "e": "Le compte rendu retient les points importants et les décisions."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Rapport",
+   "q": "À propos du rapport administratif :",
+   "a": [
+    [
+     "Il informe l'autorité sur une situation.",
+     true
+    ],
+    [
+     "Il ne comporte jamais de conclusion.",
+     false
+    ],
+    [
+     "Il propose souvent des recommandations.",
+     true
+    ]
+   ],
+   "e": "Un bon rapport est structuré : introduction, développement, conclusion."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Copie et ampliation",
+   "q": "À propos des copies d'un document :",
+   "a": [
+    [
+     "L'ampliation est une copie destinée à des destinataires.",
+     true
+    ],
+    [
+     "L'ampliation désigne un original perdu.",
+     false
+    ],
+    [
+     "La copie conforme certifie la conformité à l'original.",
+     true
+    ]
+   ],
+   "e": "Les ampliations servent à informer les services concernés."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Archivage",
+   "q": "À propos de l'archivage :",
+   "a": [
+    [
+     "On distingue les archives courantes, intermédiaires et définitives.",
+     true
+    ],
+    [
+     "Les archives sont conservées selon leur durée d'utilité administrative.",
+     true
+    ],
+    [
+     "Les archives courantes peuvent être détruites sans tri.",
+     false
+    ]
+   ],
+   "e": "Un tri préalable évite de détruire des documents à conserver."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Courrier",
+   "q": "À propos du traitement du courrier :",
+   "a": [
+    [
+     "Le courrier arrivé et le courrier départ sont enregistrés.",
+     true
+    ],
+    [
+     "Un accusé de réception peut être délivré.",
+     true
+    ],
+    [
+     "Le courrier confidentiel est ouvert par tous les agents.",
+     false
+    ]
+   ],
+   "e": "Un courrier confidentiel est remis au destinataire sans être ouvert par d'autres."
+  },
+  {
+   "p": "Rédaction et communication administratives",
+   "s": "Communication institutionnelle",
+   "q": "À propos du communiqué :",
+   "a": [
+    [
+     "Un porte-parole peut parler au nom d'une institution.",
+     true
+    ],
+    [
+     "Un communiqué est destiné à informer la presse ou le public.",
+     true
+    ],
+    [
+     "Un communiqué est une lettre confidentielle.",
+     false
+    ]
+   ],
+   "e": "Il sert à communiquer une position officielle."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Ministère",
+   "q": "À propos de la structure d'un ministère :",
+   "a": [
+    [
+     "Le secrétariat général est l'organe politique du ministre.",
+     false
+    ],
+    [
+     "Le cabinet est l'organe politique du ministre.",
+     true
+    ],
+    [
+     "Il comprend un cabinet et un secrétariat général.",
+     true
+    ]
+   ],
+   "e": "Le secrétariat général est la partie administrative du ministère."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Ministres",
+   "q": "À propos de la nomination des ministres :",
+   "a": [
+    [
+     "Le ministre est nommé par ordonnance présidentielle sur proposition du Premier ministre.",
+     true
+    ],
+    [
+     "Le vice-ministre assure l'intérim du ministre en cas d'absence.",
+     true
+    ],
+    [
+     "Le vice-ministre est élu par le Parlement.",
+     false
+    ]
+   ],
+   "e": "Le vice-ministre collabore avec le secrétaire général sur la structure administrative et financière."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Structures",
+   "q": "À propos de la hiérarchie des unités administratives :",
+   "a": [
+    [
+     "Le bureau est une unité supérieure à la direction.",
+     false
+    ],
+    [
+     "La division est dirigée par un chef de division.",
+     true
+    ],
+    [
+     "La direction est une unité supérieure de l'administration centrale.",
+     true
+    ]
+   ],
+   "e": "L'ordre habituel est : direction, division, bureau."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Cabinet",
+   "q": "À propos du cabinet du ministre :",
+   "a": [
+    [
+     "Il comprend notamment un directeur de cabinet et un secrétaire particulier.",
+     true
+    ],
+    [
+     "Il est organisé selon le décret n° 07/01 du 26 mai 2007 sur les cabinets ministériels.",
+     true
+    ],
+    [
+     "Le directeur de cabinet dirige le secrétariat général.",
+     false
+    ]
+   ],
+   "e": "Le cabinet et le secrétariat général sont deux organes distincts."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Administration publique",
+   "q": "À propos de la notion d'administration publique :",
+   "a": [
+    [
+     "Elle est au service de l'intérêt général.",
+     true
+    ],
+    [
+     "Elle désigne l'ensemble des services administratifs du pouvoir central, des provinces et des ETD.",
+     true
+    ],
+    [
+     "Elle est au service des intérêts personnels du chef de service.",
+     false
+    ]
+   ],
+   "e": "L'intérêt général est la finalité de l'administration."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Service public",
+   "q": "À propos du service public :",
+   "a": [
+    [
+     "C'est un organisme ou une activité d'intérêt général relevant de l'administration publique.",
+     true
+    ],
+    [
+     "Un service public est toujours une entreprise privée.",
+     false
+    ],
+    [
+     "Un établissement public est une personne morale de droit public.",
+     true
+    ]
+   ],
+   "e": "Le service public peut aussi être assuré par des organismes publics spécialisés."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Administration provinciale",
+   "q": "À propos de l'administration des provinces :",
+   "a": [
+    [
+     "Il n'existe aucune administration provinciale.",
+     false
+    ],
+    [
+     "Il existe une administration rattachée au gouverneur.",
+     true
+    ],
+    [
+     "Il existe des ministères provinciaux.",
+     true
+    ]
+   ],
+   "e": "La loi organique prévoit aussi l'administration de l'assemblée provinciale."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Organisation du travail",
+   "q": "À propos de la ligne hiérarchique et de l'état-major :",
+   "a": [
+    [
+     "Les fonctions d'état-major (staff) conseillent la hiérarchie.",
+     true
+    ],
+    [
+     "La ligne hiérarchique comprend ceux qui dirigent les opérations.",
+     true
+    ],
+    [
+     "L'état-major dispose de l'autorité hiérarchique sur toute la ligne.",
+     false
+    ]
+   ],
+   "e": "Les conseillers n'ont pas d'autorité hiérarchique propre sur la ligne."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Organisation du travail",
+   "q": "À propos du principe d'unité de commandement :",
+   "a": [
+    [
+     "Chaque agent reçoit ses ordres d'un seul supérieur.",
+     true
+    ],
+    [
+     "Il évite les ordres contradictoires.",
+     true
+    ],
+    [
+     "Il impose à chaque agent d'avoir quatre supérieurs.",
+     false
+    ]
+   ],
+   "e": "C'est un principe de Fayol."
+  },
+  {
+   "p": "Organisation administrative",
+   "s": "Déconcentration",
+   "q": "À propos des services déconcentrés :",
+   "a": [
+    [
+     "Ils sont des entités territoriales décentralisées.",
+     false
+    ],
+    [
+     "Ce sont des services de l'administration centrale implantés dans les provinces.",
+     true
+    ],
+    [
+     "Ils relèvent de l'autorité de l'administration centrale.",
+     true
+    ]
+   ],
+   "e": "Les ETD sont la ville, la commune, le secteur et la chefferie."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Définitions",
+   "q": "À propos de la définition d'un projet :",
+   "a": [
+    [
+     "Il vise à produire un résultat ou un produit unique.",
+     true
+    ],
+    [
+     "Un projet est une entreprise temporaire.",
+     true
+    ],
+    [
+     "Un projet est une activité répétitive et permanente.",
+     false
+    ]
+   ],
+   "e": "Un projet a un début et une fin. Une activité répétitive relève de l'exploitation."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Définitions",
+   "q": "À propos des différences entre un projet et une opération courante :",
+   "a": [
+    [
+     "Un projet n'a jamais de fin.",
+     false
+    ],
+    [
+     "Une opération courante est répétitive.",
+     true
+    ],
+    [
+     "Un projet a un début et une fin.",
+     true
+    ]
+   ],
+   "e": "Un projet se termine lorsque ses objectifs sont atteints ou abandonnés."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Cycle de projet",
+   "q": "À propos du cycle de projet (approche PCM) :",
+   "a": [
+    [
+     "L'évaluation précède la programmation.",
+     false
+    ],
+    [
+     "L'identification précède la formulation.",
+     true
+    ],
+    [
+     "Il comprend la programmation, l'identification, la formulation, le financement, la mise en œuvre et l'évaluation.",
+     true
+    ]
+   ],
+   "e": "Le cycle se referme sur l'évaluation, qui alimente la programmation suivante."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Cadre logique",
+   "q": "À propos du cadre logique :",
+   "a": [
+    [
+     "Il comprend des indicateurs, des sources de vérification et des hypothèses.",
+     true
+    ],
+    [
+     "Il ne comprend pas d'indicateurs.",
+     false
+    ],
+    [
+     "Il structure l'objectif global, l'objectif spécifique, les résultats et les activités.",
+     true
+    ]
+   ],
+   "e": "Le cadre logique relie les moyens, les activités et les résultats attendus."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Arbre à problèmes",
+   "q": "À propos de l'arbre à problèmes :",
+   "a": [
+    [
+     "Le problème central est au milieu.",
+     true
+    ],
+    [
+     "Les causes sont placées au-dessus du problème central.",
+     false
+    ],
+    [
+     "Les causes sont placées en dessous et les effets au-dessus.",
+     true
+    ]
+   ],
+   "e": "On retourne ensuite l'arbre à problèmes pour obtenir l'arbre à objectifs."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Hypothèses",
+   "q": "À propos des hypothèses dans un cadre logique :",
+   "a": [
+    [
+     "Elles remplacent les indicateurs.",
+     false
+    ],
+    [
+     "Ce sont des conditions extérieures nécessaires à la réussite.",
+     true
+    ],
+    [
+     "Elles échappent en grande partie au contrôle du projet.",
+     true
+    ]
+   ],
+   "e": "Une hypothèse fausse peut compromettre un résultat même si les activités sont bien menées."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Faisabilité",
+   "q": "À propos de l'étude de faisabilité :",
+   "a": [
+    [
+     "Elle précède la décision de lancer le projet.",
+     true
+    ],
+    [
+     "Elle évalue la faisabilité technique, financière et organisationnelle.",
+     true
+    ],
+    [
+     "Elle est faite une fois le projet terminé.",
+     false
+    ]
+   ],
+   "e": "Elle aide à décider de lancer, de modifier ou d'abandonner le projet."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Phases",
+   "q": "À propos des groupes de processus du PMI :",
+   "a": [
+    [
+     "Il y a cinq groupes : initiation, planification, exécution, suivi et maîtrise, clôture.",
+     true
+    ],
+    [
+     "La planification se situe avant l'exécution.",
+     true
+    ],
+    [
+     "La clôture est le premier groupe de processus.",
+     false
+    ]
+   ],
+   "e": "La clôture marque la fin du projet."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Livrables",
+   "q": "À propos des livrables :",
+   "a": [
+    [
+     "Un livrable est une réunion de suivi.",
+     false
+    ],
+    [
+     "Un livrable est un produit ou un résultat vérifiable.",
+     true
+    ],
+    [
+     "Il est accepté selon des critères d'acceptation.",
+     true
+    ]
+   ],
+   "e": "Les critères d'acceptation permettent de savoir si le livrable est conforme."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Organisation",
+   "q": "À propos des structures d'organisation de projet :",
+   "a": [
+    [
+     "Dans une structure par projet, le chef de projet a peu d'autorité.",
+     false
+    ],
+    [
+     "Il existe des structures fonctionnelle, matricielle et par projet.",
+     true
+    ],
+    [
+     "Dans une structure matricielle, un membre peut avoir deux supérieurs.",
+     true
+    ]
+   ],
+   "e": "La structure par projet donne au chef de projet une autorité forte."
+  },
+  {
+   "p": "Cycle de projet et cadre logique",
+   "s": "Rôles",
+   "q": "À propos des rôles dans un projet :",
+   "a": [
+    [
+     "Le sponsor soutient le projet et en défend les enjeux.",
+     true
+    ],
+    [
+     "Le chef de projet est toujours le bailleur de fonds.",
+     false
+    ],
+    [
+     "Le chef de projet dirige la réalisation du projet.",
+     true
+    ]
+   ],
+   "e": "Ce sont des rôles distincts, même si une personne peut en cumuler dans de petites organisations."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "WBS",
+   "q": "À propos de la structure de découpage du projet (WBS) :",
+   "a": [
+    [
+     "Elle décompose hiérarchiquement le travail en livrables.",
+     true
+    ],
+    [
+     "C'est un calendrier avec des dates.",
+     false
+    ],
+    [
+     "La règle des 100 % impose que le WBS couvre l'ensemble du périmètre.",
+     true
+    ]
+   ],
+   "e": "Le WBS organise le travail, le calendrier vient ensuite."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "WBS",
+   "q": "À propos du lot de travaux (work package) :",
+   "a": [
+    [
+     "C'est le niveau le plus bas du WBS.",
+     true
+    ],
+    [
+     "C'est le niveau le plus élevé du WBS.",
+     false
+    ],
+    [
+     "Il peut être estimé et affecté à un responsable.",
+     true
+    ]
+   ],
+   "e": "Les lots de travaux servent de base à l'estimation des délais et des coûts."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Dépendances",
+   "q": "À propos des dépendances entre tâches :",
+   "a": [
+    [
+     "La dépendance fin-début est la plus courante.",
+     true
+    ],
+    [
+     "Dans une dépendance fin-début, B commence avant le début de A.",
+     false
+    ],
+    [
+     "Dans une dépendance fin-début, B commence après la fin de A.",
+     true
+    ]
+   ],
+   "e": "Il existe aussi les dépendances début-début, fin-fin et début-fin."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Chemin critique",
+   "q": "À propos du chemin critique :",
+   "a": [
+    [
+     "Il correspond au chemin le plus long du réseau.",
+     true
+    ],
+    [
+     "Les tâches du chemin critique ont une marge totale nulle.",
+     true
+    ],
+    [
+     "Il correspond au chemin le plus court.",
+     false
+    ]
+   ],
+   "e": "Tout retard sur une tâche critique retarde la fin du projet."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Chemin critique",
+   "q": "Réseau : A (3 jours) précède B (4 jours) et C (6 jours). B et C précèdent D (2 jours).",
+   "a": [
+    [
+     "Le chemin critique est A-C-D.",
+     true
+    ],
+    [
+     "La durée du projet est de 9 jours.",
+     false
+    ],
+    [
+     "La durée du projet est de 11 jours.",
+     true
+    ]
+   ],
+   "e": "A-C-D = 3 + 6 + 2 = 11 jours. A-B-D = 3 + 4 + 2 = 9 jours."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Marges",
+   "q": "Même réseau : A (3), B (4), C (6), D (2).",
+   "a": [
+    [
+     "Les tâches A, C et D n'ont pas de marge.",
+     true
+    ],
+    [
+     "La tâche A a une marge de 2 jours.",
+     false
+    ],
+    [
+     "La tâche B a une marge totale de 2 jours.",
+     true
+    ]
+   ],
+   "e": "La marge de B est la différence entre 11 et 9 jours."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Compression",
+   "q": "À propos de la compression du calendrier :",
+   "a": [
+    [
+     "Le crashing consiste à ajouter des ressources sur les tâches critiques.",
+     true
+    ],
+    [
+     "Le crashing consiste à réduire le périmètre sans en parler au client.",
+     false
+    ],
+    [
+     "Le fast tracking consiste à faire en parallèle des tâches normalement séquentielles.",
+     true
+    ]
+   ],
+   "e": "Ces techniques raccourcissent le calendrier, mais augmentent souvent les coûts ou les risques."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Estimation",
+   "q": "À propos des méthodes d'estimation :",
+   "a": [
+    [
+     "L'estimation ascendante part du total pour le répartir.",
+     false
+    ],
+    [
+     "L'estimation paramétrique utilise un ratio, comme un coût par mètre carré.",
+     true
+    ],
+    [
+     "L'estimation analogique s'appuie sur des projets similaires.",
+     true
+    ]
+   ],
+   "e": "L'estimation ascendante part des lots de travaux pour les additionner."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Estimation",
+   "q": "À propos de l'estimation ascendante :",
+   "a": [
+    [
+     "Elle est en général plus précise que l'analogique.",
+     true
+    ],
+    [
+     "Elle part des lots de travaux et les additionne.",
+     true
+    ],
+    [
+     "Elle est plus rapide et moins précise.",
+     false
+    ]
+   ],
+   "e": "Elle demande plus de temps, mais elle est plus détaillée."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Ressources",
+   "q": "À propos de la gestion des ressources :",
+   "a": [
+    [
+     "La matrice RACI précise qui est responsable, qui approuve, qui est consulté et qui est informé.",
+     true
+    ],
+    [
+     "Le nivellement des ressources ajuste le calendrier selon leur disponibilité.",
+     true
+    ],
+    [
+     "RACI désigne un type de budget.",
+     false
+    ]
+   ],
+   "e": "RACI : Responsible, Accountable, Consulted, Informed."
+  },
+  {
+   "p": "Planification : WBS, Gantt et chemin critique",
+   "s": "Ligne de base",
+   "q": "À propos de la ligne de base d'un projet :",
+   "a": [
+    [
+     "Elle permet de mesurer les écarts.",
+     true
+    ],
+    [
+     "Elle peut être modifiée librement, sans contrôle.",
+     false
+    ],
+    [
+     "C'est la version approuvée du périmètre, du calendrier et du coût.",
+     true
+    ]
+   ],
+   "e": "Les changements de ligne de base passent par un processus de maîtrise des modifications."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Coûts",
+   "q": "À propos des types de coûts :",
+   "a": [
+    [
+     "Les coûts indirects sont partagés entre plusieurs activités.",
+     true
+    ],
+    [
+     "Les coûts fixes varient proportionnellement au volume.",
+     false
+    ],
+    [
+     "Les coûts directs sont imputables à un projet précis.",
+     true
+    ]
+   ],
+   "e": "Les coûts fixes ne dépendent pas du volume produit."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Réserves",
+   "q": "À propos des réserves budgétaires :",
+   "a": [
+    [
+     "La réserve pour aléas couvre des risques identifiés.",
+     true
+    ],
+    [
+     "Une réserve pour aléas représente le bénéfice du projet.",
+     false
+    ],
+    [
+     "La réserve de gestion couvre des imprévus non identifiés.",
+     true
+    ]
+   ],
+   "e": "Les réserves protègent le budget contre les incertitudes."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Valeur acquise",
+   "q": "Un projet a : BAC = 100 000, PV = 45 000, EV = 40 000, AC = 50 000.",
+   "a": [
+    [
+     "Le projet est en avance sur le calendrier.",
+     false
+    ],
+    [
+     "L'écart de coût (CV = EV − AC) est de −10 000.",
+     true
+    ],
+    [
+     "L'indice de performance des coûts (CPI = EV ÷ AC) est de 0,8.",
+     true
+    ]
+   ],
+   "e": "SPI = 40 000 ÷ 45 000 ≈ 0,89 : le projet est en retard."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Valeur acquise",
+   "q": "Mêmes données : BAC = 100 000 ; EV = 40 000 ; AC = 50 000 ; CPI = 0,8.",
+   "a": [
+    [
+     "L'EAC est de 90 000.",
+     false
+    ],
+    [
+     "L'estimation à l'achèvement (EAC = BAC ÷ CPI) est de 125 000.",
+     true
+    ],
+    [
+     "Le reste à dépenser (ETC = EAC − AC) est de 75 000.",
+     true
+    ]
+   ],
+   "e": "100 000 ÷ 0,8 = 125 000, et 125 000 − 50 000 = 75 000."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Valeur acquise",
+   "q": "À propos de l'interprétation du CPI et du SPI :",
+   "a": [
+    [
+     "Un CPI inférieur à 1 signale un dépassement des coûts.",
+     true
+    ],
+    [
+     "Un SPI inférieur à 1 signale un retard.",
+     true
+    ],
+    [
+     "Un CPI supérieur à 1 signale un dépassement des coûts.",
+     false
+    ]
+   ],
+   "e": "Un CPI supérieur à 1 signale au contraire des coûts inférieurs aux prévisions."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Rentabilité",
+   "q": "On investit 1 000 aujourd'hui pour recevoir 1 100 dans un an. Le taux d'actualisation est de 10 %.",
+   "a": [
+    [
+     "La VAN est nulle.",
+     true
+    ],
+    [
+     "Le taux de rentabilité interne (TRI) est de 10 %.",
+     true
+    ],
+    [
+     "La VAN est de 100.",
+     false
+    ]
+   ],
+   "e": "−1 000 + 1 100 ÷ 1,10 = 0."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Rentabilité",
+   "q": "On investit 1 000 et on reçoit 250 par an.",
+   "a": [
+    [
+     "Cet indicateur ne tient pas compte de l'actualisation.",
+     true
+    ],
+    [
+     "Le délai de récupération est de 2,5 ans.",
+     false
+    ],
+    [
+     "Le délai de récupération est de 4 ans.",
+     true
+    ]
+   ],
+   "e": "1 000 ÷ 250 = 4."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Trésorerie",
+   "q": "À propos du plan de trésorerie d'un projet :",
+   "a": [
+    [
+     "Il se limite au budget total sans échéancier.",
+     false
+    ],
+    [
+     "Il aide à éviter des ruptures de financement.",
+     true
+    ],
+    [
+     "Il décrit les décaissements et les encaissements dans le temps.",
+     true
+    ]
+   ],
+   "e": "Un budget total ne dit pas à quel moment l'argent sera nécessaire."
+  },
+  {
+   "p": "Coûts, valeur acquise et rentabilité",
+   "s": "Contrats",
+   "q": "À propos des types de contrats :",
+   "a": [
+    [
+     "Dans un contrat forfaitaire, le prix est fixé à l'avance.",
+     true
+    ],
+    [
+     "Dans un forfait, le client supporte tout dépassement.",
+     false
+    ],
+    [
+     "Dans un contrat en régie ou remboursable, le client supporte davantage le risque de dépassement.",
+     true
+    ]
+   ],
+   "e": "Dans un forfait, c'est en principe le prestataire qui supporte le risque de dépassement."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Définition",
+   "q": "À propos de la définition d'un risque de projet :",
+   "a": [
+    [
+     "Il peut avoir un effet positif ou négatif.",
+     true
+    ],
+    [
+     "Un risque est un problème déjà survenu.",
+     false
+    ],
+    [
+     "Un risque est un événement incertain.",
+     true
+    ]
+   ],
+   "e": "Un problème déjà survenu s'appelle une question ou une difficulté."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Évaluation",
+   "q": "À propos de la matrice probabilité-impact :",
+   "a": [
+    [
+     "Elle ne tient compte que de la probabilité.",
+     false
+    ],
+    [
+     "La criticité combine la probabilité et l'impact.",
+     true
+    ],
+    [
+     "Elle permet de prioriser les risques.",
+     true
+    ]
+   ],
+   "e": "Un risque peu probable mais très grave peut rester prioritaire."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Réponses",
+   "q": "À propos des stratégies face aux opportunités :",
+   "a": [
+    [
+     "Exploiter est une stratégie.",
+     true
+    ],
+    [
+     "Partager est une stratégie.",
+     true
+    ],
+    [
+     "Transférer est la stratégie propre aux opportunités.",
+     false
+    ]
+   ],
+   "e": "Les stratégies sont exploiter, partager, améliorer et accepter."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Registre",
+   "q": "À propos du registre des risques :",
+   "a": [
+    [
+     "Il liste les risques, leurs propriétaires et leurs réponses.",
+     true
+    ],
+    [
+     "Il est rédigé une fois, puis jamais revu.",
+     false
+    ],
+    [
+     "Il est mis à jour tout au long du projet.",
+     true
+    ]
+   ],
+   "e": "Les risques évoluent, et le registre doit évoluer avec eux."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Valeur monétaire",
+   "q": "Un risque a une probabilité de 20 % et un impact de 50 000.",
+   "a": [
+    [
+     "La valeur monétaire attendue est de 100 000.",
+     false
+    ],
+    [
+     "Elle peut aider à dimensionner une réserve pour aléas.",
+     true
+    ],
+    [
+     "La valeur monétaire attendue est de 10 000.",
+     true
+    ]
+   ],
+   "e": "0,20 × 50 000 = 10 000."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Risques résiduels",
+   "q": "À propos des risques résiduels et secondaires :",
+   "a": [
+    [
+     "Un risque résiduel subsiste après la réponse.",
+     true
+    ],
+    [
+     "Un risque secondaire est généré par la réponse elle-même.",
+     true
+    ],
+    [
+     "Un risque résiduel existe avant toute réponse.",
+     false
+    ]
+   ],
+   "e": "Il faut anticiper ces risques lorsqu'on choisit une réponse."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Plans",
+   "q": "À propos du plan de contingence :",
+   "a": [
+    [
+     "Il est inutile quand un risque est identifié.",
+     false
+    ],
+    [
+     "Il est activé si le risque survient.",
+     true
+    ],
+    [
+     "Un déclencheur indique quand l'appliquer.",
+     true
+    ]
+   ],
+   "e": "Il prépare une réponse avant que le risque ne se réalise."
+  },
+  {
+   "p": "Gestion des risques",
+   "s": "Suivi",
+   "q": "À propos du suivi des risques :",
+   "a": [
+    [
+     "Les risques sont identifiés au démarrage, puis jamais revus.",
+     false
+    ],
+    [
+     "Il se poursuit pendant toute la durée du projet.",
+     true
+    ],
+    [
+     "La tolérance au risque dépend de l'organisation.",
+     true
+    ]
+   ],
+   "e": "Une revue régulière est une bonne pratique."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Parties prenantes",
+   "q": "À propos des parties prenantes d'un projet :",
+   "a": [
+    [
+     "Ce sont des personnes ou des organisations qui peuvent affecter le projet ou en être affectées.",
+     true
+    ],
+    [
+     "Seuls les membres de l'équipe sont des parties prenantes.",
+     false
+    ],
+    [
+     "Les bénéficiaires et le sponsor en font partie.",
+     true
+    ]
+   ],
+   "e": "Il faut identifier toutes les parties prenantes, y compris celles qui n'appartiennent pas à l'équipe."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Parties prenantes",
+   "q": "À propos de la matrice pouvoir-intérêt :",
+   "a": [
+    [
+     "Une partie prenante à fort pouvoir et à fort intérêt est gérée de près.",
+     true
+    ],
+    [
+     "Une partie prenante à fort pouvoir et à faible intérêt est ignorée.",
+     false
+    ],
+    [
+     "Une partie prenante à faible pouvoir et à faible intérêt est simplement surveillée.",
+     true
+    ]
+   ],
+   "e": "Une partie prenante à fort pouvoir et à faible intérêt doit être tenue satisfaite."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Plan de communication",
+   "q": "À propos du plan de communication :",
+   "a": [
+    [
+     "Il précise qui reçoit quelle information, quand et par quel canal.",
+     true
+    ],
+    [
+     "Il prévoit un message unique, identique pour tous.",
+     false
+    ],
+    [
+     "Il est adapté aux différents publics.",
+     true
+    ]
+   ],
+   "e": "Un directeur et un technicien n'ont pas les mêmes besoins d'information."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Canaux de communication",
+   "q": "Le nombre de canaux de communication se calcule par n(n − 1) ÷ 2.",
+   "a": [
+    [
+     "Pour 5 personnes, il y a 5 canaux.",
+     false
+    ],
+    [
+     "Pour 5 personnes, il y a 10 canaux.",
+     true
+    ],
+    [
+     "Avec 6 personnes, il y a 15 canaux.",
+     true
+    ]
+   ],
+   "e": "5 × 4 ÷ 2 = 10, et 6 × 5 ÷ 2 = 15."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Modèle de communication",
+   "q": "À propos du modèle de communication :",
+   "a": [
+    [
+     "La rétroaction est inutile.",
+     false
+    ],
+    [
+     "Il comprend un émetteur, un message, un canal et un récepteur.",
+     true
+    ],
+    [
+     "La rétroaction permet de vérifier la compréhension.",
+     true
+    ]
+   ],
+   "e": "Le bruit (langue, distraction, mauvais canal) peut déformer le message."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Rapports",
+   "q": "À propos du rapport d'avancement :",
+   "a": [
+    [
+     "Il ne présente que les bonnes nouvelles.",
+     false
+    ],
+    [
+     "Il annonce les prochaines étapes.",
+     true
+    ],
+    [
+     "Il présente les réalisations, les écarts et les risques.",
+     true
+    ]
+   ],
+   "e": "Un rapport honnête permet de décider et de corriger à temps."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Conflits",
+   "q": "À propos de la gestion des conflits :",
+   "a": [
+    [
+     "Collaborer cherche une solution profitable aux deux parties.",
+     true
+    ],
+    [
+     "Le compromis suppose des concessions de part et d'autre.",
+     true
+    ],
+    [
+     "Éviter le conflit résout toujours sa cause.",
+     false
+    ]
+   ],
+   "e": "Éviter peut calmer la situation, mais la cause du conflit demeure."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Engagement",
+   "q": "À propos de l'engagement des parties prenantes :",
+   "a": [
+    [
+     "Les parties prenantes résistantes n'ont aucune importance.",
+     false
+    ],
+    [
+     "On peut les classer comme inconscientes, résistantes, neutres, favorables ou meneuses.",
+     true
+    ],
+    [
+     "L'objectif est de faire évoluer chacune vers le niveau d'engagement souhaité.",
+     true
+    ]
+   ],
+   "e": "Une partie prenante résistante peut bloquer un projet."
+  },
+  {
+   "p": "Parties prenantes et communication",
+   "s": "Gestion de l'information",
+   "q": "À propos de la gestion des documents du projet :",
+   "a": [
+    [
+     "Plusieurs versions non datées peuvent circuler.",
+     false
+    ],
+    [
+     "Le contrôle des versions évite d'utiliser un document périmé.",
+     true
+    ],
+    [
+     "Les documents doivent être centralisés.",
+     true
+    ]
+   ],
+   "e": "Une seule version de référence limite les erreurs."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Manifeste agile",
+   "q": "À propos du Manifeste agile :",
+   "a": [
+    [
+     "Il rejette toute documentation.",
+     false
+    ],
+    [
+     "Il valorise la collaboration avec le client plus que la négociation contractuelle.",
+     true
+    ],
+    [
+     "Il date de 2001.",
+     true
+    ]
+   ],
+   "e": "Il préfère un logiciel opérationnel à une documentation exhaustive, sans supprimer la documentation utile."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Rôles Scrum",
+   "q": "À propos des rôles dans Scrum :",
+   "a": [
+    [
+     "Le Product Owner maximise la valeur du produit.",
+     true
+    ],
+    [
+     "Le Scrum Master est le chef hiérarchique de l'équipe.",
+     false
+    ],
+    [
+     "Le Scrum Master aide l'équipe à appliquer Scrum.",
+     true
+    ]
+   ],
+   "e": "Les rôles de Scrum sont le Product Owner, le Scrum Master et les Développeurs."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Événements Scrum",
+   "q": "À propos des événements Scrum :",
+   "a": [
+    [
+     "La rétrospective est la démonstration du produit aux parties prenantes.",
+     false
+    ],
+    [
+     "Le Daily Scrum dure au maximum 15 minutes.",
+     true
+    ],
+    [
+     "La planification du sprint prépare le travail à réaliser.",
+     true
+    ]
+   ],
+   "e": "La revue de sprint présente l'incrément. La rétrospective améliore la manière de travailler."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Artefacts Scrum",
+   "q": "À propos des artefacts de Scrum :",
+   "a": [
+    [
+     "Le Sprint Backlog contient le travail choisi pour le sprint.",
+     true
+    ],
+    [
+     "Le Sprint Backlog est géré par le client seul.",
+     false
+    ],
+    [
+     "Le Product Backlog est une liste ordonnée de ce qui est nécessaire.",
+     true
+    ]
+   ],
+   "e": "Les artefacts sont le Product Backlog, le Sprint Backlog et l'incrément."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Definition of Done",
+   "q": "À propos de la définition de « terminé » (Definition of Done) :",
+   "a": [
+    [
+     "Elle est partagée par toute l'équipe.",
+     true
+    ],
+    [
+     "Elle est décidée après le sprint par le client seul.",
+     false
+    ],
+    [
+     "Elle fixe les critères pour qu'un incrément soit considéré comme terminé.",
+     true
+    ]
+   ],
+   "e": "Elle garantit une même compréhension de la qualité attendue."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "User story",
+   "q": "À propos de la user story :",
+   "a": [
+    [
+     "C'est un contrat juridique.",
+     false
+    ],
+    [
+     "Elle décrit un besoin du point de vue de l'utilisateur.",
+     true
+    ],
+    [
+     "Elle suit souvent la forme « en tant que..., je veux... afin de... ».",
+     true
+    ]
+   ],
+   "e": "Elle sert de base de discussion, non de contrat."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Kanban",
+   "q": "À propos du Kanban :",
+   "a": [
+    [
+     "Il limite le travail en cours (WIP).",
+     true
+    ],
+    [
+     "Il visualise le flux de travail.",
+     true
+    ],
+    [
+     "Il interdit l'usage d'un tableau.",
+     false
+    ]
+   ],
+   "e": "Un tableau Kanban comprend souvent les colonnes à faire, en cours, terminé."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Vélocité",
+   "q": "À propos de la vélocité d'une équipe :",
+   "a": [
+    [
+     "Elle aide à prévoir les sprints futurs.",
+     true
+    ],
+    [
+     "Elle représente la quantité de travail terminée par sprint.",
+     true
+    ],
+    [
+     "Elle mesure la vitesse d'un véhicule.",
+     false
+    ]
+   ],
+   "e": "Elle se calcule sur plusieurs sprints, pour éviter les écarts isolés."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Agile et prédictif",
+   "q": "À propos des approches prédictive et agile :",
+   "a": [
+    [
+     "L'approche agile est toujours meilleure que l'approche prédictive.",
+     false
+    ],
+    [
+     "L'approche prédictive planifie l'essentiel au départ.",
+     true
+    ],
+    [
+     "L'approche agile convient mieux lorsque les exigences changent.",
+     true
+    ]
+   ],
+   "e": "Le choix dépend du contexte, du risque et de la stabilité des exigences."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "MVP",
+   "q": "À propos du produit minimum viable (MVP) :",
+   "a": [
+    [
+     "Il contient les fonctions essentielles.",
+     true
+    ],
+    [
+     "Il permet de tester des hypothèses avec de vrais utilisateurs.",
+     true
+    ],
+    [
+     "C'est la version finale complète du produit.",
+     false
+    ]
+   ],
+   "e": "Le MVP permet d'apprendre vite et à moindre coût."
+  },
+  {
+   "p": "Agile et Scrum",
+   "s": "Rétrospective",
+   "q": "À propos de la rétrospective de sprint :",
+   "a": [
+    [
+     "Elle évalue uniquement les performances individuelles.",
+     false
+    ],
+    [
+     "Elle a lieu à la fin du sprint.",
+     true
+    ],
+    [
+     "Elle vise à améliorer la manière de travailler.",
+     true
+    ]
+   ],
+   "e": "Elle porte sur les processus, les relations et les outils."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "PMBOK",
+   "q": "À propos du Guide PMBOK (6ᵉ édition) :",
+   "a": [
+    [
+     "Il décrit 10 domaines de connaissance.",
+     true
+    ],
+    [
+     "Il décrit 6 groupes de processus.",
+     false
+    ],
+    [
+     "Il décrit 5 groupes de processus.",
+     true
+    ]
+   ],
+   "e": "Les 5 groupes sont l'initiation, la planification, l'exécution, le suivi et la maîtrise, la clôture."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "PMBOK",
+   "q": "À propos des domaines de connaissance du PMBOK :",
+   "a": [
+    [
+     "La gestion de l'intégration en fait partie.",
+     true
+    ],
+    [
+     "La gestion des approvisionnements en fait partie.",
+     true
+    ],
+    [
+     "La gestion de la rentabilité en fait partie.",
+     false
+    ]
+   ],
+   "e": "On y trouve aussi le périmètre, l'échéancier, les coûts, la qualité, les ressources, les communications, les risques et les parties prenantes."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "PMI",
+   "q": "À propos du PMI :",
+   "a": [
+    [
+     "La certification PMP est réservée à l'approche agile.",
+     false
+    ],
+    [
+     "Il délivre la certification PMP.",
+     true
+    ],
+    [
+     "Il s'agit du Project Management Institute.",
+     true
+    ]
+   ],
+   "e": "Le PMP couvre des approches prédictives, agiles et hybrides."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "PRINCE2",
+   "q": "À propos de PRINCE2 :",
+   "a": [
+    [
+     "La méthode comprend 5 principes seulement.",
+     false
+    ],
+    [
+     "La méthode comprend 7 principes, 7 thèmes et 7 processus.",
+     true
+    ],
+    [
+     "Le nom signifie PRojects IN Controlled Environments.",
+     true
+    ]
+   ],
+   "e": "PRINCE2 est une méthode structurée, très utilisée dans le secteur public."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "PRINCE2",
+   "q": "À propos des principes de PRINCE2 :",
+   "a": [
+    [
+     "Il est inutile de définir les rôles et les responsabilités.",
+     false
+    ],
+    [
+     "La justification continue de l'intérêt du projet en fait partie.",
+     true
+    ],
+    [
+     "Apprendre de l'expérience en fait partie.",
+     true
+    ]
+   ],
+   "e": "Les rôles et responsabilités définis font partie des principes."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "Approche hybride",
+   "q": "À propos des approches hybrides :",
+   "a": [
+    [
+     "Elles sont adaptées à des projets qui combinent des parties stables et des parties incertaines.",
+     true
+    ],
+    [
+     "Elles combinent des éléments agiles et prédictifs.",
+     true
+    ],
+    [
+     "Elles interdisent l'usage de plans.",
+     false
+    ]
+   ],
+   "e": "On peut planifier le cadre global et itérer sur certaines parties."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "Normes",
+   "q": "À propos de la norme ISO 21500 :",
+   "a": [
+    [
+     "Elle donne des lignes directrices sur le management de projet.",
+     true
+    ],
+    [
+     "Elle est publiée par l'Organisation internationale de normalisation.",
+     true
+    ],
+    [
+     "Elle impose une certification obligatoire à tous les chefs de projet.",
+     false
+    ]
+   ],
+   "e": "Elle fournit des lignes directrices, sans imposer de certification individuelle."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "Programmes et portefeuilles",
+   "q": "À propos des programmes et des portefeuilles :",
+   "a": [
+    [
+     "Un programme regroupe des projets liés, gérés de façon coordonnée.",
+     true
+    ],
+    [
+     "Un portefeuille regroupe des projets et programmes alignés sur la stratégie.",
+     true
+    ],
+    [
+     "Un portefeuille est un projet unique.",
+     false
+    ]
+   ],
+   "e": "Le portefeuille permet d'arbitrer les priorités entre initiatives."
+  },
+  {
+   "p": "PMBOK et PRINCE2",
+   "s": "Valeur",
+   "q": "À propos de la valeur d'un projet :",
+   "a": [
+    [
+     "Un projet doit être lié à la stratégie de l'organisation.",
+     true
+    ],
+    [
+     "La valeur est égale au coût du projet.",
+     false
+    ],
+    [
+     "La valeur ne se limite pas au coût.",
+     true
+    ]
+   ],
+   "e": "La valeur compare les bénéfices attendus aux ressources engagées."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Suivi et évaluation",
+   "q": "À propos du suivi et de l'évaluation :",
+   "a": [
+    [
+     "L'évaluation porte un jugement sur la pertinence, l'efficacité et l'impact.",
+     true
+    ],
+    [
+     "L'évaluation est un suivi continu identique en tout point.",
+     false
+    ],
+    [
+     "Le suivi est une collecte continue d'informations.",
+     true
+    ]
+   ],
+   "e": "L'évaluation est ponctuelle et plus approfondie."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Indicateurs",
+   "q": "À propos des niveaux de résultats :",
+   "a": [
+    [
+     "Un effet (outcome) est un changement à moyen terme.",
+     true
+    ],
+    [
+     "Un extrant (output) est un produit direct d'une activité.",
+     true
+    ],
+    [
+     "Un intrant est un impact.",
+     false
+    ]
+   ],
+   "e": "Un intrant est une ressource utilisée au départ."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Plan de S&E",
+   "q": "À propos du plan de suivi-évaluation :",
+   "a": [
+    [
+     "Il n'est utile qu'à la fin du projet.",
+     false
+    ],
+    [
+     "Il précise les indicateurs, les sources, la fréquence et les responsables.",
+     true
+    ],
+    [
+     "Il comprend une valeur de référence.",
+     true
+    ]
+   ],
+   "e": "Il est conçu dès la planification."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Ligne de base",
+   "q": "À propos de la situation de référence (baseline) :",
+   "a": [
+    [
+     "Elle permet de mesurer le changement.",
+     true
+    ],
+    [
+     "Elle décrit la situation avant l'intervention.",
+     true
+    ],
+    [
+     "Elle est établie après la fin du projet.",
+     false
+    ]
+   ],
+   "e": "Sans situation de départ, on ne peut pas mesurer d'évolution."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Critères d'évaluation",
+   "q": "À propos des critères d'évaluation du CAD de l'OCDE :",
+   "a": [
+    [
+     "La cohérence a été ajoutée en 2019.",
+     true
+    ],
+    [
+     "Ils sont au nombre de six.",
+     true
+    ],
+    [
+     "La popularité en fait partie.",
+     false
+    ]
+   ],
+   "e": "Pertinence, cohérence, efficacité, efficience, impact et durabilité."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Types d'évaluation",
+   "q": "À propos des types d'évaluation :",
+   "a": [
+    [
+     "L'évaluation ex post a lieu avant l'intervention.",
+     false
+    ],
+    [
+     "L'évaluation ex ante a lieu avant l'intervention.",
+     true
+    ],
+    [
+     "L'évaluation à mi-parcours a lieu en cours de projet.",
+     true
+    ]
+   ],
+   "e": "L'évaluation ex post a lieu après la fin de l'intervention."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Triangulation",
+   "q": "À propos de la triangulation :",
+   "a": [
+    [
+     "Elle améliore la fiabilité des conclusions.",
+     true
+    ],
+    [
+     "Elle consiste à répéter la même source plusieurs fois.",
+     false
+    ],
+    [
+     "Elle croise plusieurs sources ou méthodes.",
+     true
+    ]
+   ],
+   "e": "Plusieurs sources indépendantes qui convergent renforcent une conclusion."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Rapport d'évaluation",
+   "q": "À propos du rapport d'évaluation :",
+   "a": [
+    [
+     "Il se limite à un résumé du budget.",
+     false
+    ],
+    [
+     "Il documente des leçons apprises.",
+     true
+    ],
+    [
+     "Il présente des constats, des conclusions et des recommandations.",
+     true
+    ]
+   ],
+   "e": "Les recommandations doivent être utiles et réalisables."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Indicateurs",
+   "q": "À propos de la désagrégation des indicateurs :",
+   "a": [
+    [
+     "Cela rend l'indicateur inutile.",
+     false
+    ],
+    [
+     "On peut ventiler un indicateur par sexe ou par âge.",
+     true
+    ],
+    [
+     "Cela révèle des écarts entre groupes.",
+     true
+    ]
+   ],
+   "e": "Une moyenne peut masquer des inégalités."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Évaluation d'impact",
+   "q": "À propos de l'évaluation d'impact :",
+   "a": [
+    [
+     "Elle mesure les effets attribuables à l'intervention.",
+     true
+    ],
+    [
+     "Elle peut utiliser un groupe témoin.",
+     true
+    ],
+    [
+     "Elle est impossible pour un projet de développement.",
+     false
+    ]
+   ],
+   "e": "Un groupe de comparaison permet d'isoler l'effet du projet."
+  },
+  {
+   "p": "Suivi-évaluation",
+   "s": "Gestion axée sur les résultats",
+   "q": "À propos de la gestion axée sur les résultats (GAR) :",
+   "a": [
+    [
+     "Elle ignore la mesure des résultats.",
+     false
+    ],
+    [
+     "Elle s'oriente vers les résultats plutôt que vers les seules activités.",
+     true
+    ],
+    [
+     "Elle repose sur des indicateurs et des cibles.",
+     true
+    ]
+   ],
+   "e": "Elle demande de définir, mesurer et rendre compte des résultats."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Qualité",
+   "q": "À propos de la qualité d'un projet :",
+   "a": [
+    [
+     "La qualité mesure la conformité aux exigences.",
+     true
+    ],
+    [
+     "La qualité est un luxe réservé aux grands projets.",
+     false
+    ],
+    [
+     "Le grade désigne une catégorie ou une classe de produit.",
+     true
+    ]
+   ],
+   "e": "Un grade bas peut être acceptable, mais une qualité basse ne l'est pas."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "PDCA",
+   "q": "À propos du cycle PDCA de Deming :",
+   "a": [
+    [
+     "Il signifie Plan-Deliver-Close-Audit.",
+     false
+    ],
+    [
+     "Il signifie Plan-Do-Check-Act.",
+     true
+    ],
+    [
+     "Il soutient l'amélioration continue.",
+     true
+    ]
+   ],
+   "e": "Planifier, faire, vérifier, agir."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Outils de qualité",
+   "q": "À propos du diagramme de Pareto :",
+   "a": [
+    [
+     "Il aide à prioriser les causes principales d'un problème.",
+     true
+    ],
+    [
+     "Il mesure la variance d'un processus.",
+     false
+    ],
+    [
+     "Il illustre la règle du 80/20.",
+     true
+    ]
+   ],
+   "e": "Un petit nombre de causes explique souvent la plus grande part des effets."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Outils de qualité",
+   "q": "À propos des cartes de contrôle :",
+   "a": [
+    [
+     "Elles permettent de suivre la stabilité d'un processus.",
+     true
+    ],
+    [
+     "Elles comportent des limites de contrôle.",
+     true
+    ],
+    [
+     "Elles servent à planifier les ressources.",
+     false
+    ]
+   ],
+   "e": "Un point hors limites signale une variation anormale."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Coût de la qualité",
+   "q": "À propos du coût de la qualité :",
+   "a": [
+    [
+     "La prévention et l'évaluation font partie des coûts de conformité.",
+     true
+    ],
+    [
+     "Les défaillances internes et externes font partie des coûts de non-conformité.",
+     true
+    ],
+    [
+     "La non-qualité ne coûte rien.",
+     false
+    ]
+   ],
+   "e": "Prévenir coûte en général moins cher que réparer."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Gestion des modifications",
+   "q": "À propos de la maîtrise des modifications :",
+   "a": [
+    [
+     "Tout changement demandé est accepté automatiquement.",
+     false
+    ],
+    [
+     "Un comité de contrôle des modifications (CCB) peut décider.",
+     true
+    ],
+    [
+     "Une demande de changement est évaluée avant d'être acceptée.",
+     true
+    ]
+   ],
+   "e": "Chaque changement a des effets sur le coût, le délai et la qualité."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Changement organisationnel",
+   "q": "À propos du changement dans les organisations :",
+   "a": [
+    [
+     "La communication et la formation facilitent l'adoption.",
+     true
+    ],
+    [
+     "La résistance au changement est fréquente.",
+     true
+    ],
+    [
+     "Il est inutile d'accompagner les personnes concernées.",
+     false
+    ]
+   ],
+   "e": "Un produit livré mais non utilisé n'apporte pas de valeur."
+  },
+  {
+   "p": "Qualité et changements",
+   "s": "Recette",
+   "q": "À propos de l'acceptation d'un livrable (recette) :",
+   "a": [
+    [
+     "Elle a lieu avant toute livraison.",
+     false
+    ],
+    [
+     "Elle consiste en la validation par le client selon des critères définis.",
+     true
+    ],
+    [
+     "Des tests et des revues la précèdent.",
+     true
+    ]
+   ],
+   "e": "La recette intervient après la livraison, sur la base des critères d'acceptation."
+  },
+  {
+   "p": "Approvisionnement et contrats",
+   "s": "Achat ou production",
+   "q": "À propos de la décision de faire ou d'acheter (make or buy) :",
+   "a": [
+    [
+     "Elle tient compte du coût, des compétences et des délais.",
+     true
+    ],
+    [
+     "Elle compare la production interne à l'achat externe.",
+     true
+    ],
+    [
+     "Il faut toujours acheter à l'extérieur.",
+     false
+    ]
+   ],
+   "e": "Aucune option n'est meilleure dans tous les cas."
+  },
+  {
+   "p": "Approvisionnement et contrats",
+   "s": "Appel d'offres",
+   "q": "À propos de l'appel d'offres :",
+   "a": [
+    [
+     "Il s'appuie sur un cahier des charges.",
+     true
+    ],
+    [
+     "Les critères d'évaluation sont connus à l'avance.",
+     true
+    ],
+    [
+     "Les critères d'évaluation sont tenus secrets.",
+     false
+    ]
+   ],
+   "e": "La transparence des critères garantit l'égalité entre les candidats."
+  },
+  {
+   "p": "Approvisionnement et contrats",
+   "s": "Termes de référence",
+   "q": "À propos des termes de référence (TdR) :",
+   "a": [
+    [
+     "Ils décrivent les objectifs, les tâches et les livrables attendus.",
+     true
+    ],
+    [
+     "Ils servent de base à une consultation ou à un appel d'offres.",
+     true
+    ],
+    [
+     "Ce sont des contrats déjà signés.",
+     false
+    ]
+   ],
+   "e": "Les TdR cadrent la demande avant la signature d'un contrat."
+  },
+  {
+   "p": "Approvisionnement et contrats",
+   "s": "Garanties",
+   "q": "À propos des garanties dans les contrats :",
+   "a": [
+    [
+     "Une garantie de bonne exécution protège l'autorité contractante.",
+     true
+    ],
+    [
+     "Il est recommandé de tout payer d'avance, sans garantie.",
+     false
+    ],
+    [
+     "Une retenue de garantie peut être appliquée sur les paiements.",
+     true
+    ]
+   ],
+   "e": "Les garanties limitent le risque de mauvaise exécution."
+  },
+  {
+   "p": "Approvisionnement et contrats",
+   "s": "Gestion des contrats",
+   "q": "À propos de la gestion des contrats :",
+   "a": [
+    [
+     "Un avenant formalise une modification du contrat.",
+     true
+    ],
+    [
+     "Un contrat ne peut jamais être modifié.",
+     false
+    ],
+    [
+     "Elle comprend le suivi de l'exécution.",
+     true
+    ]
+   ],
+   "e": "Les modifications doivent être écrites et approuvées."
+  },
+  {
+   "p": "Approvisionnement et contrats",
+   "s": "Éthique des achats",
+   "q": "À propos de l'éthique dans les achats :",
+   "a": [
+    [
+     "Les relations personnelles avec un fournisseur sont sans importance.",
+     false
+    ],
+    [
+     "Une déclaration d'intérêts aide à prévenir les conflits d'intérêts.",
+     true
+    ],
+    [
+     "Les cadeaux de fournisseurs doivent être encadrés.",
+     true
+    ]
+   ],
+   "e": "L'impartialité protège l'organisation et le fournisseur."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Équipes",
+   "q": "À propos des étapes de développement d'une équipe (Tuckman) :",
+   "a": [
+    [
+     "La dissolution clôt le cycle.",
+     true
+    ],
+    [
+     "La turbulence correspond à la phase de performance.",
+     false
+    ],
+    [
+     "Elles comprennent formation, turbulence, normalisation et performance.",
+     true
+    ]
+   ],
+   "e": "La turbulence (storming) est une phase de tensions et de clarification des rôles."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Leadership",
+   "q": "À propos du leadership situationnel de Hersey et Blanchard :",
+   "a": [
+    [
+     "Le style doit s'adapter à la maturité des collaborateurs.",
+     true
+    ],
+    [
+     "Il décrit quatre styles : directif, persuasif, participatif, délégatif.",
+     true
+    ],
+    [
+     "Il recommande un style unique, quelle que soit la situation.",
+     false
+    ]
+   ],
+   "e": "Un débutant a besoin d'un cadrage plus fort qu'un expert."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Délégation",
+   "q": "À propos de la délégation :",
+   "a": [
+    [
+     "Il faut préciser les résultats attendus.",
+     true
+    ],
+    [
+     "On peut déléguer une tâche, mais on conserve la responsabilité finale.",
+     true
+    ],
+    [
+     "Déléguer signifie abandonner tout suivi.",
+     false
+    ]
+   ],
+   "e": "La délégation s'accompagne d'un suivi proportionné."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Feedback",
+   "q": "À propos du feedback (méthode SBI) :",
+   "a": [
+    [
+     "Il consiste à critiquer le caractère de la personne.",
+     false
+    ],
+    [
+     "SBI signifie Situation, Comportement, Impact.",
+     true
+    ],
+    [
+     "Il décrit un fait observable, pas un jugement sur la personne.",
+     true
+    ]
+   ],
+   "e": "Un feedback précis est plus facile à entendre et à utiliser."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Équipes virtuelles",
+   "q": "À propos des équipes virtuelles :",
+   "a": [
+    [
+     "Les fuseaux horaires doivent être pris en compte.",
+     true
+    ],
+    [
+     "Des outils collaboratifs facilitent le travail à distance.",
+     true
+    ],
+    [
+     "La communication y est moins nécessaire.",
+     false
+    ]
+   ],
+   "e": "À distance, il faut communiquer davantage et plus clairement."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
+   "s": "Décision",
+   "q": "À propos des modes de décision :",
+   "a": [
+    [
+     "La décision autocratique implique toujours le consensus.",
+     false
+    ],
+    [
+     "On peut décider à la majorité.",
+     true
+    ],
+    [
+     "On peut décider par consensus.",
+     true
+    ]
+   ],
+   "e": "Une décision autocratique est prise par une personne seule."
+  },
+  {
+   "p": "Leadership et gestion d'équipe",
    "s": "Intelligence émotionnelle",
-   "q": "À propos des critiques de l'intelligence émotionnelle :",
+   "q": "À propos de l'intelligence émotionnelle d'un chef de projet :",
    "a": [
     [
-     "Les tests de capacité sont souvent cotés par consensus d'experts.",
+     "Elle aide à comprendre et à gérer les émotions.",
      true
     ],
     [
-     "Mesurée par auto-questionnaire, elle peut se confondre avec la personnalité.",
-     true
-    ],
-    [
-     "Elle se confond parfaitement avec le QI.",
-     false
-    ]
-   ],
-   "e": "Les corrélations avec le QI sont modérées, pas parfaites.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Santé et bien-être",
-   "q": "À propos du WHOQOL-BREF :",
-   "a": [
-    [
-     "Il comporte 26 items.",
-     true
-    ],
-    [
-     "Il évalue quatre domaines, dont le physique et le psychologique.",
-     true
-    ],
-    [
-     "Il comporte 100 items.",
-     false
-    ]
-   ],
-   "e": "Il évalue aussi les relations sociales et l'environnement.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Psychologie positive",
-   "q": "À propos du FFMQ (Five Facet Mindfulness Questionnaire) :",
-   "a": [
-    [
-     "Il comprend trois facettes seulement.",
-     false
-    ],
-    [
-     "Il comprend cinq facettes, dont l'observation et la non-réactivité.",
-     true
-    ],
-    [
-     "Il comporte 39 items.",
-     true
-    ]
-   ],
-   "e": "Les autres facettes sont décrire, agir en conscience et ne pas juger.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Concept de soi",
-   "q": "À propos du test d'association implicite (IAT) :",
-   "a": [
-    [
-     "Il se base sur une auto-évaluation par questionnaire.",
-     false
-    ],
-    [
-     "Il mesure la force d'associations par des temps de réaction.",
-     true
-    ],
-    [
-     "Il a été proposé par Greenwald et ses collègues en 1998.",
-     true
-    ]
-   ],
-   "e": "Sa fidélité test-retest est discutée.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Soutien social et cognitions",
-   "q": "À propos de l'échelle d'attitudes dysfonctionnelles (DAS) :",
-   "a": [
-    [
-     "Elle évalue la dextérité.",
-     false
-    ],
-    [
-     "Weissman et Beck en sont les auteurs.",
-     true
-    ],
-    [
-     "Elle évalue des croyances associées à la vulnérabilité à la dépression.",
-     true
-    ]
-   ],
-   "e": "La version la plus connue comporte 40 items.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Coping et stress",
-   "q": "À propos du Ways of Coping Questionnaire :",
-   "a": [
-    [
-     "Lazarus et Folkman en sont à l'origine.",
-     true
-    ],
-    [
-     "Il distingue le coping centré sur le problème et le coping centré sur l'émotion.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes mécaniques.",
-     false
-    ]
-   ],
-   "e": "Il s'appuie sur leur modèle transactionnel du stress.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Psychologie positive",
-   "q": "À propos du questionnaire de gratitude GQ-6 :",
-   "a": [
-    [
-     "Il comporte 6 items.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il évalue la tendance à éprouver de la gratitude.",
-     true
-    ]
-   ],
-   "e": "McCullough et ses collègues l'ont proposé.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos de l'échelle de Likert :",
-   "a": [
-    [
-     "C'est une échelle d'attitude.",
-     true
-    ],
-    [
-     "Elle a été développée par Rensis Likert.",
-     true
-    ],
-    [
-     "Elle ne propose que deux réponses : 0 ou 1.",
-     false
-    ]
-   ],
-   "e": "Elle propose généralement 5 ou 7 niveaux d'accord (de « pas du tout » à « tout à fait »).",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos des styles de réponse :",
-   "a": [
-    [
-     "Un style de réponse prouve toujours un trouble psychologique.",
-     false
-    ],
-    [
-     "Le style extrême consiste à choisir surtout les extrémités.",
-     true
-    ],
-    [
-     "La tendance centrale consiste à choisir surtout le milieu de l'échelle.",
-     true
-    ]
-   ],
-   "e": "Ce sont des habitudes de réponse, qui varient notamment selon la culture.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos de l'effet de halo :",
-   "a": [
-    [
-     "Une qualité perçue influence l'évaluation d'autres qualités.",
-     true
-    ],
-    [
-     "Il consiste à répondre au hasard.",
-     false
-    ],
-    [
-     "Il est fréquent dans les évaluations faites par un supérieur.",
-     true
-    ]
-   ],
-   "e": "Exemple : juger quelqu'un compétent dans tous les domaines parce qu'il est très sympathique.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos de l'effet Pygmalion (Rosenthal et Jacobson) :",
-   "a": [
-    [
-     "Cet effet est nul.",
-     false
-    ],
-    [
-     "Les attentes d'un enseignant peuvent influencer les résultats des élèves.",
-     true
-    ],
-    [
-     "Des attentes positives peuvent améliorer la performance.",
-     true
-    ]
-   ],
-   "e": "L'enseignant adopte, sans le savoir, des comportements qui renforcent ses attentes.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos de l'échelle de Guttman :",
-   "a": [
-    [
-     "Elle est identique à l'échelle de Likert.",
-     false
-    ],
-    [
-     "Les items y sont hiérarchisés.",
-     true
-    ],
-    [
-     "Accepter un item fort implique d'accepter les items plus faibles.",
-     true
-    ]
-   ],
-   "e": "C'est une échelle cumulative : chaque item est plus exigeant que le précédent.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Cotation des questionnaires",
-   "q": "À propos de la cotation de l'échelle de stress perçu (PSS-10) :",
-   "a": [
-    [
-     "Aucun item n'est inversé.",
-     false
-    ],
-    [
-     "Certains items sont inversés avant d'être additionnés.",
-     true
-    ],
-    [
-     "Les items 4, 5, 7 et 8 sont à inverser.",
-     true
-    ]
-   ],
-   "e": "L'inversion permet de calculer un score total cohérent.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos du choix des outils :",
-   "a": [
-    [
-     "Il peut utiliser un test non validé s'il est gratuit.",
-     false
-    ],
-    [
-     "Un psychologue choisit des tests adaptés à la population évaluée.",
-     true
-    ],
-    [
-     "Il n'utilise que les outils pour lesquels il est formé.",
-     true
-    ]
-   ],
-   "e": "La gratuité ne remplace ni la validité ni la formation.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de la non-discrimination :",
-   "a": [
-    [
-     "On évite toute discrimination liée au sexe, à l'origine ou au handicap.",
-     true
-    ],
-    [
-     "On peut exclure d'emblée les personnes handicapées.",
-     false
-    ],
-    [
-     "On peut adapter les conditions de passation pour une personne en situation de handicap.",
-     true
-    ]
-   ],
-   "e": "Des aménagements raisonnables permettent d'évaluer chacun de façon équitable.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de l'accès aux résultats :",
-   "a": [
-    [
-     "Les résultats peuvent être transmis à l'employeur sans l'accord du candidat.",
-     false
-    ],
-    [
-     "Le psychologue explique les résultats de façon compréhensible.",
-     true
-    ],
-    [
-     "La personne évaluée a en général le droit d'être informée de ses résultats.",
-     true
-    ]
-   ],
-   "e": "La transmission à un tiers demande en principe l'accord de la personne.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Interprétation des profils",
-   "q": "À propos de l'analyse du TAT :",
-   "a": [
-    [
-     "Les récits sont interprétés avec l'entretien et l'histoire de la personne.",
-     true
-    ],
-    [
-     "On s'intéresse notamment au héros du récit, à ses besoins et aux pressions qui s'exercent sur lui.",
-     true
-    ],
-    [
-     "Elle repose sur un score unique de QI.",
-     false
-    ]
-   ],
-   "e": "C'est une analyse qualitative, qui demande une formation spécifique.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Interprétation des profils",
-   "q": "À propos d'un item de pensées suicidaires au BDI-II :",
-   "a": [
-    [
-     "Le professionnel doit orienter la personne vers une aide adaptée.",
-     true
-    ],
-    [
-     "Une réponse qui indique un risque appelle une évaluation approfondie.",
-     true
-    ],
-    [
-     "Il faut ignorer l'item pour poursuivre la passation.",
-     false
-    ]
-   ],
-   "e": "Un risque détecté est toujours traité avec priorité, avant toute interprétation d'un score.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Interprétation des profils",
-   "q": "Un score correspond au 16ᵉ percentile (z d'environ −1).",
-   "a": [
-    [
-     "Il est supérieur à celui de 84 % du groupe.",
-     false
-    ],
-    [
-     "Il se situe dans la zone basse de la moyenne.",
-     true
-    ],
-    [
-     "Il est situé environ un écart-type sous la moyenne.",
-     true
-    ]
-   ],
-   "e": "16 % des personnes obtiennent un score inférieur ou égal.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du modèle de personnalité en cinq facteurs (Big Five) :",
-   "a": [
-    [
-     "Il comprend l'ouverture, la conscienciosité, l'extraversion, l'agréabilité et le névrosisme.",
-     true
-    ],
-    [
-     "« Intelligence » est l'un des cinq facteurs.",
-     false
-    ],
-    [
-     "On le désigne aussi par le sigle OCEAN.",
-     true
-    ]
-   ],
-   "e": "OCEAN : Ouverture, Conscienciosité, Extraversion, Agréabilité, Névrosisme. L'intelligence n'en fait pas partie.",
-   "p": "Big Five"
-  },
-  {
-   "s": "MBTI",
-   "q": "À propos du MBTI (Myers-Briggs Type Indicator) :",
-   "a": [
-    [
-     "Il décrit 16 types.",
-     true
-    ],
-    [
-     "Il s'appuie sur la typologie de Jung.",
-     true
-    ],
-    [
-     "C'est un outil de diagnostic psychiatrique.",
-     false
-    ],
-    [
-     "Il oppose notamment E/I, S/N, T/F et J/P.",
-     true
-    ]
-   ],
-   "e": "Le MBTI classe les préférences en 4 dimensions (16 combinaisons). Il n'est pas un outil de diagnostic clinique.",
-   "p": "MBTI"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du MMPI :",
-   "a": [
-    [
-     "C'est un test projectif.",
-     false
-    ],
-    [
-     "Il s'agit de l'inventaire multiphasique de personnalité du Minnesota.",
-     true
-    ],
-    [
-     "Il est utilisé en psychologie clinique.",
-     true
-    ]
-   ],
-   "e": "Le MMPI est un questionnaire d'auto-évaluation, donc un test objectif. Il comprend aussi des échelles de validité.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test de Rorschach :",
-   "a": [
-    [
-     "C'est un test projectif.",
-     true
-    ],
-    [
-     "Il utilise 10 planches de taches d'encre.",
-     true
-    ],
-    [
-     "C'est un questionnaire d'auto-évaluation à choix fermés.",
-     false
-    ]
-   ],
-   "e": "Le sujet interprète des stimuli ambigus. La cotation et l'interprétation demandent une formation spécifique.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du 16PF de Cattell :",
-   "a": [
-    [
-     "Cattell est son auteur.",
-     true
-    ],
-    [
-     "Il se compose de 5 facteurs seulement.",
-     false
-    ],
-    [
-     "Il mesure 16 facteurs primaires de personnalité.",
-     true
-    ]
-   ],
-   "e": "Raymond Cattell a décrit 16 facteurs primaires. Le modèle à 5 facteurs correspond au Big Five.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Intérêts professionnels",
-   "q": "À propos du modèle RIASEC de Holland :",
-   "a": [
-    [
-     "Il évalue les intérêts professionnels.",
-     true
-    ],
-    [
-     "Il mesure le QI.",
-     false
-    ],
-    [
-     "Il décrit six types : réaliste, investigateur, artistique, social, entreprenant, conventionnel.",
-     true
-    ]
-   ],
-   "e": "RIASEC sert à l'orientation : on compare le profil d'intérêts d'une personne aux environnements professionnels.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "Tests objectifs et tests projectifs :",
-   "a": [
-    [
-     "La cotation d'un test projectif est totalement indépendante du clinicien.",
-     false
-    ],
-    [
-     "Les tests projectifs reposent sur des stimuli ambigus.",
-     true
-    ],
-    [
-     "Un questionnaire objectif propose des réponses cadrées (oui/non, échelle).",
-     true
-    ]
-   ],
-   "e": "Les tests projectifs laissent plus de place à l'interprétation, d'où l'importance de la formation et de la standardisation de la cotation.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos de la désirabilité sociale :",
-   "a": [
-    [
-     "C'est la tendance à répondre de façon socialement favorable.",
-     true
-    ],
-    [
-     "Elle disparaît dès que le test est passé en ligne.",
-     false
-    ],
-    [
-     "Elle peut fausser les résultats d'un inventaire de personnalité.",
-     true
-    ],
-    [
-     "Des échelles de mensonge ou de validité servent à la repérer.",
-     true
-    ]
-   ],
-   "e": "En recrutement, les candidats ont intérêt à se présenter sous leur meilleur jour. Les échelles de validité aident à repérer ce biais.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de l'extraversion :",
-   "a": [
-    [
-     "Une personne introvertie souffre forcément d'un trouble anxieux.",
-     false
-    ],
-    [
-     "Elle recouvre la sociabilité et le niveau d'énergie.",
-     true
-    ],
-    [
-     "Dans le Big Five, extraversion et introversion sont les deux pôles d'une même dimension.",
-     true
-    ]
-   ],
-   "e": "L'introversion est un style de personnalité, pas un trouble. Il ne faut pas la confondre avec l'anxiété ou la timidité.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos des tests de jugement situationnel (SJT) :",
-   "a": [
-    [
-     "Ils mesurent uniquement la mémoire.",
-     false
-    ],
-    [
-     "Ils sont utilisés en recrutement.",
-     true
-    ],
-    [
-     "Ils présentent des situations de travail et demandent de choisir une réaction.",
-     true
-    ]
-   ],
-   "e": "Les SJT évaluent le jugement professionnel, par exemple la gestion d'un conflit ou d'une priorité.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de la conscienciosité (Big Five) :",
-   "a": [
-    [
-     "Elle renvoie à l'organisation, à la rigueur et à la persévérance.",
-     true
-    ],
-    [
-     "Elle désigne la tendance à être anxieux.",
-     false
-    ],
-    [
-     "C'est l'un des traits les plus liés à la performance au travail.",
-     true
-    ]
-   ],
-   "e": "La tendance à l'anxiété correspond au névrosisme.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de l'agréabilité (Big Five) :",
-   "a": [
-    [
-     "Un score très bas est associé à plus de méfiance et de compétition.",
-     true
-    ],
-    [
-     "Elle renvoie à la coopération et à la bienveillance.",
-     true
-    ],
-    [
-     "Elle désigne la sociabilité et l'énergie.",
-     false
-    ]
-   ],
-   "e": "La sociabilité et l'énergie relèvent de l'extraversion.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos des traits du Big Five :",
-   "a": [
-    [
-     "Ce sont des dimensions continues.",
-     true
-    ],
-    [
-     "On est soit extraverti, soit introverti, sans nuance.",
-     false
-    ],
-    [
-     "La plupart des gens obtiennent des scores proches de la moyenne.",
-     true
-    ]
-   ],
-   "e": "Les scores se distribuent à peu près selon une courbe normale.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du NEO-PI-R de Costa et McCrae :",
-   "a": [
-    [
-     "Il évalue les cinq grands facteurs.",
-     true
-    ],
-    [
-     "Chaque facteur est décomposé en facettes.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ]
-   ],
-   "e": "Le NEO-PI-R est un questionnaire d'auto-évaluation qui décrit 30 facettes.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de la stabilité émotionnelle :",
-   "a": [
-    [
-     "Les études de jumeaux suggèrent une part héréditaire dans les traits de personnalité.",
-     true
-    ],
-    [
-     "C'est le pôle opposé du névrosisme.",
-     true
-    ],
-    [
-     "Le Big Five n'a jamais été étudié dans plusieurs cultures.",
-     false
-    ]
-   ],
-   "e": "Le modèle a été étudié dans de nombreux pays, avec des résultats globalement convergents.",
-   "p": "Big Five"
-  },
-  {
-   "s": "MBTI",
-   "q": "À propos des critiques du MBTI :",
-   "a": [
-    [
-     "La stabilité des types dans le temps est parfois remise en cause.",
-     true
-    ],
-    [
-     "Il classe les personnes en catégories plutôt qu'en continuum.",
-     true
-    ],
-    [
-     "De nombreux chercheurs jugent son soutien empirique plus faible que celui du Big Five.",
-     true
-    ],
-    [
-     "Les critiques du MBTI portent uniquement sur son prix.",
-     false
-    ]
-   ],
-   "e": "Un même répondant peut changer de type quand il repasse le test, car ses scores sont proches du seuil entre deux pôles.",
-   "p": "MBTI"
-  },
-  {
-   "s": "MBTI",
-   "q": "À propos des auteurs du MBTI :",
-   "a": [
-    [
-     "Il a été conçu par Katharine Briggs et Isabel Briggs Myers.",
-     true
-    ],
-    [
-     "Il a été créé par Cattell.",
-     false
-    ],
-    [
-     "Il est inspiré de la théorie des types de Jung.",
-     true
-    ]
-   ],
-   "e": "Cattell est l'auteur du 16PF.",
-   "p": "MBTI"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos des échelles de validité du MMPI-2 :",
-   "a": [
-    [
-     "L'échelle L détecte une présentation de soi trop favorable.",
-     true
-    ],
-    [
-     "L'échelle L mesure le QI.",
-     false
-    ],
-    [
-     "Il en comporte plusieurs, comme L, F et K.",
-     true
-    ]
-   ],
-   "e": "Ces échelles servent à repérer les réponses défensives, exagérées ou incohérentes.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du STAI de Spielberger :",
-   "a": [
-    [
-     "Le STAI mesure uniquement les intérêts professionnels.",
-     false
-    ],
-    [
-     "L'anxiété-trait correspond à une disposition relativement stable.",
-     true
-    ],
-    [
-     "Il distingue anxiété-état et anxiété-trait.",
-     true
-    ],
-    [
-     "L'anxiété-état correspond à l'anxiété ressentie à un moment donné.",
-     true
-    ]
-   ],
-   "e": "Le STAI comporte deux échelles de 20 items, l'une pour l'état et l'autre pour le trait.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos de Hermann Rorschach :",
-   "a": [
-    [
-     "C'était un psychiatre suisse.",
-     true
-    ],
-    [
-     "Il a conçu le TAT.",
-     false
-    ],
-    [
-     "Son test a été publié en 1921.",
-     true
-    ]
-   ],
-   "e": "Le TAT a été conçu par Murray et Morgan.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test des phrases à compléter :",
-   "a": [
-    [
-     "Le sujet termine des débuts de phrases.",
-     true
-    ],
-    [
-     "La cotation est entièrement automatique, sans interprétation.",
-     false
-    ],
-    [
-     "C'est un test projectif.",
-     true
-    ]
-   ],
-   "e": "Les réponses sont analysées par le psychologue selon une grille ou une analyse qualitative.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test Patte Noire de Louis Corman :",
-   "a": [
-    [
-     "Il mesure l'aptitude numérique.",
-     false
-    ],
-    [
-     "Il est destiné aux enfants.",
-     true
-    ],
-    [
-     "Il s'appuie sur des histoires d'un petit cochon.",
-     true
-    ]
-   ],
-   "e": "C'est un test projectif où l'enfant s'identifie aux personnages et raconte des histoires.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos des questionnaires d'Eysenck (EPI/EPQ) :",
-   "a": [
-    [
-     "Ils évaluent l'extraversion et le névrosisme.",
-     true
-    ],
-    [
-     "Ils mesurent les intérêts professionnels.",
-     false
-    ],
-    [
-     "L'EPQ ajoute le psychoticisme.",
-     true
-    ]
-   ],
-   "e": "Eysenck décrit la personnalité par quelques grandes dimensions : E, N et P.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos des inventaires de personnalité :",
-   "a": [
-    [
-     "Ils sont habituellement basés sur de bonnes et de mauvaises réponses, comme un test de connaissances.",
-     false
-    ],
-    [
-     "Ils reposent sur l'auto-description du répondant.",
-     true
-    ],
-    [
-     "Les items sont souvent cotés sur une échelle de Likert.",
-     true
-    ]
-   ],
-   "e": "Il n'y a pas de bonne réponse : chacun décrit sa manière d'être habituelle.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Intérêts professionnels",
-   "q": "À propos du modèle de Holland :",
-   "a": [
-    [
-     "Le type « Conventionnel » aime l'ordre et les procédures.",
-     true
-    ],
-    [
-     "Le type « Social » aime aider, enseigner, accompagner.",
-     true
-    ],
-    [
-     "Le type « Réaliste » aime surtout les activités artistiques libres.",
-     false
-    ]
-   ],
-   "e": "Le type artistique est le « A » de RIASEC. Le réaliste préfère les activités concrètes et techniques.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos des items inversés :",
-   "a": [
-    [
-     "Ils se cotent dans le sens inverse des autres items.",
-     true
-    ],
-    [
-     "Ils doivent être supprimés avant l'analyse.",
-     false
-    ],
-    [
-     "Ils aident à repérer les réponses automatiques.",
-     true
-    ]
-   ],
-   "e": "Par exemple, « Je suis rarement stressé » doit être recodé dans une échelle de névrosisme.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos du format à choix forcé :",
-   "a": [
-    [
-     "Le répondant doit choisir parmi des énoncés équivalents.",
-     true
-    ],
-    [
-     "Il limite la désirabilité sociale.",
-     true
-    ],
-    [
-     "Ses scores se comparent d'un candidat à l'autre sans aucune précaution.",
-     false
-    ]
-   ],
-   "e": "Les scores peuvent être ipsatifs : ils situent les traits d'une personne les uns par rapport aux autres.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos de l'acquiescement :",
-   "a": [
-    [
-     "C'est la tendance à répondre « oui » quel que soit le contenu.",
-     true
-    ],
-    [
-     "Des items inversés permettent de le contrôler.",
-     true
-    ],
-    [
-     "Il concerne uniquement les tests de QI.",
-     false
-    ]
-   ],
-   "e": "Il concerne surtout les questionnaires d'auto-évaluation.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos de la simulation (faking) :",
-   "a": [
-    [
-     "Les échelles de validité peuvent aider à la repérer.",
-     true
-    ],
-    [
-     "En recrutement, des candidats peuvent embellir leurs réponses.",
-     true
-    ],
-    [
-     "Elle est impossible dans un questionnaire.",
-     false
-    ]
-   ],
-   "e": "D'où l'intérêt de croiser les questionnaires avec d'autres méthodes.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos de l'entretien structuré :",
-   "a": [
-    [
-     "L'entretien libre, sans grille, est le plus fiable.",
-     false
-    ],
-    [
-     "Les mêmes questions sont posées à tous les candidats.",
-     true
-    ],
-    [
-     "Sa validité prédictive est meilleure que celle de l'entretien non structuré.",
-     true
-    ]
-   ],
-   "e": "Une grille de cotation commune réduit les biais de l'interviewer.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos de l'usage éthique des tests :",
-   "a": [
-    [
-     "On peut publier les scores individuels sans l'accord des candidats.",
-     false
-    ],
-    [
-     "Un test ne doit pas être le seul critère de décision.",
-     true
-    ],
-    [
-     "Les résultats individuels doivent rester confidentiels.",
-     true
-    ]
-   ],
-   "e": "Les résultats sont des informations personnelles, à communiquer seulement aux personnes concernées et autorisées.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de l'analyse de poste :",
-   "a": [
-    [
-     "Elle sert de base au recrutement.",
-     true
-    ],
-    [
-     "Elle est inutile si l'on utilise un bon test.",
-     false
-    ],
-    [
-     "Elle décrit les missions et les compétences requises.",
-     true
-    ]
-   ],
-   "e": "Sans analyse de poste, on ne sait pas quelles aptitudes ou quels traits évaluer.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la théorie de Herzberg :",
-   "a": [
-    [
-     "Elle distingue facteurs d'hygiène et facteurs de motivation.",
-     true
-    ],
-    [
-     "Elle décrit une hiérarchie en cinq niveaux de besoins.",
-     false
-    ],
-    [
-     "Le salaire est un facteur d'hygiène.",
-     true
-    ]
-   ],
-   "e": "La hiérarchie en cinq niveaux est celle de Maslow.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos du burn-out :",
-   "a": [
-    [
-     "Le burn-out est un test d'aptitude.",
-     false
-    ],
-    [
-     "Le Maslach Burnout Inventory (MBI) permet de l'évaluer.",
-     true
-    ],
-    [
-     "Maslach le décrit par l'épuisement émotionnel, la dépersonnalisation et la baisse du sentiment d'accomplissement.",
-     true
-    ]
-   ],
-   "e": "Le burn-out est un état d'épuisement lié au travail, pas un test.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos du modèle de Karasek :",
-   "a": [
-    [
-     "Une forte demande avec une faible latitude crée un risque de tension (job strain).",
-     true
-    ],
-    [
-     "Une forte latitude augmente toujours le stress.",
-     false
-    ],
-    [
-     "Il croise demande psychologique et latitude décisionnelle.",
-     true
-    ]
-   ],
-   "e": "Pouvoir décider de son travail est plutôt un facteur protecteur.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos des styles de leadership de Lewin :",
-   "a": [
-    [
-     "Le style laissez-faire correspond à un contrôle strict.",
-     false
-    ],
-    [
-     "Le style démocratique implique la participation du groupe.",
-     true
-    ],
-    [
-     "Il distingue autocratique, démocratique et laissez-faire.",
-     true
-    ]
-   ],
-   "e": "Le laissez-faire laisse beaucoup de liberté, voire trop peu de direction.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la validité des méthodes de sélection :",
-   "a": [
-    [
-     "Les tests d'aptitude cognitive sont parmi les meilleurs prédicteurs de performance.",
-     true
-    ],
-    [
-     "L'entretien structuré a une bonne validité prédictive.",
-     true
-    ],
-    [
-     "L'âge du candidat est un bon prédicteur de performance.",
-     false
-    ]
-   ],
-   "e": "L'âge n'est pas un critère de sélection valide : l'utiliser peut constituer une discrimination.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos du consentement éclairé :",
-   "a": [
-    [
-     "Elle peut refuser de passer le test.",
-     true
-    ],
-    [
-     "La personne est informée du but et de l'usage des résultats.",
-     true
-    ],
-    [
-     "Il n'est pas nécessaire en contexte de recrutement.",
-     false
-    ]
-   ],
-   "e": "Il s'applique à tous les contextes d'évaluation.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de la confidentialité :",
-   "a": [
-    [
-     "La loi prévoit certaines exceptions, par exemple en cas de danger grave.",
-     true
-    ],
-    [
-     "Le psychologue est tenu au secret professionnel.",
-     true
-    ],
-    [
-     "Il peut partager les résultats avec n'importe quel collègue.",
-     false
-    ]
-   ],
-   "e": "Le partage se limite aux personnes autorisées et concernées.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de la sécurité des tests :",
-   "a": [
-    [
-     "Les protocoles et le matériel ne doivent pas être diffusés au public.",
-     true
-    ],
-    [
-     "La divulgation préalable des items peut fausser les résultats.",
-     true
-    ],
-    [
-     "Publier les items en ligne ne nuit pas à la validité d'un test.",
-     false
-    ]
-   ],
-   "e": "Un candidat qui connaît les réponses à l'avance n'est plus évalué correctement.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de la restitution des résultats :",
-   "a": [
-    [
-     "Elle doit être expliquée de façon compréhensible.",
-     true
-    ],
-    [
-     "Un score brut donné sans explication suffit.",
-     false
-    ],
-    [
-     "Il faut éviter le jargon technique.",
-     true
-    ]
-   ],
-   "e": "Un chiffre seul peut être mal interprété ou mal vécu.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de l'interprétation d'un test :",
-   "a": [
-    [
-     "Un seul test suffit pour poser un diagnostic.",
-     false
-    ],
-    [
-     "Un score ne définit pas toute une personne.",
-     true
-    ],
-    [
-     "On évite de poser un diagnostic à partir d'un seul test.",
-     true
-    ]
-   ],
-   "e": "Le diagnostic croise entretien, observation, histoire de la personne et plusieurs outils.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de la conservation des dossiers :",
-   "a": [
-    [
-     "On peut les laisser sur un bureau accessible à tous.",
-     false
-    ],
-    [
-     "Les dossiers doivent être protégés.",
-     true
-    ],
-    [
-     "L'accès doit être limité aux personnes autorisées.",
-     true
-    ]
-   ],
-   "e": "Les données psychologiques sont particulièrement sensibles.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de la stabilité des traits :",
-   "a": [
-    [
-     "Les traits changent complètement chaque année.",
-     false
-    ],
-    [
-     "Avec l'âge, la conscienciosité et la stabilité émotionnelle ont tendance à augmenter.",
-     true
-    ],
-    [
-     "Les traits sont relativement stables, mais pas immuables.",
-     true
-    ]
-   ],
-   "e": "On parle parfois de principe de maturité.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de l'auto-évaluation et de l'évaluation par autrui :",
-   "a": [
-    [
-     "L'avis de proches peut compléter l'auto-évaluation.",
-     true
-    ],
-    [
-     "L'auto-évaluation est sensible à la désirabilité sociale.",
-     true
-    ],
-    [
-     "Les deux sources donnent toujours exactement les mêmes scores.",
-     false
-    ]
-   ],
-   "e": "Chacun voit des facettes différentes de la personne.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du 16PF :",
-   "a": [
-    [
-     "Il mesure uniquement l'intelligence.",
-     false
-    ],
-    [
-     "Il comprend un facteur de dominance.",
-     true
-    ],
-    [
-     "Il comprend un facteur de raisonnement.",
-     true
-    ]
-   ],
-   "e": "Le 16PF est surtout un inventaire de personnalité, avec un facteur B de raisonnement.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du locus de contrôle (Rotter) :",
-   "a": [
-    [
-     "Une personne à locus externe attribue davantage les résultats au hasard ou aux autres.",
-     true
-    ],
-    [
-     "Une personne à locus interne pense que ses actions influencent les résultats.",
-     true
-    ],
-    [
-     "Une personne à locus externe pense que tout dépend d'elle.",
-     false
-    ]
-   ],
-   "e": "Locus interne : « cela dépend de moi ». Locus externe : « cela dépend des circonstances ».",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test de Rosenzweig (P-F Study) :",
-   "a": [
-    [
-     "C'est un test projectif.",
-     true
-    ],
-    [
-     "Il mesure le QI.",
-     false
-    ],
-    [
-     "Il présente des images de situations de frustration à compléter.",
-     true
-    ]
-   ],
-   "e": "Il explore la manière de réagir à la frustration, notamment l'agressivité.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du dessin de la famille (Corman) :",
-   "a": [
-    [
-     "Le dessin sert de support projectif.",
-     true
-    ],
-    [
-     "Un seul dessin suffit pour poser un diagnostic.",
-     false
-    ],
-    [
-     "L'interprétation tient compte du dessin et du commentaire de l'enfant.",
-     true
-    ]
-   ],
-   "e": "Le dessin est une porte d'entrée vers un entretien, jamais une preuve à lui seul.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos du différentiel sémantique d'Osgood :",
-   "a": [
-    [
-     "Il utilise des paires d'adjectifs opposés.",
-     true
-    ],
-    [
-     "Chaque paire est placée sur une échelle graduée.",
-     true
-    ],
-    [
-     "Il ne contient qu'une seule question.",
-     false
-    ]
-   ],
-   "e": "Par exemple : agréable — désagréable, avec plusieurs niveaux entre les deux.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos de la passation en ligne :",
-   "a": [
-    [
-     "Un test non surveillé présente un risque de fraude.",
-     true
-    ],
-    [
-     "Une surveillance ou une vérification ultérieure peut limiter ce risque.",
-     true
-    ],
-    [
-     "Elle est toujours équivalente à la passation papier, sans vérification.",
-     false
-    ]
-   ],
-   "e": "L'équivalence entre formats doit être vérifiée.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos des biais des évaluateurs :",
-   "a": [
-    [
-     "L'erreur de clémence consiste à noter trop haut.",
-     true
-    ],
-    [
-     "L'effet de contraste consiste à juger un candidat par comparaison avec le précédent.",
-     true
-    ],
-    [
-     "Ces biais disparaissent d'eux-mêmes avec l'expérience.",
-     false
-    ]
-   ],
-   "e": "Une formation et des grilles structurées aident à les réduire.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos de l'intelligence émotionnelle :",
-   "a": [
-    [
-     "Le MSCEIT est un test de capacité.",
-     true
-    ],
-    [
-     "Elle recouvre la perception, la compréhension et la gestion des émotions.",
-     true
-    ],
-    [
-     "Le MSCEIT est un test projectif.",
-     false
-    ]
-   ],
-   "e": "Ce test a été développé par Mayer, Salovey et Caruso.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du PHQ-9 :",
-   "a": [
-    [
-     "Son score va de 0 à 27.",
-     true
-    ],
-    [
-     "Il comporte 9 items sur les symptômes dépressifs des deux dernières semaines.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ]
-   ],
-   "e": "C'est un questionnaire de dépistage rempli par la personne.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du GAD-7 :",
-   "a": [
-    [
-     "Il comporte 7 items sur l'anxiété généralisée.",
-     true
-    ],
-    [
-     "Son score va de 0 à 21.",
-     true
-    ],
-    [
-     "Il suffit à poser un diagnostic définitif.",
-     false
-    ]
-   ],
-   "e": "C'est un outil de dépistage : un score élevé appelle une évaluation clinique.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du MMPI-2 :",
-   "a": [
-    [
-     "Il comporte 567 items.",
-     true
-    ],
-    [
-     "C'est un questionnaire de 50 items.",
-     false
-    ],
-    [
-     "Il comprend 10 échelles cliniques.",
-     true
-    ]
-   ],
-   "e": "Sa longueur demande environ une heure ou plus de passation.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos des échelles de dépistage :",
-   "a": [
-    [
-     "Elles ne remplacent pas l'entretien clinique.",
-     true
-    ],
-    [
-     "Un score faible exclut toute difficulté.",
-     false
-    ],
-    [
-     "Un score élevé doit conduire à une évaluation clinique.",
-     true
-    ]
-   ],
-   "e": "Un score faible rassure, sans écarter totalement un problème.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'échelle d'Edinburgh (EPDS) :",
-   "a": [
-    [
-     "Elle comporte 10 items.",
-     true
-    ],
-    [
-     "Elle sert à dépister la dépression du post-partum.",
-     true
-    ],
-    [
-     "Elle est destinée à des hommes de plus de 60 ans.",
-     false
-    ]
-   ],
-   "e": "Elle s'adresse aux mères après l'accouchement.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la théorie de McClelland :",
-   "a": [
-    [
-     "Elle décrit les besoins de réussite, d'affiliation et de pouvoir.",
-     true
-    ],
-    [
-     "Un fort besoin de réussite pousse à relever des défis.",
-     true
-    ],
-    [
-     "Elle décrit les facteurs d'hygiène.",
-     false
-    ]
-   ],
-   "e": "Les facteurs d'hygiène relèvent de Herzberg.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la théorie de l'autodétermination (Deci et Ryan) :",
-   "a": [
-    [
-     "Les récompenses augmentent toujours la motivation intrinsèque.",
-     false
-    ],
-    [
-     "Elle met en avant l'autonomie, la compétence et la relation aux autres.",
-     true
-    ],
-    [
-     "Elle distingue motivation intrinsèque et extrinsèque.",
-     true
-    ]
-   ],
-   "e": "Des récompenses perçues comme contrôlantes peuvent la réduire.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de la théorie des attentes de Vroom :",
-   "a": [
-    [
-     "Vroom a créé le MBTI.",
-     false
-    ],
-    [
-     "Elle fait intervenir l'expectation, l'instrumentalité et la valence.",
-     true
-    ],
-    [
-     "La motivation dépend de la croyance que l'effort mène à la performance.",
-     true
-    ]
-   ],
-   "e": "Le MBTI a été créé par Briggs et Myers.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos des valeurs de Schwartz :",
-   "a": [
-    [
-     "Schwartz a créé le test de Rorschach.",
-     false
-    ],
-    [
-     "Ces valeurs sont organisées selon un modèle circulaire.",
-     true
-    ],
-    [
-     "Il décrit dix valeurs de base, comme le pouvoir, la réussite ou la bienveillance.",
-     true
-    ]
-   ],
-   "e": "Schwartz est un psychologue social. Le test de Rorschach porte le nom de son auteur.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Intelligence émotionnelle",
-   "q": "À propos du modèle de Mayer et Salovey :",
-   "a": [
-    [
-     "Mayer et Salovey ont créé le MBTI.",
-     false
-    ],
-    [
-     "Il définit l'intelligence émotionnelle comme une capacité.",
-     true
-    ],
-    [
-     "Il comprend quatre branches : perception, facilitation, compréhension et gestion des émotions.",
-     true
-    ]
-   ],
-   "e": "Le MSCEIT est issu de ce modèle.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Intelligence émotionnelle",
-   "q": "À propos de l'EQ-i de Bar-On :",
-   "a": [
-    [
-     "C'est un questionnaire d'auto-évaluation.",
-     true
-    ],
-    [
-     "Il mesure des compétences émotionnelles et sociales.",
-     true
-    ],
-    [
-     "C'est un test de QI.",
-     false
-    ]
-   ],
-   "e": "C'est un inventaire, pas un test de capacité.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "MBTI",
-   "q": "Sensation (S) et Intuition (N) :",
-   "a": [
-    [
-     "Le type S se fie aux faits concrets.",
-     true
-    ],
-    [
-     "Le type N s'intéresse aux possibilités et aux schémas.",
-     true
-    ],
-    [
-     "S signifie « sociabilité ».",
-     false
-    ]
-   ],
-   "e": "S = Sensation (Sensing).",
-   "p": "MBTI"
-  },
-  {
-   "s": "MBTI",
-   "q": "Jugement (J) et Perception (P) :",
-   "a": [
-    [
-     "P est plus flexible et adaptable.",
-     true
-    ],
-    [
-     "J aime planifier et structurer.",
-     true
-    ],
-    [
-     "P signifie « planificateur strict ».",
-     false
-    ]
-   ],
-   "e": "P = Perceiving (Perception), tourné vers l'adaptation au fur et à mesure.",
-   "p": "MBTI"
-  },
-  {
-   "s": "MBTI",
-   "q": "À propos de l'interprétation du MBTI :",
-   "a": [
-    [
-     "Une préférence ne mesure pas la compétence.",
-     true
-    ],
-    [
-     "Un type est meilleur qu'un autre.",
-     false
-    ],
-    [
-     "Il évalue des préférences, pas des aptitudes.",
-     true
-    ]
-   ],
-   "e": "Aucun type n'est supérieur : ce sont des manières différentes de fonctionner.",
-   "p": "MBTI"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de l'hypothèse lexicale :",
-   "a": [
-    [
-     "Allport et Odbert ont recensé près de 18 000 termes en 1936.",
-     true
-    ],
-    [
-     "Elle a été formulée à partir du test de Rorschach.",
-     false
-    ],
-    [
-     "Les différences importantes entre personnes se retrouvent dans le langage.",
-     true
-    ]
-   ],
-   "e": "Elle est à l'origine des analyses factorielles qui ont conduit au Big Five.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du Big Five et de la culture :",
-   "a": [
-    [
-     "Une adaptation locale reste utile.",
-     true
-    ],
-    [
-     "La structure a été retrouvée dans de nombreuses cultures.",
-     true
-    ],
-    [
-     "Le modèle n'existe qu'en anglais.",
-     false
-    ]
-   ],
-   "e": "Des versions existent dans de nombreuses langues.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos des traits et des situations :",
-   "a": [
-    [
-     "Les traits prédisent mieux les comportements moyens qu'un comportement ponctuel.",
-     true
-    ],
-    [
-     "Les situations influencent aussi le comportement.",
-     true
-    ],
-    [
-     "Une personne se comporte de façon identique dans toutes les situations.",
-     false
-    ]
-   ],
-   "e": "Le comportement résulte à la fois de la personne et du contexte.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos de la cotation du Rorschach :",
-   "a": [
-    [
-     "Le Système intégré d'Exner en est une méthode.",
-     true
-    ],
-    [
-     "Elle porte sur la localisation, les déterminants et le contenu.",
-     true
-    ],
-    [
-     "Elle consiste à compter les planches.",
-     false
-    ]
-   ],
-   "e": "Les réponses sont codées selon plusieurs critères, puis interprétées.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos des tests projectifs en pratique :",
-   "a": [
-    [
-     "Le Rorschach compte 12 planches.",
-     false
-    ],
-    [
-     "Leur interprétation tient compte de l'histoire de la personne.",
-     true
-    ],
-    [
-     "Ils servent souvent de support à l'entretien clinique.",
-     true
-    ]
-   ],
-   "e": "Le Rorschach compte 10 planches.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos de la rédaction des items :",
-   "a": [
-    [
-     "Il faut privilégier des phrases longues et complexes.",
-     false
-    ],
-    [
-     "Il faut éviter les items qui posent deux questions à la fois.",
-     true
-    ],
-    [
-     "Il faut éviter les doubles négations.",
-     true
-    ]
-   ],
-   "e": "Des phrases simples réduisent les erreurs de compréhension.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos du pré-test pilote :",
-   "a": [
-    [
-     "Il repère les items ambigus.",
-     true
-    ],
-    [
-     "Il est inutile si les items viennent d'un livre.",
-     false
-    ],
-    [
-     "Il permet d'estimer le temps de passation.",
-     true
-    ]
-   ],
-   "e": "Même des items bien écrits doivent être essayés auprès de la population visée.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos de l'échelle de Marlowe-Crowne :",
-   "a": [
-    [
-     "Elle mesure le QI.",
-     false
-    ],
-    [
-     "Elle mesure la désirabilité sociale.",
-     true
-    ],
-    [
-     "Elle comporte 33 items.",
-     true
-    ]
-   ],
-   "e": "Elle sert à repérer la tendance à se présenter de façon trop favorable.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos du biais de similarité :",
-   "a": [
-    [
-     "L'entretien structuré aide à le réduire.",
-     true
-    ],
-    [
-     "Il consiste à préférer les candidats qui nous ressemblent.",
-     true
-    ],
-    [
-     "C'est un critère de sélection objectif.",
-     false
-    ]
-   ],
-   "e": "Il n'a aucun lien avec la compétence réelle du candidat.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos de la validation locale d'un test :",
-   "a": [
-    [
-     "Une validation faite à l'étranger ne suffit pas toujours.",
-     true
-    ],
-    [
-     "Un test doit être validé pour le poste et la population visés.",
-     true
-    ],
-    [
-     "Un test valide pour un poste l'est pour tous les postes.",
-     false
-    ]
-   ],
-   "e": "La validité dépend de l'usage qu'on fait des scores.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de la conscienciosité et des études :",
-   "a": [
-    [
-     "Son effet est modeste à modéré, et ne remplace pas les aptitudes.",
-     true
-    ],
-    [
-     "Un névrosisme élevé prédit toujours de meilleures notes.",
-     false
-    ],
-    [
-     "Elle prédit en partie la réussite scolaire.",
-     true
-    ]
-   ],
-   "e": "Aucun trait ne prédit à lui seul la réussite : les aptitudes, la motivation et le contexte comptent aussi.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos des versions courtes du Big Five (par exemple le Mini-IPIP) :",
-   "a": [
-    [
-     "Elles font gagner du temps.",
-     true
-    ],
-    [
-     "Elles sont toujours aussi précises que les versions longues.",
-     false
-    ],
-    [
-     "Leur fidélité est souvent plus faible que celle des versions longues.",
-     true
-    ]
-   ],
-   "e": "Moins d'items signifient en général moins de précision.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du Big Five et du bien-être :",
-   "a": [
-    [
-     "Le névrosisme est associé à un bien-être plus élevé.",
-     false
-    ],
-    [
-     "L'extraversion est associée à un bien-être plus élevé.",
-     true
-    ],
-    [
-     "Le névrosisme est associé à un bien-être plus faible.",
-     true
-    ]
-   ],
-   "e": "Les personnes très réactives émotionnellement rapportent en général plus de mal-être.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du sentiment d'auto-efficacité (Bandura) :",
-   "a": [
-    [
-     "Il influence l'effort et la persévérance.",
-     true
-    ],
-    [
-     "C'est la croyance en sa capacité de réussir une tâche.",
-     true
-    ],
-    [
-     "C'est un trait de personnalité inné et fixe.",
-     false
-    ]
-   ],
-   "e": "Il se développe avec l'expérience et peut évoluer.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos de l'échelle de satisfaction de vie (SWLS) de Diener :",
-   "a": [
-    [
-     "Elle comporte 5 items.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ],
-    [
-     "C'est un questionnaire d'auto-évaluation.",
-     true
-    ]
-   ],
-   "e": "Elle mesure l'évaluation globale que la personne fait de sa vie.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du PANAS :",
-   "a": [
-    [
-     "Il mesure l'affect positif et l'affect négatif.",
-     true
-    ],
-    [
-     "Il mesure le QI.",
-     false
-    ],
-    [
-     "Il comporte 20 items.",
-     true
-    ]
-   ],
-   "e": "10 items portent sur l'affect positif et 10 sur l'affect négatif.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de l'engagement organisationnel (Allen et Meyer) :",
-   "a": [
-    [
-     "Il comprend l'engagement affectif, de continuité et normatif.",
-     true
-    ],
-    [
-     "L'engagement affectif est un attachement émotionnel à l'organisation.",
-     true
-    ],
-    [
-     "L'engagement de continuité repose sur le plaisir de travailler.",
-     false
-    ]
-   ],
-   "e": "L'engagement de continuité repose sur le coût perçu d'un départ.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos des dimensions culturelles de Hofstede :",
-   "a": [
-    [
-     "Hofstede a créé le modèle du Big Five.",
-     false
-    ],
-    [
-     "Elles décrivent des différences entre cultures nationales.",
-     true
-    ],
-    [
-     "Elles incluent la distance hiérarchique et l'individualisme.",
-     true
-    ]
-   ],
-   "e": "Hofstede a étudié les valeurs au travail dans différents pays.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de l'évaluation à 360° :",
-   "a": [
-    [
-     "Elle vise un retour d'information issu de plusieurs sources.",
-     true
-    ],
-    [
-     "Elle recueille l'avis de collègues, de supérieurs et de subordonnés.",
-     true
-    ],
-    [
-     "Seul le supérieur évalue la personne.",
-     false
-    ]
-   ],
-   "e": "L'évaluation 360° croise plusieurs points de vue.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos des conflits et de l'ambiguïté de rôle :",
-   "a": [
-    [
-     "L'ambiguïté de rôle correspond à des attentes peu claires.",
-     true
-    ],
-    [
-     "Ils améliorent toujours la performance.",
-     false
-    ],
-    [
-     "Le conflit de rôle correspond à des exigences contradictoires.",
-     true
-    ]
-   ],
-   "e": "Ce sont des sources connues de stress professionnel.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos des principes éthiques de la bioéthique :",
-   "a": [
-    [
-     "On y trouve la bienfaisance, la non-malfaisance, l'autonomie et la justice.",
-     true
-    ],
-    [
-     "La non-malfaisance consiste à ne pas nuire.",
-     true
-    ],
-    [
-     "L'autonomie consiste à décider à la place de la personne.",
-     false
-    ]
-   ],
-   "e": "L'autonomie respecte la capacité de la personne à décider pour elle-même.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos de l'évaluation avec un interprète :",
-   "a": [
-    [
-     "Il faut le mentionner dans le rapport.",
-     true
-    ],
-    [
-     "L'usage d'un interprète peut affecter la validité des résultats.",
-     true
-    ],
-    [
-     "Il faut ignorer la langue de la personne.",
-     false
-    ]
-   ],
-   "e": "Les normes d'un test ne sont pas toujours valables hors de la langue de standardisation.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Éthique et déontologie",
-   "q": "À propos des limites de compétence :",
-   "a": [
-    [
-     "Il peut utiliser un nouveau test sans formation s'il a lu le manuel.",
-     false
-    ],
-    [
-     "Il se forme tout au long de sa carrière.",
-     true
-    ],
-    [
-     "Un psychologue reconnaît ses limites et oriente vers un collègue si besoin.",
-     true
-    ]
-   ],
-   "e": "Lire un manuel ne remplace pas une formation à l'utilisation d'un test.",
-   "p": "Éthique et déontologie"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du CAT (Children's Apperception Test) de Bellak :",
-   "a": [
-    [
-     "Il mesure le QI.",
-     false
-    ],
-    [
-     "Il utilise des images d'animaux.",
-     true
-    ],
-    [
-     "Il est destiné à de jeunes enfants.",
-     true
-    ]
-   ],
-   "e": "Les enfants s'identifient plus facilement à des animaux qu'à des personnages humains.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test d'association de mots de Jung :",
-   "a": [
-    [
-     "Il prend en compte le temps de réaction aux mots.",
-     true
-    ],
-    [
-     "Une réponse retardée peut signaler une charge émotionnelle.",
-     true
-    ],
-    [
-     "Les temps de réaction n'avaient aucune importance.",
-     false
-    ]
-   ],
-   "e": "Jung analysait les délais et les réponses inhabituelles pour repérer des « complexes ».",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos de l'effet Hawthorne :",
-   "a": [
-    [
-     "Se savoir observé peut modifier le comportement.",
-     true
-    ],
-    [
-     "Il peut influencer les résultats d'une recherche.",
-     true
-    ],
-    [
-     "Il n'a jamais d'effet sur les études.",
-     false
-    ]
-   ],
-   "e": "Les participants peuvent se comporter différemment parce qu'ils sont étudiés.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Biais de réponse",
-   "q": "À propos du biais de confirmation :",
-   "a": [
-    [
-     "Il consiste à chercher les informations qui confirment ses idées.",
-     true
-    ],
-    [
-     "Il disparaît toujours avec l'expérience.",
-     false
-    ],
-    [
-     "Il peut fausser l'interprétation de résultats.",
-     true
-    ]
-   ],
-   "e": "Envisager des hypothèses alternatives est une bonne manière de s'en protéger.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "Questions ouvertes et fermées :",
-   "a": [
-    [
-     "Les questions ouvertes donnent des réponses riches, mais plus longues à analyser.",
-     true
-    ],
-    [
-     "Les questions fermées permettent toujours de comprendre les raisons des réponses.",
-     false
-    ],
-    [
-     "Les questions fermées sont faciles à coder.",
-     true
-    ]
-   ],
-   "e": "Pour comprendre le « pourquoi », une question ouverte est souvent préférable.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Méthodologie",
-   "q": "À propos du biais de non-réponse :",
-   "a": [
-    [
-     "Les répondants peuvent différer des non-répondants.",
-     true
-    ],
-    [
-     "Il peut limiter la généralisation des résultats.",
-     true
-    ],
-    [
-     "Il n'a aucun effet sur la représentativité.",
-     false
-    ]
-   ],
-   "e": "Si seuls les plus motivés répondent, l'échantillon n'est plus représentatif.",
-   "p": "Méthodologie des questionnaires"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos de l'entretien comportemental (méthode STAR) :",
-   "a": [
-    [
-     "Les questions portent sur des expériences passées.",
-     true
-    ],
-    [
-     "STAR signifie Situation, Tâche, Action, Résultat.",
-     true
-    ],
-    [
-     "Les questions portent uniquement sur des situations hypothétiques.",
-     false
-    ]
-   ],
-   "e": "Le comportement passé est un bon indicateur du comportement futur.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Recrutement",
-   "q": "À propos du profil de poste :",
-   "a": [
-    [
-     "Il est inutile si le candidat est brillant.",
-     false
-    ],
-    [
-     "Il précise les compétences et les qualités recherchées.",
-     true
-    ],
-    [
-     "Une bonne description du poste améliore la qualité de la sélection.",
-     true
-    ]
-   ],
-   "e": "Un candidat brillant n'est pas forcément adapté au poste concerné.",
-   "p": "Recrutement et sélection"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du NEO-FFI :",
-   "a": [
-    [
-     "Il compte 12 items par domaine.",
-     true
-    ],
-    [
-     "Il comporte 60 items.",
-     true
-    ],
-    [
-     "Il comporte 240 items.",
-     false
-    ]
-   ],
-   "e": "Les réponses se donnent sur une échelle en 5 points.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos du Big Five Inventory (BFI) :",
-   "a": [
-    [
-     "John et Srivastava ont contribué à son développement.",
-     true
-    ],
-    [
-     "Il comporte 44 items.",
-     true
-    ],
-    [
-     "Il est un test projectif.",
-     false
-    ]
-   ],
-   "e": "C'est un questionnaire court d'auto-évaluation, très utilisé en recherche.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de l'IPIP (International Personality Item Pool) :",
-   "a": [
-    [
-     "Il s'agit d'un ensemble d'items du domaine public.",
-     true
-    ],
-    [
-     "Il est un test projectif payant.",
-     false
-    ],
-    [
-     "Il permet de construire des échelles de Big Five sans droits d'utilisation.",
-     true
-    ]
-   ],
-   "e": "Goldberg l'a créé pour faciliter la recherche.",
-   "p": "Big Five"
-  },
-  {
-   "s": "Big Five",
-   "q": "À propos de la stabilité des scores au NEO :",
-   "a": [
-    [
-     "Les scores changent complètement d'une semaine à l'autre.",
-     false
-    ],
-    [
-     "Les traits restent relativement stables, sans être immuables.",
-     true
-    ],
-    [
-     "La stabilité test-retest est élevée sur plusieurs années chez l'adulte.",
-     true
-    ]
-   ],
-   "e": "Les traits évoluent lentement, notamment avec l'âge.",
-   "p": "Big Five"
-  },
-  {
-   "s": "MBTI",
-   "q": "À propos de l'usage du MBTI en recrutement :",
-   "a": [
-    [
-     "Il est plutôt destiné au développement personnel et aux équipes.",
-     true
-    ],
-    [
-     "Les éditeurs déconseillent de s'en servir pour sélectionner des candidats.",
-     true
-    ],
-    [
-     "Il a été validé spécialement pour prédire la performance au travail.",
-     false
-    ]
-   ],
-   "e": "Il n'a pas été conçu pour prédire la performance professionnelle.",
-   "p": "MBTI"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du 16PF (5ᵉ édition) :",
-   "a": [
-    [
-     "Il comporte 185 items.",
-     true
-    ],
-    [
-     "Il comporte 50 items.",
-     false
-    ],
-    [
-     "Il mesure 16 facteurs primaires.",
-     true
-    ]
-   ],
-   "e": "On y ajoute 5 facteurs globaux, comme l'extraversion et l'anxiété.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du California Psychological Inventory (CPI) :",
-   "a": [
-    [
-     "Harrison Gough en est l'auteur.",
-     true
-    ],
-    [
-     "Il évalue des traits de la personnalité normale.",
-     true
-    ],
-    [
-     "C'est un test de QI.",
-     false
-    ]
-   ],
-   "e": "Il comporte 434 items et des échelles comme la dominance et la sociabilité.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos de l'OPQ32 :",
-   "a": [
-    [
-     "Il est édité par SHL.",
-     true
-    ],
-    [
-     "Il est surtout utilisé en contexte professionnel.",
-     true
-    ],
-    [
-     "Il mesure uniquement l'intelligence.",
-     false
-    ]
-   ],
-   "e": "Il décrit 32 caractéristiques de personnalité liées au travail.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du MMPI-A :",
-   "a": [
-    [
-     "Il est destiné aux personnes de plus de 80 ans.",
-     false
-    ],
-    [
-     "Il comporte 478 items.",
-     true
-    ],
-    [
-     "Il est destiné aux adolescents.",
-     true
-    ]
-   ],
-   "e": "Il évalue la psychopathologie et la personnalité de l'adolescent.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos des notes T au MMPI-2 :",
-   "a": [
-    [
-     "Une note T de 50 est une valeur extrême.",
-     false
-    ],
-    [
-     "Leur moyenne est de 50 et leur écart-type est de 10.",
-     true
-    ],
-    [
-     "Une note T d'au moins 65 est considérée comme cliniquement significative.",
-     true
-    ]
-   ],
-   "e": "T = 50 correspond à la moyenne du groupe de référence.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos des échelles de validité du MMPI-2 (VRIN, TRIN, F, K) :",
-   "a": [
-    [
-     "L'échelle K mesure le QI.",
-     false
-    ],
-    [
-     "VRIN et TRIN détectent des réponses incohérentes.",
-     true
-    ],
-    [
-     "L'échelle F repère des réponses rares ou exagérées.",
-     true
-    ]
-   ],
-   "e": "L'échelle K évalue la défensivité.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos des traductions du MMPI-2 :",
-   "a": [
-    [
-     "Il a été traduit dans plus de 30 langues.",
-     true
-    ],
-    [
-     "Une traduction suffit pour employer les normes américaines sans vérification.",
-     false
-    ],
-    [
-     "Une traduction doit être accompagnée de normes locales.",
-     true
-    ]
-   ],
-   "e": "La traduction ne garantit pas l'équivalence des normes.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'inventaire d'anxiété de Beck (BAI) :",
-   "a": [
-    [
-     "C'est un test projectif.",
-     false
-    ],
-    [
-     "Il comporte 21 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 63.",
-     true
-    ]
-   ],
-   "e": "C'est un questionnaire d'auto-évaluation.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du SCL-90-R de Derogatis :",
-   "a": [
-    [
-     "Il évalue un large éventail de symptômes psychologiques.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes cognitives.",
-     false
-    ],
-    [
-     "Il comporte 90 items.",
-     true
-    ]
-   ],
-   "e": "Il donne un indice global de détresse et des échelles de symptômes.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Intérêts professionnels",
-   "q": "À propos du Self-Directed Search (SDS) de Holland :",
-   "a": [
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il produit un code de trois lettres du modèle RIASEC.",
-     true
-    ],
-    [
-     "Il peut être rempli et interprété par la personne elle-même.",
-     true
-    ]
-   ],
-   "e": "Le code de trois lettres résume les types dominants.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Intérêts professionnels",
-   "q": "À propos du Strong Interest Inventory :",
-   "a": [
-    [
-     "Il compare les intérêts d'une personne à ceux de professionnels.",
-     true
-    ],
-    [
-     "Il mesure la personnalité de façon projective.",
-     false
-    ],
-    [
-     "Il s'appuie sur le modèle RIASEC de Holland.",
-     true
-    ]
-   ],
-   "e": "Il remonte aux travaux d'E. K. Strong, dans les années 1920.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Intérêts professionnels",
-   "q": "À propos du Kuder Preference Record :",
-   "a": [
-    [
-     "Il utilise des triades d'activités à classer.",
-     true
-    ],
-    [
-     "Il évalue l'intelligence générale.",
-     false
-    ],
-    [
-     "Il évalue les préférences d'activités.",
-     true
-    ]
-   ],
-   "e": "Dans chaque triade, le sujet indique l'activité qu'il préfère.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test des phrases à compléter de Rotter (ISB) :",
-   "a": [
-    [
-     "Il se cote automatiquement par un total chiffré.",
-     false
-    ],
-    [
-     "C'est un test projectif.",
-     true
-    ],
-    [
-     "Il comporte 40 débuts de phrases à compléter.",
-     true
-    ]
-   ],
-   "e": "Les réponses sont analysées qualitativement par le clinicien.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test Maison-Arbre-Personne (HTP) :",
-   "a": [
-    [
-     "Buck l'a proposé en 1948.",
-     true
-    ],
-    [
-     "Le sujet dessine une maison, un arbre et une personne.",
-     true
-    ],
-    [
-     "Il se cote uniquement à l'aide de normes chiffrées de QI.",
-     false
-    ]
-   ],
-   "e": "Les dessins sont interprétés avec prudence, avec l'entretien et d'autres sources d'information.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos du Maslach Burnout Inventory (MBI) :",
-   "a": [
-    [
-     "Il évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Il évalue l'épuisement émotionnel, la dépersonnalisation et l'accomplissement personnel.",
-     true
-    ],
-    [
-     "Il comporte 22 items.",
-     true
-    ]
-   ],
-   "e": "Les trois dimensions correspondent au modèle de Maslach.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Psychologie du travail",
-   "q": "À propos de l'Utrecht Work Engagement Scale (UWES) :",
-   "a": [
-    [
-     "Elle évalue la psychopathologie.",
-     false
-    ],
-    [
-     "Elle existe en versions de 17 et de 9 items.",
-     true
-    ],
-    [
-     "Elle évalue la vigueur, le dévouement et l'absorption.",
-     true
-    ]
-   ],
-   "e": "Elle mesure l'engagement au travail.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Échelles pour enfants",
-   "q": "À propos du SDQ (Strengths and Difficulties Questionnaire) :",
-   "a": [
-    [
-     "Il évalue le QI de l'enfant.",
-     false
-    ],
-    [
-     "Il inclut une échelle de comportements prosociaux.",
-     true
-    ],
-    [
-     "Il comporte 25 items répartis en 5 échelles.",
-     true
-    ]
-   ],
-   "e": "Il explore les symptômes émotionnels, les troubles du comportement, l'hyperactivité, les relations avec les pairs et les comportements prosociaux.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Échelles pour enfants",
-   "q": "À propos du CBCL d'Achenbach (Child Behavior Checklist) :",
-   "a": [
-    [
-     "Il est rempli par un parent ou un proche de l'enfant.",
-     true
-    ],
-    [
-     "Il recense des problèmes de comportement et d'émotions.",
-     true
-    ],
-    [
-     "Il est rempli uniquement par l'enfant.",
-     false
-    ]
-   ],
-   "e": "C'est un questionnaire d'observation du comportement par un adulte.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos de l'EPQ-R d'Eysenck :",
-   "a": [
-    [
-     "Il évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Il comprend une échelle de mensonge.",
-     true
-    ],
-    [
-     "Il évalue psychoticisme, extraversion et névrosisme.",
-     true
-    ]
-   ],
-   "e": "La version complète compte 100 items.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos de l'EPPS (Edwards Personal Preference Schedule) :",
-   "a": [
-    [
-     "Il s'appuie sur les besoins décrits par Murray.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il repose sur un format à choix forcé.",
-     true
-    ]
-   ],
-   "e": "Il comporte 225 paires d'énoncés, d'où des scores ipsatifs.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du Personality Research Form (PRF) de Jackson :",
-   "a": [
-    [
-     "Il a été conçu à partir d'une méthode rigoureuse de construction d'échelles.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il s'appuie sur les besoins décrits par Murray.",
-     true
-    ]
-   ],
-   "e": "Jackson a insisté sur la validité de construit dès la conception des items.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du HEXACO-PI-R :",
-   "a": [
-    [
-     "Il évalue six domaines.",
-     true
-    ],
-    [
-     "Il inclut le domaine honnêteté-humilité.",
-     true
-    ],
-    [
-     "Il évalue cinq domaines.",
-     false
-    ]
-   ],
-   "e": "Il existe en versions de 200, 100 et 60 items.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du MCMI-IV de Millon :",
-   "a": [
-    [
-     "Il évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Il évalue des troubles de la personnalité et des syndromes cliniques.",
-     true
-    ],
-    [
-     "Il comporte 195 items.",
-     true
-    ]
-   ],
-   "e": "C'est un questionnaire d'auto-évaluation à réponses vrai ou faux.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos du Personality Assessment Inventory (PAI) de Morey :",
-   "a": [
-    [
-     "Il comprend 22 échelles.",
-     true
-    ],
-    [
-     "Il comporte 344 items.",
-     true
-    ],
-    [
-     "Il comporte 50 items.",
-     false
-    ]
-   ],
-   "e": "Il évalue des dimensions cliniques, avec des échelles de validité.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires de personnalité",
-   "q": "À propos de l'échelle de recherche de sensations de Zuckerman (SSS-V) :",
-   "a": [
-    [
-     "Elle comprend aussi la désinhibition et la susceptibilité à l'ennui.",
-     true
-    ],
-    [
-     "Elle évalue l'aptitude numérique.",
-     false
-    ],
-    [
-     "Elle comprend notamment la recherche de frissons et d'aventure.",
-     true
-    ]
-   ],
-   "e": "Elle comporte 40 items à choix forcé.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'échelle d'anxiété de Hamilton (HAM-A) :",
-   "a": [
-    [
-     "Elle est remplie seule par la personne.",
-     false
-    ],
-    [
-     "Elle est cotée par un clinicien.",
-     true
-    ],
-    [
-     "Elle comporte 14 items.",
-     true
-    ]
-   ],
-   "e": "C'est une échelle d'hétéro-évaluation de l'anxiété.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de la Y-BOCS (Yale-Brown) :",
-   "a": [
-    [
-     "Elle évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Elle évalue les obsessions et les compulsions.",
-     true
-    ],
-    [
-     "Son score total va de 0 à 40.",
-     true
-    ]
-   ],
-   "e": "Elle comporte 10 items : 5 sur les obsessions et 5 sur les compulsions.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'IES-R (Impact of Event Scale-Revised) :",
-   "a": [
-    [
-     "Elle évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Elle explore l'intrusion, l'évitement et l'hyperactivation.",
-     true
-    ],
-    [
-     "Elle comporte 22 items.",
-     true
-    ]
-   ],
-   "e": "Elle évalue la détresse liée à un événement traumatique.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'échelle d'impulsivité de Barratt (BIS-11) :",
-   "a": [
-    [
-     "Elle évalue l'intelligence verbale.",
-     false
-    ],
-    [
-     "Elle distingue l'impulsivité attentionnelle, motrice et par manque de planification.",
-     true
-    ],
-    [
-     "Elle comporte 30 items.",
-     true
-    ]
-   ],
-   "e": "C'est un questionnaire d'auto-évaluation.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos de l'AUDIT (Alcohol Use Disorders Identification Test) :",
-   "a": [
-    [
-     "Il comporte 10 items.",
-     true
-    ],
-    [
-     "Il évalue l'intelligence émotionnelle.",
-     false
-    ],
-    [
-     "Il a été développé par l'Organisation mondiale de la santé.",
-     true
-    ]
-   ],
-   "e": "C'est un outil de repérage de la consommation à risque, et non un diagnostic.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Inventaires cliniques",
-   "q": "À propos du test de Fagerström pour la dépendance à la nicotine :",
-   "a": [
-    [
-     "Il comporte 6 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 10.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes spatiales.",
-     false
-    ]
-   ],
-   "e": "Un score élevé indique une dépendance plus forte.",
-   "p": "MMPI et inventaires cliniques"
-  },
-  {
-   "s": "Traits sombres et sociaux",
-   "q": "À propos de la triade noire :",
-   "a": [
-    [
-     "Elle regroupe le narcissisme, le machiavélisme et la psychopathie.",
-     true
-    ],
-    [
-     "Elle regroupe l'ouverture, la conscienciosité et l'agréabilité.",
-     false
-    ],
-    [
-     "Le SD3 est un questionnaire qui l'évalue.",
-     true
-    ]
-   ],
-   "e": "Le SD3 comporte 27 items.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Traits sombres et sociaux",
-   "q": "À propos du NPI (Narcissistic Personality Inventory) :",
-   "a": [
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "La version de Raskin et Hall comporte 40 items à choix forcé.",
-     true
-    ],
-    [
-     "Il évalue le narcissisme dans la population générale.",
-     true
-    ]
-   ],
-   "e": "Il ne sert pas à diagnostiquer un trouble de la personnalité narcissique.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Traits sombres et sociaux",
-   "q": "À propos de l'indice de réactivité interpersonnelle (IRI) de Davis :",
-   "a": [
-    [
-     "Il comprend la prise de perspective et la préoccupation empathique.",
-     true
-    ],
-    [
-     "Il évalue l'empathie.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ]
-   ],
-   "e": "Il comporte 28 items et 4 sous-échelles.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Santé et bien-être",
-   "q": "À propos du GHQ-12 de Goldberg :",
-   "a": [
-    [
-     "Il comporte 12 items.",
-     true
-    ],
-    [
-     "Il sert à repérer une détresse psychologique.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes cognitives.",
-     false
-    ]
-   ],
-   "e": "C'est un outil de dépistage, pas un diagnostic.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Santé et bien-être",
-   "q": "À propos de l'indice de bien-être WHO-5 :",
-   "a": [
-    [
-     "Il comporte 36 items.",
-     false
-    ],
-    [
-     "Le score brut va de 0 à 25.",
-     true
-    ],
-    [
-     "Il comporte 5 items.",
-     true
-    ]
-   ],
-   "e": "Le score brut est souvent multiplié par 4 pour obtenir une note sur 100.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Santé et bien-être",
-   "q": "À propos du SF-36 :",
-   "a": [
-    [
-     "Il évalue huit dimensions de la santé perçue.",
-     true
-    ],
-    [
-     "Il comporte 36 items.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ]
-   ],
-   "e": "Il mesure la qualité de vie liée à la santé.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Santé et bien-être",
-   "q": "À propos de l'échelle de stress perçu (PSS-10) :",
-   "a": [
-    [
-     "Elle évalue le degré auquel la personne trouve sa vie imprévisible et incontrôlable.",
-     true
-    ],
-    [
-     "Elle évalue l'intelligence émotionnelle.",
-     false
-    ],
-    [
-     "Elle comporte 10 items.",
-     true
-    ]
-   ],
-   "e": "Cohen l'a conçue en 1983, dans une version de 14 items, avant la version courte.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Mesures au travail",
-   "q": "À propos du Minnesota Satisfaction Questionnaire (MSQ) :",
-   "a": [
-    [
-     "Il évalue la satisfaction au travail.",
-     true
-    ],
-    [
-     "Il distingue la satisfaction intrinsèque et extrinsèque.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ]
-   ],
-   "e": "Il existe en versions longue et courte.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Mesures au travail",
-   "q": "À propos du NASA-TLX :",
-   "a": [
-    [
-     "Il comprend six dimensions, dont l'effort et la frustration.",
-     true
-    ],
-    [
-     "Il évalue la dextérité.",
-     false
-    ],
-    [
-     "Il évalue la charge de travail perçue.",
-     true
-    ]
-   ],
-   "e": "Il comprend aussi les exigences mentales, physiques et temporelles et la performance.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Mesures au travail",
-   "q": "À propos du Job Content Questionnaire de Karasek :",
-   "a": [
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il évalue aussi les exigences psychologiques et le soutien social.",
-     true
-    ],
-    [
-     "Il évalue notamment la latitude décisionnelle.",
-     true
-    ]
-   ],
-   "e": "Il est lié au modèle demande-latitude.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Équipes et leadership",
-   "q": "À propos des rôles d'équipe de Belbin :",
-   "a": [
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il aide à composer des équipes complémentaires.",
-     true
-    ],
-    [
-     "Il décrit neuf rôles.",
-     true
-    ]
-   ],
-   "e": "Il compte, par exemple, le rôle de coordinateur et celui de finisseur.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Équipes et leadership",
-   "q": "À propos du Multifactor Leadership Questionnaire (MLQ) :",
-   "a": [
-    [
-     "Il évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Il évalue aussi le leadership transactionnel et le laissez-faire.",
-     true
-    ],
-    [
-     "Il évalue le leadership transformationnel.",
-     true
-    ]
-   ],
-   "e": "Bass et Avolio l'ont développé.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Équipes et leadership",
-   "q": "À propos de l'échelle LPC de Fiedler :",
-   "a": [
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Elle est associée au modèle de contingence de Fiedler.",
-     true
-    ],
-    [
-     "Elle évalue la manière de décrire le collaborateur le moins apprécié.",
-     true
-    ]
-   ],
-   "e": "Le modèle suppose que l'efficacité du leader dépend de la situation.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Équipes et leadership",
-   "q": "À propos du LBDQ de l'université de l'Ohio :",
-   "a": [
-    [
-     "Il décrit la considération et la structuration.",
-     true
-    ],
-    [
-     "Il évalue les troubles anxieux.",
-     false
-    ],
-    [
-     "Il évalue des comportements de leaders.",
-     true
-    ]
-   ],
-   "e": "Ce sont deux dimensions classiques du comportement du leader.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Styles individuels",
-   "q": "À propos de CliftonStrengths (Gallup) :",
-   "a": [
-    [
-     "Il décrit 34 thèmes de talents.",
-     true
-    ],
-    [
-     "Il est utilisé surtout en développement professionnel.",
-     true
-    ],
-    [
-     "C'est un test projectif.",
-     false
-    ]
-   ],
-   "e": "C'est un outil commercial d'auto-évaluation.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos de la CES-D :",
-   "a": [
-    [
-     "Elle comporte 20 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 60.",
-     true
-    ],
-    [
-     "Elle évalue l'intelligence.",
-     false
-    ]
-   ],
-   "e": "Radloff l'a conçue pour la population générale.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos de la HADS :",
-   "a": [
-    [
-     "Elle comprend 7 items d'anxiété et 7 items de dépression.",
-     true
-    ],
-    [
-     "Elle comporte 14 items.",
-     true
-    ],
-    [
-     "Elle évalue la personnalité.",
-     false
-    ]
-   ],
-   "e": "Elle a été conçue pour les patients des services de médecine.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos de l'échelle de dépression gériatrique (GDS) :",
-   "a": [
-    [
-     "Elle est destinée aux jeunes enfants.",
-     false
-    ],
-    [
-     "Les réponses sont de type oui ou non.",
-     true
-    ],
-    [
-     "Yesavage en est l'auteur.",
-     true
-    ]
-   ],
-   "e": "Il existe une version courte de 15 items.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos de l'AQ (Autism-Spectrum Quotient) :",
-   "a": [
-    [
-     "C'est un outil de repérage, qui ne pose pas de diagnostic.",
-     true
-    ],
-    [
-     "Il comporte 50 items.",
-     true
-    ],
-    [
-     "Il permet de diagnostiquer l'autisme.",
-     false
-    ]
-   ],
-   "e": "Baron-Cohen et ses collègues l'ont proposé en 2001.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos de l'ASRS (Adult ADHD Self-Report Scale) :",
-   "a": [
-    [
-     "Elle évalue l'intelligence.",
-     false
-    ],
-    [
-     "La version complète comporte 18 items.",
-     true
-    ],
-    [
-     "Une partie de 6 items sert de dépistage.",
-     true
-    ]
-   ],
-   "e": "Elle a été développée avec l'Organisation mondiale de la santé.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos du questionnaire CAGE :",
-   "a": [
-    [
-     "Il comporte 50 questions.",
-     false
-    ],
-    [
-     "Il sert à repérer des problèmes liés à l'alcool.",
-     true
-    ],
-    [
-     "Il comporte 4 questions.",
-     true
-    ]
-   ],
-   "e": "Les initiales renvoient aux mots anglais Cut down, Annoyed, Guilty, Eye-opener.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Échelles de dépistage",
-   "q": "À propos du DAST-10 :",
-   "a": [
-    [
-     "Il évalue la dextérité.",
-     false
-    ],
-    [
-     "Il comporte 10 items.",
-     true
-    ],
-    [
-     "Il évalue l'usage de drogues, hors alcool et tabac.",
-     true
-    ]
-   ],
-   "e": "Les questions portent sur les 12 derniers mois.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Questionnaires de sommeil",
-   "q": "À propos de l'indice de qualité du sommeil de Pittsburgh (PSQI) :",
-   "a": [
-    [
-     "Il évalue les aptitudes spatiales.",
-     false
-    ],
-    [
-     "Il comporte 19 items.",
-     true
-    ],
-    [
-     "Son score va de 0 à 21.",
-     true
-    ]
-   ],
-   "e": "Un score plus élevé indique un sommeil de moins bonne qualité.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Questionnaires de sommeil",
-   "q": "À propos de l'échelle de somnolence d'Epworth :",
-   "a": [
-    [
-     "Elle évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Son score va de 0 à 24.",
-     true
-    ],
-    [
-     "Elle comporte 8 situations.",
-     true
-    ]
-   ],
-   "e": "Un score supérieur à 10 suggère une somnolence excessive.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Psychologie positive",
-   "q": "À propos du VIA Inventory of Strengths :",
-   "a": [
-    [
-     "Peterson et Seligman en sont les auteurs.",
-     true
-    ],
-    [
-     "Il évalue 5 traits seulement.",
-     false
-    ],
-    [
-     "Il évalue 24 forces de caractère.",
-     true
-    ]
-   ],
-   "e": "La version complète comporte 240 items.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Psychologie positive",
-   "q": "À propos de la MAAS (Mindful Attention Awareness Scale) :",
-   "a": [
-    [
-     "Elle évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Elle comporte 15 items.",
-     true
-    ],
-    [
-     "Elle évalue l'attention à l'instant présent dans la vie quotidienne.",
-     true
-    ]
-   ],
-   "e": "Brown et Ryan l'ont publiée en 2003.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Psychologie positive",
-   "q": "À propos de l'échelle d'espoir de Snyder :",
-   "a": [
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Elle distingue la volonté (agency) et les voies (pathways).",
-     true
-    ],
-    [
-     "Elle comporte 12 items.",
-     true
-    ]
-   ],
-   "e": "L'espoir est défini comme la combinaison de motivation et de plans pour atteindre un but.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test MAPS (Make A Picture Story) :",
-   "a": [
-    [
-     "Il évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Il a été créé par Shneidman.",
-     true
-    ],
-    [
-     "Le sujet compose une scène avec des figurines et raconte une histoire.",
-     true
-    ]
-   ],
-   "e": "Il est proche du TAT, avec un matériel que le sujet manipule.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos des Blacky Pictures de Blum :",
-   "a": [
-    [
-     "Elles évaluent l'intelligence verbale.",
-     false
-    ],
-    [
-     "Elles s'inspirent de la théorie psychanalytique.",
-     true
-    ],
-    [
-     "Elles montrent un chien nommé Blacky dans des situations variées.",
-     true
-    ]
-   ],
-   "e": "Elles datent de 1949.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du test de Zulliger :",
-   "a": [
-    [
-     "C'est un test de taches d'encre.",
-     true
-    ],
-    [
-     "Il comporte 10 planches.",
-     false
-    ],
-    [
-     "Il comporte 3 planches.",
-     true
-    ]
-   ],
-   "e": "Il est plus court que le Rorschach et parfois utilisé en passation collective.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Tests projectifs",
-   "q": "À propos du Rorschach et du Zulliger :",
-   "a": [
-    [
-     "Ils sont interprétés par un clinicien formé.",
-     true
-    ],
-    [
-     "Ils fournissent des scores de QI.",
-     false
-    ],
-    [
-     "Ils reposent sur des stimuli peu structurés.",
-     true
-    ]
-   ],
-   "e": "Ce sont des tests projectifs de personnalité.",
-   "p": "Tests projectifs"
-  },
-  {
-   "s": "Valeurs et motivation",
-   "q": "À propos du Rokeach Value Survey :",
-   "a": [
-    [
-     "Le sujet les classe par ordre d'importance.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il comporte 18 valeurs terminales et 18 valeurs instrumentales.",
-     true
-    ]
-   ],
-   "e": "Les valeurs terminales décrivent des buts de vie et les valeurs instrumentales des modes de conduite.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Valeurs et motivation",
-   "q": "À propos du Portrait Values Questionnaire (PVQ) de Schwartz :",
-   "a": [
-    [
-     "Il décrit des portraits de personnes.",
-     true
-    ],
-    [
-     "La version courante comporte 40 items.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes numériques.",
-     false
-    ]
-   ],
-   "e": "Le répondant indique à quel point chaque portrait lui ressemble.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Valeurs et motivation",
-   "q": "À propos de l'inventaire des valeurs de travail de Super :",
-   "a": [
-    [
-     "Super en est l'auteur.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il évalue l'importance de valeurs au travail, comme la sécurité ou l'autonomie.",
-     true
-    ]
-   ],
-   "e": "Il aide à comprendre ce que la personne recherche dans un emploi.",
-   "p": "Intérêts, valeurs et styles"
-  },
-  {
-   "s": "Concept de soi",
-   "q": "À propos de l'inventaire d'estime de soi de Coopersmith :",
-   "a": [
-    [
-     "C'est un test projectif.",
-     false
-    ],
-    [
-     "Il s'appuie sur l'auto-évaluation.",
-     true
-    ],
-    [
-     "Il existe une version courte de 25 items.",
-     true
-    ]
-   ],
-   "e": "Il est largement utilisé auprès d'enfants et d'adolescents.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Concept de soi",
-   "q": "À propos de l'échelle de concept de soi de Piers-Harris :",
-   "a": [
-    [
-     "Elle se remplit en auto-évaluation.",
-     true
-    ],
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Elle évalue le concept de soi chez l'enfant.",
-     true
-    ]
-   ],
-   "e": "La seconde édition comporte 60 items.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Relations et famille",
-   "q": "À propos de la Dyadic Adjustment Scale (DAS) de Spanier :",
-   "a": [
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Elle évalue l'ajustement conjugal.",
-     true
-    ],
-    [
-     "Elle comporte 32 items.",
-     true
-    ]
-   ],
-   "e": "Elle est très utilisée dans la recherche sur les couples.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Relations et famille",
-   "q": "À propos de l'ECR (Experiences in Close Relationships) :",
-   "a": [
-    [
-     "Il évalue l'anxiété et l'évitement d'attachement.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Il comporte 36 items.",
-     true
-    ]
-   ],
-   "e": "Il a été proposé par Brennan, Clark et Shaver.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Relations et famille",
-   "q": "À propos de la Situation étrange d'Ainsworth :",
-   "a": [
-    [
-     "Elle distingue notamment des attachements sécure, évitant et ambivalent.",
-     true
-    ],
-    [
-     "Elle s'adresse à des adolescents de 15 ans.",
-     false
-    ],
-    [
-     "Elle observe un jeune enfant lors de séparations et de retrouvailles avec sa mère.",
-     true
-    ]
-   ],
-   "e": "Elle concerne des enfants d'environ 12 à 18 mois.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Relations et famille",
-   "q": "À propos du Parenting Stress Index (PSI) :",
-   "a": [
-    [
-     "La version complète comporte 120 items.",
-     true
-    ],
-    [
-     "Il évalue le stress lié à la fonction parentale.",
-     true
-    ],
-    [
-     "Il évalue le QI de l'enfant.",
-     false
-    ]
-   ],
-   "e": "Il existe une forme abrégée de 36 items.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Entretiens et échelles cliniques",
-   "q": "À propos du SCID-5 :",
-   "a": [
-    [
-     "C'est un test projectif.",
-     false
-    ],
-    [
-     "C'est un entretien clinique structuré.",
-     true
-    ],
-    [
-     "Il est lié aux critères du DSM-5.",
-     true
-    ]
-   ],
-   "e": "Il aide à établir des diagnostics de manière systématique.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Entretiens et échelles cliniques",
-   "q": "À propos du MINI (Mini International Neuropsychiatric Interview) :",
-   "a": [
-    [
-     "C'est un entretien structuré bref.",
-     true
-    ],
-    [
-     "Sa passation dure en général une quinzaine de minutes.",
-     true
-    ],
-    [
-     "Il dure plusieurs jours.",
-     false
-    ]
-   ],
-   "e": "Il sert au repérage des principaux troubles psychiatriques.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Entretiens et échelles cliniques",
-   "q": "À propos de la BPRS (Brief Psychiatric Rating Scale) :",
-   "a": [
-    [
-     "Elle est remplie uniquement par l'enfant.",
-     false
-    ],
-    [
-     "Elle évalue un large éventail de symptômes psychiatriques.",
-     true
-    ],
-    [
-     "C'est une échelle cotée par un clinicien.",
-     true
-    ]
-   ],
-   "e": "Elle comporte 18 ou 24 items selon la version.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Entretiens et échelles cliniques",
-   "q": "À propos de l'échelle d'impression clinique globale (CGI) :",
-   "a": [
-    [
-     "Elle comporte 100 items.",
-     false
-    ],
-    [
-     "Elle se cote sur 7 niveaux.",
-     true
-    ],
-    [
-     "Elle évalue la sévérité et l'amélioration.",
-     true
-    ]
-   ],
-   "e": "C'est un outil très bref.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Entretiens et échelles cliniques",
-   "q": "À propos de l'échelle d'évaluation globale du fonctionnement (GAF) :",
-   "a": [
-    [
-     "Elle ne figure plus dans le DSM-5.",
-     true
-    ],
-    [
-     "Elle évalue l'intelligence verbale.",
-     false
-    ],
-    [
-     "Son score va de 0 à 100.",
-     true
-    ]
-   ],
-   "e": "Le DSM-5 a retenu d'autres outils, comme le WHODAS.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Inventaires classiques",
-   "q": "À propos de l'EPI d'Eysenck :",
-   "a": [
-    [
-     "Il évalue extraversion et névrosisme.",
-     true
-    ],
-    [
-     "Il comporte 57 items.",
-     true
-    ],
-    [
-     "Il évalue les intérêts professionnels.",
-     false
-    ]
-   ],
-   "e": "Il comprend aussi une échelle de mensonge.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires classiques",
-   "q": "À propos du Gordon Personal Profile :",
-   "a": [
-    [
-     "Il évalue le QI.",
-     false
-    ],
-    [
-     "Il évalue notamment l'ascendant et la sociabilité.",
-     true
-    ],
-    [
-     "Il utilise un format à choix forcé.",
-     true
-    ]
-   ],
-   "e": "Il évalue aussi la responsabilité et la stabilité émotionnelle.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires classiques",
-   "q": "À propos de l'Adjective Check List de Gough :",
-   "a": [
-    [
-     "Elle peut décrire soi-même ou une autre personne.",
-     true
-    ],
-    [
-     "Le sujet choisit parmi 300 adjectifs ceux qui le décrivent.",
-     true
-    ],
-    [
-     "Elle évalue la dextérité.",
-     false
-    ]
-   ],
-   "e": "Elle permet de décrire l'image de soi.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires classiques",
-   "q": "À propos du California Q-Set de Block :",
-   "a": [
-    [
-     "Il comporte 100 énoncés à classer.",
-     true
-    ],
-    [
-     "Les énoncés sont répartis selon une distribution forcée.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes numériques.",
-     false
-    ]
-   ],
-   "e": "Il sert à décrire la personnalité à partir de l'avis d'un observateur.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Inventaires classiques",
-   "q": "À propos de la grille de répertoire de Kelly :",
-   "a": [
-    [
-     "Elle explore les construits personnels d'un individu.",
-     true
-    ],
-    [
-     "Elle évalue le QI.",
-     false
-    ],
-    [
-     "Kelly l'a proposée en 1955.",
-     true
-    ]
-   ],
-   "e": "Elle permet de comprendre la manière dont la personne organise sa perception des autres.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Anxiété et traits cognitifs",
-   "q": "À propos de l'échelle d'anxiété sociale de Liebowitz (LSAS) :",
-   "a": [
-    [
-     "Elle comporte 24 items.",
-     true
-    ],
-    [
-     "Elle évalue la peur et l'évitement.",
-     true
-    ],
-    [
-     "Elle évalue le QI.",
-     false
-    ]
-   ],
-   "e": "Elle explore des situations sociales et de performance.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Anxiété et traits cognitifs",
-   "q": "À propos de l'échelle de perfectionnisme multidimensionnelle de Frost :",
-   "a": [
-    [
-     "Elle évalue les aptitudes spatiales.",
-     false
-    ],
-    [
-     "Elle comporte 35 items.",
-     true
-    ],
-    [
-     "Elle comprend plusieurs sous-échelles, comme les doutes sur les actions.",
-     true
-    ]
-   ],
-   "e": "Elle comprend six sous-échelles.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Anxiété et traits cognitifs",
-   "q": "À propos de l'échelle d'intolérance à l'incertitude (IUS) :",
-   "a": [
-    [
-     "Elle évalue la difficulté à tolérer l'incertitude.",
-     true
-    ],
-    [
-     "Elle comporte 27 items.",
-     true
-    ],
-    [
-     "Elle évalue l'intelligence.",
-     false
-    ]
-   ],
-   "e": "Elle est liée à l'inquiétude.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Anxiété et traits cognitifs",
-   "q": "À propos de l'échelle brève d'autocontrôle de Tangney :",
-   "a": [
-    [
-     "Elle évalue l'intelligence verbale.",
-     false
-    ],
-    [
-     "Elle comporte 13 items.",
-     true
-    ],
-    [
-     "Elle évalue la capacité de contrôler ses impulsions.",
-     true
-    ]
-   ],
-   "e": "Elle découle d'une version de 36 items.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Anxiété et traits cognitifs",
-   "q": "À propos de l'échelle de persévérance (Grit) de Duckworth :",
-   "a": [
-    [
-     "Elle évalue la dextérité.",
-     false
-    ],
-    [
-     "Il existe une version courte de 8 items.",
-     true
-    ],
-    [
-     "Elle évalue la persévérance et la passion pour des objectifs à long terme.",
-     true
-    ]
-   ],
-   "e": "La version originale comporte 12 items.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Troubles anxieux et trauma",
-   "q": "À propos du PCL-5 :",
-   "a": [
-    [
-     "Il comporte 20 items.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes cognitives.",
-     false
-    ],
-    [
-     "Son score va de 0 à 80.",
-     true
-    ]
-   ],
-   "e": "C'est un questionnaire d'auto-évaluation des symptômes de stress post-traumatique.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Troubles anxieux et trauma",
-   "q": "À propos de la Dissociative Experiences Scale (DES) :",
-   "a": [
-    [
-     "Elle évalue les expériences dissociatives.",
-     true
-    ],
-    [
-     "Elle évalue les intérêts professionnels.",
-     false
-    ],
-    [
-     "Elle comporte 28 items.",
-     true
-    ]
-   ],
-   "e": "Elle a été proposée par Bernstein et Putnam.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Troubles anxieux et trauma",
-   "q": "À propos de l'inventaire obsessionnel-compulsif révisé (OCI-R) :",
-   "a": [
-    [
-     "Il comporte 18 items.",
-     true
-    ],
-    [
-     "Il comprend six sous-échelles, dont le lavage et la vérification.",
-     true
-    ],
-    [
-     "Il évalue le QI.",
-     false
-    ]
-   ],
-   "e": "Il est issu des travaux de Foa.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Troubles anxieux et trauma",
-   "q": "À propos de l'indice de sensibilité à l'anxiété (ASI) :",
-   "a": [
-    [
-     "Il évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "La version originale comporte 16 items.",
-     true
-    ],
-    [
-     "Il évalue la peur des sensations liées à l'anxiété.",
-     true
-    ]
-   ],
-   "e": "Reiss en est l'auteur.",
-   "p": "Dépistage : anxiété, trauma, humeur, sommeil"
-  },
-  {
-   "s": "Humeur et échelles pour enfants",
-   "q": "À propos du Children's Depression Inventory (CDI) :",
-   "a": [
-    [
-     "Il est destiné aux adultes de plus de 65 ans.",
-     false
-    ],
-    [
-     "Kovacs en est l'auteur.",
-     true
-    ],
-    [
-     "Il comporte 27 items.",
-     true
-    ]
-   ],
-   "e": "Il s'adresse à des enfants et adolescents d'environ 7 à 17 ans.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Humeur et échelles pour enfants",
-   "q": "À propos du SCARED :",
-   "a": [
-    [
-     "Il comporte 41 items.",
-     true
-    ],
-    [
-     "Il existe en versions pour l'enfant et pour le parent.",
-     true
-    ],
-    [
-     "Il évalue la dextérité.",
-     false
-    ]
-   ],
-   "e": "Il évalue les troubles anxieux de l'enfant.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Humeur et échelles pour enfants",
-   "q": "À propos de la RCMAS (Revised Children's Manifest Anxiety Scale) :",
-   "a": [
-    [
-     "Elle se remplit en auto-évaluation.",
-     true
-    ],
-    [
-     "Elle évalue l'anxiété chez l'enfant.",
-     true
-    ],
-    [
-     "Elle évalue la lecture.",
-     false
-    ]
-   ],
-   "e": "Reynolds et Richmond l'ont conçue.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Humeur et échelles pour enfants",
-   "q": "À propos du HiPIC :",
-   "a": [
-    [
-     "Il décrit cinq grandes dimensions, comme la stabilité émotionnelle et l'imagination.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes numériques.",
-     false
-    ],
-    [
-     "Il évalue la personnalité de l'enfant.",
-     true
-    ]
-   ],
-   "e": "Il est rempli par les parents ou les enseignants.",
-   "p": "Entretiens cliniques, enfants et famille"
-  },
-  {
-   "s": "Personnalité de l'enfant",
-   "q": "À propos du BFQ-C (Big Five Questionnaire for Children) :",
-   "a": [
-    [
-     "Il évalue les dimensions du Big Five chez l'enfant.",
-     true
-    ],
-    [
-     "Il se remplit en auto-évaluation par les enfants.",
-     true
-    ],
-    [
-     "Il évalue les aptitudes mécaniques.",
-     false
-    ]
-   ],
-   "e": "Il a été développé en s'inspirant du questionnaire pour adultes.",
-   "p": "Inventaires de personnalité"
-  },
-  {
-   "s": "Soutien social et cognitions",
-   "q": "À propos de l'échelle de solitude UCLA :",
-   "a": [
-    [
-     "Elle évalue l'intelligence.",
+     "Elle est inutile dans un projet.",
      false
-    ],
-    [
-     "La version 3 comporte 20 items.",
-     true
-    ],
-    [
-     "Elle évalue le sentiment de solitude.",
-     true
-    ]
-   ],
-   "e": "Russell en est l'auteur.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Soutien social et cognitions",
-   "q": "À propos de l'échelle MSPSS :",
-   "a": [
-    [
-     "Elle évalue le soutien social perçu.",
-     true
     ],
     [
-     "Elle distingue la famille, les amis et une personne significative.",
+     "Elle améliore les relations dans l'équipe.",
      true
-    ],
-    [
-     "Elle évalue la dextérité.",
-     false
     ]
    ],
-   "e": "Zimet et ses collègues l'ont proposée en 1988.",
-   "p": "Bien-être, stress et psychologie positive"
+   "e": "Un chef de projet passe beaucoup de temps à communiquer et à négocier."
   },
   {
-   "s": "Soutien social et cognitions",
-   "q": "À propos du Social Skills Rating System (SSRS) :",
+   "p": "Leadership et gestion d'équipe",
+   "s": "Gestion du temps",
+   "q": "À propos de la matrice d'Eisenhower :",
    "a": [
     [
-     "Il existe en versions pour les parents, les enseignants et l'élève.",
+     "Elle classe les tâches selon l'urgence et l'importance.",
      true
     ],
     [
-     "Il évalue le QI.",
+     "Une tâche ni urgente ni importante est prioritaire.",
      false
     ],
     [
-     "Il évalue les compétences sociales.",
+     "Une tâche urgente et importante est à traiter immédiatement.",
      true
     ]
    ],
-   "e": "Il a été conçu par Gresham et Elliott.",
-   "p": "Bien-être, stress et psychologie positive"
+   "e": "Les tâches importantes mais non urgentes sont à planifier."
   },
   {
-   "s": "Soutien social et cognitions",
-   "q": "À propos du questionnaire de pensées automatiques (ATQ) :",
+   "p": "Leadership et gestion d'équipe",
+   "s": "Santé au travail",
+   "q": "À propos de la charge de travail dans une équipe projet :",
    "a": [
     [
-     "Il évalue la fréquence de pensées négatives automatiques.",
+     "Une charge excessive peut conduire à l'épuisement.",
      true
     ],
     [
-     "Hollon et Kendall en sont les auteurs.",
+     "Le chef de projet doit être attentif à la répartition de la charge.",
      true
     ],
     [
-     "Il évalue les aptitudes numériques.",
+     "La surcharge n'a jamais d'effet sur la qualité.",
      false
     ]
    ],
-   "e": "Il comporte 30 items.",
-   "p": "Bien-être, stress et psychologie positive"
+   "e": "La surcharge augmente les erreurs et les départs."
   },
   {
-   "s": "Soutien social et cognitions",
-   "q": "À propos de l'échelle d'auto-efficacité généralisée (GSE) :",
+   "p": "Clôture et gouvernance de projet",
+   "s": "Clôture",
+   "q": "À propos de la clôture d'un projet :",
    "a": [
-    [
-     "Schwarzer et Jerusalem en sont les auteurs.",
-     true
-    ],
-    [
-     "Elle comporte 10 items.",
-     true
-    ],
     [
-     "Elle évalue le QI.",
+     "Elle est inutile quand les livrables sont terminés.",
      false
-    ]
-   ],
-   "e": "Son score va de 10 à 40.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Coping et stress",
-   "q": "À propos du Brief COPE :",
-   "a": [
-    [
-     "Il comporte 28 items.",
-     true
-    ],
-    [
-     "Il évalue 14 stratégies de coping.",
-     true
     ],
-    [
-     "Il évalue le QI.",
-     false
-    ]
-   ],
-   "e": "Carver l'a proposé en 1997.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Coping et stress",
-   "q": "À propos du CISS (Coping Inventory for Stressful Situations) :",
-   "a": [
     [
-     "Il évalue le coping orienté vers la tâche, vers l'émotion et vers l'évitement.",
+     "Elle comprend l'acceptation finale des livrables.",
      true
     ],
     [
-     "Endler et Parker en sont les auteurs.",
+     "Elle comprend la capitalisation des leçons apprises.",
      true
-    ],
-    [
-     "Il évalue le QI.",
-     false
     ]
    ],
-   "e": "Il comporte 48 items.",
-   "p": "Bien-être, stress et psychologie positive"
+   "e": "La clôture formalise la fin du projet et libère les ressources."
   },
   {
-   "s": "Coping et stress",
-   "q": "À propos de l'échelle de réajustement social de Holmes et Rahe :",
+   "p": "Clôture et gouvernance de projet",
+   "s": "Transfert",
+   "q": "À propos du transfert des résultats aux bénéficiaires :",
    "a": [
-    [
-     "Elle recense 43 événements de vie.",
-     true
-    ],
     [
-     "Chaque événement reçoit un nombre d'unités de changement de vie.",
+     "Il peut s'accompagner d'une formation.",
      true
-    ],
-    [
-     "Elle évalue les aptitudes cognitives.",
-     false
-    ]
-   ],
-   "e": "Le décès du conjoint y reçoit le score le plus élevé.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Mesures au travail",
-   "q": "À propos du Job Satisfaction Survey de Spector :",
-   "a": [
-    [
-     "Il évalue l'intelligence.",
-     false
     ],
     [
-     "Il évalue neuf facettes de la satisfaction au travail.",
+     "Il prépare l'exploitation des résultats après le projet.",
      true
     ],
-    [
-     "Il comporte 36 items.",
-     true
-    ]
-   ],
-   "e": "Il inclut le salaire, la supervision et la communication.",
-   "p": "Psychologie du travail"
-  },
-  {
-   "s": "Mesures au travail",
-   "q": "À propos de l'échelle de soutien organisationnel perçu (SPOS) :",
-   "a": [
     [
-     "Elle évalue les aptitudes spatiales.",
+     "Il n'est pas nécessaire si le projet est réussi.",
      false
-    ],
-    [
-     "Elle évalue la perception du soutien de l'organisation.",
-     true
-    ],
-    [
-     "Eisenberger et ses collègues en sont les auteurs.",
-     true
     ]
    ],
-   "e": "Elle existe en versions longue et courte.",
-   "p": "Psychologie du travail"
+   "e": "Sans transfert, les résultats risquent de ne pas être utilisés."
   },
   {
-   "s": "Psychologie positive",
-   "q": "À propos de l'échelle de compassion envers soi (SCS) de Neff :",
+   "p": "Clôture et gouvernance de projet",
+   "s": "Gouvernance",
+   "q": "À propos de la gouvernance d'un projet :",
    "a": [
     [
-     "Elle évalue l'intelligence.",
+     "Le comité de pilotage gère les tâches quotidiennes de l'équipe.",
      false
     ],
     [
-     "Elle comporte 26 items.",
+     "Le chef de projet gère le projet au quotidien.",
      true
     ],
     [
-     "Elle comprend six composantes, dont la bienveillance envers soi.",
+     "Le comité de pilotage prend les décisions stratégiques.",
      true
     ]
    ],
-   "e": "Elle explore aussi l'humanité commune et la pleine conscience.",
-   "p": "Bien-être, stress et psychologie positive"
+   "e": "La gouvernance clarifie qui décide de quoi."
   },
   {
-   "s": "Psychologie positive",
-   "q": "À propos de l'échelle de bonheur subjectif de Lyubomirsky :",
+   "p": "Clôture et gouvernance de projet",
+   "s": "Revues de jalon",
+   "q": "À propos des revues de jalon (stage gates) :",
    "a": [
     [
-     "Elle évalue les aptitudes numériques.",
+     "Elles sont décidées uniquement par le prestataire.",
      false
     ],
     [
-     "Elle évalue le bonheur global perçu.",
+     "Elles s'appuient sur des critères définis.",
      true
     ],
     [
-     "Elle comporte 4 items.",
+     "Elles permettent de décider de continuer, d'ajuster ou d'arrêter.",
      true
     ]
    ],
-   "e": "Lyubomirsky et Lepper l'ont publiée en 1999.",
-   "p": "Bien-être, stress et psychologie positive"
+   "e": "Elles limitent le risque de poursuivre un projet qui ne se justifie plus."
   },
   {
-   "s": "Psychologie positive",
-   "q": "À propos du questionnaire sur le sens de la vie (MLQ) de Steger :",
+   "p": "Clôture et gouvernance de projet",
+   "s": "Audit",
+   "q": "À propos de l'audit de projet :",
    "a": [
     [
-     "Il comporte 10 items.",
+     "Il vérifie la conformité aux règles et aux procédures.",
      true
     ],
     [
-     "Il évalue la présence de sens et la recherche de sens.",
-     true
-    ],
-    [
-     "Il évalue l'intelligence.",
-     false
-    ]
-   ],
-   "e": "Il distingue deux dimensions indépendantes.",
-   "p": "Bien-être, stress et psychologie positive"
-  },
-  {
-   "s": "Interprétation des profils",
-   "q": "À propos d'un score d'extraversion au 90ᵉ percentile au NEO :",
-   "a": [
-    [
-     "La personne est plus extravertie que 90 % du groupe de référence.",
-     true
-    ],
-    [
-     "Le score se compare à des normes.",
-     true
-    ],
-    [
-     "La personne répond « oui » à 90 % des items.",
+     "Il est toujours réalisé par le chef de projet lui-même.",
      false
-    ]
-   ],
-   "e": "Un percentile situe la personne par rapport à un groupe de référence.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Interprétation des profils",
-   "q": "À propos d'une échelle F très élevée au MMPI-2 :",
-   "a": [
-    [
-     "Elle prouve une intelligence très élevée.",
-     false
-    ],
-    [
-     "Elle peut refléter une exagération des symptômes ou des réponses au hasard.",
-     true
     ],
     [
-     "Elle doit faire douter de la validité du profil.",
+     "C'est une évaluation indépendante.",
      true
     ]
    ],
-   "e": "On examine alors les autres échelles de validité avant d'interpréter.",
-   "p": "Interprétation des profils"
+   "e": "L'indépendance donne de la crédibilité à l'audit."
   },
   {
-   "s": "Interprétation des profils",
-   "q": "À propos des facteurs du 16PF :",
+   "p": "Clôture et gouvernance de projet",
+   "s": "Durabilité",
+   "q": "À propos de la durabilité des résultats d'un projet :",
    "a": [
     [
-     "Le facteur B correspond à la sociabilité.",
+     "Elle se limite à la durée du projet.",
      false
     ],
     [
-     "Le facteur H correspond à la hardiesse sociale.",
+     "L'implication des acteurs locaux la favorise.",
      true
     ],
     [
-     "Le facteur Q4 correspond à la tension.",
+     "Elle désigne la capacité de maintenir les bénéfices après la fin du projet.",
      true
     ]
    ],
-   "e": "Le facteur B correspond au raisonnement.",
-   "p": "Interprétation des profils"
+   "e": "La durabilité est l'un des critères d'évaluation du CAD de l'OCDE."
   },
   {
-   "s": "Interprétation des profils",
-   "q": "Autres facteurs du 16PF :",
+   "p": "Projets de développement et bailleurs",
+   "s": "Bailleurs",
+   "q": "À propos de la relation avec un bailleur de fonds :",
    "a": [
-    [
-     "Le facteur L correspond à la vigilance.",
-     true
-    ],
     [
-     "Le facteur Q3 correspond au perfectionnisme.",
+     "Le financement est généralement soumis à des conditions.",
      true
     ],
     [
-     "Le facteur M correspond à la chaleur.",
+     "Le bailleur n'attend aucun rapport.",
      false
-    ]
-   ],
-   "e": "Le facteur M correspond à l'abstraction, et la chaleur correspond au facteur A.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Interprétation des profils",
-   "q": "À propos d'un code de Holland « SAE » :",
-   "a": [
-    [
-     "Il désigne les types Social, Artistique et Entreprenant.",
-     true
     ],
     [
-     "Le premier type est dominant.",
+     "Des rapports narratifs et financiers sont attendus.",
      true
-    ],
-    [
-     "Il désigne les types Scientifique, Artisan et Employé.",
-     false
     ]
    ],
-   "e": "Le code résume les trois types les plus marqués, dans l'ordre.",
-   "p": "Interprétation des profils"
+   "e": "La redevabilité envers le bailleur fait partie du contrat de financement."
   },
   {
-   "s": "Interprétation des profils",
-   "q": "À propos de l'observation du comportement pendant une passation :",
+   "p": "Projets de développement et bailleurs",
+   "s": "Budget",
+   "q": "À propos du budget d'un projet financé :",
    "a": [
     [
-     "Elle est inutile quand on dispose de scores.",
+     "Toutes les dépenses sont éligibles par défaut.",
      false
     ],
     [
-     "Elle renseigne sur l'attention, la motivation et l'anxiété de la personne.",
+     "Les règles d'éligibilité des dépenses doivent être respectées.",
      true
     ],
     [
-     "Elle aide à nuancer l'interprétation des scores.",
+     "Il est détaillé par activités.",
      true
     ]
    ],
-   "e": "Une personne très anxieuse ou fatiguée peut sous-performer.",
-   "p": "Interprétation des profils"
+   "e": "Une dépense non éligible peut être refusée et remboursée."
   },
   {
-   "s": "Interprétation des profils",
-   "q": "À propos de la restitution des résultats à un adolescent :",
+   "p": "Projets de développement et bailleurs",
+   "s": "Audit des fonds",
+   "q": "À propos de l'audit des fonds d'un projet :",
    "a": [
-    [
-     "On utilise un langage clair et sans jargon.",
-     true
-    ],
     [
-     "On ne lui communique jamais rien sur ses résultats.",
+     "Il est interdit pour les projets financés par des bailleurs.",
      false
     ],
-    [
-     "On évite les étiquettes définitives.",
-     true
-    ]
-   ],
-   "e": "On vérifie que l'adolescent a compris et on l'invite à poser des questions.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Interprétation des profils",
-   "q": "Un candidat obtient un score très élevé à une échelle de désirabilité sociale.",
-   "a": [
     [
-     "Il peut s'être présenté sous un jour trop favorable.",
+     "Un audit externe peut être exigé.",
      true
     ],
     [
-     "Les autres résultats doivent être interprétés avec prudence.",
+     "Il vérifie l'usage régulier des fonds.",
      true
-    ],
-    [
-     "Ses scores sont à retenir tels quels, sans réserve.",
-     false
     ]
    ],
-   "e": "On recoupe avec d'autres sources d'information.",
-   "p": "Interprétation des profils"
+   "e": "L'audit rassure les bailleurs sur la bonne gestion."
   },
   {
-   "s": "Interprétation des profils",
-   "q": "Un élève a un QI dans la moyenne, mais des résultats scolaires très faibles.",
+   "p": "Projets de développement et bailleurs",
+   "s": "Partenariats",
+   "q": "À propos des partenariats avec des acteurs locaux :",
    "a": [
     [
-     "On doit conclure qu'il manque de volonté.",
+     "Ils sont inutiles dans un projet de développement.",
      false
     ],
     [
-     "Un seul test ne suffit pas à expliquer l'écart.",
+     "Ils renforcent l'appropriation des résultats.",
      true
     ],
     [
-     "Il faut chercher les causes possibles, comme un trouble d'apprentissage ou une difficulté émotionnelle.",
+     "Ils peuvent inclure des ONG locales et des collectivités.",
      true
     ]
    ],
-   "e": "Plusieurs facteurs peuvent expliquer l'écart entre aptitudes et résultats.",
-   "p": "Interprétation des profils"
+   "e": "Les acteurs locaux connaissent le contexte et assurent la continuité."
   },
   {
-   "s": "Interprétation des profils",
-   "q": "Les intérêts d'une personne ne correspondent pas à ses aptitudes.",
+   "p": "Projets de développement et bailleurs",
+   "s": "Genre et inclusion",
+   "q": "À propos de l'approche genre dans un projet :",
    "a": [
     [
-     "Il faut tenir compte des deux, ainsi que de ses valeurs.",
+     "Elle contribue à l'inclusion des groupes vulnérables.",
      true
     ],
     [
-     "Seuls les intérêts comptent dans une décision d'orientation.",
+     "Elle est incompatible avec l'efficacité du projet.",
      false
-    ],
-    [
-     "Un intérêt ne garantit pas une aptitude suffisante.",
-     true
-    ]
-   ],
-   "e": "L'orientation croise intérêts, aptitudes, valeurs et contexte.",
-   "p": "Interprétation des profils"
-  },
-  {
-   "s": "Cotation des questionnaires",
-   "q": "À propos du score global de gravité (GSI) du SCL-90-R :",
-   "a": [
-    [
-     "Il correspond à la moyenne des scores obtenus sur les 90 items.",
-     true
     ],
     [
-     "Il fournit un indice global de détresse.",
+     "Elle analyse les besoins différents des femmes et des hommes.",
      true
-    ],
-    [
-     "Il évalue le QI.",
-     false
     ]
    ],
-   "e": "Il se complète par des échelles de symptômes.",
-   "p": "Méthodologie des questionnaires"
+   "e": "Une analyse inclusive améliore souvent la pertinence du projet."
   },
   {
-   "s": "Cotation des questionnaires",
-   "q": "À propos de l'échelle d'anxiété STAI :",
+   "p": "Projets de développement et bailleurs",
+   "s": "Intégrité",
+   "q": "À propos de la lutte contre la fraude dans les projets financés :",
    "a": [
     [
-     "Chaque échelle (état et trait) comporte 20 items.",
+     "Une politique de tolérance zéro est fréquente.",
      true
     ],
     [
-     "Chaque score va de 0 à 10.",
+     "La fraude est acceptable si elle est de faible montant.",
      false
     ],
     [
-     "Chaque score va de 20 à 80.",
+     "Des procédures de contrôle interne limitent les risques.",
      true
     ]
    ],
-   "e": "Les items sont cotés de 1 à 4.",
-   "p": "Méthodologie des questionnaires"
+   "e": "Le contrôle interne combine séparation des tâches, validations et documentation."
   },
   {
-   "s": "Cotation des questionnaires",
-   "q": "À propos de la cotation de l'échelle d'estime de soi de Rosenberg :",
+   "p": "Projets de développement et bailleurs",
+   "s": "Impact environnemental",
+   "q": "À propos de l'étude d'impact environnemental et social :",
    "a": [
     [
-     "Elle comporte 10 items.",
+     "Elle est souvent exigée avant certains projets.",
      true
     ],
     [
-     "Elle comporte 100 items.",
+     "Elle est faite après la fin des travaux.",
      false
     ],
     [
-     "Une cotation courante donne un score de 10 à 40.",
+     "Elle évalue les effets d'un projet sur l'environnement et les populations.",
      true
     ]
    ],
-   "e": "Les items négatifs sont inversés avant de totaliser.",
-   "p": "Méthodologie des questionnaires"
+   "e": "L'étude doit précéder la décision pour pouvoir limiter les impacts."
   },
   {
-   "s": "Cotation des questionnaires",
-   "q": "Sur une échelle de Likert de 1 à 5, un item doit être inversé.",
+   "p": "Projets de développement et bailleurs",
+   "s": "Coordination",
+   "q": "À propos de la coordination entre acteurs d'un secteur :",
    "a": [
     [
-     "Une réponse de 2 devient 4.",
+     "Elle améliore la cohérence de l'action.",
      true
     ],
     [
-     "Une réponse de 5 reste 5.",
+     "Elle est inutile quand plusieurs organisations interviennent.",
      false
     ],
     [
-     "Une réponse de 5 devient 1.",
+     "Elle limite les doublons entre projets.",
      true
     ]
    ],
-   "e": "La formule est 6 moins la réponse donnée.",
-   "p": "Méthodologie des questionnaires"
+   "e": "La coordination évite que plusieurs projets financent la même chose au même endroit."
   }
  ],
  "theo": [
