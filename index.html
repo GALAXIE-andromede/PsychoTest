@@ -2,24 +2,197 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>PsychoTest</title>
+<title>PsychoTest : réviser les tests psychométriques, l'administration publique et la gestion de projets</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1FA971">
-<meta name="description" content="Révisez les tests psychométriques : aptitudes, personnalité et théorie.">
+<meta name="description" content="1000 questions Vrai ou Faux avec explications : tests psychométriques, administration publique de la RDC et gestion de projets. 250 questions gratuites.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PsychoTest : 1000 questions pour réviser et réussir">
+<meta property="og:description" content="Tests psychométriques, administration publique et gestion de projets. 250 questions gratuites, application installable.">
+<meta property="og:image" content="https://galaxie-andromede.github.io/PsychoTest/icon-512.png">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="PsychoTest">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="stylesheet" href="style.css">
+<style>
+body{-webkit-user-select:auto;user-select:auto;overscroll-behavior:auto}
+.w{max-width:720px;margin:0 auto;padding:0 18px}
+.hero{background:var(--g);color:#fff;padding:calc(env(safe-area-inset-top,0px) + 26px) 0 38px;border-radius:0 0 32px 32px;background-image:radial-gradient(circle at 22px 22px,rgba(255,255,255,.14) 6px,transparent 7px),radial-gradient(circle at 66px 66px,rgba(255,255,255,.08) 6px,transparent 7px);background-size:88px 88px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:1.25rem}
+.logo img{width:46px;height:46px;border-radius:12px}
+.hero h1{font-size:clamp(1.9rem,7vw,2.8rem);line-height:1.1;margin:24px 0 12px;letter-spacing:-.02em}
+.hero .lead{font-size:1.1rem;opacity:.96;max-width:34em}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.cta .btn{width:auto;display:inline-block;padding:15px 22px}
+.btn.white{background:#fff;color:var(--gd);box-shadow:0 4px 0 rgba(0,0,0,.2)}
+.btn.ghostw{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.75);box-shadow:none}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}
+.stats div{background:rgba(255,255,255,.17);border-radius:16px;padding:12px 4px;text-align:center;font-size:.8rem}
+.stats b{display:block;font-size:1.55rem;line-height:1.1}
+section{padding:36px 0 4px}
+section h2{font-size:1.55rem;letter-spacing:-.01em;margin:0 0 6px}
+.sub{color:var(--mut);margin:0 0 16px}
+.cols{display:grid;gap:14px}
+@media(min-width:620px){.c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}}
+.box{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 4px 0 var(--line)}
+.box h3{margin:10px 0 6px;font-size:1.15rem}
+.box p{margin:0;color:var(--mut)}
+.ib{width:3rem;height:3rem;border-radius:16px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:1.3rem}
+.who{display:flex;flex-wrap:wrap;gap:10px}
+.who span{background:var(--gs);color:var(--gd);font-weight:700;padding:10px 16px;border-radius:99px}
+:root[data-theme="dark"] .who span{color:var(--g)}
+@media(prefers-color-scheme:dark){.who span{color:var(--g)}}
+.demo{background:var(--card);border:2px solid var(--line);border-radius:26px;padding:20px;box-shadow:0 4px 0 var(--line)}
+.demo .q{font-size:1.35rem;font-weight:700;line-height:1.25;margin:4px 0 14px}
+.demo .a{background:var(--gs);border-radius:18px;padding:16px;font-size:1.05rem}
+.demo .vf{display:flex;gap:12px;margin:14px 0}
+.demo .vf button{flex:1;padding:15px;border-radius:16px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:700;box-shadow:0 4px 0 var(--line)}
+.demo .res{display:none;border-radius:18px;padding:14px;margin-top:6px}
+.demo .res.ok{display:block;background:var(--gs)}
+.demo .res.ko{display:block;background:var(--rs)}
+.demo .res b{display:block;margin-bottom:4px}
+.price{position:relative}
+.price.pro{border-color:var(--g);box-shadow:0 4px 0 var(--g)}
+.price .big{font-size:2.2rem;font-weight:700;line-height:1.1;margin:6px 0 10px}
+.price ul{list-style:none;padding:0;margin:12px 0 0}
+.price li{padding:7px 0 7px 30px;position:relative;color:var(--ink)}
+.price li::before{content:"";position:absolute;left:2px;top:11px;width:16px;height:9px;border-left:3px solid var(--g);border-bottom:3px solid var(--g);transform:rotate(-45deg)}
+.steps{counter-reset:s;display:grid;gap:12px}
+.steps div{display:flex;gap:14px;align-items:flex-start}
+.steps div::before{counter-increment:s;content:counter(s);flex:none;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--y);color:#4A3500;font-weight:700;display:grid;place-items:center;box-shadow:0 3px 0 #D9A400}
+.steps b{display:block}
+details{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:14px 16px;margin-top:10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:10px 0 0;color:var(--mut)}
+.band{background:var(--g);color:#fff;border-radius:26px;padding:24px 20px;margin-top:34px;text-align:center}
+.band .btn{display:inline-block;width:auto;margin-top:12px;padding:15px 22px}
+footer{padding:26px 0 calc(env(safe-area-inset-bottom,0px) + 30px);color:var(--mut);font-size:.88rem}
+footer p{margin:0 0 10px}
+[hidden]{display:none!important}
+</style>
 </head>
 <body>
-<div id="app"></div>
-<noscript>Cette application a besoin de JavaScript.</noscript>
-<script src="config.js"></script>
-<script src="questions.js"></script>
-<script src="app.js"></script>
+
+<header class="hero"><div class="w">
+  <div class="logo"><img src="icon-192.png" alt="" width="46" height="46"><span>PsychoTest</span></div>
+  <h1>Révisez, comprenez, réussissez.</h1>
+  <p class="lead">1000 questions Vrai ou Faux avec explications : tests psychométriques, administration publique de la RDC et gestion de projets.</p>
+  <div class="cta">
+    <a class="btn white" href="app.html">Ouvrir l'application</a>
+    <button class="btn ghostw" id="inst" hidden>Installer sur mon téléphone</button>
+  </div>
+  <div class="stats">
+    <div><b>1000</b>questions</div><div><b>250</b>gratuites</div><div><b>51</b>paquets</div><div><b>9</b>programmes</div>
+  </div>
+</div></header>
+
+<main class="w">
+
+<section>
+  <h2>Pour qui ?</h2>
+  <p class="sub">Pour toute personne qui prépare un examen, un concours ou un poste.</p>
+  <div class="who"><span>Étudiants en psychologie</span><span>Candidats aux concours administratifs</span><span>Chefs de projet</span><span>Enseignants et formateurs</span></div>
+</section>
+
+<section>
+  <h2>Trois catégories</h2>
+  <p class="sub">Des questions rédigées pour réviser efficacement, avec une explication après chaque réponse.</p>
+  <div class="cols c3">
+    <div class="box"><div class="ib" style="background:#1FA971">A</div><h3>Aptitudes</h3><p>Logique, calcul, langage, attention, mémoire et tests cognitifs. 366 questions.</p></div>
+    <div class="box"><div class="ib" style="background:#F5B301">P</div><h3>Administration et projets</h3><p>Administration publique de la RDC, finances publiques, marchés publics et gestion de projets. 300 questions.</p></div>
+    <div class="box"><div class="ib" style="background:#FF7A59">T</div><h3>Théorie psychométrique</h3><p>QI, fidélité, validité, statistiques, éthique et grands tests. 334 questions.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Essayez une question</h2>
+  <p class="sub">Voici comment se passe une révision : une assertion à la fois.</p>
+  <div class="demo" id="demo">
+    <div class="q">Un test fidèle est-il forcément valide ?</div>
+    <div class="a">Un test peut mesurer de façon très stable autre chose que ce qu'il prétend mesurer.</div>
+    <div class="vf"><button data-v="1">Vrai</button><button data-v="0">Faux</button></div>
+    <div class="res" id="demores"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Ce que vous y trouverez</h2>
+  <div class="cols c2" style="margin-top:14px">
+    <div class="box"><h3>Vrai ou Faux, une assertion à la fois</h3><p>Chaque question comporte plusieurs assertions. Vous recevez la correction, puis l'explication « À retenir ».</p></div>
+    <div class="box"><h3>51 paquets, 9 programmes</h3><p>Révisez par thème, ou suivez un parcours guidé étape par étape.</p></div>
+    <div class="box"><h3>Votre progression</h3><p>Série de jours, objectif quotidien, badges et liste des points à revoir.</p></div>
+    <div class="box"><h3>Fonctionne hors connexion</h3><p>Après la première ouverture, l'application reste utilisable sans Internet.</p></div>
+    <div class="box"><h3>S'installe comme une application</h3><p>Sur Android et sur iPhone, directement depuis le lien, sans magasin d'applications.</p></div>
+    <div class="box"><h3>Confortable à lire</h3><p>Texte Normal, Grand ou Très grand. Mode clair ou sombre. Trois couleurs au choix.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gratuit ou Pro</h2>
+  <p class="sub">Commencez gratuitement, passez à Pro quand vous le souhaitez.</p>
+  <div class="cols c2">
+    <div class="box price"><h3>Gratuit</h3><div class="big">0 $</div>
+      <ul><li>250 questions réparties dans tous les paquets</li><li>Programmes, suivi de progression, badges</li><li>Fonctionne hors connexion</li></ul></div>
+    <div class="box price pro"><h3>Pro</h3><div class="big">5 $ <small style="font-size:.5em;font-weight:500;color:var(--mut)">paiement unique</small></div>
+      <ul><li>Les 1000 questions débloquées</li><li>Sans limite de durée</li><li>Un code d'activation par téléphone</li><li>Paiement par Airtel Money, Orange Money ou cryptomonnaies</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Comment ça marche</h2>
+  <div class="steps" style="margin-top:14px">
+    <div><span><b>Ouvrez le lien</b>Aucune inscription n'est nécessaire.</span></div>
+    <div><span><b>Révisez gratuitement</b>250 questions sont accessibles dès le départ.</span></div>
+    <div><span><b>Passez à Pro si vous le souhaitez</b>Payez, envoyez votre preuve sur WhatsApp et recevez votre code.</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Questions fréquentes</h2>
+  <details><summary>Faut-il une connexion Internet ?</summary><p>Il en faut une pour la première ouverture. Ensuite, l'application fonctionne sans connexion, avec le contenu déjà chargé.</p></details>
+  <details><summary>Comment installer l'application ?</summary><p>Sur Android (Chrome) : menu ⋮ puis « Installer l'application ». Sur iPhone (Safari) : bouton Partager puis « Sur l'écran d'accueil ».</p></details>
+  <details><summary>Comment fonctionne le code Pro ?</summary><p>Dans l'application, l'écran « Passer à Pro » affiche l'ID de votre téléphone. Vous nous l'envoyez avec votre preuve de paiement sur WhatsApp, puis vous recevez un code. Ce code ne fonctionne que sur ce téléphone. Si vous désinstallez l'application ou effacez ses données, l'ID change et il faut demander un nouveau code.</p></details>
+  <details><summary>Mes données sont-elles envoyées quelque part ?</summary><p>Non. Votre progression reste enregistrée sur votre téléphone.</p></details>
+  <details><summary>Les questions sont-elles des textes officiels ?</summary><p>Non. Ce sont des questions de révision, rédigées à partir de sources publiques. Elles ne remplacent ni les textes officiels, ni les manuels, ni la formation d'un professionnel. La législation évolue : vérifiez toujours les textes en vigueur.</p></details>
+</section>
+
+<div class="band">
+  <div class="h1" style="font-size:1.5rem">Prêt à commencer ?</div>
+  <p style="margin:6px 0 0;opacity:.95">250 questions gratuites, sans inscription.</p>
+  <a class="btn white" href="app.html">Ouvrir l'application</a>
+</div>
+
+</main>
+
+<footer><div class="w">
+  <p><a href="https://wa.me/243850800833" style="color:var(--gd);font-weight:700">Une question ? Écrivez-nous sur WhatsApp</a> · <a href="#" id="share" style="color:var(--gd);font-weight:700">Partager cette page</a></p>
+  <p>PsychoTest est un outil de révision. Il ne remplace ni les textes officiels, ni la formation d'un professionnel. Les tests psychologiques ne servent pas à poser un diagnostic à eux seuls.</p>
+  <p>© PsychoTest</p>
+</div></footer>
+
+<script>
+(function(){
+  if (window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true) { location.replace("app.html"); return; }
+  if ("serviceWorker" in navigator) window.addEventListener("load", function(){ navigator.serviceWorker.register("./sw.js").catch(function(){}); });
+  var dp = null, ib = document.getElementById("inst");
+  window.addEventListener("beforeinstallprompt", function(e){ e.preventDefault(); dp = e; ib.hidden = false; });
+  ib.addEventListener("click", function(){ if (!dp) return; dp.prompt(); dp.userChoice.then(function(){ dp = null; ib.hidden = true; }); });
+  window.addEventListener("appinstalled", function(){ ib.hidden = true; });
+  var res = document.getElementById("demores");
+  document.querySelectorAll("#demo .vf button").forEach(function(b){
+    b.addEventListener("click", function(){
+      var good = b.dataset.v === "1";
+      res.className = "res " + (good ? "ok" : "ko");
+      res.innerHTML = "<b>" + (good ? "Bien vu !" : "Pas tout à fait.") + "</b>Bonne réponse : Vrai. La fidélité (la constance des résultats) ne garantit pas la validité : un test peut mesurer de façon stable autre chose que ce qu'il prétend mesurer.";
+    });
+  });
+  document.getElementById("share").addEventListener("click", function(e){
+    e.preventDefault();
+    var url = location.href.split("#")[0], text = "Je révise avec PsychoTest : 1000 questions, dont 250 gratuites. ";
+    if (navigator.share) { navigator.share({ title: "PsychoTest", text: text, url: url }).catch(function(){}); }
+    else if (navigator.clipboard) { navigator.clipboard.writeText(text + url); alert("Lien copié"); }
+  });
+})();
+</script>
 </body>
 </html>
